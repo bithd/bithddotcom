@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>BitHD</title>
+    <title>BITHD</title>
     <link href="resource/icon.png" rel="icon shortcut">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
     <link rel="shortcut icon" href="/favicon.ico" mce_href="/favicon.ico" type="image/x-icon">
@@ -14,7 +14,7 @@
 <nav style="display: none">
     <div class="mobile-nav pc-hidden">
         <div class="mobile-header-logo">
-            <img class="logo" src="../resource/bithd.jpg">
+            <img class="logo" src="../resource/bithd.png">
         </div>
         <div class="mobile-header-menu">
             <img id="menu" src="../resource/menu.png">
@@ -23,7 +23,7 @@
 
     <div id="menu-list" class="pc-nav mobile-hidden">
         <div class="pc-header-logo mobile-hidden">
-            <img class="logo" src="../resource/bithd.jpg">
+            <img class="logo" src="../resource/bithd.png">
         </div>
         <div class="pc-header-menu">
             <ul>
@@ -58,6 +58,15 @@
         <div class="text-content">
             <p class="title"></p>
             <p id="simple-summary" class="summary"></p>
+        </div>
+    </div>
+
+    <div class="management">
+        <img id="management-bg" class="bg-image" src="../resource/management_pc.jpg">
+        <div class="text-content">
+            <p class="title"></p>
+            <p class="summary"></p>
+            <p class="content"></p>
         </div>
     </div>
 
@@ -237,13 +246,14 @@
             $("#introduction-bg").attr('src','../resource/banner_mobile.jpg');
             $("#security-bg").attr('src','../resource/safety_mobile.jpg');
             $("#simple-bg").attr('src','../resource/easy_mobile.jpg');
+            $("#management-bg").attr('src','../resource/management_mobile.jpg');
             $("#convenience-bg").attr('src','../resource/carousel_mobile.jpg');
             $("#wear-bg").attr('src','../resource/wear_mobile.jpg');
             $("#float-image").attr('src','../resource/watch_mobile.png');
             if ($.i18n.browserLang() == "zh-CN") {
                 $("#component-bg").attr('src','../resource/industry_mobile_cn.jpg');
             } else if($.i18n.browserLang() == "zh-TW" || $.i18n.browserLang() == "zh-HK") {
-                $("#component-bg").attr('src','../resource/industry_mobile_cn.jpg');
+                $("#component-bg").attr('src','../resource/industry_mobile_rtw.jpg');
             } else {
                 $("#component-bg").attr('src','../resource/industry_mobile_en.jpg');
             }
@@ -251,10 +261,20 @@
             $("#introduction-bg").attr('src','../resource/banner_pc.jpg');
             $("#security-bg").attr('src','../resource/safety_pc.jpg');
             $("#simple-bg").attr('src','../resource/easy_pc.jpg');
+            $("#management-bg").attr('src','../resource/management_pc.jpg');
             $("#convenience-bg").attr('src','../resource/carousel_pc.jpg');
             $("#component-bg").attr('src','../resource/industry_pc.jpg');
             $("#wear-bg").attr('src','../resource/wear_pc.jpg');
             $("#float-image").attr('src','../resource/watch_pc.png');
+            if ($.i18n.browserLang() == "zh-CN") {
+                $("#component-bg").attr('src','../resource/industry_pc_cn.jpg');
+            } else if($.i18n.browserLang() == "zh-TW" || $.i18n.browserLang() == "zh-HK") {
+                $("#component-bg").attr('src','../resource/industry_pc_rtw.jpg');
+            } else {
+                $(".convenience .summary").css("width","3.18rem");
+                $(".management .summary").css("width","3.18rem");
+                $("#component-bg").attr('src','../resource/industry_pc_en.jpg');
+            }
             document.getElementById("float-image").style.transform = "rotate(0deg) translateY(0px)";
             document.getElementById("float-image").style.webkitTransform = "rotate(0deg) translateY(0px)";
         }
@@ -290,6 +310,9 @@
 
                 $(".simple .title").html($.i18n.prop('features_sim_title'));
                 $(".simple .summary").html($.i18n.prop('features_sim_summary'));
+
+                $(".management .title").html($.i18n.prop('management_title'));
+                $(".management .summary").html($.i18n.prop('management_summary'));
 
                 $(".convenience .title").html($.i18n.prop('convenience_title'));
                 $(".convenience .summary").html($.i18n.prop('convenience_summary'));

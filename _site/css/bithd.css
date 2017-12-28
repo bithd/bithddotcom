@@ -452,6 +452,8 @@ nav {
 
 .convenience .summary {
     margin-top: 0.541667rem;
+    word-wrap: break-word;
+    word-break: normal;
     height: 0.28125rem;
     line-height: 0.28125rem;
     font-size: 0.177083rem;
@@ -492,6 +494,78 @@ nav {
     }
 }
 
+/*management*/
+.management {
+    position: relative;
+    width: 10rem;
+    height: auto;
+}
+
+.management .text-content {
+    position: absolute;
+    top: 0.651042rem;
+    right: 1.875rem;
+}
+
+.management .title {
+    height: 0.34375rem;
+    line-height: 0.34375rem;
+    font-size: 0.34375rem;
+    color: #E85F24;
+}
+
+.management .title:after {
+    display: block;
+    content: "";
+    height: 1px;
+    width: 0.520833rem;
+    margin-top: 0.28125rem;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.management .summary {
+    margin-top: 0.541667rem;
+    word-wrap: break-word;
+    word-break: normal;
+    height: 0.28125rem;
+    line-height: 0.28125rem;
+    font-size: 0.177083rem;
+    color: #000;
+}
+
+@media (max-width: 768px) {
+    .management .text-content {
+        position: absolute;
+        top: 0.666667rem;
+        right: 0.666667rem;
+    }
+
+    .management .title {
+        height: 0.48rem;
+        line-height: 0.48rem;
+        font-size: 0.48rem;
+        color: #000;
+    }
+
+    .management .title:after {
+        display: block;
+        content: "";
+        height: 1px;
+        width: 1.2rem;
+        margin-top: 0.48rem;
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    .management .summary {
+        margin-top: 0.906667rem;
+        width: 4.6rem;
+        word-wrap: break-word;
+        line-height: 0.533333rem;
+        font-size: 0.346667rem;
+        color: #000;
+    }
+}
+
 /*wear*/
 .wear {
     position: relative;
@@ -524,6 +598,9 @@ nav {
 .wear .summary {
     height: 0.197917rem;
     margin-top: 0.541667rem;
+    width: 2.9rem;
+    word-wrap: break-word;
+    word-break: normal;
     line-height: 0.197917rem;
     font-size: 0.177083rem;
     color: #000;
@@ -625,6 +702,8 @@ nav {
 
     .component .summary {
         margin-top: 0.266667rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
         word-wrap: break-word;
         word-break: normal;
         line-height: 0.506667rem;
@@ -734,7 +813,6 @@ nav {
 
     .parameter .headline {
         height: 0.48rem;
-        height: 0.48rem;
         line-height: 0.48rem;
         font-size: 0.48rem;
     }
@@ -805,7 +883,7 @@ nav {
 @media (max-width: 768px) {
     .welcome-img {
         margin-left: 1rem;
-        margin-top: calc(50% - 3.2rem);
+        margin-top: calc(50% - 3rem);
         width: 8.0rem;
         height: 7.413333rem;
     }
@@ -816,6 +894,6 @@ nav {
         top: 4rem;
         color: #fff;
         text-align: center;
-        font-size: 0.4rem;
+        font-size: 0.6rem;
     }
 }
