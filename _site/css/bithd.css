@@ -58,7 +58,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 /*body*/
 body {
-    font-family: PingFangSC-Light, sans-serif;
+    font-family: PingFangSC-Regular, Arial;
     height: 100%;
     background-color: #f2f2f2;
 }
@@ -283,11 +283,6 @@ nav {
     right: 0.9375rem;
     width: 4.4375rem;
     height: 4.255208rem;
-    -webkit-transition: all 2s ease;
-    transition: all 2s ease;
-    -webkit-transform: rotate(5deg) translateY(-100px);
-    -ms-transform: rotate(5deg) translateY(-100px);
-    transform: rotate(5deg) translateY(-100px)
 }
 
 @media (max-width: 768px) {
