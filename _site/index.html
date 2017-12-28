@@ -11,7 +11,7 @@
 </head>
 <body>
 
-<nav style="display: none">
+<nav style="display: block">
     <div class="mobile-nav pc-hidden">
         <div class="mobile-header-logo">
             <img class="logo" src="../resource/bithd.png">
@@ -34,7 +34,7 @@
     </div>
 </nav>
 
-<div style="display: none" class="container" onclick="containMenuOperation()">
+<div style="display: block" class="container" onclick="containMenuOperation()">
     <div id="overview" class="introduction">
         <img id="introduction-bg" class="bg-image" src="../resource/banner_pc.jpg">
         <div class="text-content">
@@ -88,7 +88,7 @@
     </div>
 
     <div id="specifications" class="component">
-        <img id="component-bg" class="bg-image" src="../resource/industry_pc.jpg">
+        <img id="component-bg" class="bg-image">
         <div class="text-content">
             <p class="title"></p>
             <p class="summary"></p>
@@ -263,7 +263,6 @@
             $("#simple-bg").attr('src','../resource/easy_pc.jpg');
             $("#management-bg").attr('src','../resource/management_pc.jpg');
             $("#convenience-bg").attr('src','../resource/carousel_pc.jpg');
-            $("#component-bg").attr('src','../resource/industry_pc.jpg');
             $("#wear-bg").attr('src','../resource/wear_pc.jpg');
             $("#float-image").attr('src','../resource/watch_pc.png');
             if ($.i18n.browserLang() == "zh-CN") {
