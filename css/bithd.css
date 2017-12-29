@@ -887,8 +887,11 @@ nav {
         margin-top: 0.408333rem;
         width: 10rem;
         top: 4rem;
+        word-wrap: break-word;
+        word-break: normal;
         color: #fff;
         text-align: center;
         font-size: 0.6rem;
+        line-height: 0.9rem;
     }
 }
