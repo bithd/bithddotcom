@@ -895,3 +895,32 @@ nav {
         line-height: 0.9rem;
     }
 }
+
+/*footer*/
+footer {
+    background-color: #fff;
+}
+
+footer p {
+    margin: 0;
+    width: 100%;
+    color: #333;
+    text-align: center;
+    font-size: 0.12rem;
+    line-height: 70px;
+}
+
+@media (max-width: 768px) {
+    footer {
+        background-color: #F9F9FC;
+    }
+
+    footer p {
+        margin: 0;
+        width: 100%;
+        color: #333;
+        text-align: center;
+        font-size: 0.2rem;
+        line-height: 40px;
+    }
+}
