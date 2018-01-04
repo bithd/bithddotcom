@@ -274,6 +274,10 @@ var _hmt = _hmt || [];
         if ($("#menu-list").hasClass("mobile-hidden") == false) {
             $("#menu-list").addClass("mobile-hidden");
         }
+        var display =$(".reports").css("display");
+        if (display == "block") {
+            $(".reports").css("display","none");
+        }
     }
 
     function menuListOperation() {
