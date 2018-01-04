@@ -26,76 +26,90 @@
         </div>
         <div class="pc-header-menu">
             <ul>
-                <li><a href="#overview" class="menu_overview" onclick="menuListOperation()"></a></li>
-                <li><a href="#specifications" class="menu_specifications" onclick="menuListOperation()"></a></li>
+                <li><a href="#overview" class="menu_overview" onclick="menuListOperation()">概述</a></li>
+                <li><a href="#specifications" class="menu_specifications" onclick="menuListOperation()">规格参数</a></li>
+                <li>
+                    <a class="menu_report">相关报道</a>
+                    <ul class="mobile-ul" style="display: none">
+                        <li><a href="http://www.jinse.com/bitcoin/123580.html" target="_blank" id="jinse_mobile">金色财经</a></li>
+                        <li><a href="http://www.aicoin.net.cn/amp/services/news-share?id=3762&lang=zh&from=timeline" target="_blank" id="alcoin_mobile">Alcoin</a></li>
+                        <li><a href="https://mp.weixin.qq.com/s/PHBJaW8kUW-duMeKb7Hg2g" target="_blank" id="chain_mobile">白话区块链</a></li>
+                    </ul>
+                </li>
             </ul>
         </div>
     </div>
 </nav>
 
+<div class="reports" style="display: none">
+    <ul>
+        <li><a href="http://www.jinse.com/bitcoin/123580.html" target="_blank" id="jinse_pc">金色财经</a></li>
+        <li><a href="http://www.aicoin.net.cn/amp/services/news-share?id=3762&lang=zh&from=timeline" target="_blank" id="alcoin_pc">Alcoin</a></li>
+        <li><a href="https://mp.weixin.qq.com/s/PHBJaW8kUW-duMeKb7Hg2g" target="_blank" id="chain_pc">白话区块链</a></li>
+    </ul>
+</div>
+
 <div style="display: block" class="container" onclick="containMenuOperation()">
     <div id="overview" class="introduction">
-        <img id="introduction-bg" class="bg-image" src="../resource/banner_pc.jpg">
+        <img id="introduction-bg" class="bg-image" src="../resource/banner_pc.jpg" alt="introduction">
         <div class="text-content">
-            <p class="title"></p>
-            <p class="summary"></p>
-            <p class="content"></p>
+            <p class="title">比特护盾</p>
+            <p class="summary">数字货币 安全卫士</p>
+            <p class="content">来自冷钱包开创者 - 比太团队</p>
         </div>
-        <img id="float-image" class="float-image" src="../resource/watch_pc.png">
+        <img id="float-image" class="float-image" src="../resource/watch_pc.png" alt="watch">
     </div>
 
     <div class="features security">
-        <img id="security-bg" class="bg-image" src="../resource/safety_pc.jpg">
+        <img id="security-bg" class="bg-image" src="../resource/safety_pc.jpg" alt="security">
         <div class="text-content">
-            <p class="title"></p>
-            <p class="summary"></p>
+            <p class="title">安全</p>
+            <p class="summary">资产冷存储，永不触网<br>基于成熟的硬件方案</p>
         </div>
     </div>
 
     <div class="features simple">
-        <img id="simple-bg" class="bg-image" src="../resource/easy_pc.jpg">
+        <img id="simple-bg" class="bg-image" src="../resource/easy_pc.jpg" alt="easy">
         <div class="text-content">
-            <p class="title"></p>
-            <p id="simple-summary" class="summary"></p>
+            <p class="title">易用</p>
+            <p id="simple-summary" class="summary">支持多区块链资产<br>比特派无缝衔接，操作简单、冷热兼备</p>
         </div>
     </div>
 
     <div class="management">
-        <img id="management-bg" class="bg-image" src="../resource/management_pc.jpg">
+        <img id="management-bg" class="bg-image" src="../resource/management_pc.jpg" alt="management">
         <div class="text-content">
-            <p class="title"></p>
-            <p class="summary"></p>
-            <p class="content"></p>
+            <p class="title">口令管理</p>
+            <p class="summary">BITHD 内置了口令管理功能<br>向您的密码说再见<br>向老旧的密码管理工具说再见</p>
         </div>
     </div>
 
     <div class="convenience">
-        <img id="convenience-bg" class="bg-image" src="../resource/carousel_pc.jpg">
+        <img id="convenience-bg" class="bg-image" src="../resource/carousel_pc.jpg" alt="convenience">
         <div class="text-content">
-            <p class="title"></p>
-            <p class="summary"></p>
-            <p class="content"></p>
+            <p class="title">手表即钱包</p>
+            <p class="summary">可随身携带、不易丢失<br>随时随地的大额转币更加安全</p>
         </div>
     </div>
 
     <div class="wear">
-        <img id="wear-bg" class="bg-image" src="../resource/wear_pc.jpg">
+        <img id="wear-bg" class="bg-image" src="../resource/wear_pc.jpg" alt="wear">
         <div class="text-content">
-            <p class="title"></p>
-            <p class="summary"></p>
+            <p class="title">可穿戴+智能合约</p>
+            <p class="summary">带着您的 Token 猫一起跑起来</p>
         </div>
     </div>
 
     <div id="specifications" class="component">
-        <img id="component-bg" class="bg-image">
+        <img id="component-bg" class="bg-image" alt="component">
         <div class="text-content">
-            <p class="title"></p>
-            <p class="summary"></p>
+            <p class="title">顶尖工业级设计</p>
+            <p class="summary">IP65级防护，零下20-70度均正常工作</p>
         </div>
     </div>
 
     <div id="parameter" class="parameter">
-        <p class="headline">Technical specification</p>
+        <p class="headline">技术参数</p>
         <div class="parameter-content-pc">
             <div class="left-content">
                 <div class="cpu">
@@ -192,11 +206,6 @@
     <p>基于 Trezor 源码，感谢 BWallet 币定行</p>
 </footer>
 
-<div style="display: none" class="welcome">
-    <img class="welcome-img" src="../resource/cat.png">
-    <p class="welcome-title"></p>
-</div>
-
 <script src="js/jquery-1.9.1.min.js"></script>
 <script src="js/smooth-scroll.min.js"></script>
 <script src="js/jquery.i18n.properties-min-1.0.9.js"></script>
@@ -234,6 +243,25 @@ var _hmt = _hmt || [];
         menuListOperation();
     });
 
+    $(".menu_report").click(function () {
+        var width = $(window).width();
+        if (width < 768) {
+            var display = $(".mobile-ul").css("display");
+            if (display == "none") {
+                $(".mobile-ul").css("display","block");
+            } else {
+                $(".mobile-ul").css("display","none");
+            }
+        } else {
+            var display =$(".reports").css("display");
+            if (display == "none") {
+                $(".reports").css("display","block");
+            } else {
+                $(".reports").css("display","none");
+            }
+        }
+    });
+
     $(document).ready(function(){
         adapterSize();
     })
@@ -259,6 +287,7 @@ var _hmt = _hmt || [];
     function adapterSize() {
         var width = $(window).width();
         if (width < 768) {
+            $(".reports").css("display","none");
             $("#introduction-bg").attr('src','../resource/banner_mobile.jpg');
             $("#security-bg").attr('src','../resource/safety_mobile.jpg');
             $("#simple-bg").attr('src','../resource/easy_mobile.jpg');
@@ -274,6 +303,7 @@ var _hmt = _hmt || [];
                 $("#component-bg").attr('src','../resource/industry_mobile_en.jpg');
             }
         } else {
+            $(".mobile-ul").css("display","none");
             $("#introduction-bg").attr('src','../resource/banner_pc.jpg');
             $("#security-bg").attr('src','../resource/safety_pc.jpg');
             $("#simple-bg").attr('src','../resource/easy_pc.jpg');
@@ -313,6 +343,14 @@ var _hmt = _hmt || [];
 
                 $(".menu_overview").html($.i18n.prop('menu_features'));
                 $(".menu_specifications").html($.i18n.prop('menu_specifications'));
+                $(".menu_report").html($.i18n.prop('menu_report'));
+
+                $("#jinse_mobile").html($.i18n.prop('menu_ul_jinse'));
+                $("#jinse_pc").html($.i18n.prop('menu_ul_jinse'));
+                $("#alcoin_mobile").html($.i18n.prop('menu_ul_alcoin'));
+                $("#alcoin_pc").html($.i18n.prop('menu_ul_alcoin'));
+                $("#chain_mobile").html($.i18n.prop('menu_ul_alcoin'));
+                $("#chain_pc").html($.i18n.prop('menu_ul_alcoin'));
 
                 $(".introduction .title").html($.i18n.prop('introduction_title'));
                 $(".introduction .summary").html($.i18n.prop('introduction_summary'));

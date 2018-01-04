@@ -136,6 +136,43 @@ nav {
     color: #E85F24;
 }
 
+.reports {
+    position: fixed;
+    top: 60px;
+    right: 1.6rem;
+    width: 120px;
+    z-index: 1040;
+    background-color: white;
+    -webkit-border-bottom-left-radius: 4px;
+    -webkit-border-bottom-right-radius: 4px;
+}
+
+.reports ul {
+    margin-left: 12px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.reports ul li {
+    margin-right: 12px;
+    margin-top: 10px;
+}
+
+.reports ul li a {
+    text-align: center;
+    font-size: 16px;
+    color: #666666;
+    text-decoration: none;
+}
+
+.reports ul li a:hover {
+    color: #E85F24;
+}
+
+.mobile-ul {
+    display: none;
+}
+
 /*mobile header*/
 @media (max-width: 768px) {
     .mobile-hidden {
@@ -144,6 +181,10 @@ nav {
 
     .pc-hidden {
         display: block;
+    }
+
+    .reports {
+        display: none;
     }
 
     .pc-header-menu {
@@ -160,6 +201,10 @@ nav {
         float: left;
     }
 
+    .mobile-ul {
+        width: 100%;
+    }
+
     .pc-header-menu ul li {
         height: 17px;
         margin-top: 20px;
@@ -171,6 +216,7 @@ nav {
     }
 
     .pc-header-menu ul li a {
+        float: left;
         font-family: PingFangSC-Regular, sans-serif;
         color: #666666;
         font-weight: 100;
