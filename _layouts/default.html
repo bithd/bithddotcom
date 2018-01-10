@@ -203,7 +203,7 @@
 </div>
 
 <footer>
-    <p>基于 Trezor 源码，感谢 BWallet 币定行</p>
+    <p class="thanks">基于 Trezor 源码，感谢 BWallet 币定行</p>
 </footer>
 
 {% include js.html %}
@@ -364,6 +364,8 @@
                 $(".component .summary").html($.i18n.prop('component_summary'));
 
                 $(".headline").html($.i18n.prop('parameter_headline'));
+
+                $(".thanks").html($.i18n.prop('thanks'));
             }
         });
     });
