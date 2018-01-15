@@ -237,10 +237,12 @@ nav {
 }
 
 .introduction .summary {
+    font-family: PingFangSC-Thin, sans-serif;
     height: 0.197917rem;
     margin-top: 0.197917rem;
     line-height: 0.197917rem;
     font-size: 0.197917rem;
+    font-weight: 400;
     color: #E85F24;
 }
 
@@ -273,7 +275,7 @@ nav {
 }
 
 .play-video {
-    margin-top: 0.208333rem;
+    margin-top: 0.13rem;
     width: 2.6rem;
     vertical-align: middle;
     font-size: 0;
@@ -282,7 +284,7 @@ nav {
 .play-video p {
     float: left;
     line-height: 0.166667rem;
-    font-size: 0.15625rem;
+    font-size: 0.15rem;
     font-family: PingFangSC-Thin, sans-serif;
     color: #E85F24;
     border: 0;
@@ -955,6 +957,7 @@ nav {
 
 .video-head {
     height: 60px;
+    width: 6.25rem;
     background-color: white;
     vertical-align: middle;
 }
