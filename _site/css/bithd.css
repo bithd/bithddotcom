@@ -272,6 +272,29 @@ nav {
     height: 4.255208rem;
 }
 
+.play-video {
+    margin-top: 0.208333rem;
+    width: 2.6rem;
+    vertical-align: middle;
+    font-size: 0;
+}
+
+.play-video p {
+    float: left;
+    line-height: 0.166667rem;
+    font-size: 0.15625rem;
+    font-family: PingFangSC-Thin, sans-serif;
+    color: #E85F24;
+    border: 0;
+    text-align: left;
+    background-color: transparent;
+}
+
+.play-video img {
+    height: 0.166667rem;
+    padding-left: 0.041667rem;
+}
+
 @media (max-width: 768px) {
     .introduction .text-content {
         position: absolute;
@@ -306,7 +329,6 @@ nav {
 
     .introduction .content {
         margin-top: 1.093333rem;
-        height: 0.293333rem;
         width: 4rem;
         word-wrap: break-word;
         word-break: normal;
@@ -325,6 +347,30 @@ nav {
         -webkit-transform: rotate(0deg) translateY(0px);
         -ms-transform: rotate(0deg) translateY(0px);
         transform: rotate(0deg) translateY(0px)
+    }
+
+    .play-video {
+        font-size: 0;
+        margin-top: 0.3rem;
+        width: 2.6rem;
+        vertical-align: middle;
+    }
+
+    .play-video p {
+        float: left;
+        line-height: 0.333333rem;
+        font-size: 0.293333rem;
+        font-family: PingFangSC-Thin, sans-serif;
+        color: #E85F24;
+        border: 0;
+        text-align: left;
+        background-color: transparent;
+    }
+
+    .play-video img {
+        padding-left: 0.106667rem;
+        width: 0.506667rem;
+        height: 0.333333rem;
     }
 }
 
@@ -881,6 +927,58 @@ nav {
         font-size: 0.6rem;
         line-height: 0.9rem;
     }
+}
+
+/*float background*/
+.float-back {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1500;
+    width: 100%;
+    height: 100%;
+    filter: alpha(opacity=50);
+    opacity: 0.5;
+    -moz-opacity: 0.5;
+    background-color: #000;
+}
+/*video*/
+.video-back {
+    position: fixed;
+    display: none;
+    z-index: 2000;
+    top: calc(50% - 1.758474rem - 30px);
+    left: 1.875rem;
+    right: 1.875rem;
+}
+
+.video-head {
+    height: 60px;
+    background-color: white;
+    vertical-align: middle;
+}
+
+.video-title {
+    float: left;
+    margin-left: 20px;
+    width: calc(100% - 64px);
+    font-size: 16px;
+    line-height: 60px;
+    color: #333;
+}
+
+.video-btn {
+    position: absolute;
+    margin-right: 20px;
+    margin-top: 18px;
+    width: 24px;
+    border-radius: 15px;
+}
+
+.video iframe {
+    width: 6.25rem;
+    height: 3.516949rem;
 }
 
 /*footer*/

@@ -56,6 +56,9 @@
             <p class="title"></p>
             <p class="summary"></p>
             <p class="content"></p>
+            <div class="play-video">
+                <p>观看宣传片</p><img src="../resource/playVideo.png">
+            </div>
         </div>
         <img id="float-image" class="float-image" src="../resource/watch_pc.png" alt="watch">
     </div>
@@ -202,6 +205,17 @@
     </div>
 </div>
 
+<div class="float-back"></div>
+
+<div class="video-back">
+    <div class="video-head">
+        <p class="video-title">BITHD 发布会宣传片</p>
+        <img class="video-btn" src="../resource/close.png">
+    </div>
+    <div class="video">
+    </div>
+</div>
+
 <footer>
     <p class="thanks">基于 Trezor 源码，感谢 BWallet 币定行</p>
 </footer>
@@ -265,6 +279,27 @@
         }
     }
 
+    $(".play-video").click(function () {
+        var width = $(window).width();
+        if (width < 768) {
+            window.location.href="http://v.youku.com/v_show/id_XMzMxOTYxNTQ5Mg==.html?spm=a2h3j.8428770.3416059.1";
+        } else {
+            $(".float-back").css("display","block");
+            $(".video-back").css("display","block");
+            $(".video").append("<iframe src='http://player.youku.com/embed/XMzMxOTYxNTQ5Mg==' frameborder=0 'allowfullscreen'></iframe>");
+        }
+    });
+
+    $(".video-btn").click(function () {
+        removeVideo();
+    });
+
+    function removeVideo() {
+        $(".float-back").css("display","none");
+        $(".video-back").css("display","none");
+        $(".video").empty();
+    }
+
     function menuListOperation() {
         if ($("#menu-list").hasClass("mobile-hidden") == true) {
             $("#menu-list").removeClass("mobile-hidden");
@@ -276,6 +311,7 @@
     function adapterSize() {
         var width = $(window).width();
         if (width < 768) {
+            removeVideo();
             $(".reports").css("display","none");
             $("#introduction-bg").attr('src','../resource/banner_mobile.jpg');
             $("#security-bg").attr('src','../resource/safety_mobile.jpg');
