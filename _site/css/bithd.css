@@ -17,7 +17,7 @@ nav {
     background-color: white;
     border-bottom: 1px solid #e0e0e0;
     -webkit-box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.07);
-    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.07)
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.07);
 }
 
 /*pc header*/
@@ -232,12 +232,12 @@ nav {
     height: 0.34375rem;
     line-height: 0.34375rem;
     font-size: 0.34375rem;
-    font-family: PingFangSC-Thin, sans-serif;
+    font-family: PingFangSC-Light, sans-serif;
     color: white;
 }
 
 .introduction .summary {
-    font-family: PingFangSC-Thin, sans-serif;
+    font-family: PingFangSC-Light, sans-serif;
     height: 0.197917rem;
     margin-top: 0.197917rem;
     line-height: 0.197917rem;
@@ -262,7 +262,7 @@ nav {
     word-break: normal;
     line-height: 0.260417rem;
     font-size: 0.15625rem;
-    font-family: PingFangSC-Thin, sans-serif;
+    font-family: PingFangSC-Light, sans-serif;
     color: white;
 }
 
@@ -285,7 +285,7 @@ nav {
     float: left;
     line-height: 0.166667rem;
     font-size: 0.15rem;
-    font-family: PingFangSC-Thin, sans-serif;
+    font-family: PingFangSC-Light, sans-serif;
     color: #E85F24;
     border: 0;
     text-align: left;
@@ -308,7 +308,7 @@ nav {
         height: 0.666667rem;
         line-height: 0.666667rem;
         font-size: 0.666667rem;
-        font-family: PingFangSC-Thin, sans-serif;
+        font-family: PingFangSC-Light, sans-serif;
         color: white;
     }
 
@@ -336,7 +336,7 @@ nav {
         word-break: normal;
         line-height: 0.479999rem;
         font-size: 0.293333rem;
-        font-family: PingFangSC-Thin, sans-serif;
+        font-family: PingFangSC-Light, sans-serif;
         color: white;
     }
 
@@ -362,7 +362,7 @@ nav {
         float: left;
         line-height: 0.333333rem;
         font-size: 0.293333rem;
-        font-family: PingFangSC-Thin, sans-serif;
+        font-family: PingFangSC-Light, sans-serif;
         color: #E85F24;
         border: 0;
         text-align: left;
