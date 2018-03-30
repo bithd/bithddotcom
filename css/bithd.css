@@ -156,7 +156,7 @@ footer p a{
 
 
 .features-1 .bg-image img {
-    width: 2.7rem;
+    width: 1.7rem;
     margin-left: 2.8rem;
     margin-top: 0.5rem;
 }
@@ -172,7 +172,7 @@ footer p a{
 .features-1 .title {
     line-height: 0.34375rem;
     font-size: 0.34375rem;
-    color: #333
+    color: #666;
 }
 .features-1{
     position: relative;
@@ -1164,9 +1164,45 @@ footer p {
     .mobile-header-logo img{
         margin-left: 0px;
     }
-    .site-name{margin-left: 0px}
+    .banner .bg-image{
+        height:9rem;
+    }
+    .site-name{margin-left: 0px;font-size: 15px}
     .mobile-menu-app ul li a{
         float:none
+    }
+    .banner .text-content{
+        top:2.3rem;
+        right:3.875rem;
+        text-align: center;
+    }
+    .banner .content-app{
+        margin:0.7rem 0 0;
+    }
+    .img-ios{
+        margin-top: 0.2rem;
+        width:1.541666rem
+    }
+    .features-1 .bg-image img{
+        margin:5.2rem 0 0 4.2rem;
+    }
+    .features-1 .title:after{
+        margin:0.28rem auto 0 auto;
+    }
+    .features-1 .bg-content{
+        text-align: center;
+        top:1.651042rem;
+        left:0;
+        width:100%;
+    }
+
+    .features-1 .summary{
+        width:50%;
+        margin:1rem  auto 0 auto;
+        line-height: 0.5rem;
+    }
+    .float-image-app{
+        right:4.2rem;
     }
     footer{
         background-color: #F9F9FC;
