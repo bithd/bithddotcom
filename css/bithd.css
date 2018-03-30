@@ -1110,12 +1110,13 @@ footer p {
 }
 
 @media (max-width: 768px) {
-    .banner .content{
+    .banner .content-app{
         width:100%;
     }
     .mobile-header-logo img{
         margin-left: 0px;
     }
+    .site-name{margin-left: 0px}
     .mobile-menu-app ul li a{
         float:none
     }
