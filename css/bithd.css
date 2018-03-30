@@ -99,11 +99,14 @@ nav {
     margin-top: 10px;
 }
 
-.reports ul li a {
+.reports ul li a,footer p a{
     text-align: center;
     font-size: 16px;
     color: #666666;
     text-decoration: none;
+}
+footer p a{
+    text-decoration: underline;
 }
 
 .reports ul li a:hover {
@@ -112,6 +115,64 @@ nav {
 
 .mobile-ul {
     display: none;
+}
+.img-ios,.img-android{
+    width:1.041666rem
+}
+
+.introductions{
+    /*padding-top: 50px;*/
+    /*padding-bottom: 50px;*/
+    text-align: center;
+    color: #f8f8f8;
+    background: url(../resource/banner.jpg) no-repeat center center;
+    background-size: cover;
+}
+.banner{
+    position: relative;
+    width: 10rem;
+    height: auto;
+}
+.bg-image{
+    width: 100%;
+    display: block;
+}
+
+.banner .text-content {
+    position: absolute;
+    top: 1.36271rem;
+    right: 1.875rem;
+    text-align: right;
+}
+
+.banner .title {
+    height: 0.38rem;
+    line-height: 0.38rem;
+    font-size: 0.38rem;
+    font-family: PingFangSC-Thin, sans-serif;
+    color: white;
+    font-weight: bold;
+}
+
+.banner .content {
+    margin-top: 0.220416rem;
+    margin-right: 0;
+    margin-left: calc(100% - 2.291662rem);
+    width: 2.291662rem;
+    word-wrap: break-word;
+    word-break: normal;
+    line-height: 0.2875rem;
+    font-size: 0.1875rem;
+    font-family: PingFangSC-Thin, sans-serif;
+    text-align: right;
+    color: white;
+}
+.text-content-web p{
+
+    padding: 0.2rem 0;
+}
+.title-web{
+    font-size: 0.5rem;
 }
 
 /*mobile header*/
@@ -185,6 +246,19 @@ nav {
     margin-top: 8px;
     margin-left: 12px;
 }
+.logo-app{
+    width:30%;
+}
+.logo-app img{
+    width:50px;
+}
+
+.float-image {
+    position: absolute;
+    bottom: 0;
+    right: 3.675rem;
+    width: 3.0rem;
+}
 
 .mobile-header-menu {
     width: 7rem;
@@ -200,6 +274,43 @@ nav {
     float: right;
 }
 
+.float-image-app{
+    right:5.29rem
+}
+
+.banner .content:after {
+    display: block;
+    content: "";
+    height: 1px;
+    width: 1.041666rem;
+    margin-top: 0.322916rem;
+    margin-left: calc(100% - 1.041666rem);
+    background-color: rgba(255, 255, 255, 0.3);
+}
+.download-img {
+    margin-top: 0.322916rem;
+    font-size: 0;
+}
+.pc-header-menu ul li span{
+    padding:0 5px;
+    color:#666666;
+}
+.site-name {
+    margin-left: 12px;
+    line-height: 60px;
+    font-size: 18px;
+    color: #333;
+    float:right
+}
+.pc-header-menu ul li{
+    height: 24px;
+    margin-top: 19px;
+    line-height: 24px;
+    font-size: 18px;
+    margin-left: 30px;
+    float: left;
+    list-style: none;
+}
 /*container*/
 .container {
     width: 10rem;
@@ -999,7 +1110,16 @@ footer p {
 }
 
 @media (max-width: 768px) {
-    footer {
+    .banner .content{
+        width:100%;
+    }
+    .mobile-header-logo img{
+        margin-left: 0px;
+    }
+    .mobile-menu-app ul li a{
+        float:none
+    }
+    footer{
         background-color: #F9F9FC;
     }
 
