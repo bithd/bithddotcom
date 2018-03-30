@@ -138,6 +138,11 @@ footer p a{
     display: block;
 }
 
+.bithd-app-log{
+    width:50px;
+    height:50px;
+}
+
 .banner .text-content {
     position: absolute;
     top: 1.36271rem;
@@ -169,7 +174,7 @@ footer p a{
     text-align: right;
     vertical-align: middle;
 }
-.features-1 .title {
+.features-1 .title-features-1 {
     line-height: 0.34375rem;
     font-size: 0.34375rem;
     color: #666;
@@ -179,7 +184,7 @@ footer p a{
     background: #fff;
 }
 
-.features-1 .title:after {
+.features-1 .title-features-1:after {
     display: block;
     content: "";
     height: 1px;
@@ -190,7 +195,7 @@ footer p a{
 }
 
 
-.features-1 .summary {
+.features-1 .summary-features-1 {
     margin-top: 0.28rem;
     height: 0.28125rem;
     word-wrap: break-word;
@@ -1173,7 +1178,7 @@ footer p {
     }
     .banner .text-content{
         top:2.3rem;
-        right:3.875rem;
+        right:3.475rem;
         text-align: center;
     }
     .banner .content-app{
@@ -1184,9 +1189,10 @@ footer p {
         width:1.541666rem
     }
     .features-1 .bg-image img{
-        margin:5.2rem 0 0 4.2rem;
+        margin:5.2rem 0 0 3.6rem;
+        width:2.7rem;
     }
-    .features-1 .title:after{
+    .features-1 .title-features-1:after{
         margin:0.28rem auto 0 auto;
     }
     .features-1 .bg-content{
@@ -1196,13 +1202,13 @@ footer p {
         width:100%;
     }
 
-    .features-1 .summary{
+    .features-1 .summary-features-1{
         width:50%;
         margin:1rem  auto 0 auto;
         line-height: 0.5rem;
     }
     .float-image-app{
-        right:4.2rem;
+        right:3.8rem;
     }
     footer{
         background-color: #F9F9FC;
