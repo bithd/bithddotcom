@@ -145,7 +145,7 @@ footer p a{
     text-align: right;
 }
 
-.banner .title {
+.banner .title-app {
     height: 0.38rem;
     line-height: 0.38rem;
     font-size: 0.38rem;
@@ -154,7 +154,7 @@ footer p a{
     font-weight: bold;
 }
 
-.banner .content {
+.banner .content-app {
     margin-top: 0.220416rem;
     margin-right: 0;
     margin-left: calc(100% - 2.291662rem);
