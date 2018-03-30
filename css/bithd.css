@@ -154,6 +154,54 @@ footer p a{
     font-weight: bold;
 }
 
+
+.features-1 .bg-image img {
+    width: 2.7rem;
+    margin-left: 2.8rem;
+    margin-top: 0.5rem;
+}
+
+.features-1 .bg-content {
+    position: absolute;
+    top: 0.651042rem;
+    left:5rem;
+    width: 3.125rem;
+    text-align: right;
+    vertical-align: middle;
+}
+.features-1 .title {
+    line-height: 0.34375rem;
+    font-size: 0.34375rem;
+    color: #333
+}
+.features-1{
+    position: relative;
+    background: #fff;
+}
+
+.features-1 .title:after {
+    display: block;
+    content: "";
+    height: 1px;
+    width: 0.6875rem;
+    margin-top: 0.28rem;
+    margin-left: calc(100% - 0.6875rem);
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+
+.features-1 .summary {
+    margin-top: 0.28rem;
+    height: 0.28125rem;
+    word-wrap: break-word;
+    word-break: normal;
+    line-height: 0.28125rem;
+    font-size: 0.177083rem;
+    font-family: PingFangSC-Thin, sans-serif;
+    font-weight: 500;
+    color: #666;
+}
+
 .banner .content-app {
     margin-top: 0.220416rem;
     margin-right: 0;
