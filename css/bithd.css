@@ -1129,6 +1129,7 @@ footer{
     right: 1.875rem;
 }
 
+
 .video-head {
     height: 60px;
     width: 6.25rem;
@@ -1171,7 +1172,18 @@ footer p {
     font-size: 0.11rem;
     line-height: 40px;
 }
-
+.bithd_content{
+    padding-top: 0.15rem;
+}
+.bithd_content a{
+    line-height: 0.197917rem;
+    font-size: 0.197917rem;
+    font-family: PingFangSC-Light, sans-serif;
+    color: #E85F24;
+}
+.bithd_page a{
+    color:white !important;
+}
 @media (max-width: 768px) {
     .banner .content-app{
         width:100%;
