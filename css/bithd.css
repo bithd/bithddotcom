@@ -474,7 +474,7 @@ footer{
 @media (max-width: 768px) {
     .introduction .text-content {
         position: absolute;
-        top: 1.786667rem;
+        top: 1.086667rem;
         left: 0.666667rem;
     }
 
@@ -1202,8 +1202,9 @@ footer p {
         float:none
     }
     .banner .text-content{
-        top:2.3rem;
+        top:1.3rem;
         right:3.475rem;
+        margin:0 auto;
         text-align: center;
     }
     .banner .content-app{
