@@ -1179,6 +1179,9 @@ footer p {
     .mobile-header-logo img{
         margin-left: 0px;
     }
+    .mobile-bithd img{
+        margin-left:12px !important;
+    }
     .banner .bg-image{
         height:9rem;
     }
