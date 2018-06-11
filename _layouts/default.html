@@ -333,9 +333,9 @@
                 $("#convenience-bg").attr('src', '../resource/carousel_mobile.jpg');
                 $("#wear-bg").attr('src', '../resource/wear_mobile.jpg');
                 $("#float-image").attr('src', '../resource/watch_mobile.png');
-                if ($.i18n.browserLang() == "zh-CN") {
+                if (new String($.i18n.browserLang()).indexOf("zh")> -1) {
                     $("#component-bg").attr('src', '../resource/industry_mobile_cn.jpg');
-                } else if ($.i18n.browserLang() == "zh-TW" || $.i18n.browserLang() == "zh-HK") {
+                } else if ((new String($.i18n.browserLang()).toLowerCase).indexOf("tw") > -1|| (new String($.i18n.browserLang()).toLowerCase).indexOf("hk") > -1) {
                     $("#component-bg").attr('src', '../resource/industry_mobile_rtw.jpg');
                 } else {
                     $("#component-bg").attr('src', '../resource/industry_mobile_en.jpg');

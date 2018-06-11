@@ -290,9 +290,9 @@
                 });
             }
             var languageCode;
-            if ($.i18n.browserLang() == "zh-CN") {
+            if (new String($.i18n.browserLang()).indexOf("zh")> -1) {
                 languageCode = "zh";
-            } else if ($.i18n.browserLang() == "zh-TW" || $.i18n.browserLang() == "zh-HK") {
+            } else if ((new String($.i18n.browserLang()).toLowerCase).indexOf("tw") > -1|| (new String($.i18n.browserLang()).toLowerCase).indexOf("hk") > -1) {
                 languageCode = "zh-rTW";
             } else {
                 languageCode = "en";
