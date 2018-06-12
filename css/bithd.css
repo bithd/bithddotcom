@@ -1249,3 +1249,9 @@ footer p {
         line-height: 40px;
     }
 }
+
+@media(min-width: 410px) and  (max-width: 768px) {
+    .banner .text-content{
+        right: 4.2rem;
+    }
+}
