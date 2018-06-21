@@ -700,6 +700,32 @@ footer{
         font-size: 0.346667rem;
         color: #000;
     }
+    .banner .text-market{
+        right:0rem !important;
+        width:100%;
+    }
+    .banner .title-app {
+        padding-top:0.173333rem;
+        font-size: 0.666667rem;
+        line-height: 0.666667rem;
+    }
+
+    .banner .bithd_content a{
+       font-size:0.383333rem;
+        line-height: 0.383333rem;
+    }
+    .banner .content-app{
+        //line-height: 0.073333rem;
+        font-size: 0.293333rem;
+        text-align: center !important;
+    }
+    .banner .text-market .title-app{
+        padding-top:0rem !important;
+    }
+    .text-market .download-img{
+        margin-top: 0rem !important;
+    }
+
 }
 
 /*management*/
