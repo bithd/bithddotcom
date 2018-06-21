@@ -664,6 +664,10 @@ footer{
     color: #000;
 }
 
+.text-market{
+    top:1.06271rem !important;
+}
+
 @media (max-width: 768px) {
     .convenience .text-content {
         position: absolute;
