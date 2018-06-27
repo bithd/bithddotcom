@@ -374,6 +374,9 @@ footer{
     float: left;
     list-style: none;
 }
+.bithddocs{
+    color:red !important;
+}
 /*container*/
 .container {
     width: 10rem;
