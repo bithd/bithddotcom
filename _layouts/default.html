@@ -18,6 +18,7 @@
                 <a href><img class="logo" src="../resource/bithd.png"></a>
             </div>
             <div class="mobile-header-menu">
+                <a href="http://docs.bithd.com" class="site-name mobilebithd bithddocs"></a>
                 <img id="menu" src="../resource/menu.png">
             </div>
         </div>
@@ -233,7 +234,8 @@
 
     <footer>
         <p class="bithd_help"></p>
-        <p class="thanks">基于 Trezor 源码，感谢 BWallet 币定行</p>
+        <p class="thanks"></p>
+        <p><a href="https://github.com/bithd" target="_blank" class="source"></a></p>
     </footer>
 
     {% include js.html %}
@@ -420,10 +422,13 @@
                     $(".bithdtitleshop").html($.i18n.prop('bithdtitleshop'));
                     $(".taobaoshop").html($.i18n.prop('taobaoshop'));
                     $(".headline").html($.i18n.prop('parameter_headline'));
+                    $(".bithddocs").html($.i18n.prop('bithddocs'));
 
                     $(".bithd_help").html($.i18n.prop('bithd_help'));
 
                     $(".thanks").html($.i18n.prop('thanks'));
+
+                    $(".source").html($.i18n.prop('source'));
 
                     $(".video-title").html($.i18n.prop('video_title'));
                 }
