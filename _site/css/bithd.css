@@ -1,6 +1,6 @@
 /*body*/
 body {
-    font-family: PingFangSC-Regular, Arial;
+    font-family: PingFang SC, "\5FAE\8F6F\96C5\9ED1",Arial !important;
     height: 100%;
     background-color: #f2f2f2;
 }
@@ -35,14 +35,12 @@ nav {
 }
 
 .pc-header-menu {
-    width: 7rem;
     height: 100%;
-    float: left;
+    float: right;
 }
 
 .pc-header-menu ul {
     float: right;
-    margin-right: 1.875rem;
 }
 
 .pc-header-menu ul li {
@@ -65,7 +63,6 @@ nav {
 }
 
 .pc-header-logo {
-    width: 3rem;
     height: 100%;
     float: left;
 }
@@ -74,7 +71,7 @@ nav {
     width: 81px;
     height: 44px;
     margin-top: 8px;
-    margin-left: 1.875rem;
+    float:left;
 }
 
 .reports {
@@ -99,11 +96,14 @@ nav {
     margin-top: 10px;
 }
 
-.reports ul li a {
+.reports ul li a,footer p a{
     text-align: center;
     font-size: 16px;
     color: #666666;
     text-decoration: none;
+}
+footer p a{
+    text-decoration: underline;
 }
 
 .reports ul li a:hover {
@@ -112,6 +112,127 @@ nav {
 
 .mobile-ul {
     display: none;
+}
+.img-ios,.img-android{
+    width:1.041666rem
+}
+
+.introductions{
+    /*padding-top: 50px;*/
+    /*padding-bottom: 50px;*/
+    text-align: center;
+    color: #f8f8f8;
+    background: url(../resource/banner.jpg) no-repeat center center;
+    background-size: cover;
+}
+.banner{
+    position: relative;
+    width: 10rem;
+    height: auto;
+}
+.bg-image{
+    width: 100%;
+    display: block;
+}
+
+.bithd-app-log{
+    width:50px;
+    height:50px;
+}
+
+.banner .text-content {
+    position: absolute;
+    top: 1.36271rem;
+    right: 1.875rem;
+    text-align: right;
+}
+
+.banner .title-app {
+    height: 0.38rem;
+    line-height: 0.38rem;
+    font-size: 0.38rem;
+    font-family: PingFangSC-Thin, sans-serif;
+    color: white;
+    font-weight: bold;
+}
+
+
+.features-1 .bg-image img {
+    width: 1.7rem;
+    margin-left: 2.8rem;
+    margin-top: 0.5rem;
+}
+
+.features-1 .bg-content {
+    position: absolute;
+    top: 0.651042rem;
+    left:5rem;
+    width: 3.125rem;
+    text-align: right;
+    vertical-align: middle;
+}
+.features-1 .title-features-1 {
+    line-height: 0.34375rem;
+    font-size: 0.34375rem;
+    color: #666;
+}
+.features-1{
+    position: relative;
+    background: #fff;
+}
+
+.features-1 .title-features-1:after {
+    display: block;
+    content: "";
+    height: 1px;
+    width: 0.6875rem;
+    margin-top: 0.28rem;
+    margin-left: calc(100% - 0.6875rem);
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+
+.features-1 .summary-features-1 {
+    margin-top: 0.28rem;
+    height: 0.28125rem;
+    word-wrap: break-word;
+    word-break: normal;
+    line-height: 0.28125rem;
+    font-size: 0.177083rem;
+    font-family: PingFangSC-Thin, sans-serif;
+    font-weight: 500;
+    color: #666;
+}
+
+.banner .content-app {
+    margin-top: 0.220416rem;
+    margin-right: 0;
+    margin-left: calc(100% - 2.291662rem);
+    width: 2.291662rem;
+    word-wrap: break-word;
+    word-break: normal;
+    line-height: 0.2875rem;
+    font-size: 0.1875rem;
+    font-family: PingFangSC-Thin, sans-serif;
+    text-align: right;
+    color: white;
+}
+.text-content-web p{
+
+    padding: 0.2rem 0;
+}
+.title-web{
+    font-size: 0.5rem;
+}
+
+
+footer{
+   padding:30px 0;
+}
+.source,.bithd_help{
+    font-size: 0.10rem;
+    line-height: 32px;
+    color:#333;
 }
 
 /*mobile header*/
@@ -140,6 +261,7 @@ nav {
 
     .pc-header-menu ul {
         float: left;
+      width:100%;
     }
 
     .mobile-ul {
@@ -151,9 +273,11 @@ nav {
         margin-top: 20px;
         line-height: 17px;
         font-size: 17px;
-        margin-left: 20px;
+        /*margin-left: 20px;*/
         margin-bottom: 20px;
         float: none;
+        display:block;
+      width:100%;
     }
 
     .pc-header-menu ul li a {
@@ -185,11 +309,23 @@ nav {
     margin-top: 8px;
     margin-left: 12px;
 }
+.logo-app{
+    width:30%;
+}
+.logo-app img{
+    width:44px;
+}
+
+.float-image {
+    position: absolute;
+    bottom: 0;
+    right: 3.675rem;
+    width: 3.0rem;
+}
 
 .mobile-header-menu {
-    width: 7rem;
     height: 100%;
-    float: left;
+    float: right;
 }
 
 .mobile-header-menu img {
@@ -198,8 +334,49 @@ nav {
     margin-top: 18px;
     margin-right: 12px;
     float: right;
+  margin-left:20px;
 }
 
+.float-image-app{
+    right:5.29rem
+}
+
+.banner .content:after {
+    display: block;
+    content: "";
+    height: 1px;
+    width: 1.041666rem;
+    margin-top: 0.322916rem;
+    margin-left: calc(100% - 1.041666rem);
+    background-color: rgba(255, 255, 255, 0.3);
+}
+.download-img {
+    margin-top: 0.322916rem;
+    font-size: 0;
+}
+.pc-header-menu ul li span{
+    padding:0 5px;
+    color:#666666;
+}
+.site-name {
+    margin-left: 12px;
+    line-height: 60px;
+    font-size: 18px;
+    color: #333;
+    float:right
+}
+.pc-header-menu ul li{
+    height: 24px;
+    margin-top: 19px;
+    line-height: 24px;
+    font-size: 18px;
+    margin-left: 50px;
+    float: left;
+    list-style: none;
+}
+.bithddocs{
+    color:red !important;
+}
 /*container*/
 .container {
     width: 10rem;
@@ -300,7 +477,7 @@ nav {
 @media (max-width: 768px) {
     .introduction .text-content {
         position: absolute;
-        top: 1.786667rem;
+        top: 1.086667rem;
         left: 0.666667rem;
     }
 
@@ -490,6 +667,10 @@ nav {
     color: #000;
 }
 
+.text-market{
+    top:0.7rem !important;
+}
+
 @media (max-width: 768px) {
     .convenience .text-content {
         position: absolute;
@@ -522,6 +703,81 @@ nav {
         font-size: 0.346667rem;
         color: #000;
     }
+    .banner .text-market{
+        right:0rem !important;
+        width:100%;
+    }
+    .banner .title-app {
+        padding-top:0.173333rem;
+        font-size: 0.666667rem;
+        line-height: 0.666667rem;
+    }
+
+    .banner .bithd_content a{
+       font-size:0.383333rem;
+        line-height: 0.383333rem;
+    }
+    .banner .content-app{
+        //line-height: 0.073333rem;
+        font-size: 0.293333rem;
+        text-align: center !important;
+    }
+    .banner .text-market .title-app{
+        padding-top:0rem !important;
+    }
+    .text-market .download-img{
+        margin-top: 0rem !important;
+    }
+
+    .mobilebithd {
+        float: left;
+        text-decoration: none;
+        margin-top: 15px;
+        display: inline-block;
+        padding: 4px 12px;
+        margin-bottom: 0;
+        font-size: 14px;
+        line-height: 20px;
+        color: #333;
+        text-align: center;
+        text-shadow: 0 1px 1px rgba(255,255,255,0.75);
+        vertical-align: middle;
+        cursor: pointer;
+        background-color: #f5f5f5;
+        background-image: -moz-linear-gradient(top,#fff,#e6e6e6);
+        background-image: -webkit-gradient(linear,0 0,0 100%,from(#fff),to(#e6e6e6));
+        background-image: -webkit-linear-gradient(top,#fff,#e6e6e6);
+        background-image: -o-linear-gradient(top,#fff,#e6e6e6);
+        background-image: linear-gradient(to bottom,#fff,#e6e6e6);
+        background-repeat: repeat-x;
+        border: 1px solid #ccc;
+        border-color: #e6e6e6 #e6e6e6 #bfbfbf;
+        border-color: rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25);
+        border-bottom-color: #b3b3b3;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-radius: 4px;
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff',endColorstr='#ffe6e6e6',GradientType=0);
+        filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+        -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,0.2), 0 1px 2px rgba(0,0,0,0.05);
+        -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,0.2),0 1px 2px rgba(0,0,0,0.05);
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.2), 0 1px 2px rgba(0,0,0,0.05);
+    }
+    .mobilebithd:hover, .mobilebithd:focus, .mobilebithd:active,  .mobilebithd.disabled, .mobilebithd[disabled] {
+        color: #333;
+        background-color: #e6e6e6;
+    }
+    .mobilebithd:hover, .mobilebithd:focus {
+        color: #333;
+        text-decoration: none;
+        background-position: 0 -15px;
+        -webkit-transition: background-position .1s linear;
+        -moz-transition: background-position .1s linear;
+        -o-transition: background-position .1s linear;
+        transition: background-position .1s linear;
+    }
+
+
 }
 
 /*management*/
@@ -955,6 +1211,7 @@ nav {
     right: 1.875rem;
 }
 
+
 .video-head {
     height: 60px;
     width: 6.25rem;
@@ -992,14 +1249,76 @@ footer {
 footer p {
     margin: 0;
     width: 100%;
-    color: #333;
+    color: #666;
     text-align: center;
-    font-size: 0.12rem;
-    line-height: 70px;
+    font-size: 0.11rem;
+    line-height: 40px;
 }
-
+.bithd_content{
+    padding-top: 0.15rem;
+}
+.bithd_content a{
+    line-height: 0.197917rem;
+    font-size: 0.197917rem;
+    font-family: PingFangSC-Light, sans-serif;
+    color: #E85F24;
+}
+.bithd_page a{
+    color:white !important;
+}
 @media (max-width: 768px) {
-    footer {
+    .banner .content-app{
+        width:100%;
+    }
+    .mobile-header-logo img{
+        margin-left: 0px;
+    }
+    .mobile-bithd img{
+        margin-left:12px !important;
+    }
+    .banner .bg-image{
+        height:9rem;
+    }
+    .site-name{margin-left: 0px;font-size: 15px}
+    .mobile-menu-app ul li a{
+        float:none
+    }
+    .banner .text-content{
+        top:1.3rem;
+        right:3.475rem;
+        margin:0 auto;
+        text-align: center;
+    }
+    .banner .content-app{
+        margin:0.7rem 0 0;
+    }
+    .img-ios{
+        margin-top: 0.2rem;
+        width:1.541666rem
+    }
+    .features-1 .bg-image img{
+        margin:5.2rem 0 0 3.6rem;
+        width:2.7rem;
+    }
+    .features-1 .title-features-1:after{
+        margin:0.28rem auto 0 auto;
+    }
+    .features-1 .bg-content{
+        text-align: center;
+        top:1.651042rem;
+        left:0;
+        width:100%;
+    }
+
+    .features-1 .summary-features-1{
+        width:50%;
+        margin:1rem  auto 0 auto;
+        line-height: 0.5rem;
+    }
+    .float-image-app{
+        right:3.8rem;
+    }
+    footer{
         background-color: #F9F9FC;
     }
 
@@ -1010,5 +1329,11 @@ footer p {
         text-align: center;
         font-size: 0.2rem;
         line-height: 40px;
+    }
+}
+
+@media(min-width: 410px) and  (max-width: 768px) {
+    .banner .text-content{
+        right: 4.2rem;
     }
 }
