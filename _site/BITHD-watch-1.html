@@ -247,16 +247,18 @@
 
 <div class="alert-buy-box">
   <div class="buy-box">
-    <div class="buy-title">选择购买方式</div>
+    <div id="buy_title" class="buy-title"></div>
     <div class="buy-btn-box">
-      <a href="#" id="buy-wd" class="buy-btn" target="_blank">比特护盾官方微店购买
+      <a href="#" id="buy-wd" class="buy-btn" target="_blank">
+        <span id="buy_wd_font"></span>
         <span class="gt">></span>
       </a>
-      <a href="#" id="buy-tb" class="buy-btn" target="_blank">比特护盾官方淘宝店购买
+      <a href="#" id="buy-tb" class="buy-btn" target="_blank">
+        <span id="buy_tb_font"></span>
         <span class="gt">></span>
       </a>
     </div>
-    <div class="close-btn">取消</div>
+    <div id="buy_close_btn" class="close-btn"></div>
   </div>
 </div>
 <script src="/js/jquery-1.9.1.min.js"></script>
@@ -470,6 +472,11 @@ var _hmt = _hmt || [];
         $(".video-title").html($.i18n.prop('video_title'));
         $("#buy-btn").html($.i18n.prop('buy'));
         $('#nav_compare').html($.i18n.prop('nav_compare'));
+
+        $('#buy_title').html($.i18n.prop('buy_title'));
+        $('#buy_wd_font').html($.i18n.prop('buy_wd_font'));
+        $('#buy_tb_font').html($.i18n.prop('buy_tb_font'));
+        $('#buy_close_btn').html($.i18n.prop('buy_close_btn'));
       }
     });
   });

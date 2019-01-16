@@ -19,7 +19,7 @@ $(function(){
   })
   $('.open-buy').click(function(){
     if($(this).hasClass('not-open')){
-      alert('尚未开放购买，敬请期待')
+      alert('工程机将于 2019年1月18日12:00:00 开售，总量100台，届时请前往购买')
       return false
     }
     if($(this).hasClass('buy-watch2')){

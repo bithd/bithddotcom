@@ -46,6 +46,9 @@
   .second-img2{
     height:360px;
   }
+  .en .intro-font{
+    height:168px;
+  }
 
 }
 @media screen and (max-width: 500px) {
@@ -90,6 +93,9 @@
   }
   .intro-img{
     height:320px;
+  }
+  .en .intro-font{
+    height:auto;
   }
 }
 @media screen and (max-width: 400px) {
@@ -179,5 +185,8 @@
   .intro-title{
     font-size:32px;
     margin-bottom:15px;
+  }
+  .en .intro-font{
+    height:auto;
   }
 }
