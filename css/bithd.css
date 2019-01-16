@@ -1337,3 +1337,12 @@ footer p {
         right: 4.2rem;
     }
 }
+#buy-btn{
+  cursor:pointer;
+}
+.play-content{
+  cursor:pointer;
+}
+.open-buy{
+  cursor:pointer;
+}
