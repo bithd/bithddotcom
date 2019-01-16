@@ -176,7 +176,7 @@ a{
   height:700px;
 }
 .second-img2{
-  height:600px;
+  height:560px;
   margin-top:50px;
 }
 .relative{
@@ -367,5 +367,11 @@ a{
   /*font-size:28px;*/
 }
 .en .second-title{
-  font-size:44px;
+  font-size:40px;
+}
+.en .right{
+  text-align: left;
+}
+.en .bd-box{
+  width:480px;
 }

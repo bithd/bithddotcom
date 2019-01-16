@@ -22,6 +22,10 @@
   .second-img-d{
     height:440px;
   }
+  .en .bd-box{
+    width:430px;
+  }
+
 }
 @media screen and (max-width: 1100px) {
   .second-font-box{
@@ -70,7 +74,7 @@
     height:450px;
   }
   .second-img2{
-    height:400px;
+    height:360px;
   }
   .second-imgc{
     height:360px;
@@ -165,9 +169,19 @@
   .g-box{
     height:720px;
   }
+  .en .bd-box{
+    width:400px;
+  }
+  .en .right{
+    text-align: center;
+  }
+
 }
 @media screen and (max-width: 400px) {
   .m-box{
+    width:340px;
+  }
+  .en .bd-box{
     width:340px;
   }
   .second-font-box{
@@ -243,6 +257,9 @@
 }
 @media screen and (max-width: 330px) {
   .m-box{
+    width:300px;
+  }
+  .en .bd-box{
     width:300px;
   }
   .second-font-box{

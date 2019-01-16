@@ -40,6 +40,12 @@
   .banner-box{
     height:500px;
   }
+  .en .bd-box{
+    width:310px;
+  }
+  .second-img2{
+    height:360px;
+  }
 
 }
 @media screen and (max-width: 500px) {
