@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="25f4867b-7b91-44f8-9f89-f29b5ca80316" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/feed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/_site/feed.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/i18n/strings_zh-rTW.properties" beforeDir="false" afterPath="$PROJECT_DIR$/_site/i18n/strings_zh-rTW.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/strings_zh-rTW.properties" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/strings_zh-rTW.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n/strings_en.properties" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/strings_en.properties" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -95,20 +92,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="strings_en.properties" pinned="false" current-in-tab="false">
+      <file leaf-file-name="strings_en.properties" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/i18n/strings_en.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="555">
-              <caret line="111" column="5" selection-start-line="111" selection-start-column="5" selection-end-line="111" selection-end-column="5" />
+            <state relative-caret-position="103">
+              <caret line="83" column="84" lean-forward="true" selection-start-line="83" selection-start-column="84" selection-end-line="83" selection-end-column="84" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="strings_zh-rTW.properties" pinned="false" current-in-tab="true">
+      <file leaf-file-name="strings_zh-rTW.properties" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/i18n/strings_zh-rTW.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="506">
-              <caret line="111" column="25" selection-start-line="111" selection-start-column="25" selection-end-line="111" selection-end-column="25" />
+            <state relative-caret-position="352">
+              <caret line="104" column="33" lean-forward="true" selection-start-line="104" selection-start-column="33" selection-end-line="104" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -179,12 +176,12 @@
         <option value="$PROJECT_DIR$/css/index_media.css" />
         <option value="$PROJECT_DIR$/_layouts/Compare.html" />
         <option value="$PROJECT_DIR$/i18n/strings_zh.properties" />
-        <option value="$PROJECT_DIR$/i18n/strings_en.properties" />
         <option value="$PROJECT_DIR$/_layouts/default.html" />
         <option value="$PROJECT_DIR$/_layouts/second.html" />
         <option value="$PROJECT_DIR$/_layouts/first.html" />
         <option value="$PROJECT_DIR$/css/compare_media.css" />
         <option value="$PROJECT_DIR$/i18n/strings_zh-rTW.properties" />
+        <option value="$PROJECT_DIR$/i18n/strings_en.properties" />
       </list>
     </option>
   </component>
@@ -292,12 +289,12 @@
       <option name="presentableId" value="Default" />
       <updated>1547039351058</updated>
       <workItem from="1547039353321" duration="322000" />
-      <workItem from="1547099043265" duration="124100000" />
+      <workItem from="1547099043265" duration="124474000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="124422000" />
+    <option name="totallyTimeSpent" value="124796000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1" y="24" width="1440" height="823" extended-state="6" />
@@ -563,13 +560,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/i18n/strings_en.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="111" column="5" selection-start-line="111" selection-start-column="5" selection-end-line="111" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_layouts/Compare.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="213">
@@ -636,8 +626,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/i18n/strings_zh-rTW.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="111" column="25" selection-start-line="111" selection-start-column="25" selection-end-line="111" selection-end-column="25" />
+        <state relative-caret-position="352">
+          <caret line="104" column="33" lean-forward="true" selection-start-line="104" selection-start-column="33" selection-end-line="104" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/i18n/strings_en.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="103">
+          <caret line="83" column="84" lean-forward="true" selection-start-line="83" selection-start-column="84" selection-end-line="83" selection-end-column="84" />
         </state>
       </provider>
     </entry>
