@@ -363,3 +363,9 @@ a{
     font-size:20px;
   }
 }
+.en .banner-title{
+  /*font-size:28px;*/
+}
+.en .second-title{
+  font-size:44px;
+}

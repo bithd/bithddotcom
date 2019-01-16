@@ -36,7 +36,7 @@
             <a href="/BITHD-watch-2.html">BITHD Watch 2</a>
           </li>
           <li>
-            <a href="/BITHD-compare.html">BITHD 比较</a>
+            <a id="nav_compare" href="/BITHD-compare.html">BITHD 比较</a>
           </li>
           <li>
             <a href="../reports/reports.html" class="menu_report"></a>
@@ -57,17 +57,16 @@
 </nav>
 <div class="second-nav">
   <div class="m-box">
-    <span class="lt second-nav-font">BITHD 二代</span>
-    <div id="buy-btn" class="gt second-buy-btn open-buy not-open buy-watch2">购买</div>
+    <span id="watch2_title" class="lt second-nav-font"></span>
+    <div id="buy-btn" class="gt second-buy-btn open-buy not-open buy-watch2"></div>
   </div>
 </div>
 <div class="body-box"  onclick="containMenuOperation()">
   <div class="second-box">
     <div class="m-box">
       <div class="lt second-font-box">
-        <div class="second-title left">全新设计<br/> 不止是进步，更是进化
-        </div>
-        <div class="second-font left">经过由内而外的重新设计和打造，全新<br/>BITHD Watch 2，给予数字资产更安全的守护</div>
+        <div id="watch2_title_1" class="second-title left"></div>
+        <div id="watch2_font_1" class="second-font left"></div>
       </div>
       <img src="../image/pic_a@2x.png" alt="" class="gt second-img1">
     </div>
@@ -75,8 +74,8 @@
   <div class="second-box">
     <div class="m-box">
       <div class="gt second-font-box">
-        <div class="second-title right">超轻，超薄</div>
-        <div class="second-font right">精心打造 12mm 轻薄金属机身，仅 26.4g<br/>使表盘和手腕完美贴合</div>
+        <div id="watch2_title_2" class="second-title right"></div>
+        <div id="watch2_font_2" class="second-font right"></div>
       </div>
       <img src="../image/pic_b@2x.png" alt="" class="lt second-img2">
     </div>
@@ -84,8 +83,8 @@
   <div class="second-box water-box">
     <div class="m-box relative"  style="height:100%;">
       <div class="lt second-font-box">
-        <div class="second-title left">IP68 防水防尘设计<br/>无惧风雨</div>
-        <div class="second-font left">IP68 级别防水防尘，洗手时，下雨天，手表仍可以正常使用。无惧风雨，陪你长长久久</div>
+        <div id="watch2_title_3" class="second-title left"></div>
+        <div id="watch2_font_3" class="second-font left"></div>
       </div>
       <img src="../image/pic_c@2x.png" alt="" class="gt second-imgc">
     </div>
@@ -93,8 +92,8 @@
   <div class="second-box">
     <div class="m-box">
       <div class="gt second-font-box">
-        <div class="second-title right">长久待机，安心应用</div>
-        <div class="second-font right">BITHD Watch 2 将电量提升至 200 毫安时<br/>大容量带来更强劲的使用时间，免去反复<br/>充电的烦恼</div>
+        <div id="watch2_title_4" class="second-title right"></div>
+        <div id="watch2_font_4" class="second-font right"></div>
       </div>
       <img src="../image/pic_d@2x.png" alt="" class="lt second-img-d">
     </div>
@@ -102,8 +101,8 @@
   <div class="second-box">
     <div class="m-box">
       <div class="lt second-font-box">
-        <div class="second-title left">纳米涂层，亲肤设计</div>
-        <div class="second-font left">Quick Fit 快拆表带，无需任何工具，简单替换。如有个性化需求，可随心更换 42mm 标准表带，助你靓丽登场</div>
+        <div id="watch2_title_5" class="second-title left"></div>
+        <div id="watch2_font_5" class="second-font left"></div>
       </div>
       <img src="../image/pic_e@2x.png" alt="" class="gt second-img1 second-img-e">
     </div>
@@ -111,8 +110,8 @@
   <div class="second-box f-box">
     <div class="m-box relative">
       <div class="gt second-font-box">
-        <div class="second-title right">便捷无线充电</div>
-        <div class="second-font right">磁吸式无线充电，表背一触即充。当它需要充电的时候，只需简单放置在无线充电器上即可实现</div>
+        <div id="watch2_title_6" class="second-title right"></div>
+        <div id="watch2_font_6" class="second-font right"></div>
       </div>
       <img src="../image/pic_f@2x.png" alt="" class="lt second-img-f">
     </div>
@@ -120,8 +119,8 @@
   <div class="second-box g-box">
     <div class="m-box relative">
       <div class="lt second-font-box">
-        <div class="second-title left">多币种 + BTC、ETH、EOS多重签名</div>
-        <div class="second-font left">支持存储 BTC、ETH、EOS、BCH、BSV、LTC、DASH、ZEC、DOGE 等多种区块链资产。同时也是全球首款支持 ETH、EOS 多重签名功能的硬件钱包</div>
+        <div id="watch2_title_7" class="second-title left"></div>
+        <div id="watch2_font_7" class="second-font left"></div>
       </div>
       <img src="../image/pic_g@2x.png" alt="" class="gt second-img-g">
     </div>
@@ -275,10 +274,13 @@
 
     if (new String($.i18n.browserLang()).indexOf("zh")> -1) {
       languageCode = "zh";
+      $('body').addClass('zh')
     } else if ((new String($.i18n.browserLang()).toLowerCase()).indexOf("tw") > -1|| (new String($.i18n.browserLang()).toLowerCase()).indexOf("hk") > -1) {
       languageCode = "zh-rTW";
+      $('body').addClass('tw')
     } else {
       languageCode = "en";
+      $('body').addClass('en')
     }
     jQuery.i18n.properties({
       name: 'strings',
@@ -336,6 +338,23 @@
 
         $(".video-title").html($.i18n.prop('video_title'));
         $("#buy-btn").html($.i18n.prop('buy'));
+
+        $('#watch2_title_1').html($.i18n.prop('watch2_title_1'));
+        $('#watch2_font_1').html($.i18n.prop('watch2_font_1'));
+        $('#watch2_title_2').html($.i18n.prop('watch2_title_2'));
+        $('#watch2_font_2').html($.i18n.prop('watch2_font_2'));
+        $('#watch2_title_3').html($.i18n.prop('watch2_title_3'));
+        $('#watch2_font_3').html($.i18n.prop('watch2_font_3'));
+        $('#watch2_title_4').html($.i18n.prop('watch2_title_4'));
+        $('#watch2_font_4').html($.i18n.prop('watch2_font_4'));
+        $('#watch2_title_5').html($.i18n.prop('watch2_title_5'));
+        $('#watch2_font_5').html($.i18n.prop('watch2_font_5'));
+        $('#watch2_title_6').html($.i18n.prop('watch2_title_6'));
+        $('#watch2_font_6').html($.i18n.prop('watch2_font_6'));
+        $('#watch2_title_7').html($.i18n.prop('watch2_title_7'));
+        $('#watch2_font_7').html($.i18n.prop('watch2_font_7'));
+        $('#nav_compare').html($.i18n.prop('nav_compare'));
+        $('#watch2_title').html($.i18n.prop('watch2_title'));
       }
     });
   });

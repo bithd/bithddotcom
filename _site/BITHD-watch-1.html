@@ -41,7 +41,7 @@
             <a href="/BITHD-watch-2.html">BITHD Watch 2</a>
           </li>
           <li>
-            <a href="/BITHD-compare.html">BITHD 比较</a>
+            <a id="nav_compare" href="/BITHD-compare.html">BITHD 比较</a>
           </li>
           <li>
             <a href="../reports/reports.html" class="menu_report"></a>
@@ -79,7 +79,7 @@
         <p class="play-content"></p><img src="../resource/playVideo.png">
       </div>
       <p class="bithd_content">
-        <a id="buy-btn" class="open-buy buy-watch1">购买 ></a>
+        <a id="buy-btn" class="open-buy buy-watch1"></a>
       </p>
     </div>
     <img id="float-image" class="float-image" src="../resource/watch_pc.png" alt="watch">
@@ -469,6 +469,7 @@ var _hmt = _hmt || [];
 
         $(".video-title").html($.i18n.prop('video_title'));
         $("#buy-btn").html($.i18n.prop('buy'));
+        $('#nav_compare').html($.i18n.prop('nav_compare'));
       }
     });
   });
