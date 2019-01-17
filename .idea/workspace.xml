@@ -98,8 +98,8 @@
       <file leaf-file-name="strings_en.properties" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/i18n/strings_en.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="139">
-              <caret line="85" column="211" selection-start-line="85" selection-start-column="211" selection-end-line="85" selection-end-column="211" />
+            <state relative-caret-position="256">
+              <caret line="83" column="101" selection-start-line="83" selection-start-column="101" selection-end-line="83" selection-end-column="101" />
             </state>
           </provider>
         </entry>
@@ -126,8 +126,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>second-img-f</find>
-      <find>compare-font</find>
       <find>nav-btn</find>
       <find>banner-title</find>
       <find>second-nav</find>
@@ -156,6 +154,8 @@
       <find>BITHD</find>
       <find>alert-buy-box</find>
       <find>watch2_font_2</find>
+      <find>15%</find>
+      <find>indeed</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -292,12 +292,12 @@
       <option name="presentableId" value="Default" />
       <updated>1547039351058</updated>
       <workItem from="1547039353321" duration="322000" />
-      <workItem from="1547099043265" duration="128036000" />
+      <workItem from="1547099043265" duration="128362000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="128358000" />
+    <option name="totallyTimeSpent" value="128684000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1" y="24" width="1440" height="823" extended-state="6" />
@@ -636,8 +636,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/i18n/strings_en.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="85" column="211" selection-start-line="85" selection-start-column="211" selection-end-line="85" selection-end-column="211" />
+        <state relative-caret-position="256">
+          <caret line="83" column="101" selection-start-line="83" selection-start-column="101" selection-end-line="83" selection-end-column="101" />
         </state>
       </provider>
     </entry>
