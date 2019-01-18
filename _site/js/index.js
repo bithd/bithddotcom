@@ -21,10 +21,12 @@ $(function(){
     if($(this).hasClass('buy-watch2')){
       $('#buy-wd').attr('href',watch2_wd_address)
       $('#buy-tb').attr('href',watch2_tb_address)
+      $('#buy-tb').hide()
     }
     if($(this).hasClass('buy-watch1')){
       $('#buy-wd').attr('href',watch1_wd_address)
       $('#buy-tb').attr('href',watch1_tb_address)
+      $('#buy-tb').show()
     }
     openBuyBox()
   })
