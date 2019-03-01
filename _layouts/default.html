@@ -60,10 +60,6 @@
       <a href="/BITHD-watch-2.html" class="nav-btn">
         <img src="../image/icon_bithd2@2x.png" class="nav-img" alt="">
         <div>BITHD Watch 2</div>
-      </a>
-      <a href="/BITHD-Razor.html" class="nav-btn">
-        <img src="../image/icon_razor@3x.png" class="nav-img" alt="">
-        <div>BITHD Razor</div>
         <div id="index_news" class="nav-btn-font">新款</div>
       </a>
       <a href="/BITHD-compare.html" class="nav-btn">
@@ -72,22 +68,33 @@
       </a>
     </div>
   </div>
-  <div class="rol razor-box-1 index-banner-box">
+  <div class="banner-box">
     <div class="m-box">
-      <div class="box-1-font">
-        <div id="razor_banner_title" class="box-1-tltle"></div>
-        <div id="razor_banner_font" class="box-1-message index-banner"></div>
+      <div class="lt banner-font-box">
+        <div id="index_banner_title" class="banner-title">全新设计<br/>不止是进步，更是进化</div>
+        <div id="index_banner_font" class="banner-font">
+          经过由内而外的重新设计和打造，全新 BITHD Watch 2，给予数字资产更安全的守护。
+        </div>
         <div class="banner-btn-box">
-          <a id="index_banner_btn1" href="/BITHD-Razor.html" class="lt banner-btn">进一步了解 ></a>
-          <div id="index_banner_btn2" class="lt banner-btn open-buy not-open buy-razor">购买 ></div>
+          <a id="index_banner_btn1" href="/BITHD-watch-2.html" class="lt banner-btn">进一步了解 ></a>
+          <div id="index_banner_btn2" class="lt banner-btn open-buy not-open buy-watch2">购买 ></div>
         </div>
       </div>
-
-      <img src="../image/banner_pic@2x.png" class="banner-pic" alt="">
+      <img src="../image/home_pic_a@2x.png" alt="" class="gt banner-img">
     </div>
   </div>
   <div class="index-intro-box">
     <div class="m-box">
+      <div class="lt intro-btn-box">
+        <div class="intro-title">BITHD Watch 1</div>
+        <div id="index_watch_1" class="intro-font">
+          全球首款可配戴数字货币冷钱包<br/>随身携带，不易丢失，随时随地的大额转币更加安全。
+        </div>
+        <a href="/BITHD-watch-1.html" class="intro-btn more">
+          进一步了解 >
+        </a>
+        <img src="../image/home_pic_c@2x.png" alt="" class="intro-img">
+      </div>
       <div class="lt intro-btn-box">
         <div class="intro-title">BITHD Watch 2</div>
         <div id="index_watch_2" class="intro-font">
@@ -97,16 +104,6 @@
           进一步了解 >
         </a>
         <img src="../image/home_pic_b@2x.png" alt="" class="intro-img">
-      </div>
-      <div class="lt intro-btn-box intro-btn-index">
-        <div class="intro-title">BITHD Razor</div>
-        <div id="index_watch_1" class="intro-font">
-          经过由内而外的重新设计和打造，全新 BITHD Watch 2，给予数字资产更安全的守护。
-        </div>
-        <a href="/BITHD-Razor.html" class="intro-btn more">
-          进一步了解 >
-        </a>
-        <img src="../image/icon_pic_razor@3x.png" alt="" class="intro-img razro-img">
       </div>
     </div>
   </div>
@@ -129,8 +126,6 @@
 </div>
 
     {% include js.html %}
-<link href="/css/index_media.css" rel="stylesheet" type="text/css" media="all"/>
-
     <script>
         $(function() {
             $('a[href*=#]:not([href=#])').click(function() {
@@ -278,8 +273,6 @@
                 async: true,
                 language: languageCode,
                 callback: function() {
-                  $('#razor_banner_title').html($.i18n.prop('razor_banner_title'));
-                  $('#razor_banner_font').html($.i18n.prop('razor_banner_font'));
                     $(".welcome-title").html($.i18n.prop('welcome'));
 
                     $(".menu_overview").html($.i18n.prop('menu_features'));

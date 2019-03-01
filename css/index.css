@@ -95,7 +95,6 @@ a{
   background: #FAFAFA;
   text-align: center;
   margin-bottom:100px;
-  overflow:hidden;
 }
 .intro-btn-box:last-child{
   margin-right:0;
@@ -108,13 +107,13 @@ a{
   font-family: PingFangSC-Medium;
 }
 .intro-font{
-  font-size:16px;
+  font-size:18px;
   color:#333;
   line-height:1.6em;
   margin-bottom:20px;
 }
 .intro-btn{
-  font-size: 16px;
+  font-size: 18px;
   color: #0070C9;
   text-align: center;
   margin-bottom:25px;
@@ -378,10 +377,4 @@ a{
 }
 .en .intro-font{
   height:112px;
-}
-.razro-img{
-  height:365px;
-}
-.intro-btn-index{
-  padding-bottom:0;
 }
