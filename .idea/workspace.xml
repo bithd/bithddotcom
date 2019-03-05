@@ -3,9 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="25f4867b-7b91-44f8-9f89-f29b5ca80316" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/css/index_media.css" beforeDir="false" afterPath="$PROJECT_DIR$/_site/css/index_media.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/feed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/_site/feed.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/index_media.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/index_media.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/index.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -81,11 +80,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index_media.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index_media.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/index_media.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="239">
-              <caret line="306" column="14" lean-forward="true" selection-start-line="306" selection-start-column="14" selection-end-line="306" selection-end-column="14" />
+            <state relative-caret-position="150">
+              <caret line="307" column="21" lean-forward="true" selection-start-line="307" selection-start-column="21" selection-end-line="307" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -108,11 +107,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/index.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="428" column="20" lean-forward="true" selection-start-line="428" selection-start-column="20" selection-end-line="428" selection-end-column="20" />
+            <state relative-caret-position="419">
+              <caret line="434" column="20" selection-start-line="434" selection-start-column="20" selection-end-line="434" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -170,9 +169,9 @@
       <find>thinner</find>
       <find>not-open</find>
       <find>banner-time-font-box</find>
-      <find>banner-time</find>
       <find>banner-day</find>
       <find>banner-time-block</find>
+      <find>banner-time</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -201,8 +200,8 @@
         <option value="$PROJECT_DIR$/_layouts/second.html" />
         <option value="$PROJECT_DIR$/_layouts/Compare.html" />
         <option value="$PROJECT_DIR$/_layouts/default.html" />
-        <option value="$PROJECT_DIR$/css/index.css" />
         <option value="$PROJECT_DIR$/css/index_media.css" />
+        <option value="$PROJECT_DIR$/css/index.css" />
       </list>
     </option>
   </component>
@@ -312,7 +311,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="149510000" />
+    <option name="totallyTimeSpent" value="149939000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1" y="23" width="1440" height="804" extended-state="0" />
@@ -559,13 +558,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="3" lean-forward="true" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.md">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -635,17 +627,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/index.css">
+    <entry file="file://$PROJECT_DIR$/css/index_media.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="428" column="20" lean-forward="true" selection-start-line="428" selection-start-column="20" selection-end-line="428" selection-end-column="20" />
+        <state relative-caret-position="150">
+          <caret line="307" column="21" lean-forward="true" selection-start-line="307" selection-start-column="21" selection-end-line="307" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/index_media.css">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="306" column="14" lean-forward="true" selection-start-line="306" selection-start-column="14" selection-end-line="306" selection-end-column="14" />
+        <state relative-caret-position="44">
+          <caret line="2" column="3" lean-forward="true" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="419">
+          <caret line="434" column="20" selection-start-line="434" selection-start-column="20" selection-end-line="434" selection-end-column="20" />
         </state>
       </provider>
     </entry>
