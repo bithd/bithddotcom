@@ -70,17 +70,46 @@
   </div>
   <div class="banner-box">
     <div class="m-box">
-      <div class="lt banner-font-box">
-        <div id="index_banner_title" class="banner-title">全新设计<br/>不止是进步，更是进化</div>
-        <div id="index_banner_font" class="banner-font">
-          经过由内而外的重新设计和打造，全新 BITHD Watch 2，给予数字资产更安全的守护。
-        </div>
-        <div class="banner-btn-box">
-          <a id="index_banner_btn1" href="/BITHD-watch-2.html" class="lt banner-btn">进一步了解 ></a>
-          <div id="index_banner_btn2" class="lt banner-btn open-buy not-open buy-watch2">购买 ></div>
+      <div id="banner-time-font-cn" class="rol banner-time-font-box">
+        <img src="../image/banner-time-font.png" alt="">
+      </div>
+      <div id="banner-time-font-en" class="rol banner-time-font-box">
+        Razor<br/>We Raise Your Future.
+      </div>
+      <div class="rol banner-time-box">
+        <div class="banner-time-in-box">
+          <div class="lt banner-time">
+            <div class="banner-time-block">
+              <div id="banner-day"></div>
+              <div class="banner-time-line"></div>
+            </div>
+            <div class="banner-time-font">DAYS</div>
+
+
+          </div>
+          <div class="lt banner-time">
+            <div class="banner-time-block">
+              <div id="banner-hrs"></div>
+              <div class="banner-time-line"></div>
+            </div>
+            <div class="banner-time-font">HRS</div>
+          </div>
+          <div class="lt banner-time">
+            <div class="banner-time-block">
+              <div id="banner-mins"></div>
+              <div class="banner-time-line"></div>
+            </div>
+            <div class="banner-time-font">MINS</div>
+          </div>
+          <div class="lt banner-time">
+            <div class="banner-time-block">
+              <div id="banner-secs"></div>
+              <div class="banner-time-line"></div>
+            </div>
+            <div class="banner-time-font">SECS</div>
+          </div>
         </div>
       </div>
-      <img src="../image/home_pic_a@2x.png" alt="" class="gt banner-img">
     </div>
   </div>
   <div class="index-intro-box">
@@ -126,6 +155,7 @@
 </div>
 
     {% include js.html %}
+<link href="/css/index_media.css" rel="stylesheet" type="text/css" media="all"/>
     <script>
         $(function() {
             $('a[href*=#]:not([href=#])').click(function() {
@@ -140,9 +170,44 @@
                     }
                 }
             });
+
         });
+
     </script>
     <script>
+      function timeover (overtime){
+        //结束时间
+        var overtime = overtime;
+        var endDate = new Date(new Date(overtime).getTime()+24*60*60*1000-1);
+        //当前时间
+        var nowDate = new Date();
+        //相差的总秒数
+        var totalSeconds = parseInt((endDate - nowDate) / 1000);
+        //天数
+        var days = Math.floor(totalSeconds / (60 * 60 * 24));
+        //取模（余数）
+        var modulo = totalSeconds % (60 * 60 * 24);
+        //小时数
+        var hours =PrefixInteger(Math.floor(modulo / (60 * 60)),2);
+        modulo = modulo % (60 * 60);
+        //分钟
+        var minutes = PrefixInteger(Math.floor(modulo / 60),2);
+        //秒
+        var seconds = PrefixInteger(modulo % 60,2);
+        //输出到页面
+        $('#banner-day').html(days)
+        $('#banner-hrs').html(hours)
+        $('#banner-mins').html(minutes)
+        $('#banner-secs').html(seconds)
+        //延迟一秒执行自己
+        setTimeout(()=>{
+          timeover(overtime);
+        }, 1000)
+      }
+      function PrefixInteger(num, n) {
+        return (Array(n).join(0) + num).slice(-n);
+      }
+      timeover ('2019/3/8 12:00:00')
         $("#menu").click(function() {
             menuListOperation();
         });
@@ -259,12 +324,15 @@
           if (new String($.i18n.browserLang()).indexOf("zh")> -1) {
             languageCode = "zh";
             $('body').addClass('zh')
+            $('#banner-time-font-cn').show()
           } else if ((new String($.i18n.browserLang()).toLowerCase()).indexOf("tw") > -1|| (new String($.i18n.browserLang()).toLowerCase()).indexOf("hk") > -1) {
             languageCode = "zh-rTW";
             $('body').addClass('tw')
+            $('#banner-time-font-cn').show()
           } else {
             languageCode = "en";
             $('body').addClass('en')
+            $('#banner-time-font-en').show()
           }
             jQuery.i18n.properties({
                 name: 'strings',

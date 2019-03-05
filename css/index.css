@@ -45,7 +45,9 @@ a{
   line-height:1.6em;
 }
 .banner-box{
-  background-image: radial-gradient(50% 160%, #414141 36%, #000000 100%);
+  background-image: url("../image/pic_index_bg@2x.png");
+  background-repeat: no-repeat;
+  background-size:100% 100%;
   width:100%;
   height:700px;
   margin-bottom:40px;
@@ -377,4 +379,61 @@ a{
 }
 .en .intro-font{
   height:112px;
+}
+.banner-time-font-box{
+  font-size:46px;
+  text-align: center;
+  color:#fff;
+  margin-top:125px;
+  line-height:1.6em;
+  margin-bottom:105px;
+  display:none;
+  font-weight:bold;
+  text-transform:Uppercase;
+}
+.banner-time{
+  width:115px;
+  position:relative;
+  margin-right:25px;
+}
+.banner-time:last-child{
+  margin-right:0;
+}
+.banner-time-in-box{
+  display:inline-block;
+}
+.banner-time-box{
+  text-align: center;
+}
+.banner-time-block{
+  width:100%;
+  height:115px;
+  background:url("../image/pic_index_ka@2x.png") no-repeat;
+  background-size:100% 100%;
+  margin-bottom:25px;
+  position:relative;
+}
+.banner-time-block{
+  color:#fff;
+  line-height:148px;
+  text-align: center;
+  font-family: DINCondensed-Bold;
+  font-size: 120px;
+  letter-spacing: 0;
+}
+.banner-time-font{
+  text-align: center;
+  font-family: AvenirNext-DemiBold;
+  font-size: 22px;
+  color: #FFFFFF;
+  letter-spacing: 0;
+}
+.banner-time-line{
+  position:absolute;
+  width:80%;
+  height:2px;
+  background:#000;
+  top:50%;
+  margin-top:-1px;
+  margin-left:10%;
 }

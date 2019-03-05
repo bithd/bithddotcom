@@ -42,7 +42,7 @@
     margin-bottom:20px;
   }
   .banner-box{
-    height:500px;
+    height:700px;
   }
   .en .bd-box{
     width:310px;
@@ -84,7 +84,7 @@
     margin-right:20px;
   }
   .banner-box{
-    height:800px;
+    height:600px;
     text-align: center;
   }
   .banner-btn:first-child{
@@ -101,8 +101,25 @@
   .en .intro-font{
     height:auto;
   }
+
+  .banner-time-font-box{
+    font-size:40px;
+    margin-top:100px;
+    margin-bottom:80px;
+  }
+  .banner-time{
+    width:100px;
+  }
+  .banner-time-block{
+    height:100px;
+    font-size:100px;
+    line-height:135px;
+  }
 }
 @media screen and (max-width: 500px) {
+  .m-box{
+    width:380px;
+  }
   .banner-font-box{
     width:400px;
     margin-top:60px;
@@ -131,7 +148,7 @@
     margin-right:20px;
   }
   .banner-box{
-    height:800px;
+    height:600px;
     text-align: center;
   }
   .banner-btn:first-child{
@@ -148,8 +165,23 @@
   .en .intro-font{
     height:auto;
   }
+  .banner-time-font-box{
+    font-size:32px;
+  }
+  .banner-time{
+    width:85px;
+    margin-right:10px;
+  }
+  .banner-time-block{
+    height:85px;
+    font-size:85px;
+    line-height:110px;
+  }
 }
 @media screen and (max-width: 400px) {
+  .m-box{
+    width:320px;
+  }
   .banner-font-box{
     width:340px;
     margin-top:60px;
@@ -177,7 +209,7 @@
     font-size:18px;
   }
   .banner-box{
-    height:770px;
+    height:450px;
     text-align: center;
   }
   .banner-btn:first-child{
@@ -188,8 +220,24 @@
     margin-right:0;
     margin-bottom:20px;
   }
+  .banner-time-font-box{
+    font-size:27px;
+    margin-bottom:40px;
+  }
+  .banner-time{
+    width:72px;
+  }
+  .banner-time-block{
+    height:72px;
+    font-size:72px;
+    line-height:95px;
+  }
+
 }
 @media screen and (max-width: 340px) {
+  .m-box{
+    width:300px;
+  }
   .banner-font-box{
     width:300px;
     margin-top:60px;
@@ -240,4 +288,29 @@
   .en .intro-font{
     height:auto;
   }
+  .banner-time-font-box{
+    font-size:24px;
+    margin-top:80px;
+  }
+  .banner-time {
+    width:65px;
+  }
+  .banner-time-block{
+    height:65px;
+    font-size:65px;
+    line-height:85px;
+  }
+  .banner-box{
+    height:400px;
+  }
+  .banner-time-font{
+    font-size:18px;
+  }
+}
+.banner-time-font-box{
+  text-align: center;
+}
+.banner-time-font-box img{
+  width:100%;
+  max-width:540px;
 }
