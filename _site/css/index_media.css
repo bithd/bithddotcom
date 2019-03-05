@@ -19,6 +19,10 @@
     width:680px;
     margin:0 auto;
   }
+  .banner-time-block{
+    font-size:100px;
+    line-height:148px;
+  }
   .banner-font-box{
     width:320px;
     margin-top:130px;
@@ -174,8 +178,11 @@
   }
   .banner-time-block{
     height:85px;
-    font-size:85px;
+    font-size:75px;
     line-height:110px;
+  }
+  .banner-time-font{
+    font-size:18px;
   }
 }
 @media screen and (max-width: 400px) {
@@ -229,8 +236,8 @@
   }
   .banner-time-block{
     height:72px;
-    font-size:72px;
-    line-height:95px;
+    font-size:55px;
+    line-height:90px;
   }
 
 }
@@ -297,8 +304,8 @@
   }
   .banner-time-block{
     height:65px;
-    font-size:65px;
-    line-height:85px;
+    font-size:55px;
+    line-height:83px;
   }
   .banner-box{
     height:400px;

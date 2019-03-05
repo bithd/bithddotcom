@@ -2,24 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="25f4867b-7b91-44f8-9f89-f29b5ca80316" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/_site/image/banner-time-font.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image/banner-time-font.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image/pic_index_bg@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image/pic_index_ka@2x.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_layouts/Compare.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/Compare.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_layouts/default.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/default.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_layouts/second.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/second.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/404.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/BITHD-compare.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/BITHD-compare.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/BITHD-watch-2.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/BITHD-watch-2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/about/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/about/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/_site/css/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/css/index_media.css" beforeDir="false" afterPath="$PROJECT_DIR$/_site/css/index_media.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/feed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/_site/feed.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/wallet/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/wallet/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/index_media.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/index_media.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -96,11 +81,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index_media.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index_media.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/index_media.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="343">
-              <caret line="110" column="16" selection-start-line="110" selection-start-column="16" selection-end-line="110" selection-end-column="16" />
+            <state relative-caret-position="239">
+              <caret line="306" column="14" lean-forward="true" selection-start-line="306" selection-start-column="14" selection-end-line="306" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -123,11 +108,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/index.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="502">
-              <caret line="437" column="18" selection-start-line="437" selection-start-column="18" selection-end-line="437" selection-end-column="18" />
+            <state relative-caret-position="304">
+              <caret line="428" column="20" lean-forward="true" selection-start-line="428" selection-start-column="20" selection-end-line="428" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -215,9 +200,9 @@
         <option value="$PROJECT_DIR$/js/index.js" />
         <option value="$PROJECT_DIR$/_layouts/second.html" />
         <option value="$PROJECT_DIR$/_layouts/Compare.html" />
-        <option value="$PROJECT_DIR$/css/index_media.css" />
         <option value="$PROJECT_DIR$/_layouts/default.html" />
         <option value="$PROJECT_DIR$/css/index.css" />
+        <option value="$PROJECT_DIR$/css/index_media.css" />
       </list>
     </option>
   </component>
@@ -327,7 +312,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="148372000" />
+    <option name="totallyTimeSpent" value="149510000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1" y="23" width="1440" height="804" extended-state="0" />
@@ -627,13 +612,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/index_media.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="110" column="16" selection-start-line="110" selection-start-column="16" selection-end-line="110" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_layouts/second.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="294">
@@ -659,8 +637,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/index.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="502">
-          <caret line="437" column="18" selection-start-line="437" selection-start-column="18" selection-end-line="437" selection-end-column="18" />
+        <state relative-caret-position="304">
+          <caret line="428" column="20" lean-forward="true" selection-start-line="428" selection-start-column="20" selection-end-line="428" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/index_media.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="306" column="14" lean-forward="true" selection-start-line="306" selection-start-column="14" selection-end-line="306" selection-end-column="14" />
         </state>
       </provider>
     </entry>
