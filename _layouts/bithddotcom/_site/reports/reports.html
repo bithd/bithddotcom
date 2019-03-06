@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>bithd.com</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <link rel="shortcut icon" href="/favicon.ico" mce_href="/favicon.ico" type="image/x-icon">
+    <script src="../js/flexible.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../css/reports.css">
+</head>
+<body>
+
+<nav style="display: block">
+    <div class="mobile-nav pc-hidden">
+        <div class="mobile-header-logo">
+            <a href="../"><img class="logo" src="../resource/bithd.png"></a>
+        </div>
+        <div class="mobile-header-menu">
+            <img id="menu" src="../resource/menu.png">
+        </div>
+    </div>
+
+    <div id="menu-list" class="pc-nav mobile-hidden">
+        <div class="pc-header-logo mobile-hidden">
+            <a href="../"><img class="logo" src="../resource/bithd.png"></a>
+        </div>
+        <div class="pc-header-menu">
+            <ul>
+                <li><a href="../#overview" class="menu_overview" onclick="menuListOperation()"></a></li>
+                <li><a href="../#specifications" class="menu_specifications" onclick="menuListOperation()"></a></li>
+                <li><a class="menu_report"></a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container" onclick="containMenuOperation()">
+    <ul class="report-list">
+        <li class="report">
+            <a class="title" href="http://www.jinse.com/bitcoin/123580.html" target="_blank">比特派新品发布会召开 冷钱包与智能手表结合带来更多玩法</a>
+            <span class="content">金色财经-比特币 12月30日讯 2017年12月30日下午14：30分，比特派/比太团队于北京3W咖啡厅举办了神秘新品发布会。此次发布会以“未来已来”为主题，邀请了区块链/比特币行业的诸多大咖、达人、媒体等各色人群前来共聚一堂，一同见证神秘新品的问世。比特派创始人文浩上台做出演讲并为大家揭开了此次神秘新品的面纱。</span>
+            <span class="report-time">2017-12-30</span>
+        </li>
+
+        <li class="report">
+            <a class="title" href="http://www.aicoin.net.cn/amp/services/news-share?id=3762&lang=zh&from=timeline" target="_blank">比特派新比特派/比太团队发布冷钱包终极解决方案 - 比特护盾（BITHD）</a>
+            <span class="content">白话区块链 12月30日讯 未来已来，BITHD 是第一个真正做到能让大妈也能轻松使用的硬件钱包，BITHD 也是第一个可穿戴的、给区块链世界的未来带来无限可能玩法的硬件设备，BITHD 来了！</span>
+            <span class="report-time">2017-12-30</span>
+        </li>
+
+        <li class="report">
+            <a class="title" href="https://mp.weixin.qq.com/s/PHBJaW8kUW-duMeKb7Hg2g" target="_blank">比特派新比特派/比太团队发布冷钱包终极解决方案 - 比特护盾（BITHD）</a>
+            <span class="content">AICoin 2017-12-30 15:06:18 了解比太历史的人都知道，我们最初是一个由四名码农组成的技术团队，我们很拼，也艰苦奋斗了好几年，很不容易。码农团队的特点大家懂的，虽然比特币/区块链行业很“浮躁”，我们这个技术团队仍然保持了相当程度的“出淤泥而不染”</span>
+            <span class="report-time">2017-12-30</span>
+        </li>
+    </ul>
+</div>
+
+<script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../js/jquery.i18n.properties-min-1.0.9.js"></script>
+<script type="text/javascript">
+    $("#menu").click(function () {
+        menuListOperation();
+    });
+
+    function menuListOperation() {
+        if ($("#menu-list").hasClass("mobile-hidden") == true) {
+            $("#menu-list").removeClass("mobile-hidden");
+        } else {
+            $("#menu-list").addClass("mobile-hidden");
+        }
+    }
+
+    function containMenuOperation() {
+        if ($("#menu-list").hasClass("mobile-hidden") == false) {
+            $("#menu-list").addClass("mobile-hidden");
+        }
+        var display =$(".reports").css("display");
+        if (display == "block") {
+            $(".reports").css("display","none");
+        }
+    }
+
+    function menuListOperation() {
+        if ($("#menu-list").hasClass("mobile-hidden") == true) {
+            $("#menu-list").removeClass("mobile-hidden");
+        } else {
+            $("#menu-list").addClass("mobile-hidden");
+        }
+    }
+
+    $(function() {
+        var languageCode;
+        if ($.i18n.browserLang() == "zh-CN") {
+            languageCode = "zh";
+        } else if ($.i18n.browserLang() == "zh-TW" || $.i18n.browserLang() == "zh-HK") {
+            languageCode = "zh-rTW";
+        } else {
+            languageCode = "en";
+        }
+        jQuery.i18n.properties({
+            name: 'strings',
+            path: '/i18n/',
+            mode: 'map',
+            async: true,
+            language: languageCode,
+            callback: function () {
+                $(".menu_overview").html($.i18n.prop('menu_features'));
+                $(".menu_specifications").html($.i18n.prop('menu_specifications'));
+                $(".menu_report").html($.i18n.prop('menu_report'));
+
+                $("#jinse_mobile").html($.i18n.prop('menu_ul_jinse'));
+                $("#jinse_pc").html($.i18n.prop('menu_ul_jinse'));
+                $("#alcoin_mobile").html($.i18n.prop('menu_ul_alcoin'));
+                $("#alcoin_pc").html($.i18n.prop('menu_ul_alcoin'));
+                $("#chain_mobile").html($.i18n.prop('menu_ul_chain'));
+                $("#chain_pc").html($.i18n.prop('menu_ul_chain'));
+            }
+        });
+    })
+</script>
+</body>
+</html>
+
