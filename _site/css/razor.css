@@ -3,6 +3,7 @@
   float:left;
   box-sizing: border-box;
 }
+
 .razor-box-1{
   background:url(../image/banner_bg@2x.jpg) no-repeat 100% 100%;
   height:750px;
@@ -10,6 +11,9 @@
   float:left;
   width:100%;
   position:relative;
+}
+.en .razor-box-1{
+  height:850px;
 }
 .box-1-font{
   width:700px;
