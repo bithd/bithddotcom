@@ -61,7 +61,7 @@
         <img src="../image/icon_bithd2@2x.png" class="nav-img" alt="">
         <div>BITHD Watch 2</div>
       </a>
-      <a id="new-btn" class="nav-btn">
+      <a href="/BITHD-Razor.html" class="nav-btn">
         <img src="../image/icon_razor@3x.png" class="nav-img" alt="">
         <div>BITHD Razor</div>
         <div id="index_news" class="nav-btn-font">新款</div>
@@ -72,62 +72,22 @@
       </a>
     </div>
   </div>
-  <div class="banner-box">
+  <div class="rol razor-box-1 index-banner-box">
     <div class="m-box">
-      <div id="banner-time-font-cn" class="rol banner-time-font-box">
-        <img src="../image/banner-time-font.png" alt="">
-      </div>
-      <div id="banner-time-font-en" class="rol banner-time-font-box">
-        Razor<br/>We Raise Your Future.
-      </div>
-      <div class="rol banner-time-box">
-        <div class="banner-time-in-box">
-          <div class="lt banner-time">
-            <div class="banner-time-block">
-              <div id="banner-day"></div>
-              <div class="banner-time-line"></div>
-            </div>
-            <div class="banner-time-font">DAYS</div>
-
-
-          </div>
-          <div class="lt banner-time">
-            <div class="banner-time-block">
-              <div id="banner-hrs"></div>
-              <div class="banner-time-line"></div>
-            </div>
-            <div class="banner-time-font">HRS</div>
-          </div>
-          <div class="lt banner-time">
-            <div class="banner-time-block">
-              <div id="banner-mins"></div>
-              <div class="banner-time-line"></div>
-            </div>
-            <div class="banner-time-font">MINS</div>
-          </div>
-          <div class="lt banner-time">
-            <div class="banner-time-block">
-              <div id="banner-secs"></div>
-              <div class="banner-time-line"></div>
-            </div>
-            <div class="banner-time-font">SECS</div>
-          </div>
+      <div class="box-1-font">
+        <div id="razor_banner_title" class="box-1-tltle"></div>
+        <div id="razor_banner_font" class="box-1-message index-banner"></div>
+        <div class="banner-btn-box">
+          <a id="index_banner_btn1" href="/BITHD-Razor.html" class="lt banner-btn">进一步了解 ></a>
+          <div id="index_banner_btn2" class="lt banner-btn open-buy not-open buy-razor">购买 ></div>
         </div>
       </div>
+
+      <img src="../image/banner_pic@2x.png" class="banner-pic" alt="">
     </div>
   </div>
   <div class="index-intro-box">
     <div class="m-box">
-      <div class="lt intro-btn-box">
-        <div class="intro-title">BITHD Watch 1</div>
-        <div id="index_watch_1" class="intro-font">
-          全球首款可配戴数字货币冷钱包<br/>随身携带，不易丢失，随时随地的大额转币更加安全。
-        </div>
-        <a href="/BITHD-watch-1.html" class="intro-btn more">
-          进一步了解 >
-        </a>
-        <img src="../image/home_pic_c@2x.png" alt="" class="intro-img">
-      </div>
       <div class="lt intro-btn-box">
         <div class="intro-title">BITHD Watch 2</div>
         <div id="index_watch_2" class="intro-font">
@@ -137,6 +97,16 @@
           进一步了解 >
         </a>
         <img src="../image/home_pic_b@2x.png" alt="" class="intro-img">
+      </div>
+      <div class="lt intro-btn-box intro-btn-index">
+        <div class="intro-title">BITHD Razor</div>
+        <div id="index_watch_1" class="intro-font">
+          经过由内而外的重新设计和打造，全新 BITHD Watch 2，给予数字资产更安全的守护。
+        </div>
+        <a href="/BITHD-Razor.html" class="intro-btn more">
+          进一步了解 >
+        </a>
+        <img src="../image/icon_pic_razor@3x.png" alt="" class="intro-img razro-img">
       </div>
     </div>
   </div>
@@ -160,6 +130,7 @@
 
     {% include js.html %}
 <link href="/css/index_media.css" rel="stylesheet" type="text/css" media="all"/>
+
     <script>
         $(function() {
             $('a[href*=#]:not([href=#])').click(function() {
@@ -174,44 +145,9 @@
                     }
                 }
             });
-
         });
-
     </script>
     <script>
-      function timeover (overtime){
-        //结束时间
-        var overtime = overtime;
-        var endDate = new Date(new Date(overtime).getTime()-1);
-        //当前时间
-        var nowDate = new Date();
-        //相差的总秒数
-        var totalSeconds = parseInt((endDate - nowDate) / 1000);
-        //天数
-        var days = Math.floor(totalSeconds / (60 * 60 * 24));
-        //取模（余数）
-        var modulo = totalSeconds % (60 * 60 * 24);
-        //小时数
-        var hours =PrefixInteger(Math.floor(modulo / (60 * 60)),2);
-        modulo = modulo % (60 * 60);
-        //分钟
-        var minutes = PrefixInteger(Math.floor(modulo / 60),2);
-        //秒
-        var seconds = PrefixInteger(modulo % 60,2);
-        //输出到页面
-        $('#banner-day').html(days)
-        $('#banner-hrs').html(hours)
-        $('#banner-mins').html(minutes)
-        $('#banner-secs').html(seconds)
-        //延迟一秒执行自己
-        setTimeout(()=>{
-          timeover(overtime);
-        }, 1000)
-      }
-      function PrefixInteger(num, n) {
-        return (Array(n).join(0) + num).slice(-n);
-      }
-      timeover ('2019/3/8 12:00:00')
         $("#menu").click(function() {
             menuListOperation();
         });
@@ -234,9 +170,7 @@
                 }
             }
         });
-        $('#new-btn').click(function(){
-          alert('新品将于3月8日12:00:00发布，敬请期待')
-        })
+
         $(document).ready(function() {
             adapterSize();
         })
@@ -330,15 +264,12 @@
           if (new String($.i18n.browserLang()).indexOf("zh")> -1) {
             languageCode = "zh";
             $('body').addClass('zh')
-            $('#banner-time-font-cn').show()
           } else if ((new String($.i18n.browserLang()).toLowerCase()).indexOf("tw") > -1|| (new String($.i18n.browserLang()).toLowerCase()).indexOf("hk") > -1) {
             languageCode = "zh-rTW";
             $('body').addClass('tw')
-            $('#banner-time-font-cn').show()
           } else {
             languageCode = "en";
             $('body').addClass('en')
-            $('#banner-time-font-en').show()
           }
             jQuery.i18n.properties({
                 name: 'strings',
@@ -347,6 +278,8 @@
                 async: true,
                 language: languageCode,
                 callback: function() {
+                  $('#razor_banner_title').html($.i18n.prop('razor_banner_title'));
+                  $('#razor_banner_font').html($.i18n.prop('razor_banner_font'));
                     $(".welcome-title").html($.i18n.prop('welcome'));
 
                     $(".menu_overview").html($.i18n.prop('menu_features'));

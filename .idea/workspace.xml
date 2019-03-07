@@ -3,12 +3,584 @@
   <component name="ChangeListManager">
     <list default="true" id="25f4867b-7b91-44f8-9f89-f29b5ca80316" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/css.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/css.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/.sass-cache/908abd4914dc94e5ff8b868d492d58f6430a7fb9/minima.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/.sass-cache/c36a5e5c688a3183406d575808932eb029b7a4c0/_base.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/.sass-cache/c36a5e5c688a3183406d575808932eb029b7a4c0/_layout.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/.sass-cache/c36a5e5c688a3183406d575808932eb029b7a4c0/_syntax-highlighting.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/404.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/BITHD-compare.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/BITHD-watch-1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/BITHD-watch-2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/BITHDRazor.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/CNAME" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/Compare.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/Compare.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/Gemfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/Gemfile.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_config.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_includes/css.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_includes/js.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_layouts/Compare.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_layouts/default.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_layouts/first.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_layouts/market.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_layouts/razor.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_layouts/reports.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_layouts/second.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/404.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/BITHD-Razor.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/BITHD-compare.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/BITHD-watch-1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/BITHD-watch-2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/CNAME" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/about/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/assets/main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/bithddotcom/404.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/bithddotcom/BITHD-Razor.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/bithddotcom/BITHD-compare.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/bithddotcom/BITHD-watch-1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/bithddotcom/BITHD-watch-2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/bithddotcom/CNAME" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/bithddotcom/Gemfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/bithddotcom/Gemfile.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/bithddotcom/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/bithddotcom/css/bithd.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/bithddotcom/css/compare_media.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/bithddotcom/css/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/bithddotcom/css/index_media.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/bithddotcom/css/razor.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/bithddotcom/css/razor_media.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/bithddotcom/css/reports.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/bithddotcom/css/reset.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/bithddotcom/css/second_media.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/bithddotcom/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/bithddotcom/html/bithd.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/bithddotcom/i18n/strings.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/bithddotcom/i18n/strings_en.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/bithddotcom/i18n/strings_zh-rTW.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/bithddotcom/i18n/strings_zh.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/bithddotcom/image/banner2_pic@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/bithddotcom/image/banner3_bg@2x.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/bithddotcom/image/banner3_pic@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/bithddotcom/image/banner4_pic@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/bithddotcom/image/banner_bg@2x.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/bithddotcom/image/banner_bg_phone@2x.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/bithddotcom/image/banner_pic@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/bithddotcom/image/bithd_1@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/bithddotcom/image/bithd_2@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/bithddotcom/image/bithd_x_1@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/bithddotcom/image/bithd_x_2@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/bithddotcom/image/btn@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/bithddotcom/image/home_pic_a@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/bithddotcom/image/home_pic_b@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/bithddotcom/image/home_pic_c@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/bithddotcom/image/icon_administration@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/bithddotcom/image/icon_bithd1@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/bithddotcom/image/icon_bithd2@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/bithddotcom/image/icon_bithd@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/bithddotcom/image/icon_operation@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/bithddotcom/image/icon_pic_razor@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/bithddotcom/image/icon_portable@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/bithddotcom/image/icon_razor@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/bithddotcom/image/icon_security1@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/bithddotcom/image/icon_security@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/bithddotcom/image/icon_upgrade@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/bithddotcom/image/line@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/bithddotcom/image/pic_a@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/bithddotcom/image/pic_b@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/bithddotcom/image/pic_c@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/bithddotcom/image/pic_d@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/bithddotcom/image/pic_e@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/bithddotcom/image/pic_f@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/bithddotcom/image/pic_g@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/bithddotcom/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/bithddotcom/js/flexible.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/bithddotcom/js/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/bithddotcom/js/jquery-1.9.1.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/bithddotcom/js/jquery.i18n.properties-min-1.0.9.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/bithddotcom/js/smooth-scroll.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/bithddotcom/reports/reports.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/bithddotcom/resource/banner.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/bithddotcom/resource/banner_mobile.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/bithddotcom/resource/banner_pc.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/bithddotcom/resource/bithd.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/bithddotcom/resource/bithd_app.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/bithddotcom/resource/bithd_market.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/bithddotcom/resource/carousel_mobile.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/bithddotcom/resource/carousel_pc.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/bithddotcom/resource/cat.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/bithddotcom/resource/close.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/bithddotcom/resource/easy_mobile.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/bithddotcom/resource/easy_pc.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/bithddotcom/resource/industry_mobile_cn.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/bithddotcom/resource/industry_mobile_en.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/bithddotcom/resource/industry_mobile_rtw.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/bithddotcom/resource/industry_pc_cn.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/bithddotcom/resource/industry_pc_en.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/bithddotcom/resource/industry_pc_rtw.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/bithddotcom/resource/ios.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/bithddotcom/resource/iphone.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/bithddotcom/resource/management_mobile.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/bithddotcom/resource/management_pc.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/bithddotcom/resource/menu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/bithddotcom/resource/parameter_pc.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/bithddotcom/resource/playVideo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/bithddotcom/resource/safety_mobile.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/bithddotcom/resource/safety_pc.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/bithddotcom/resource/watch_mobile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/bithddotcom/resource/watch_pc.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/bithddotcom/resource/wear_mobile.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/bithddotcom/resource/wear_pc.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/bithddotcom/resource/welcome_bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/bithddotcom/wallet/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/css/bithd.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/css/compare_media.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/css/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/css/index_media.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/css/razor.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/css/razor_media.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/css/reports.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/css/reset.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/css/second_media.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/feed.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/html/bithd.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/i18n/strings.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/i18n/strings_en.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/i18n/strings_zh-rTW.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/i18n/strings_zh.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/image/banner2_pic@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/image/banner3_bg@2x.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/image/banner3_pic@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/image/banner4_pic@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/image/banner_bg@2x.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/image/banner_bg_phone@2x.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/image/banner_pic@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/image/bithd_1@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/image/bithd_2@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/image/bithd_x_1@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/image/bithd_x_2@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/image/btn@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/image/home_pic_a@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/image/home_pic_b@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/image/home_pic_c@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/image/icon_administration@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/image/icon_bithd1@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/image/icon_bithd2@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/image/icon_bithd@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/image/icon_operation@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/image/icon_pic_razor@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/image/icon_portable@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/image/icon_razor@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/image/icon_security1@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/image/icon_security@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/image/icon_upgrade@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/image/line@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/image/pic_a@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/image/pic_b@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/image/pic_c@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/image/pic_d@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/image/pic_e@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/image/pic_f@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/image/pic_g@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/js/flexible.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/js/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/js/jquery-1.9.1.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/js/jquery.i18n.properties-min-1.0.9.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/js/smooth-scroll.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/reports/reports.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/resource/banner.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/resource/banner_mobile.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/resource/banner_pc.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/resource/bithd.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/resource/bithd_app.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/resource/bithd_market.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/resource/carousel_mobile.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/resource/carousel_pc.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/resource/cat.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/resource/close.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/resource/easy_mobile.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/resource/easy_pc.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/resource/industry_mobile_cn.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/resource/industry_mobile_en.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/resource/industry_mobile_rtw.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/resource/industry_pc_cn.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/resource/industry_pc_en.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/resource/industry_pc_rtw.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/resource/ios.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/resource/iphone.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/resource/management_mobile.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/resource/management_pc.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/resource/menu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/resource/parameter_pc.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/resource/playVideo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/resource/safety_mobile.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/resource/safety_pc.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/resource/watch_mobile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/resource/watch_pc.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/resource/wear_mobile.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/resource/wear_pc.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/resource/welcome_bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/_site/wallet/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/about.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/.sass-cache/908abd4914dc94e5ff8b868d492d58f6430a7fb9/minima.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/.sass-cache/c36a5e5c688a3183406d575808932eb029b7a4c0/_base.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/.sass-cache/c36a5e5c688a3183406d575808932eb029b7a4c0/_layout.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/.sass-cache/c36a5e5c688a3183406d575808932eb029b7a4c0/_syntax-highlighting.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/404.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/BITHD-Razor.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/BITHD-compare.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/BITHD-watch-1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/BITHD-watch-2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/CNAME" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/Gemfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/Gemfile.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/_config.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/_includes/css.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/_includes/js.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/_layouts/Compare.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/_layouts/default.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/_layouts/first.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/_layouts/market.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/_layouts/razor.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/_layouts/reports.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/_layouts/second.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/_site/404.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/_site/BITHD-Razor.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/_site/BITHD-compare.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/_site/BITHD-watch-1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/_site/BITHD-watch-2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/_site/CNAME" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/_site/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/_site/about/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/_site/assets/main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/_site/css/bithd.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/_site/css/compare_media.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/_site/css/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/_site/css/index_media.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/_site/css/razor.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/_site/css/razor_media.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/_site/css/reports.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/_site/css/reset.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/_site/css/second_media.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/_site/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/_site/feed.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/_site/html/bithd.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/_site/i18n/strings.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/_site/i18n/strings_en.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/_site/i18n/strings_zh-rTW.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/_site/i18n/strings_zh.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/_site/image/banner2_pic@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/_site/image/banner3_bg@2x.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/_site/image/banner3_pic@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/_site/image/banner4_pic@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/_site/image/banner_bg@2x.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/_site/image/banner_bg_phone@2x.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/_site/image/banner_pic@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/_site/image/bithd_1@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/_site/image/bithd_2@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/_site/image/bithd_x_1@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/_site/image/bithd_x_2@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/_site/image/btn@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/_site/image/home_pic_a@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/_site/image/home_pic_b@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/_site/image/home_pic_c@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/_site/image/icon_administration@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/_site/image/icon_bithd1@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/_site/image/icon_bithd2@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/_site/image/icon_bithd@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/_site/image/icon_operation@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/_site/image/icon_pic_razor@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/_site/image/icon_portable@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/_site/image/icon_razor@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/_site/image/icon_security1@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/_site/image/icon_security@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/_site/image/icon_upgrade@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/_site/image/line@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/_site/image/pic_a@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/_site/image/pic_b@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/_site/image/pic_c@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/_site/image/pic_d@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/_site/image/pic_e@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/_site/image/pic_f@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/_site/image/pic_g@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/_site/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/_site/js/flexible.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/_site/js/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/_site/js/jquery-1.9.1.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/_site/js/jquery.i18n.properties-min-1.0.9.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/_site/js/smooth-scroll.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/_site/reports/reports.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/_site/resource/banner.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/_site/resource/banner_mobile.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/_site/resource/banner_pc.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/_site/resource/bithd.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/_site/resource/bithd_app.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/_site/resource/bithd_market.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/_site/resource/carousel_mobile.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/_site/resource/carousel_pc.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/_site/resource/cat.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/_site/resource/close.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/_site/resource/easy_mobile.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/_site/resource/easy_pc.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/_site/resource/industry_mobile_cn.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/_site/resource/industry_mobile_en.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/_site/resource/industry_mobile_rtw.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/_site/resource/industry_pc_cn.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/_site/resource/industry_pc_en.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/_site/resource/industry_pc_rtw.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/_site/resource/ios.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/_site/resource/iphone.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/_site/resource/management_mobile.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/_site/resource/management_pc.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/_site/resource/menu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/_site/resource/parameter_pc.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/_site/resource/playVideo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/_site/resource/safety_mobile.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/_site/resource/safety_pc.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/_site/resource/watch_mobile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/_site/resource/watch_pc.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/_site/resource/wear_mobile.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/_site/resource/wear_pc.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/_site/resource/welcome_bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/_site/wallet/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/about.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/css/bithd.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/css/compare_media.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/css/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/css/index_media.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/css/razor.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/css/razor_media.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/css/reports.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/css/reset.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/css/second_media.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/html/bithd.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/i18n/strings.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/i18n/strings_en.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/i18n/strings_zh-rTW.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/i18n/strings_zh.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/image/banner2_pic@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/image/banner3_bg@2x.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/image/banner3_pic@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/image/banner4_pic@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/image/banner_bg@2x.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/image/banner_bg_phone@2x.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/image/banner_pic@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/image/bithd_1@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/image/bithd_2@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/image/bithd_x_1@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/image/bithd_x_2@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/image/btn@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/image/home_pic_a@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/image/home_pic_b@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/image/home_pic_c@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/image/icon_administration@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/image/icon_bithd1@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/image/icon_bithd2@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/image/icon_bithd@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/image/icon_operation@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/image/icon_pic_razor@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/image/icon_portable@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/image/icon_razor@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/image/icon_security1@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/image/icon_security@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/image/icon_upgrade@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/image/line@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/image/pic_a@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/image/pic_b@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/image/pic_c@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/image/pic_d@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/image/pic_e@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/image/pic_f@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/image/pic_g@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/js/flexible.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/js/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/js/jquery-1.9.1.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/js/jquery.i18n.properties-min-1.0.9.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/js/smooth-scroll.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/reports/reports.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/resource/banner.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/resource/banner_mobile.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/resource/banner_pc.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/resource/bithd.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/resource/bithd_app.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/resource/bithd_market.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/resource/carousel_mobile.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/resource/carousel_pc.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/resource/cat.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/resource/close.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/resource/easy_mobile.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/resource/easy_pc.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/resource/industry_mobile_cn.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/resource/industry_mobile_en.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/resource/industry_mobile_rtw.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/resource/industry_pc_cn.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/resource/industry_pc_en.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/resource/industry_pc_rtw.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/resource/ios.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/resource/iphone.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/resource/management_mobile.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/resource/management_pc.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/resource/menu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/resource/parameter_pc.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/resource/playVideo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/resource/safety_mobile.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/resource/safety_pc.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/resource/watch_mobile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/resource/watch_pc.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/resource/wear_mobile.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/resource/wear_pc.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/resource/welcome_bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bithddotcom/wallet/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/css/bithd.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/css/compare_media.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/css/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/css/index_media.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/css/razor.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/css/razor_media.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/css/reports.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/css/reset.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/css/second_media.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/_layouts/default.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/default.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/first.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/first.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/html/bithd.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/i18n/strings.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/i18n/strings_en.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/i18n/strings_zh-rTW.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/i18n/strings_zh.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/image/banner2_pic@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/image/banner3_bg@2x.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/image/banner3_pic@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/image/banner4_pic@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/image/banner_bg@2x.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/image/banner_bg_phone@2x.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/image/banner_pic@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/image/bithd_1@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/image/bithd_2@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/image/bithd_x_1@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/image/bithd_x_2@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/image/btn@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/image/home_pic_a@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/image/home_pic_b@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/image/home_pic_c@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/image/icon_administration@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/image/icon_bithd1@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/image/icon_bithd2@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/image/icon_bithd@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/image/icon_operation@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/image/icon_pic_razor@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/image/icon_portable@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/image/icon_razor@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/image/icon_security1@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/image/icon_security@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/image/icon_upgrade@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/image/line@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/image/pic_a@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/image/pic_b@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/image/pic_c@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/image/pic_d@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/image/pic_e@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/image/pic_f@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/image/pic_g@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/js/flexible.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/js/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/js/jquery-1.9.1.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/js/jquery.i18n.properties-min-1.0.9.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/js/smooth-scroll.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/razor.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/razor.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/reports/reports.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/resource/banner.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/resource/banner_mobile.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/resource/banner_pc.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/resource/bithd.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/resource/bithd_app.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/resource/bithd_market.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/resource/carousel_mobile.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/resource/carousel_pc.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/resource/cat.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/resource/close.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/resource/easy_mobile.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/resource/easy_pc.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/resource/industry_mobile_cn.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/resource/industry_mobile_en.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/resource/industry_mobile_rtw.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/resource/industry_pc_cn.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/resource/industry_pc_en.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/resource/industry_pc_rtw.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/resource/ios.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/resource/iphone.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/resource/management_mobile.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/resource/management_pc.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/resource/menu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/resource/parameter_pc.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/resource/playVideo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/resource/safety_mobile.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/resource/safety_pc.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/resource/watch_mobile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/resource/watch_pc.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/resource/wear_mobile.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/resource/wear_pc.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/resource/welcome_bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/second.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/second.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/wallet/index.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/404.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/BITHD-compare.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/BITHD-compare.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/BITHD-watch-1.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/BITHD-watch-1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/BITHD-watch-2.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/BITHD-watch-2.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/about/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/about/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/_site/css/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/css/index_media.css" beforeDir="false" afterPath="$PROJECT_DIR$/_site/css/index_media.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/css/second_media.css" beforeDir="false" afterPath="$PROJECT_DIR$/_site/css/second_media.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/demo.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/democss/bithd.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/democss/compare_media.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/democss/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/democss/index_media.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/democss/razor.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/democss/razor_media.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/democss/reports.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/democss/reset.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/democss/second_media.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/feed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/_site/feed.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/i18n/strings_en.properties" beforeDir="false" afterPath="$PROJECT_DIR$/_site/i18n/strings_en.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/i18n/strings_zh-rTW.properties" beforeDir="false" afterPath="$PROJECT_DIR$/_site/i18n/strings_zh-rTW.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/i18n/strings_zh.properties" beforeDir="false" afterPath="$PROJECT_DIR$/_site/i18n/strings_zh.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/image/banner-time-font.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/image/pic_index_bg@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/image/pic_index_ka@2x.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/_site/js/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/wallet/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/wallet/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/index_media.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/index_media.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/second_media.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/second_media.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/democss/bithd.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/democss/compare_media.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/democss/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/democss/index_media.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/democss/razor.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/democss/razor_media.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/democss/reports.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/democss/reset.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/democss/second_media.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n/strings_en.properties" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/strings_en.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n/strings_zh-rTW.properties" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/strings_zh-rTW.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n/strings_zh.properties" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/strings_zh.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/banner-time-font.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/pic_index_bg@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/pic_index_ka@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/index.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -23,37 +595,46 @@
   <component name="FileEditorManager">
     <leaf>
       <file leaf-file-name="razor.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_layouts/_layouts/razor.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="484">
-              <caret line="22" column="20" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="razor.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_layouts/razor.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-8822">
-              <caret line="19" column="30" lean-forward="true" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
+            <state relative-caret-position="88">
+              <caret line="323" column="6" lean-forward="true" selection-start-line="323" selection-start-column="6" selection-end-line="332" selection-end-column="7" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="strings_en.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_layouts/i18n/strings_en.properties">
+      <file leaf-file-name="js.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_includes/js.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="611">
-              <caret line="158" column="40" lean-forward="true" selection-start-line="113" selection-end-line="158" selection-end-column="40" />
+            <state relative-caret-position="66">
+              <caret line="3" column="18" lean-forward="true" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="strings_en.properties" pinned="false" current-in-tab="false">
+      <file leaf-file-name="razor.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/razor.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="269">
+              <caret line="175" column="12" selection-start-line="175" selection-start-column="12" selection-end-line="175" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="razor_media.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/razor_media.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="592">
+              <caret line="350" column="3" lean-forward="true" selection-start-line="350" selection-start-column="3" selection-end-line="350" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="strings_en.properties" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/i18n/strings_en.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="523">
-              <caret line="158" column="40" selection-start-line="158" selection-start-column="40" selection-end-line="158" selection-end-column="40" />
+            <state relative-caret-position="325">
+              <caret line="150" column="27" lean-forward="true" selection-start-line="150" selection-start-column="27" selection-end-line="150" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -61,17 +642,17 @@
       <file leaf-file-name="strings_zh-rTW.properties" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/i18n/strings_zh-rTW.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="237">
-              <caret line="144" column="20" lean-forward="true" selection-start-line="144" selection-start-column="20" selection-end-line="144" selection-end-column="20" />
+            <state relative-caret-position="611">
+              <caret line="158" column="65" selection-start-line="158" selection-start-column="65" selection-end-line="158" selection-end-column="65" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="default.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="default.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_layouts/default.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="491">
-              <caret line="201" column="35" lean-forward="true" selection-start-line="201" selection-start-column="35" selection-end-line="201" selection-end-column="35" />
+            <state relative-caret-position="-1177">
+              <caret line="176" selection-start-line="176" selection-end-line="176" />
               <folding>
                 <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" />
               </folding>
@@ -82,35 +663,22 @@
       <file leaf-file-name="strings_zh.properties" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/i18n/strings_zh.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="523">
-              <caret line="155" column="27" selection-start-line="155" selection-start-column="27" selection-end-line="155" selection-end-column="27" />
+            <state relative-caret-position="215">
+              <caret line="142" column="25" selection-start-line="142" selection-start-column="25" selection-end-line="142" selection-end-column="62" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="strings_zh.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_layouts/i18n/strings_zh.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-423">
-              <caret line="112" selection-start-line="112" selection-end-line="155" selection-end-column="27" />
-            </state>
-          </provider>
+      <file leaf-file-name="BITHD-Razor.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BITHD-Razor.html">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file leaf-file-name="strings_zh-rTW.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_layouts/i18n/strings_zh-rTW.properties">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="565">
-              <caret line="157" column="27" selection-start-line="157" selection-start-column="27" selection-end-line="157" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="css.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_layouts/_includes/css.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="7" selection-end-column="88" />
+            <state relative-caret-position="814">
+              <caret line="37" column="5" lean-forward="true" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -128,9 +696,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>buy-btn</find>
-      <find>menu_docs</find>
-      <find>bithd_content</find>
       <find>compare-title-row</find>
       <find>watch</find>
       <find>buy</find>
@@ -158,6 +723,9 @@
       <find>最新</find>
       <find>banner-time</find>
       <find>time</find>
+      <find>alert</find>
+      <find>razor-box-6</find>
+      <find>banner6-font</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -179,7 +747,6 @@
         <option value="$PROJECT_DIR$/css/compare_media.css" />
         <option value="$PROJECT_DIR$/_site/wallet/index.html" />
         <option value="$PROJECT_DIR$/css/second_media.css" />
-        <option value="$PROJECT_DIR$/js/index.js" />
         <option value="$PROJECT_DIR$/_layouts/second.html" />
         <option value="$PROJECT_DIR$/_layouts/Compare.html" />
         <option value="$PROJECT_DIR$/css/index.css" />
@@ -189,13 +756,16 @@
         <option value="$PROJECT_DIR$/_layouts/BITHDRazor.html" />
         <option value="$PROJECT_DIR$/_layouts/_layouts/razor.html" />
         <option value="$PROJECT_DIR$/_layouts/_includes/css.html" />
-        <option value="$PROJECT_DIR$/_layouts/razor.html" />
-        <option value="$PROJECT_DIR$/i18n/strings_zh.properties" />
         <option value="$PROJECT_DIR$/_layouts/i18n/strings_en.properties" />
-        <option value="$PROJECT_DIR$/i18n/strings_en.properties" />
         <option value="$PROJECT_DIR$/_layouts/i18n/strings_zh-rTW.properties" />
-        <option value="$PROJECT_DIR$/i18n/strings_zh-rTW.properties" />
         <option value="$PROJECT_DIR$/_layouts/default.html" />
+        <option value="$PROJECT_DIR$/i18n/strings_zh-rTW.properties" />
+        <option value="$PROJECT_DIR$/_layouts/razor.html" />
+        <option value="$PROJECT_DIR$/js/index.js" />
+        <option value="$PROJECT_DIR$/css/razor_media.css" />
+        <option value="$PROJECT_DIR$/css/razor.css" />
+        <option value="$PROJECT_DIR$/i18n/strings_zh.properties" />
+        <option value="$PROJECT_DIR$/i18n/strings_en.properties" />
       </list>
     </option>
   </component>
@@ -229,7 +799,22 @@
             <path>
               <item name="bithddotcom" type="b2602c69:ProjectViewProjectNode" />
               <item name="bithddotcom" type="462c0819:PsiDirectoryNode" />
+              <item name="_includes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bithddotcom" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bithddotcom" type="462c0819:PsiDirectoryNode" />
               <item name="_layouts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bithddotcom" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bithddotcom" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bithddotcom" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bithddotcom" type="462c0819:PsiDirectoryNode" />
+              <item name="i18n" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="bithddotcom" type="b2602c69:ProjectViewProjectNode" />
@@ -291,7 +876,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="160542000" />
+    <option name="totallyTimeSpent" value="165464000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="804" extended-state="0" />
@@ -352,26 +937,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/image/pic_a@2x.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/image/bithd_x_1@2x.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_site/assets/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1707">
-          <caret line="124" column="40" selection-start-line="124" selection-start-column="1" selection-end-line="124" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_site/feed.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="65" selection-start-column="65" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_site/compare.html" />
     <entry file="file://$PROJECT_DIR$/_site/first.html" />
     <entry file="file://$PROJECT_DIR$/image/btn@2x.png">
@@ -446,24 +1011,10 @@
     <entry file="file://$PROJECT_DIR$/css/reports.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="20" column="32" lean-forward="true" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/i18n/strings.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
           <caret line="9" column="15" lean-forward="true" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/js.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -600,20 +1151,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_layouts/razor.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8822">
-          <caret line="19" column="30" lean-forward="true" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/i18n/strings_zh.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="523">
-          <caret line="155" column="27" selection-start-line="155" selection-start-column="27" selection-end-line="155" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_layouts/i18n/strings_en.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="611">
@@ -635,13 +1172,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/i18n/strings_en.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="523">
-          <caret line="158" column="40" selection-start-line="158" selection-start-column="40" selection-end-line="158" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_layouts/_layouts/razor.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="484">
@@ -649,20 +1179,79 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/i18n/strings_zh-rTW.properties">
+    <entry file="file://$PROJECT_DIR$/_layouts/_layouts/default.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="144" column="20" lean-forward="true" selection-start-line="144" selection-start-column="20" selection-end-line="144" selection-end-column="20" />
+        <state relative-caret-position="2157">
+          <caret line="112" column="19" selection-start-line="112" selection-start-column="14" selection-end-line="112" selection-end-column="19" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/BITHD-Razor.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/_layouts/default.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="491">
-          <caret line="201" column="35" lean-forward="true" selection-start-line="201" selection-start-column="35" selection-end-line="201" selection-end-column="35" />
+        <state relative-caret-position="-1177">
+          <caret line="176" selection-start-line="176" selection-end-line="176" />
           <folding>
             <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/i18n/strings_zh-rTW.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="611">
+          <caret line="158" column="65" selection-start-line="158" selection-start-column="65" selection-end-line="158" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_layouts/razor.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="323" column="6" lean-forward="true" selection-start-line="323" selection-start-column="6" selection-end-line="332" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/js.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" column="18" lean-forward="true" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="814">
+          <caret line="37" column="5" lean-forward="true" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/razor_media.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="592">
+          <caret line="350" column="3" lean-forward="true" selection-start-line="350" selection-start-column="3" selection-end-line="350" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/razor.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="175" column="12" selection-start-line="175" selection-start-column="12" selection-end-line="175" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/i18n/strings_zh.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="142" column="25" selection-start-line="142" selection-start-column="25" selection-end-line="142" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/i18n/strings_en.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="150" column="27" lean-forward="true" selection-start-line="150" selection-start-column="27" selection-end-line="150" selection-end-column="27" />
         </state>
       </provider>
     </entry>
