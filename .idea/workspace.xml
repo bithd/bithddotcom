@@ -2,49 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="25f4867b-7b91-44f8-9f89-f29b5ca80316" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/image/bithd_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image/bithd_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image/easy_mobile.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image/easy_pc.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image/watch_pc.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource/bithd_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource/bithd_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource/home_pic_b@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource/pic_a@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource/pic_c@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource/pic_g@2x.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_layouts/Compare.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/Compare.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_layouts/default.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/default.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_layouts/razor.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/razor.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/404.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/BITHD-compare.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/BITHD-compare.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/about/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/about/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/feed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/_site/feed.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/image/banner2_pic@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/_site/image/banner2_pic@2x.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/image/banner3_pic@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/_site/image/banner3_pic@2x.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/image/banner4_pic@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/_site/image/banner4_pic@2x.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/image/banner_pic@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/_site/image/banner_pic@2x.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/image/home_pic_b@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/_site/image/home_pic_b@2x.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/image/pic_a@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/_site/image/pic_a@2x.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/image/pic_c@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/_site/image/pic_c@2x.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/image/pic_g@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/_site/image/pic_g@2x.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/resource/easy_mobile.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/_site/resource/easy_mobile.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/resource/easy_pc.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/_site/resource/easy_pc.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/resource/watch_pc.png" beforeDir="false" afterPath="$PROJECT_DIR$/_site/resource/watch_pc.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/wallet/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/wallet/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/banner2_pic@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/image/banner2_pic@2x.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/banner3_pic@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/image/banner3_pic@2x.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/banner4_pic@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/image/banner4_pic@2x.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/banner_pic@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/image/banner_pic@2x.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/home_pic_b@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/image/home_pic_b@2x.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/pic_a@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/image/pic_a@2x.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/pic_c@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/image/pic_c@2x.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/pic_g@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/image/pic_g@2x.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource/easy_mobile.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/resource/easy_mobile.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource/easy_pc.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/resource/easy_pc.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource/watch_pc.png" beforeDir="false" afterPath="$PROJECT_DIR$/resource/watch_pc.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/icon_pic_razor@3x.png" beforeDir="false" afterPath="$PROJECT_DIR$/image/icon_pic_razor@3x.png" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -109,8 +68,8 @@
       <file leaf-file-name="razor.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/_layouts/razor.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="63" column="8" lean-forward="true" selection-start-line="63" selection-start-column="8" selection-end-line="63" selection-end-column="8" />
+            <state relative-caret-position="224">
+              <caret line="65" column="23" lean-forward="true" selection-start-line="65" selection-start-column="23" selection-end-line="65" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -317,8 +276,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/resource" />
       <recent name="$PROJECT_DIR$/image" />
+      <recent name="$PROJECT_DIR$/resource" />
       <recent name="$PROJECT_DIR$/_layouts" />
       <recent name="$PROJECT_DIR$/democss" />
     </key>
@@ -354,7 +313,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="170457000" />
+    <option name="totallyTimeSpent" value="170822000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="804" extended-state="0" />
@@ -734,8 +693,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/_layouts/razor.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="63" column="8" lean-forward="true" selection-start-line="63" selection-start-column="8" selection-end-line="63" selection-end-column="8" />
+        <state relative-caret-position="224">
+          <caret line="65" column="23" lean-forward="true" selection-start-line="65" selection-start-column="23" selection-end-line="65" selection-end-column="23" />
         </state>
       </provider>
     </entry>
