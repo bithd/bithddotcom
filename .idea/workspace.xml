@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="25f4867b-7b91-44f8-9f89-f29b5ca80316" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/i18n/strings_en.properties" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/strings_en.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/second.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/second.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/BITHD-watch-2.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/BITHD-watch-2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/feed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/_site/feed.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/second_media.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/second_media.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -16,6 +20,52 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="second.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_layouts/second.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="277">
+              <caret line="147" column="29" selection-start-line="147" selection-start-column="29" selection-end-line="147" selection-end-column="29" />
+              <folding>
+                <element signature="n#style#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#div#0;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#style#0;n#div#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#div#7;n#div#1;n#body#0;n#html#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="second_media.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/css/second_media.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="229">
+              <caret line="181" column="33" selection-start-line="181" selection-start-column="33" selection-end-line="181" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="css.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_includes/css.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="110">
+              <caret line="5" column="22" selection-start-line="5" selection-end-line="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="reports.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_layouts/reports.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="22">
+              <caret line="38" column="23" selection-start-line="38" selection-start-column="23" selection-end-line="38" selection-end-column="23" />
+              <folding>
+                <element signature="n#style#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="razor.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/razor.css">
           <provider selected="true" editor-type-id="text-editor">
@@ -25,29 +75,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="strings_en.properties" pinned="false" current-in-tab="true">
+      <file leaf-file-name="strings_en.properties" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/i18n/strings_en.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="453">
-              <caret line="158" column="26" lean-forward="true" selection-start-line="158" selection-start-column="26" selection-end-line="158" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="css.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_includes/css.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="44">
-              <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/index.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="568">
-              <caret line="389" column="18" selection-start-line="389" selection-start-column="18" selection-end-line="389" selection-end-column="18" />
+            <state relative-caret-position="365">
+              <caret line="154" column="42" lean-forward="true" selection-start-line="154" selection-start-column="42" selection-end-line="154" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -67,7 +99,7 @@
       <file leaf-file-name="razor.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_layouts/razor.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
+            <state relative-caret-position="-7656">
               <caret line="65" column="23" lean-forward="true" selection-start-line="65" selection-start-column="23" selection-end-line="65" selection-end-column="23" />
             </state>
           </provider>
@@ -78,28 +110,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-1395">
               <caret line="70" column="45" selection-start-line="70" selection-start-column="21" selection-end-line="70" selection-end-column="45" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="strings_zh-rTW.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/i18n/strings_zh-rTW.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1259">
-              <caret line="77" column="39" selection-start-line="77" selection-start-column="39" selection-end-line="77" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Compare.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_layouts/Compare.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="453">
-              <caret line="88" column="12" selection-start-line="88" selection-start-column="12" selection-end-line="88" selection-end-column="12" />
-              <folding>
-                <element signature="n#style#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -154,8 +164,8 @@
       <find>razor-box-1</find>
       <find>alert</find>
       <find>_1</find>
-      <find>index_banner_title</find>
       <find>.banner3-font</find>
+      <find>index_banner_title</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -176,8 +186,6 @@
         <option value="$PROJECT_DIR$/_layouts/first.html" />
         <option value="$PROJECT_DIR$/css/compare_media.css" />
         <option value="$PROJECT_DIR$/_site/wallet/index.html" />
-        <option value="$PROJECT_DIR$/css/second_media.css" />
-        <option value="$PROJECT_DIR$/_layouts/second.html" />
         <option value="$PROJECT_DIR$/css/index_media.css" />
         <option value="$PROJECT_DIR$/_layouts/BITHD-Razor.html" />
         <option value="$PROJECT_DIR$/demo.html" />
@@ -196,6 +204,8 @@
         <option value="$PROJECT_DIR$/_layouts/razor.html" />
         <option value="$PROJECT_DIR$/css/razor.css" />
         <option value="$PROJECT_DIR$/i18n/strings_en.properties" />
+        <option value="$PROJECT_DIR$/_layouts/second.html" />
+        <option value="$PROJECT_DIR$/css/second_media.css" />
       </list>
     </option>
   </component>
@@ -312,7 +322,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="171482000" />
+    <option name="totallyTimeSpent" value="172442000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="804" extended-state="0" />
@@ -436,13 +446,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/second_media.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="106">
-          <caret line="98" selection-start-line="98" selection-end-line="101" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/reports.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -463,19 +466,6 @@
           <folding>
             <element signature="n#style#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#div#0;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_layouts/second.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="146" column="81" selection-start-line="146" selection-start-column="81" selection-end-line="146" selection-end-column="81" />
-          <folding>
-            <element signature="n#style#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#0;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#style#0;n#div#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#7;n#div#1;n#body#0;n#html#0;n#!!top" />
           </folding>
         </state>
       </provider>
@@ -526,17 +516,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="29" lean-forward="true" selection-start-column="29" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_layouts/reports.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="38" column="23" selection-start-line="38" selection-start-column="23" selection-end-line="38" selection-end-column="23" />
-          <folding>
-            <element signature="n#style#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -620,13 +599,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/css.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/index.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="568">
@@ -659,6 +631,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/i18n/strings_zh.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1395">
+          <caret line="70" column="45" selection-start-line="70" selection-start-column="21" selection-end-line="70" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/i18n/strings_en.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="154" column="42" lean-forward="true" selection-start-line="154" selection-start-column="42" selection-end-line="154" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/razor.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="100" column="10" lean-forward="true" selection-start-line="100" selection-start-column="10" selection-end-line="100" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/_layouts/default.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="393">
@@ -671,29 +664,46 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/_layouts/razor.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
+        <state relative-caret-position="-7656">
           <caret line="65" column="23" lean-forward="true" selection-start-line="65" selection-start-column="23" selection-end-line="65" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/i18n/strings_zh.properties">
+    <entry file="file://$PROJECT_DIR$/_includes/css.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1395">
-          <caret line="70" column="45" selection-start-line="70" selection-start-column="21" selection-end-line="70" selection-end-column="45" />
+        <state relative-caret-position="110">
+          <caret line="5" column="22" selection-start-line="5" selection-end-line="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/razor.css">
+    <entry file="file://$PROJECT_DIR$/_layouts/reports.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="100" column="10" lean-forward="true" selection-start-line="100" selection-start-column="10" selection-end-line="100" selection-end-column="10" />
+        <state relative-caret-position="22">
+          <caret line="38" column="23" selection-start-line="38" selection-start-column="23" selection-end-line="38" selection-end-column="23" />
+          <folding>
+            <element signature="n#style#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/i18n/strings_en.properties">
+    <entry file="file://$PROJECT_DIR$/_layouts/second.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="453">
-          <caret line="158" column="26" lean-forward="true" selection-start-line="158" selection-start-column="26" selection-end-line="158" selection-end-column="26" />
+        <state relative-caret-position="277">
+          <caret line="147" column="29" selection-start-line="147" selection-start-column="29" selection-end-line="147" selection-end-column="29" />
+          <folding>
+            <element signature="n#style#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#div#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#7;n#div#1;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/second_media.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="181" column="33" selection-start-line="181" selection-start-column="33" selection-end-line="181" selection-end-column="33" />
         </state>
       </provider>
     </entry>
