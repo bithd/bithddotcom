@@ -2,25 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="25f4867b-7b91-44f8-9f89-f29b5ca80316" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/image/index-item1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image/index-item2.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_layouts/default.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/default.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/404.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/about/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/about/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/css/armor.css" beforeDir="false" afterPath="$PROJECT_DIR$/_site/css/armor.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/css/armor_media.css" beforeDir="false" afterPath="$PROJECT_DIR$/_site/css/armor_media.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/_site/css/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/feed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/_site/feed.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/i18n/strings_en.properties" beforeDir="false" afterPath="$PROJECT_DIR$/_site/i18n/strings_en.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/i18n/strings_zh.properties" beforeDir="false" afterPath="$PROJECT_DIR$/_site/i18n/strings_zh.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/wallet/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/wallet/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/armor.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/armor.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/armor_media.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/armor_media.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/strings_en.properties" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/strings_en.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/strings_zh.properties" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/strings_zh.properties" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -69,15 +57,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="strings_zh.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/i18n/strings_zh.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="146">
-              <caret line="165" column="18" selection-start-line="165" selection-end-line="165" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="armor.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_layouts/armor.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -99,11 +78,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="default.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="default.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/_layouts/default.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="463">
-              <caret line="133" column="10" lean-forward="true" selection-start-line="133" selection-start-column="10" selection-end-line="133" selection-end-column="10" />
+            <state relative-caret-position="191">
+              <caret line="130" column="12" lean-forward="true" selection-start-line="130" selection-start-column="12" selection-end-line="130" selection-end-column="12" />
               <folding>
                 <element signature="n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" />
               </folding>
@@ -111,7 +90,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/index.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="361">
@@ -175,12 +154,12 @@
       <find>armor-banner1-font</find>
       <find>.armor-banner5-itme</find>
       <find>not-open</find>
-      <find>title</find>
       <find>armor-banner6-title</find>
       <find>pirce</find>
       <find>armor_banner1_font</find>
       <find>intro-btn-box</find>
       <find>.intro-btn-box</find>
+      <find>title</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -223,8 +202,8 @@
         <option value="$PROJECT_DIR$/css/armor.css" />
         <option value="$PROJECT_DIR$/i18n/strings_zh.properties" />
         <option value="$PROJECT_DIR$/i18n/strings_en.properties" />
-        <option value="$PROJECT_DIR$/_layouts/default.html" />
         <option value="$PROJECT_DIR$/css/index.css" />
+        <option value="$PROJECT_DIR$/_layouts/default.html" />
       </list>
     </option>
   </component>
@@ -332,12 +311,12 @@
       <updated>1547039351058</updated>
       <workItem from="1547039353321" duration="322000" />
       <workItem from="1547099043265" duration="138286000" />
-      <workItem from="1552533286729" duration="26258000" />
+      <workItem from="1552533286729" duration="26475000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="229650000" />
+    <option name="totallyTimeSpent" value="229867000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="804" extended-state="0" />
@@ -625,16 +604,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_layouts/armor.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="63" column="25" selection-start-line="63" selection-start-column="20" selection-end-line="63" selection-end-column="25" />
-          <folding>
-            <element signature="n#style#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/armor.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="177">
@@ -656,20 +625,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_layouts/default.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="463">
-          <caret line="133" column="10" lean-forward="true" selection-start-line="133" selection-start-column="10" selection-end-line="133" selection-end-column="10" />
-          <folding>
-            <element signature="n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/index.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="361">
           <caret line="96" column="18" selection-start-line="96" selection-start-column="18" selection-end-line="96" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_layouts/armor.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="63" column="25" selection-start-line="63" selection-start-column="20" selection-end-line="63" selection-end-column="25" />
+          <folding>
+            <element signature="n#style#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_layouts/default.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="130" column="12" lean-forward="true" selection-start-line="130" selection-start-column="12" selection-end-line="130" selection-end-column="12" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
         </state>
       </provider>
     </entry>
