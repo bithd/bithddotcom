@@ -2,35 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="25f4867b-7b91-44f8-9f89-f29b5ca80316" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/image/armor_by@2x.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_layouts/Compare.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/Compare.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_layouts/armor.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/armor.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_layouts/default.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/default.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_layouts/first.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/first.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_layouts/market.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/market.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_layouts/razor.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/razor.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_layouts/reports.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/reports.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_layouts/second.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/second.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/404.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/BITHD-Razor.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/BITHD-Razor.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/BITHD-compare.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/BITHD-compare.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/BITHD-watch-1.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/BITHD-watch-1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/BITHD-watch-2.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/BITHD-watch-2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/Frozen-Armor.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/Frozen-Armor.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/about/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/about/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/css/armor.css" beforeDir="false" afterPath="$PROJECT_DIR$/_site/css/armor.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/css/armor_media.css" beforeDir="false" afterPath="$PROJECT_DIR$/_site/css/armor_media.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/feed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/_site/feed.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/i18n/strings_en.properties" beforeDir="false" afterPath="$PROJECT_DIR$/_site/i18n/strings_en.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/i18n/strings_zh.properties" beforeDir="false" afterPath="$PROJECT_DIR$/_site/i18n/strings_zh.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/reports/reports.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/reports/reports.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/wallet/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/wallet/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/armor.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/armor.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/armor_media.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/armor_media.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/strings_en.properties" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/strings_en.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/strings_zh.properties" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/strings_zh.properties" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -73,8 +45,8 @@
       <file leaf-file-name="armor.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/_layouts/armor.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="464">
-              <caret line="155" column="14" lean-forward="true" selection-start-line="155" selection-start-column="14" selection-end-line="155" selection-end-column="14" />
+            <state relative-caret-position="343">
+              <caret line="479" column="32" selection-start-line="479" selection-start-column="32" selection-end-line="479" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -167,7 +139,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>armor-banner3-font-box</find>
       <find>.armor-banner4-font-box</find>
       <find>armor-price-rol</find>
       <find>buy-btn</find>
@@ -197,6 +168,7 @@
       <find>nav_compare</find>
       <find>btn1</find>
       <find>buy-btn1</find>
+      <find>armor_buy_phone_price3</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -348,12 +320,12 @@
       <updated>1547039351058</updated>
       <workItem from="1547039353321" duration="322000" />
       <workItem from="1547099043265" duration="138286000" />
-      <workItem from="1552533286729" duration="22639000" />
+      <workItem from="1552533286729" duration="22699000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="226031000" />
+    <option name="totallyTimeSpent" value="226091000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="804" extended-state="0" />
@@ -678,8 +650,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/_layouts/armor.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
-          <caret line="155" column="14" lean-forward="true" selection-start-line="155" selection-start-column="14" selection-end-line="155" selection-end-column="14" />
+        <state relative-caret-position="343">
+          <caret line="479" column="32" selection-start-line="479" selection-start-column="32" selection-end-line="479" selection-end-column="32" />
         </state>
       </provider>
     </entry>
