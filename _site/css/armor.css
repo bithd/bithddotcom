@@ -331,3 +331,12 @@
 .en .armor-banner6-title{
   font-size:34px;
 }
+.armor-by{
+  position:absolute;
+  top:0;
+  right:0;
+  width:70px;
+}
+.en .armor-by{
+  display:none;
+}
