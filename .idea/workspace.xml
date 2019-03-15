@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="25f4867b-7b91-44f8-9f89-f29b5ca80316" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/_layouts/armor.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/armor.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/armor_media.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/armor_media.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -16,7 +16,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="armor.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="armor.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_layouts/armor.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-1448">
@@ -97,11 +97,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="armor_media.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="armor_media.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/armor_media.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="172">
-              <caret line="274" column="14" selection-start-line="274" selection-start-column="13" selection-end-line="274" selection-end-column="14" />
+            <state relative-caret-position="66">
+              <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -140,15 +140,15 @@
       <find>armor-banner5-title-rol</find>
       <find>armor-banner5-box</find>
       <find>Fireproof</find>
-      <find>.nav-in-box</find>
       <find>banner5-header-font</find>
       <find>armor_buy_intro</find>
       <find>armor-banner4-font-box</find>
       <find>Double Sided</find>
       <find>.armor-banner6-font</find>
-      <find>armor_banner1_font</find>
       <find>兵甲</find>
       <find>art</find>
+      <find>armor_banner1_font</find>
+      <find>.nav-in-box</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -187,12 +187,12 @@
         <option value="$PROJECT_DIR$/_layouts/razor.html" />
         <option value="$PROJECT_DIR$/_layouts/reports.html" />
         <option value="$PROJECT_DIR$/_layouts/second.html" />
-        <option value="$PROJECT_DIR$/css/armor_media.css" />
         <option value="$PROJECT_DIR$/css/index_media.css" />
         <option value="$PROJECT_DIR$/i18n/strings_zh.properties" />
         <option value="$PROJECT_DIR$/css/armor.css" />
         <option value="$PROJECT_DIR$/i18n/strings_en.properties" />
         <option value="$PROJECT_DIR$/_layouts/armor.html" />
+        <option value="$PROJECT_DIR$/css/armor_media.css" />
       </list>
     </option>
   </component>
@@ -300,12 +300,12 @@
       <updated>1547039351058</updated>
       <workItem from="1547039353321" duration="322000" />
       <workItem from="1547099043265" duration="138286000" />
-      <workItem from="1552533286729" duration="18995000" />
+      <workItem from="1552533286729" duration="19253000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="222387000" />
+    <option name="totallyTimeSpent" value="222645000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="804" extended-state="0" />
@@ -583,13 +583,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/armor_media.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="274" column="14" selection-start-line="274" selection-start-column="13" selection-end-line="274" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_layouts/Compare.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
@@ -597,13 +590,6 @@
           <folding>
             <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/index_media.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="559">
-          <caret line="252" column="21" selection-start-line="252" selection-start-column="21" selection-end-line="252" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -635,6 +621,20 @@
           <folding>
             <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/index_media.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="559">
+          <caret line="252" column="21" selection-start-line="252" selection-start-column="21" selection-end-line="252" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/armor_media.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
         </state>
       </provider>
     </entry>
