@@ -1,0 +1,293 @@
+
+@media screen and (max-width: 1600px) {
+  .armor-banner-img{
+    right:-100px;
+  }
+}
+
+
+@media screen and (max-width: 1200px) {
+  .m-box{
+    width:1000px;
+  }
+  .pc-box{
+    display:none;
+  }
+  .phone-box{
+    display:block;
+  }
+  .pc-header-menu ul li{
+    margin-left:20px;
+  }
+  .armor-banner2{
+    height:500px;
+  }
+  .armor-img1{
+    width:600px;
+  }
+  .armor-banner2-font-box{
+    margin-top:60px;
+  }
+  .armor-banner2-title{
+    font-size:36px;
+  }
+  .armor-banner2-font{
+    font-size:24px;
+  }
+  .armor-banner3-title{
+    font-size:32px;
+  }
+  .armor-banner3-font{
+    font-size:24px;
+  }
+  .armor-banner4-title{
+    font-size:32px;
+  }
+  .armor-banner4-font{
+    font-size:24px;
+  }
+  .armor-banner-img{
+    right:-100px;
+    width:600px;
+  }
+  .armor-banner1{
+    height:650px;
+  }
+  .armor-banner1-title{
+    font-size:36px;
+  }
+  .armor-banner1-font{
+    font-size:24px;
+  }
+  .armor-banner5-box{
+    margin-top:10px;
+  }
+  .armor-banner5{
+    height:850px;
+  }
+  .armor-banner6-img{
+    width:800px;
+  }
+  .armor-banner6{
+    height:650px;
+  }
+  .en .armor-banner5{
+    height:1100px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .m-box{
+    width:700px;
+  }
+  .armor-banner3-font-box{
+    width:300px;
+    margin-top:60px;
+  }
+  .armor-banner3-title{
+    font-size:20px;
+  }
+  .armor-banner3-font{
+    font-size:16px;
+  }
+  .armor-banner2{
+    height:400px;
+  }
+  .armor-img1{
+    width:500px;
+  }
+  .armor-banner-img{
+    width:500px;
+  }
+  .armor-bannner1-font-box{
+    width:300px;
+  }
+  .armor-banner1{
+    height:550px;
+  }
+  .armor-banner6-img{
+    width:500px;
+  }
+  .armor-banner6{
+    height:400px;
+  }
+  .armor-banner6-title{
+    font-size:32px;
+  }
+  .armor-banner6-font{
+    font-size:24px;
+  }
+  .armor-banner6-font-box{
+    margin-top:60px;
+  }
+  .en .armor-img1{
+    width:300px;
+  }
+  .en .armor-banner4-title {
+    font-size: 20px;
+  }
+  .en .armor-banner4-font{
+    font-size:14px;
+  }
+  .en .armor-bannner1-font-box{
+    margin-top:80px;
+  }
+  .banner5-header-title{
+    font-size:32px;
+  }
+  .banner5-header-font{
+    font-size:24px;
+    line-height:1.6em;
+  }
+}
+@media screen and (max-width: 500px) {
+  .m-box{
+    width:360px;
+  }
+  .armor-banner2{
+    height:550px;
+  }
+  .armor-banner2-font-box{
+    text-align: center;
+    width:100%;
+  }
+  .armor-banner3{
+    height:700px;
+    background:url("../image/armor_pic_2.jpg") no-repeat;
+    background-size:100% auto;
+    background-position:left bottom;
+  }
+  .armor-banner3-font-box{
+    text-align: center;
+    width:100%;
+  }
+  .armor-banner3-title{
+    font-size:28px;
+  }
+  .armor-banner3-font{
+    font-size:24px;
+  }
+  .armor-banner4{
+    height:700px;
+    background:url("../image/armor_pic_1.jpg") no-repeat;
+    background-size:100% auto;
+    background-position:left bottom;
+  }
+  .armor-banner4-font-box{
+    text-align: center;
+    width:100%;
+    margin-top:60px;
+  }
+  .armor-banner4-title{
+    font-size:28px;
+  }
+  .armor-banner4-font{
+    font-size:24px;
+  }
+  .armor-banner1{
+    background:url('../image/armor_banner_phone_bg.jpg') no-repeat;
+    height:750px;
+  }
+  .armor-banner-img{
+    top:350px;
+    right:-140px;
+  }
+  .armor-bannner1-font-box{
+    margin-top:60px;
+    text-align: center;
+    width:100%;
+  }
+  .armor-banner6{
+    height:550px;
+  }
+  .armor-banner6-font-box{
+    width:100%;
+    text-align: center;
+  }
+  .armor-banner6-img{
+    width:450px;
+  }
+  .en .armor-banner1-font{
+    font-size:20px;
+    margin-bottom:30px;
+  }
+  .en .armor-banner2-title{
+    font-size:28px;
+  }
+  .en .armor-banner2-font{
+    font-size:20px;
+  }
+  .en .armor-img1{
+    width:500px;
+  }
+  .en .armor-banner3-font{
+    font-size:20px;
+  }
+  .en .armor-banner4-title{
+    font-size:28px;
+  }
+  .en .armor-banner4-font{
+    font-size:20px;
+  }
+  .armor-banner6-title{
+    font-size:28px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .m-box{
+    width:300px;
+  }
+  .armor-img1{
+    width:350px;
+  }
+  .armor-banner3-title{
+    font-size:25px;
+  }
+  .armor-banner3-font{
+    font-size:18px;
+  }
+  .armor-banner4-title{
+    font-size:25px;
+  }
+  .armor-banner4-font{
+    font-size:18px;
+  }
+  .armor-banner4{
+    height:600px;
+  }
+  .armor-banner3{
+    height:600px;
+  }
+  .armor-banner-img{
+    width:450px;
+    right:-160px;
+  }
+  .armor-banner1{
+    height:700px;
+  }
+  .armor-banner6-img{
+    width:400px;
+  }
+  .en .armor-banner3-title{
+    font-size:24px;
+  }
+  .en .armor-banner3-font{
+    font-size:16px;
+  }
+  .en .armor-banner4-title{
+    font-size:24px;
+  }
+  .en .armor-banner4-font{
+    font-size:16px;
+  }
+  .en .armor-banner2-title{
+    font-size:24px;
+  }
+  .en .armor-banner2-font{
+    font-size:16px;
+  }
+  .banner5-header-title{
+    font-size:28px;
+  }
+}
