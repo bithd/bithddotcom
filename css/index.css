@@ -94,10 +94,10 @@ a{
   padding:25px 30px;
   background: #FAFAFA;
   text-align: center;
-  margin-bottom:100px;
+  margin-bottom:40px;
   overflow:hidden;
 }
-.intro-btn-box:last-child{
+.intro-btn-box:nth-child(2n){
   margin-right:0;
 }
 .intro-title{
@@ -388,4 +388,7 @@ a{
 #index_banner_title{
   line-height:1.8em;
   margin-bottom:0;
+}
+.intro-font{
+  height:75px;
 }

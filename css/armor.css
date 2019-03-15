@@ -13,6 +13,7 @@
   font-size:48px;
   color:#fff;
   margin-bottom:30px;
+  font-weight:bold;
 }
 .armor-banner1-font{
   font-size:28px;
@@ -38,6 +39,7 @@
   font-size:48px;
   color:#000;
   margin-bottom:30px;
+  font-weight:bold;
 }
 .armor-banner2-font{
   font-size:28px;
@@ -56,6 +58,7 @@
   color:#fff;
   margin-bottom:30px;
   line-height:1.6em;
+  font-weight:bold;
 }
 .armor-banner3-font{
   font-size:28px;
@@ -80,6 +83,7 @@
   color:#000;
   margin-bottom:30px;
   line-height:1.6em;
+  font-weight:bold;
 }
 .armor-banner4-font{
   font-size:28px;
@@ -135,10 +139,13 @@
   border-radius:35px;
   background:#f0f0f0;
   font-family: PingFangSC-Medium;
-  font-size: 26px;
+  font-size: 22px;
   color: #333333;
   letter-spacing: 0;
   text-align: center;
+}
+.armor-banner5-lt1{
+  font-size:26px;
 }
 .armor-banner5-itme.i{
   background: #D1E6F6;
@@ -279,6 +286,7 @@
   color: #000;
   margin-bottom: 30px;
   line-height: 1.6em;
+  font-weight:bold;
 }
 .armor-banner6-font{
   font-size: 25px;

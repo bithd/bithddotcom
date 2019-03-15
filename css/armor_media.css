@@ -91,7 +91,7 @@
     font-size:16px;
   }
   .armor-banner2{
-    height:400px;
+    height:600px;
   }
   .armor-img1{
     width:500px;
@@ -112,10 +112,10 @@
     height:400px;
   }
   .armor-banner6-title{
-    font-size:32px;
+    font-size:24px;
   }
   .armor-banner6-font{
-    font-size:24px;
+    font-size:16px;
   }
   .armor-banner6-font-box{
     margin-top:60px;
@@ -133,16 +133,31 @@
     margin-top:80px;
   }
   .banner5-header-title{
-    font-size:32px;
+    font-size:24px;
   }
   .banner5-header-font{
-    font-size:24px;
+    font-size:16px;
     line-height:1.6em;
   }
 }
 @media screen and (max-width: 500px) {
   .m-box{
     width:360px;
+  }
+  .armor-banner2-title{
+    font-size:24px;
+  }
+  .armor-banner1-price{
+    font-size:20px;
+  }
+  .armor-banner1-font{
+    font-size:18px;
+  }
+  .armor-banner1-title{
+    font-size:28px;
+  }
+  .armor-banner2-font{
+    font-size:16px;
   }
   .armor-banner2{
     height:550px;
@@ -162,10 +177,10 @@
     width:100%;
   }
   .armor-banner3-title{
-    font-size:28px;
+    font-size:24px;
   }
   .armor-banner3-font{
-    font-size:24px;
+    font-size:16px;
   }
   .armor-banner4{
     height:700px;
@@ -179,10 +194,10 @@
     margin-top:60px;
   }
   .armor-banner4-title{
-    font-size:28px;
+    font-size:24px;
   }
   .armor-banner4-font{
-    font-size:24px;
+    font-size:16px;
   }
   .armor-banner1{
     background:url('../image/armor_banner_phone_bg.jpg') no-repeat;
@@ -207,15 +222,18 @@
   .armor-banner6-img{
     width:450px;
   }
+  .armor-banner1-font{
+    margin-bottom:40px;
+  }
   .en .armor-banner1-font{
     font-size:20px;
     margin-bottom:30px;
   }
   .en .armor-banner2-title{
-    font-size:28px;
+    font-size:24px;
   }
   .en .armor-banner2-font{
-    font-size:20px;
+    font-size:16px;
   }
   .en .armor-img1{
     width:500px;
@@ -224,13 +242,16 @@
     font-size:20px;
   }
   .en .armor-banner4-title{
-    font-size:28px;
+    font-size:24px;
   }
   .en .armor-banner4-font{
-    font-size:20px;
+    font-size:16px;
   }
   .armor-banner6-title{
-    font-size:28px;
+    font-size:20px;
+  }
+  .armor-banner6-font{
+    font-size:14px;
   }
 }
 
@@ -242,16 +263,16 @@
     width:350px;
   }
   .armor-banner3-title{
-    font-size:25px;
+    font-size:24px;
   }
   .armor-banner3-font{
-    font-size:18px;
+    font-size:16px;
   }
   .armor-banner4-title{
-    font-size:25px;
+    font-size:24px;
   }
   .armor-banner4-font{
-    font-size:18px;
+    font-size:16px;
   }
   .armor-banner4{
     height:600px;
@@ -288,6 +309,6 @@
     font-size:16px;
   }
   .banner5-header-title{
-    font-size:28px;
+    font-size:24px;
   }
 }
