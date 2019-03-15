@@ -2,54 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="25f4867b-7b91-44f8-9f89-f29b5ca80316" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/Frozen-Armor.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_layouts/armor.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/armor.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/armor_media.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image/armor_banner@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image/armor_banner_bg@2x.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image/armor_banner_phone_bg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image/armor_icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image/armor_pic_1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image/armor_pic_1@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image/armor_pic_2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image/armor_pic_2@2x.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image/armor_pic_2@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image/armor_pic_3@2x.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image/armor_pic_3@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image/armor_pic_4@3x.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image/armor_pic_4@3x.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/css.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/css.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_layouts/Compare.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/Compare.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_layouts/default.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/default.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_layouts/first.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/first.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_layouts/market.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/market.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_layouts/razor.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/razor.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_layouts/reports.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/reports.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_layouts/second.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/second.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/404.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/BITHD-Razor.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/BITHD-Razor.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/BITHD-compare.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/BITHD-compare.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/BITHD-watch-1.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/BITHD-watch-1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/BITHD-watch-2.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/BITHD-watch-2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/about/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/about/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/css/bithd.css" beforeDir="false" afterPath="$PROJECT_DIR$/_site/css/bithd.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/css/index_media.css" beforeDir="false" afterPath="$PROJECT_DIR$/_site/css/index_media.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/css/razor_media.css" beforeDir="false" afterPath="$PROJECT_DIR$/_site/css/razor_media.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/feed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/_site/feed.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/i18n/strings_en.properties" beforeDir="false" afterPath="$PROJECT_DIR$/_site/i18n/strings_en.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/i18n/strings_zh.properties" beforeDir="false" afterPath="$PROJECT_DIR$/_site/i18n/strings_zh.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/_site/js/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/reports/reports.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/reports/reports.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/wallet/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/wallet/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/bithd.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/bithd.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/index_media.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/index_media.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/razor_media.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/razor_media.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/strings_en.properties" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/strings_en.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/strings_zh.properties" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/strings_zh.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/armor.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/armor.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -66,12 +19,10 @@
       <file leaf-file-name="armor.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/_layouts/armor.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="484">
-              <caret line="71" column="33" selection-start-line="71" selection-start-column="15" selection-end-line="71" selection-end-column="33" />
+            <state relative-caret-position="-1448">
+              <caret line="119" column="48" lean-forward="true" selection-start-line="119" selection-start-column="48" selection-end-line="119" selection-end-column="48" />
               <folding>
                 <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" />
               </folding>
             </state>
           </provider>
@@ -81,7 +32,7 @@
         <entry file="file://$PROJECT_DIR$/i18n/strings_zh.properties">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-194">
-              <caret line="160" column="23" lean-forward="true" selection-start-line="160" selection-start-column="23" selection-end-line="160" selection-end-column="23" />
+              <caret line="160" column="23" selection-start-line="160" selection-start-column="23" selection-end-line="160" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -90,7 +41,7 @@
         <entry file="file://$PROJECT_DIR$/i18n/strings_en.properties">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1386">
-              <caret line="63" column="20" lean-forward="true" selection-start-line="63" selection-start-column="20" selection-end-line="63" selection-end-column="20" />
+              <caret line="63" column="20" selection-start-line="63" selection-start-column="20" selection-end-line="63" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -99,7 +50,7 @@
         <entry file="file://$PROJECT_DIR$/css/index_media.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="559">
-              <caret line="252" column="21" lean-forward="true" selection-start-line="252" selection-start-column="21" selection-end-line="252" selection-end-column="21" />
+              <caret line="252" column="21" selection-start-line="252" selection-start-column="21" selection-end-line="252" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -117,7 +68,7 @@
         <entry file="file://$PROJECT_DIR$/_layouts/default.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="366">
-              <caret line="32" column="12" lean-forward="true" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="12" />
+              <caret line="32" column="12" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -138,7 +89,7 @@
         <entry file="file://$PROJECT_DIR$/_layouts/Compare.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="216">
-              <caret line="11" column="10" lean-forward="true" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+              <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
               <folding>
                 <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" />
               </folding>
@@ -236,12 +187,12 @@
         <option value="$PROJECT_DIR$/_layouts/razor.html" />
         <option value="$PROJECT_DIR$/_layouts/reports.html" />
         <option value="$PROJECT_DIR$/_layouts/second.html" />
-        <option value="$PROJECT_DIR$/_layouts/armor.html" />
         <option value="$PROJECT_DIR$/css/armor_media.css" />
         <option value="$PROJECT_DIR$/css/index_media.css" />
         <option value="$PROJECT_DIR$/i18n/strings_zh.properties" />
         <option value="$PROJECT_DIR$/css/armor.css" />
         <option value="$PROJECT_DIR$/i18n/strings_en.properties" />
+        <option value="$PROJECT_DIR$/_layouts/armor.html" />
       </list>
     </option>
   </component>
@@ -349,12 +300,12 @@
       <updated>1547039351058</updated>
       <workItem from="1547039353321" duration="322000" />
       <workItem from="1547099043265" duration="138286000" />
-      <workItem from="1552533286729" duration="18952000" />
+      <workItem from="1552533286729" duration="18995000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="222344000" />
+    <option name="totallyTimeSpent" value="222387000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="804" extended-state="0" />
@@ -576,7 +527,7 @@
     <entry file="file://$PROJECT_DIR$/_layouts/default.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="366">
-          <caret line="32" column="12" lean-forward="true" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="12" />
+          <caret line="32" column="12" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -642,7 +593,7 @@
     <entry file="file://$PROJECT_DIR$/_layouts/Compare.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
-          <caret line="11" column="10" lean-forward="true" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+          <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
           <folding>
             <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" />
           </folding>
@@ -652,7 +603,7 @@
     <entry file="file://$PROJECT_DIR$/css/index_media.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="559">
-          <caret line="252" column="21" lean-forward="true" selection-start-line="252" selection-start-column="21" selection-end-line="252" selection-end-column="21" />
+          <caret line="252" column="21" selection-start-line="252" selection-start-column="21" selection-end-line="252" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -666,25 +617,23 @@
     <entry file="file://$PROJECT_DIR$/i18n/strings_zh.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-194">
-          <caret line="160" column="23" lean-forward="true" selection-start-line="160" selection-start-column="23" selection-end-line="160" selection-end-column="23" />
+          <caret line="160" column="23" selection-start-line="160" selection-start-column="23" selection-end-line="160" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/i18n/strings_en.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1386">
-          <caret line="63" column="20" lean-forward="true" selection-start-line="63" selection-start-column="20" selection-end-line="63" selection-end-column="20" />
+          <caret line="63" column="20" selection-start-line="63" selection-start-column="20" selection-end-line="63" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/_layouts/armor.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="71" column="33" selection-start-line="71" selection-start-column="15" selection-end-line="71" selection-end-column="33" />
+        <state relative-caret-position="-1448">
+          <caret line="119" column="48" lean-forward="true" selection-start-line="119" selection-start-column="48" selection-end-line="119" selection-end-column="48" />
           <folding>
             <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" />
           </folding>
         </state>
       </provider>
