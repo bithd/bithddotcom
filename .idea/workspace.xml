@@ -3,14 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="25f4867b-7b91-44f8-9f89-f29b5ca80316" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_layouts/Compare.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/Compare.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_layouts/armor.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/armor.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_layouts/first.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/first.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_layouts/market.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/market.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_layouts/razor.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/razor.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_layouts/reports.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/reports.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_layouts/second.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/second.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/feed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/_site/feed.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n/strings_zh.properties" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/strings_zh.properties" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -37,11 +31,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="second.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="second.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_layouts/second.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="64" column="21" lean-forward="true" selection-start-line="64" selection-start-column="21" selection-end-line="64" selection-end-column="21" />
+            <state relative-caret-position="295">
+              <caret line="69" column="56" lean-forward="true" selection-start-line="69" selection-start-column="56" selection-end-line="69" selection-end-column="56" />
               <folding>
                 <element signature="n#style#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" />
@@ -61,6 +55,15 @@
                 <element signature="n#style#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="strings_zh.properties" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/i18n/strings_zh.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="143">
+              <caret line="116" lean-forward="true" selection-start-line="116" selection-end-line="116" />
             </state>
           </provider>
         </entry>
@@ -94,7 +97,7 @@
       <file leaf-file-name="strings_en.properties" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/i18n/strings_en.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="431">
+            <state relative-caret-position="3072">
               <caret line="233" column="17" selection-start-line="233" selection-end-line="233" selection-end-column="17" />
             </state>
           </provider>
@@ -139,15 +142,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/index.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="96" column="18" selection-start-line="96" selection-start-column="18" selection-end-line="96" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -187,10 +181,10 @@
       <find>not-open</find>
       <find>armor-banner6-title</find>
       <find>pirce</find>
-      <find>armor_banner1_font</find>
       <find>.intro-btn-box</find>
       <find>title</find>
       <find>intro-btn-box</find>
+      <find>armor_banner1_font</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -224,7 +218,6 @@
         <option value="$PROJECT_DIR$/css/index_media.css" />
         <option value="$PROJECT_DIR$/css/armor_media.css" />
         <option value="$PROJECT_DIR$/css/armor.css" />
-        <option value="$PROJECT_DIR$/i18n/strings_zh.properties" />
         <option value="$PROJECT_DIR$/i18n/strings_en.properties" />
         <option value="$PROJECT_DIR$/css/index.css" />
         <option value="$PROJECT_DIR$/_layouts/default.html" />
@@ -235,6 +228,7 @@
         <option value="$PROJECT_DIR$/_layouts/razor.html" />
         <option value="$PROJECT_DIR$/_layouts/reports.html" />
         <option value="$PROJECT_DIR$/_layouts/second.html" />
+        <option value="$PROJECT_DIR$/i18n/strings_zh.properties" />
       </list>
     </option>
   </component>
@@ -342,12 +336,12 @@
       <updated>1547039351058</updated>
       <workItem from="1547039353321" duration="322000" />
       <workItem from="1547099043265" duration="138286000" />
-      <workItem from="1552533286729" duration="26854000" />
+      <workItem from="1552533286729" duration="27418000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="230246000" />
+    <option name="totallyTimeSpent" value="230810000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="804" extended-state="0" />
@@ -580,20 +574,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/i18n/strings_zh.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="165" column="18" selection-start-line="165" selection-end-line="165" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/i18n/strings_en.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="431">
-          <caret line="233" column="17" selection-start-line="233" selection-end-line="233" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/index.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="361">
@@ -680,14 +660,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/_layouts/second.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="64" column="21" lean-forward="true" selection-start-line="64" selection-start-column="21" selection-end-line="64" selection-end-column="21" />
+        <state relative-caret-position="295">
+          <caret line="69" column="56" lean-forward="true" selection-start-line="69" selection-start-column="56" selection-end-line="69" selection-end-column="56" />
           <folding>
             <element signature="n#style#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#style#0;n#div#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#div#7;n#div#1;n#body#0;n#html#0;n#!!top" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/i18n/strings_en.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3072">
+          <caret line="233" column="17" selection-start-line="233" selection-end-line="233" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/i18n/strings_zh.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="116" lean-forward="true" selection-start-line="116" selection-end-line="116" />
         </state>
       </provider>
     </entry>
