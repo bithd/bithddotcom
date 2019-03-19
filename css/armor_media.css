@@ -139,10 +139,14 @@
     font-size:16px;
     line-height:1.6em;
   }
+
 }
 @media screen and (max-width: 500px) {
   .m-box{
     width:360px;
+  }
+  .armor-font-box{
+    margin-top:30px;
   }
   .armor-banner2-title{
     font-size:24px;
