@@ -92,7 +92,7 @@
   <div class="index-intro-box">
     <div class="m-box">
       <div class="lt intro-btn-box">
-        <div class="intro-title">BITHD Watch 2</div>
+        <div id="intro_title_1" class="intro-title"></div>
         <div id="index_watch_2" class="intro-font">
           经过由内而外的重新设计和打造，全新 BITHD Watch 2，给予数字资产更安全的守护。
         </div>
@@ -102,7 +102,7 @@
         <img src="../image/home_pic_b@2x.png" alt="" class="intro-img">
       </div>
       <div class="lt intro-btn-box intro-btn-index">
-        <div class="intro-title">BITHD Razor</div>
+        <div id="intro_title_2" class="intro-title"></div>
         <div id="index_watch_1" class="intro-font">
           经过由内而外的重新设计和打造，全新 BITHD Watch 2，给予数字资产更安全的守护。
         </div>
@@ -377,6 +377,8 @@
                     $('#index_item2_title').html($.i18n.prop('index_item2_title'));
                     $('#index_item1_font').html($.i18n.prop('index_item1_font'));
                     $('#index_item2_font').html($.i18n.prop('index_item2_font'));
+                    $('#intro_title_1').html($.i18n.prop('intro_title_1'));
+                    $('#intro_title_2').html($.i18n.prop('intro_title_2'));
                 }
             });
         });
