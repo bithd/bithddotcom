@@ -354,3 +354,25 @@
 .armor-banner7{
   height:750px;
 }
+.armor-buy-btn{
+  display: block;
+  width: 90px;
+  height: 34px;
+  background: url(../image/btn@2x.png) no-repeat 100% 100%;
+  background-size: 100% 100%;
+  text-align: center;
+  line-height: 34px;
+  font-size: 16px;
+  color: #fff;
+  margin-top: 20px;
+  cursor:pointer;
+}
+.en-show{
+  display:none;
+}
+.en .en-show{
+  display:block;
+}
+.en .cn-show{
+  display:none;
+}

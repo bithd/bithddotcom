@@ -62,7 +62,8 @@
 <div class="second-nav">
   <div class="m-box">
     <span id="armor_title" class="lt second-nav-font"></span>
-    <a href="https://weidian.com/item.html?itemID=2712943974" id="buy-btn" class="gt buy-btn1 second-buy-btn" target="_blank"></a>
+    <a href="https://weidian.com/item.html?itemID=2712943974" id="buy-btn" class="gt buy-btn1 second-buy-btn cn-show" target="_blank"></a>
+    <div class="gt buy-btn1 open-buy armor-buy armor-buy-btn en-show" target="_blank"></div>
   </div>
 </div>
 <div class="rol armor-banner1">
@@ -93,28 +94,32 @@
         <div id="armor_buy_item1_Extra" class="lt armor-banner5-lt2 armor-banner5-itme"></div>
         <div id="armor_buy_item1_price" class="lt armor-banner5-lt3 armor-banner5-itme"></div>
         <div id="armor_buy_item1_foot" class="lt armor-banner5-lt4 armor-banner5-itme"></div>
-        <a href="https://weidian.com/item.html?itemID=2712623178" class="lt armor-banner5-lt5 armor-banner5-buy-btn buy-btn1" target="_blank"></a>
+        <a href="https://weidian.com/item.html?itemID=2712623178" class="lt armor-banner5-lt5 armor-banner5-buy-btn buy-btn1 cn-show" target="_blank"></a>
+        <a href="https://www.amazon.com/dp/B07NHX34RK?ref=myi_title_dp&th=1" class="lt armor-banner5-lt5 armor-banner5-buy-btn buy-btn1 en-show" target="_blank"></a>
       </div>
       <div class="rol armor-banner5-title-rol">
         <div id="armor_buy_item2_title" class="lt armor-banner5-lt1 armor-banner5-itme i"></div>
         <div id="armor_buy_item2_Extra" class="lt armor-banner5-lt2 armor-banner5-itme i"></div>
         <div id="armor_buy_item2_price" class="lt armor-banner5-lt3 armor-banner5-itme i"></div>
         <div id="armor_buy_item2_foot" class="lt armor-banner5-lt4 armor-banner5-itme i"></div>
-        <a href="https://weidian.com/item.html?itemID=2712943974" class="lt armor-banner5-lt5 armor-banner5-buy-btn buy-btn1" target="_blank"></a>
+        <a href="https://weidian.com/item.html?itemID=2712943974" class="lt armor-banner5-lt5 armor-banner5-buy-btn buy-btn1 cn-show" target="_blank"></a>
+        <a href="https://www.amazon.com/dp/B07PTNXM68?ref=myi_title_dp&th=1" class="lt armor-banner5-lt5 armor-banner5-buy-btn buy-btn1 en-show" target="_blank"></a>
       </div>
       <div class="rol armor-banner5-title-rol">
         <div id="armor_buy_item3_title" class="lt armor-banner5-lt1 armor-banner5-itme"></div>
         <div id="armor_buy_item3_Extra" class="lt armor-banner5-lt2 armor-banner5-itme"></div>
         <div id="armor_buy_item3_price" class="lt armor-banner5-lt3 armor-banner5-itme"></div>
         <div id="armor_buy_item3_foot" class="lt armor-banner5-lt4 armor-banner5-itme"></div>
-        <a href="https://weidian.com/item.html?itemID=2712916366" class="lt armor-banner5-lt5 armor-banner5-buy-btn buy-btn1" target="_blank"></a>
+        <a href="https://weidian.com/item.html?itemID=2712916366" class="lt armor-banner5-lt5 armor-banner5-buy-btn buy-btn1 cn-show" target="_blank"></a>
+        <a href="https://www.amazon.com/dp/B07PQ9RHDZ?ref=myi_title_dp&th=1" class="lt armor-banner5-lt5 armor-banner5-buy-btn buy-btn1 en-show" target="_blank"></a>
       </div>
       <div class="rol armor-banner5-title-rol">
         <div id="armor_buy_item4_title" class="lt armor-banner5-lt1 armor-banner5-itme"></div>
         <div id="armor_buy_item4_Extra" class="lt armor-banner5-lt2 armor-banner5-itme"></div>
         <div id="armor_buy_item4_price" class="lt armor-banner5-lt3 armor-banner5-itme"></div>
         <div id="armor_buy_item4_foot" class="lt armor-banner5-lt4 armor-banner5-itme"></div>
-        <a href="https://weidian.com/item.html?itemID=2712940180" class="lt armor-banner5-lt5 armor-banner5-buy-btn buy-btn1" target="_blank"></a>
+        <a href="https://weidian.com/item.html?itemID=2712940180" class="lt armor-banner5-lt5 armor-banner5-buy-btn buy-btn1 cn-show" target="_blank"></a>
+        <a href="https://www.amazon.com/dp/B07PRGWNYG?ref=myi_title_dp&th=1" class="lt armor-banner5-lt5 armor-banner5-buy-btn buy-btn1 en-show" target="_blank"></a>
       </div>
     </div>
     <div class="rol armor-banner5-box phone-box">
@@ -213,6 +218,22 @@
         <div id="armor1_intro_font4" class="lt banner6-font"></div>
       </div>
     </div>
+  </div>
+</div>
+<div class="alert-buy-box">
+  <div class="buy-box">
+    <div id="buy_title" class="buy-title"></div>
+    <div class="buy-btn-box">
+      <a href="#" id="buy-wd" class="buy-btn" target="_blank">
+        <span id="buy_wd_font"></span>
+        <span class="gt">></span>
+      </a>
+      <a href="#" id="buy-tb" class="buy-btn" target="_blank">
+        <span id="buy_tb_font"></span>
+        <span class="gt">></span>
+      </a>
+    </div>
+    <div id="buy_close_btn" class="close-btn"></div>
   </div>
 </div>
 {% include js.html %}
@@ -435,8 +456,8 @@
         $('#watch2_title').html($.i18n.prop('watch2_title'));
 
         $('#buy_title').html($.i18n.prop('buy_title'));
-        $('#buy_wd_font').html($.i18n.prop('buy_wd_font'));
-        $('#buy_tb_font').html($.i18n.prop('buy_tb_font'));
+        $('#buy_wd_font').html($.i18n.prop('buy_amazon_font'));
+        $('#buy_tb_font').html($.i18n.prop('buy_indiegogo_font'));
         $('#buy_close_btn').html($.i18n.prop('buy_close_btn'));
         $('#armor_title').html($.i18n.prop('armor_title'));
         $('#armor_banner1_title').html($.i18n.prop('armor_banner1_title'));

@@ -5,6 +5,8 @@ $(function(){
   var watch2_tb_address = 'https://item.taobao.com/item.htm?id=586206342524'
   var razor_wd_address = 'https://weidian.com/item.html?itemID=2685724274'
   var razor_tb_address = 'https://item.taobao.com/item.htm?id=586206342524'
+  var armor_wd_address = 'https://www.amazon.com/dp/B07NHX34RK?ref=myi_title_dp&th=1'
+  var armor_tb_address = 'https://www.indiegogo.com/projects/crypto-seed-cold-storage-frozen-armor-bithd#/'
   function closeBuyBox(){
     $('.alert-buy-box').hide()
   }
@@ -20,6 +22,7 @@ $(function(){
     closeBuyBox()
   })
   $('.open-buy').click(function(){
+    console.log('aasdf')
     if (new String($.i18n.browserLang()).indexOf("zh")> -1) {
       if($(this).hasClass('not-open')){
         alert('预售将于2018年3月15日中午12:00开启')
@@ -47,6 +50,10 @@ $(function(){
     if($(this).hasClass('buy-watch1')){
       $('#buy-wd').attr('href',watch1_wd_address)
       $('#buy-tb').attr('href',watch1_tb_address)
+    }
+    if($(this).hasClass('armor-buy')){
+      $('#buy-wd').attr('href',armor_wd_address)
+      $('#buy-tb').attr('href',armor_tb_address)
     }
     openBuyBox()
   })
