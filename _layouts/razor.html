@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <title>bithd.com</title>
@@ -8,196 +9,218 @@
   <script src="/js/flexible.min.js"></script>
   {% include css.html %}
 </head>
-<body>
-<nav style="display: block">
-  <div class="mobile-nav pc-hidden">
-    <div class="m-box">
-      <div class="mobile-header-logo mobile-bithd">
-        <a href="/index.html"><img class="logo" src="../resource/bithd.png"></a>
-      </div>
-      <div class="mobile-header-menu">
-        <img id="menu" src="../resource/menu.png">
-      </div>
-    </div>
-  </div>
-  <div id="menu-list" class="pc-nav mobile-hidden">
-    <div class="m-box">
-      <div class="pc-header-logo mobile-hidden">
-        <a href="/index.html"><img class="logo" src="../resource/bithd.png"></a>
-      </div>
-      <div class="pc-header-menu">
-        <ul>
-          <li>
-            <a class="nav_btn1" href="/BITHD-Razor.html"></a>
-          </li>
-          <li>
-            <a class="nav_btn2" href="/BITHD-watch-2.html"></a>
-          </li>
-          <li>
-            <a class="nav_btn4" href="/BITHD-watch-1.html"></a>
-          </li>
-          <li>
-            <a class="nav_btn3" href="/Frozen-Armor.html"></a>
-          </li>
-          <li>
-            <a id="nav_compare" href="/BITHD-compare.html"></a>
-          </li>
-          <li>
-            <a href="../reports/reports.html" class="menu_report"></a>
-            <!--<ul class="mobile-ul" style="display: none">-->
-            <!--<li><a href="http://www.jinse.com/bitcoin/123580.html" target="_blank" id="jinse_mobile"></a></li>-->
-            <!--<li><a href="http://www.aicoin.net.cn/amp/services/news-share?id=3762&lang=zh&from=timeline" target="_blank" id="alcoin_mobile"></a></li>-->
-            <!--<li><a href="https://mp.weixin.qq.com/s/PHBJaW8kUW-duMeKb7Hg2g" target="_blank" id="chain_mobile"></a></li>-->
-            <!--</ul>-->
-          </li>
-          <li>
-            <a href="http://docs.bithd.com/" class="menu_docs" ></a>
-          </li>
-        </ul>
-      </div>
-    </div>
 
-  </div>
-</nav>
+<body>
+  <nav style="display: block">
+    <div class="mobile-nav pc-hidden">
+      <div class="m-box">
+        <div class="mobile-header-logo mobile-bithd">
+          <a href="/index.html"><img class="logo" src="../resource/bithd.png"></a>
+        </div>
+        <div class="mobile-header-menu">
+          <img id="menu" src="../resource/menu.png">
+        </div>
+      </div>
+    </div>
+    <div id="menu-list" class="pc-nav mobile-hidden">
+      <div class="m-box">
+        <div class="pc-header-logo mobile-hidden">
+          <a href="/index.html"><img class="logo" src="../resource/bithd.png"></a>
+        </div>
+        <div class="pc-header-menu">
+          <ul>
+            <li>
+              <a class="nav_btn1" href="/BITHD-Razor.html"></a>
+            </li>
+            <li>
+              <a class="nav_btn2" href="/BITHD-watch-2.html"></a>
+            </li>
+            <li>
+              <a class="nav_btn4" href="/BITHD-watch-1.html"></a>
+            </li>
+            <li>
+              <a class="nav_btn3" href="/Frozen-Armor.html"></a>
+            </li>
+            <li>
+              <a id="nav_compare" href="/BITHD-compare.html"></a>
+            </li>
+            <li>
+              <a href="../reports/reports.html" class="menu_report"></a>
+              <!--<ul class="mobile-ul" style="display: none">-->
+              <!--<li><a href="http://www.jinse.com/bitcoin/123580.html" target="_blank" id="jinse_mobile"></a></li>-->
+              <!--<li><a href="http://www.aicoin.net.cn/amp/services/news-share?id=3762&lang=zh&from=timeline" target="_blank" id="alcoin_mobile"></a></li>-->
+              <!--<li><a href="https://mp.weixin.qq.com/s/PHBJaW8kUW-duMeKb7Hg2g" target="_blank" id="chain_mobile"></a></li>-->
+              <!--</ul>-->
+            </li>
+            <li>
+              <a href="http://docs.bithd.com/" class="menu_docs"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </nav>
   <div class="second-nav">
     <div class="m-box">
       <span id="razor_title" class="lt second-nav-font"></span>
       <a href="https://weidian.com/item.html?itemID=2713821031" id="buy-btn" class="gt second-buy-btn buy-watch2" target="_blank"></a>
+      <div id="buy-btn-div" class="gt second-buy-btn open-buy buy-razor"></div>
     </div>
   </div>
-  <div class="rol razor-box-1">
-    <div class="m-box">
-      <div class="box-1-font">
-        <div id="razor_banner_title" class="box-1-tltle"></div>
-        <div id="razor_banner_font" class="box-1-message"></div>
-      </div>
-      <img src="../image/banner_pic@2x.png" class="banner-pic" alt="">
-    </div>
-  </div>
-  <div class="rol razor-box-2">
-    <div class="m-box">
-      <div class="banner2-font-box">
-        <div id="razor_banner1_title" class="banenr2-title"></div>
-        <div id="razor_banner1_font" class="banner2-font"></div>
-      </div>
-      <img src="../image/banner2_pic@2x.png" class="banner2-pic" alt="">
-    </div>
-  </div>
-  <div class="rol razor-box-3">
-    <div class="m-box">
-      <div class="banner3-font-box">
-        <div id="razor_banner2_title" class="banner3-title"></div>
-        <div id="razor_banner2_font" class="banner3-font"></div>
-      </div>
-      <img src="../image/banner3_pic@2x.png" class="banner3-pic" alt="">
-    </div>
-  </div>
-  <div class="rol razor-box-4">
-    <div class="m-box">
-      <img src="../image/banner4_pic@2x.png" class="banner4-pic" alt="">
-      <div class="banner4-font-box">
-        <div id="razor_banner3_title" class="banner4-title"></div>
-        <div id="razor_banner3_font" class="banner4-font"></div>
+  <div class="razor-content" onclick="containMenuOperation()">
+    <div class="rol razor-box-1">
+      <div class="m-box">
+        <div class="box-1-font">
+          <div id="razor_banner_title" class="box-1-tltle"></div>
+          <div id="razor_banner_font" class="box-1-message"></div>
+        </div>
+        <img src="../image/banner_pic@2x.png" class="banner-pic" alt="">
       </div>
     </div>
-  </div>
-  <div class="rol razor-box-5">
-    <div class="m-box">
-      <div class="rol banner5-box">
-        <div class="lt banner5-item">
-          <img src="../image/icon_security1@2x.png" class="lt banner5-item-icon">
-          <div class="lt banner5-font-box">
-            <div id="razor_banner4_title1" class="rol banner5-title"></div>
-            <div id="razor_banner4_font1" class="rol banner5-font"></div>
-          </div>
+    <div class="rol razor-box-2">
+      <div class="m-box">
+        <div class="banner2-font-box">
+          <div id="razor_banner1_title" class="banenr2-title"></div>
+          <div id="razor_banner1_font" class="banner2-font"></div>
         </div>
-        <div class="lt banner5-item">
-          <img src="../image/icon_administration@2x.png" class="lt banner5-item-icon">
-          <div class="lt banner5-font-box">
-            <div id="razor_banner4_title2" class="rol banner5-title"></div>
-            <div id="razor_banner4_font2" class="rol banner5-font"></div>
-          </div>
+        <img src="../image/banner2_pic@2x.png" class="banner2-pic" alt="">
+      </div>
+    </div>
+    <div class="rol razor-box-3">
+      <div class="m-box">
+        <div class="banner3-font-box">
+          <div id="razor_banner2_title" class="banner3-title"></div>
+          <div id="razor_banner2_font" class="banner3-font"></div>
         </div>
-        <div class="lt banner5-item">
-          <img src="../image/icon_portable@2x.png" class="lt banner5-item-icon">
-          <div class="lt banner5-font-box">
-            <div id="razor_banner4_title3" class="rol banner5-title"></div>
-            <div id="razor_banner4_font3" class="rol banner5-font"></div>
-          </div>
-        </div>
-        <div class="lt banner5-item">
-          <img src="../image/icon_operation@2x.png" class="lt banner5-item-icon">
-          <div class="lt banner5-font-box">
-            <div id="razor_banner4_title4" class="rol banner5-title"></div>
-            <div id="razor_banner4_font4" class="rol banner5-font"></div>
-          </div>
-        </div>
-        <div class="lt banner5-item">
-          <img src="../image/icon_security@2x.png" class="lt banner5-item-icon">
-          <div class="lt banner5-font-box">
-            <div id="razor_banner4_title5" class="rol banner5-title"></div>
-            <div id="razor_banner4_font5" class="rol banner5-font"></div>
-          </div>
-        </div>
-        <div class="lt banner5-item">
-          <img src="../image/icon_upgrade@2x.png" class="lt banner5-item-icon">
-          <div class="lt banner5-font-box">
-            <div id="razor_banner4_title6" class="rol banner5-title"></div>
-            <div id="razor_banner4_font6" class="rol banner5-font"></div>
-          </div>
+        <img src="../image/banner3_pic@2x.png" class="banner3-pic" alt="">
+      </div>
+    </div>
+    <div class="rol razor-box-4">
+      <div class="m-box">
+        <img src="../image/banner4_pic@2x.png" class="banner4-pic" alt="">
+        <div class="banner4-font-box">
+          <div id="razor_banner3_title" class="banner4-title"></div>
+          <div id="razor_banner3_font" class="banner4-font"></div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="rol razor-box-6">
-    <div class="m-box">
-      <img src="../image/line@2x.png" alt="" class="banner6-pic">
-      <div class="banner6-font-box">
-        <div class="rol banner6-font-rol">
-          <div id="razor_banner5_title1" class="lt banner6-title"></div>
-          <div class="lt banner6-font">51mm*83mm*2.2mm</div>
-        </div>
-        <div class="rol banner6-font-rol">
-          <div id="razor_banner5_title2" class="lt banner6-title"></div>
-          <div class="lt banner6-font">OLED 128*64px</div>
-        </div>
-        <div class="rol banner6-font-rol">
-          <div id="razor_banner5_title3" class="lt banner6-title"></div>
-          <div class="lt banner6-font">18g</div>
-        </div>
-        <div class="rol banner6-font-rol">
-          <div id="razor_banner5_title4" class="lt banner6-title"></div>
-          <div id="razor_banner5_font4" class="lt banner6-font"></div>
-        </div>
-        <div class="rol banner6-font-rol">
-          <div id="razor_banner5_title5" class="lt banner6-title"></div>
-          <div id="razor_banner5_font5" class="lt banner6-font"></div>
-        </div>
-        <div class="rol banner6-font-rol">
-          <div id="razor_banner5_title6" class="lt banner6-title"></div>
-          <div class="lt banner6-font">USB Type Micro-B</div>
-        </div>
-        <div class="rol banner6-font-rol">
-          <div id="razor_banner5_title7" class="lt banner6-title"></div>
-          <div id="razor_banner5_font7" class="lt banner6-font"></div>
-        </div>
-        <div class="rol banner6-font-rol">
-          <div id="razor_banner5_title8" class="lt banner6-title"></div>
-          <div class="lt banner6-font">Android/iOS</div>
-        </div>
-        <div class="rol banner6-font-rol">
-          <div id="razor_banner5_title9" class="lt banner6-title"></div>
-          <div id="razor_banner5_font9" class="lt banner6-font"></div>
+    <div class="rol razor-box-5">
+      <div class="m-box">
+        <div class="rol banner5-box">
+          <div class="lt banner5-item">
+            <img src="../image/icon_security1@2x.png" class="lt banner5-item-icon">
+            <div class="lt banner5-font-box">
+              <div id="razor_banner4_title1" class="rol banner5-title"></div>
+              <div id="razor_banner4_font1" class="rol banner5-font"></div>
+            </div>
+          </div>
+          <div class="lt banner5-item">
+            <img src="../image/icon_administration@2x.png" class="lt banner5-item-icon">
+            <div class="lt banner5-font-box">
+              <div id="razor_banner4_title2" class="rol banner5-title"></div>
+              <div id="razor_banner4_font2" class="rol banner5-font"></div>
+            </div>
+          </div>
+          <div class="lt banner5-item">
+            <img src="../image/icon_portable@2x.png" class="lt banner5-item-icon">
+            <div class="lt banner5-font-box">
+              <div id="razor_banner4_title3" class="rol banner5-title"></div>
+              <div id="razor_banner4_font3" class="rol banner5-font"></div>
+            </div>
+          </div>
+          <div class="lt banner5-item">
+            <img src="../image/icon_operation@2x.png" class="lt banner5-item-icon">
+            <div class="lt banner5-font-box">
+              <div id="razor_banner4_title4" class="rol banner5-title"></div>
+              <div id="razor_banner4_font4" class="rol banner5-font"></div>
+            </div>
+          </div>
+          <div class="lt banner5-item">
+            <img src="../image/icon_security@2x.png" class="lt banner5-item-icon">
+            <div class="lt banner5-font-box">
+              <div id="razor_banner4_title5" class="rol banner5-title"></div>
+              <div id="razor_banner4_font5" class="rol banner5-font"></div>
+            </div>
+          </div>
+          <div class="lt banner5-item">
+            <img src="../image/icon_upgrade@2x.png" class="lt banner5-item-icon">
+            <div class="lt banner5-font-box">
+              <div id="razor_banner4_title6" class="rol banner5-title"></div>
+              <div id="razor_banner4_font6" class="rol banner5-font"></div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+    <div class="rol razor-box-6">
+      <div class="m-box">
+        <img src="../image/line@2x.png" alt="" class="banner6-pic">
+        <div class="banner6-font-box">
+          <div class="rol banner6-font-rol">
+            <div id="razor_banner5_title1" class="lt banner6-title"></div>
+            <div class="lt banner6-font">51mm*83mm*2.2mm</div>
+          </div>
+          <div class="rol banner6-font-rol">
+            <div id="razor_banner5_title2" class="lt banner6-title"></div>
+            <div class="lt banner6-font">OLED 128*64px</div>
+          </div>
+          <div class="rol banner6-font-rol">
+            <div id="razor_banner5_title3" class="lt banner6-title"></div>
+            <div class="lt banner6-font">18g</div>
+          </div>
+          <div class="rol banner6-font-rol">
+            <div id="razor_banner5_title4" class="lt banner6-title"></div>
+            <div id="razor_banner5_font4" class="lt banner6-font"></div>
+          </div>
+          <div class="rol banner6-font-rol">
+            <div id="razor_banner5_title5" class="lt banner6-title"></div>
+            <div id="razor_banner5_font5" class="lt banner6-font"></div>
+          </div>
+          <div class="rol banner6-font-rol">
+            <div id="razor_banner5_title6" class="lt banner6-title"></div>
+            <div class="lt banner6-font">USB Type Micro-B</div>
+          </div>
+          <div class="rol banner6-font-rol">
+            <div id="razor_banner5_title7" class="lt banner6-title"></div>
+            <div id="razor_banner5_font7" class="lt banner6-font"></div>
+          </div>
+          <div class="rol banner6-font-rol">
+            <div id="razor_banner5_title8" class="lt banner6-title"></div>
+            <div class="lt banner6-font">Android/iOS</div>
+          </div>
+          <div class="rol banner6-font-rol">
+            <div id="razor_banner5_title9" class="lt banner6-title"></div>
+            <div id="razor_banner5_font9" class="lt banner6-font"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="alert-buy-box">
+      <div class="buy-box">
+        <div id="buy_title" class="buy-title"></div>
+        <div class="buy-btn-box">
+          <a href="#" id="buy-amazon" class="buy-btn" target="_blank">
+            <span id="buy_amazon_font"></span>
+            <span class="gt">></span>
+          </a>
+          <a href="#" id="buy-ebay" class="buy-btn" target="_blank">
+            <span id="buy_ebay_font"></span>
+            <span class="gt">></span>
+          </a>
+        </div>
+        <div id="buy_close_btn" class="close-btn"></div>
+      </div>
+    </div>
   </div>
+
   {% include js.html %}
-  <link href="/css/razor_media.css" rel="stylesheet" type="text/css" media="all"/>
+  <link href="/css/razor_media.css" rel="stylesheet" type="text/css" media="all" />
   <script>
     $(function() {
       $('a[href*=#]:not([href=#])').click(function() {
-        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname ==
+          this.hostname) {
           var target = $(this.hash);
           target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
           if (target.length) {
@@ -259,7 +282,9 @@
       } else {
         $(".float-back").css("display", "block");
         $(".video-back").css("display", "block");
-        $(".video").append("<iframe height=498 width=510 src='https://player.youku.com/embed/XMzQ2ODEwMTUwNA==' frameborder=0 'allowfullscreen'></iframe>");
+        $(".video").append(
+          "<iframe height=498 width=510 src='https://player.youku.com/embed/XMzQ2ODEwMTUwNA==' frameborder=0 'allowfullscreen'></iframe>"
+        );
       }
     });
 
@@ -293,9 +318,10 @@
         $("#convenience-bg").attr('src', '../resource/carousel_mobile.jpg');
         $("#wear-bg").attr('src', '../resource/wear_mobile.jpg');
         $("#float-image").attr('src', '../resource/watch_mobile.png');
-        if (new String($.i18n.browserLang()).indexOf("zh")> -1) {
+        if (new String($.i18n.browserLang()).indexOf("zh") > -1) {
           $("#component-bg").attr('src', '../resource/industry_mobile_cn.jpg');
-        } else if ((new String($.i18n.browserLang()).toLowerCase()).indexOf("tw") > -1|| (new String($.i18n.browserLang()).toLowerCase()).indexOf("hk") > -1) {
+        } else if ((new String($.i18n.browserLang()).toLowerCase()).indexOf("tw") > -1 || (new String($.i18n
+            .browserLang()).toLowerCase()).indexOf("hk") > -1) {
           $("#component-bg").attr('src', '../resource/industry_mobile_rtw.jpg');
         } else {
           $("#component-bg").attr('src', '../resource/industry_mobile_en.jpg');
@@ -324,10 +350,11 @@
     $(function() {
       var languageCode;
 
-      if (new String($.i18n.browserLang()).indexOf("zh")> -1) {
+      if (new String($.i18n.browserLang()).indexOf("zh") > -1) {
         languageCode = "zh";
         $('body').addClass('zh')
-      } else if ((new String($.i18n.browserLang()).toLowerCase()).indexOf("tw") > -1|| (new String($.i18n.browserLang()).toLowerCase()).indexOf("hk") > -1) {
+      } else if ((new String($.i18n.browserLang()).toLowerCase()).indexOf("tw") > -1 || (new String($.i18n
+          .browserLang()).toLowerCase()).indexOf("hk") > -1) {
         languageCode = "zh-rTW";
         $('body').addClass('tw')
       } else {
@@ -389,7 +416,15 @@
           $(".source").html($.i18n.prop('source'));
 
           $(".video-title").html($.i18n.prop('video_title'));
-          $("#buy-btn").html($.i18n.prop('buy'));
+          if (languageCode == 'zh' || languageCode == 'tw') {
+            $("#buy-btn-div").css('display', 'none')
+            $("#buy-btn").html($.i18n.prop('buy'));
+          } else {
+            $("#buy-btn").css('display', 'none')
+            $("#buy-btn-div").html($.i18n.prop('buy'));
+            $('#buy_ebay_font').html($.i18n.prop('buy_ebay_font'));
+            $('#buy_amazon_font').html($.i18n.prop('buy_amazon_font'));
+          }
 
           $('#nav_compare').html($.i18n.prop('nav_compare'));
           $('#watch2_title').html($.i18n.prop('watch2_title'));
@@ -443,4 +478,5 @@
     });
   </script>
 </body>
+
 </html>
