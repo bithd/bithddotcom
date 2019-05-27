@@ -47,7 +47,6 @@ $(function() {
       }
     }
     if($(this).hasClass('buy-razor')) {
-      console.log('asdasd')
       $('#buy-wd').attr('href', razor_wd_address)
       $('#buy-tb').attr('href', razor_tb_address)
       $('#buy-amazon').attr('href', razor_amazon_address)
