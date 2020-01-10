@@ -2,472 +2,472 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <title>bithd.com</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
-  <link rel="shortcut icon" href="/favicon.ico" mce_href="/favicon.ico" type="image/x-icon">
-  <script src="/js/flexible.min.js"></script>
-  {% include css.html %}
+    <meta charset="utf-8">
+    <title>bithd.com</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <link rel="shortcut icon" href="/favicon.ico" mce_href="/favicon.ico" type="image/x-icon">
+    <script src="/js/flexible.min.js"></script>
+    {% include css.html %}
 </head>
 
 <body>
-<nav style="display: block">
-  <div class="mobile-nav pc-hidden">
-    <div class="m-box">
-      <div class="mobile-header-logo mobile-bithd">
-        <a href="/index.html"><img class="logo" src="../resource/bithd.png"></a>
-      </div>
-      <div class="mobile-header-menu">
-        <img id="menu" src="../resource/menu.png">
-      </div>
-    </div>
-  </div>
-  <div id="menu-list" class="pc-nav mobile-hidden">
-    <div class="m-box">
-      <div class="pc-header-logo mobile-hidden">
-        <a href="/index.html"><img class="logo" src="../resource/bithd.png"></a>
-      </div>
-      <div class="pc-header-menu">
-        <ul>
-          <li>
-            <a class="nav_btn1" href="/BITHD-Razor.html"></a>
-          </li>
-          <li>
-            <a class="nav_btn2" href="/BITHD-watch-2.html"></a>
-          </li>
-          <li>
-            <a class="nav_btn4" href="/BITHD-watch-1.html"></a>
-          </li>
-          <li>
-            <a class="nav_btn3" href="/Frozen-Armor.html"></a>
-          </li>
-          <li>
-            <a id="nav_compare" href="/BITHD-compare.html"></a>
-          </li>
-          <li>
-            <a href="../reports/reports.html" class="menu_report"></a>
-            <!--<ul class="mobile-ul" style="display: none">-->
-            <!--<li><a href="http://www.jinse.com/bitcoin/123580.html" target="_blank" id="jinse_mobile"></a></li>-->
-            <!--<li><a href="http://www.aicoin.net.cn/amp/services/news-share?id=3762&lang=zh&from=timeline" target="_blank" id="alcoin_mobile"></a></li>-->
-            <!--<li><a href="https://mp.weixin.qq.com/s/PHBJaW8kUW-duMeKb7Hg2g" target="_blank" id="chain_mobile"></a></li>-->
-            <!--</ul>-->
-          </li>
-          <li>
-            <a href="http://docs.bithd.com/" class="menu_docs" ></a>
-          </li>
-        </ul>
-      </div>
-    </div>
-
-  </div>
-</nav>
-<!--<div class="reports" style="display: none">-->
-<!--<ul>-->
-<!--<li><a href="http://www.jinse.com/bitcoin/123580.html" target="_blank" id="jinse_pc">金色财经</a></li>-->
-<!--<li><a href="http://www.aicoin.net.cn/amp/services/news-share?id=3762&lang=zh&from=timeline" target="_blank" id="alcoin_pc">Alcoin</a></li>-->
-<!--<li><a href="https://mp.weixin.qq.com/s/PHBJaW8kUW-duMeKb7Hg2g" target="_blank" id="chain_pc">白话区块链</a></li>-->
-<!--</ul>-->
-<!--</div>-->
-
-<div style="display: block" class="container" onclick="containMenuOperation()">
-  <div id="overview" class="introduction">
-    <img id="introduction-bg" class="bg-image" src="../resource/banner_pc.jpg" alt="introduction">
-    <div class="text-content">
-      <p class="title"></p>
-      <p class="summary"></p>
-      <p class="content"></p>
-      <div class="play-video">
-        <p class="play-content"></p><img src="../resource/playVideo.png">
-      </div>
-      <p class="bithd_content">
-        <a id="buy-btn" class="open-buy buy-watch1"></a>
-      </p>
-    </div>
-    <img id="float-image" class="float-image" src="../resource/watch_pc.png" alt="watch">
-  </div>
-
-  <div class="features security">
-    <img id="security-bg" class="bg-image" src="../resource/safety_pc.jpg" alt="security">
-    <div class="text-content">
-      <p class="title"></p>
-      <p class="summary"></p>
-    </div>
-  </div>
-
-  <div class="features simple">
-    <img id="simple-bg" class="bg-image" src="../resource/easy_pc.jpg" alt="easy">
-    <div class="text-content">
-      <p class="title"></p>
-      <p id="simple-summary" class="summary"></p>
-    </div>
-  </div>
-
-  <div class="management">
-    <img id="management-bg" class="bg-image" src="../resource/management_pc.jpg" alt="management">
-    <div class="text-content">
-      <p class="title"></p>
-      <p class="summary"></p>
-    </div>
-  </div>
-
-  <div class="convenience">
-    <img id="convenience-bg" class="bg-image" src="../resource/carousel_pc.jpg" alt="convenience">
-    <div class="text-content">
-      <p class="title"></p>
-      <p class="summary"></p>
-    </div>
-  </div>
-
-  <div class="wear">
-    <img id="wear-bg" class="bg-image" src="../resource/wear_pc.jpg" alt="wear">
-    <div class="text-content">
-      <p class="title"></p>
-      <p class="summary"></p>
-    </div>
-  </div>
-
-  <div id="specifications" class="component">
-    <img id="component-bg" class="bg-image" alt="component">
-    <div class="text-content">
-      <p class="title"></p>
-      <p class="summary"></p>
-    </div>
-  </div>
-
-  <div id="parameter" class="parameter">
-    <p class="headline"></p>
-    <div class="parameter-content-pc">
-      <div class="left-content">
-        <div class="cpu">
-          <p class="title">CPU</p>
-          <p class="content">120 MHz embedded ARM <br>processor(Cortex-M3)</p>
+    <nav style="display: block">
+        <div class="mobile-nav pc-hidden">
+            <div class="m-box">
+                <div class="mobile-header-logo mobile-bithd">
+                    <a href="/index.html"><img class="logo" src="../resource/bithd.png"></a>
+                </div>
+                <div class="mobile-header-menu">
+                    <img id="menu" src="../resource/menu.png">
+                </div>
+            </div>
         </div>
-        <div class="flash">
-          <p class="title">FLASH</p>
-          <p class="content">512KB</p>
+        <div id="menu-list" class="pc-nav mobile-hidden">
+            <div class="m-box">
+                <div class="pc-header-logo mobile-hidden">
+                    <a href="/index.html"><img class="logo" src="../resource/bithd.png"></a>
+                </div>
+                <div class="pc-header-menu">
+                    <ul>
+                        <li>
+                            <a class="nav_btn1" href="/BITHD-Razor.html"></a>
+                        </li>
+                        <li>
+                            <a class="nav_btn2" href="/BITHD-watch-2.html"></a>
+                        </li>
+                        <li>
+                            <a class="nav_btn4" href="/BITHD-watch-1.html"></a>
+                        </li>
+                        <li>
+                            <a class="nav_btn3" href="/Frozen-Armor.html"></a>
+                        </li>
+                        <li>
+                            <a id="nav_compare" href="/BITHD-compare.html"></a>
+                        </li>
+                        <li>
+                            <a href="../reports/reports.html" class="menu_report"></a>
+                            <!--<ul class="mobile-ul" style="display: none">-->
+                            <!--<li><a href="http://www.jinse.com/bitcoin/123580.html" target="_blank" id="jinse_mobile"></a></li>-->
+                            <!--<li><a href="http://www.aicoin.net.cn/amp/services/news-share?id=3762&lang=zh&from=timeline" target="_blank" id="alcoin_mobile"></a></li>-->
+                            <!--<li><a href="https://mp.weixin.qq.com/s/PHBJaW8kUW-duMeKb7Hg2g" target="_blank" id="chain_mobile"></a></li>-->
+                            <!--</ul>-->
+                        </li>
+                        <li>
+                            <a href="http://docs.bithd.com/" class="menu_docs"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
         </div>
-        <div class="ram">
-          <p class="title">RAM</p>
-          <p class="content">128KB</p>
+    </nav>
+    <!--<div class="reports" style="display: none">-->
+    <!--<ul>-->
+    <!--<li><a href="http://www.jinse.com/bitcoin/123580.html" target="_blank" id="jinse_pc">金色财经</a></li>-->
+    <!--<li><a href="http://www.aicoin.net.cn/amp/services/news-share?id=3762&lang=zh&from=timeline" target="_blank" id="alcoin_pc">Alcoin</a></li>-->
+    <!--<li><a href="https://mp.weixin.qq.com/s/PHBJaW8kUW-duMeKb7Hg2g" target="_blank" id="chain_pc">白话区块链</a></li>-->
+    <!--</ul>-->
+    <!--</div>-->
+
+    <div style="display: block" class="container" onclick="containMenuOperation()">
+        <div id="overview" class="introduction">
+            <img id="introduction-bg" class="bg-image" src="../resource/banner_pc.jpg" alt="introduction">
+            <div class="text-content">
+                <p class="title"></p>
+                <p class="summary"></p>
+                <p class="content"></p>
+                <div class="play-video">
+                    <p class="play-content"></p><img src="../resource/playVideo.png">
+                </div>
+                <p class="bithd_content">
+                    <a id="buy-btn" class="open-buy buy-watch1"></a>
+                </p>
+            </div>
+            <img id="float-image" class="float-image" src="../resource/watch_pc.png" alt="watch">
         </div>
-        <div class="screen">
-          <p class="title">Screen</p>
-          <p class="content">Bright OLED - 128x64 pixels</p>
+
+        <div class="features security">
+            <img id="security-bg" class="bg-image" src="../resource/safety_pc.jpg" alt="security">
+            <div class="text-content">
+                <p class="title"></p>
+                <p class="summary"></p>
+            </div>
         </div>
-        <div class="size">
-          <p class="title">Size</p>
-          <p class="content">42mm x 37mm x 14mm<br>(1.7 x 1.4 x 0.6 in)</p>
+
+        <div class="features simple">
+            <img id="simple-bg" class="bg-image" src="../resource/easy_pc.jpg" alt="easy">
+            <div class="text-content">
+                <p class="title"></p>
+                <p id="simple-summary" class="summary"></p>
+            </div>
         </div>
-      </div>
-      <div class="center-content">
-        <img src="../resource/parameter_pc.png">
-      </div>
-      <div class="right-content">
-        <div class="temp">
-          <p class="title">Temp</p>
-          <p class="content">-20°C to + 60°C<br>(-4°F - + 140°F)</p>
+
+        <div class="management">
+            <img id="management-bg" class="bg-image" src="../resource/management_pc.jpg" alt="management">
+            <div class="text-content">
+                <p class="title"></p>
+                <p class="summary"></p>
+            </div>
         </div>
-        <div class="connection">
-          <p class="title">Connection</p>
-          <p class="content">Bluetooth low energy 4.0<br>to mobile</p>
+
+        <div class="convenience">
+            <img id="convenience-bg" class="bg-image" src="../resource/carousel_pc.jpg" alt="convenience">
+            <div class="text-content">
+                <p class="title"></p>
+                <p class="summary"></p>
+            </div>
         </div>
-        <div class="mobile">
-          <p class="title">Mobile</p>
-          <p class="content">Android and iOS</p>
+
+        <div class="wear">
+            <img id="wear-bg" class="bg-image" src="../resource/wear_pc.jpg" alt="wear">
+            <div class="text-content">
+                <p class="title"></p>
+                <p class="summary"></p>
+            </div>
         </div>
-        <div class="certified">
-          <p class="title">Certified</p>
-          <p class="content">State Radio Regulatory<br>Conmmission of the People's<br>Republic of china</p>
+
+        <div id="specifications" class="component">
+            <img id="component-bg" class="bg-image" alt="component">
+            <div class="text-content">
+                <p class="title"></p>
+                <p class="summary"></p>
+            </div>
         </div>
-      </div>
+
+        <div id="parameter" class="parameter">
+            <p class="headline"></p>
+            <div class="parameter-content-pc">
+                <div class="left-content">
+                    <div class="cpu">
+                        <p class="title">CPU</p>
+                        <p class="content">120 MHz embedded ARM <br>processor(Cortex-M3)</p>
+                    </div>
+                    <div class="flash">
+                        <p class="title">FLASH</p>
+                        <p class="content">512KB</p>
+                    </div>
+                    <div class="ram">
+                        <p class="title">RAM</p>
+                        <p class="content">128KB</p>
+                    </div>
+                    <div class="screen">
+                        <p class="title">Screen</p>
+                        <p class="content">Bright OLED - 128x64 pixels</p>
+                    </div>
+                    <div class="size">
+                        <p class="title">Size</p>
+                        <p class="content">42mm x 37mm x 14mm<br>(1.7 x 1.4 x 0.6 in)</p>
+                    </div>
+                </div>
+                <div class="center-content">
+                    <img src="../resource/parameter_pc.png">
+                </div>
+                <div class="right-content">
+                    <div class="temp">
+                        <p class="title">Temp</p>
+                        <p class="content">-20°C to + 60°C<br>(-4°F - + 140°F)</p>
+                    </div>
+                    <div class="connection">
+                        <p class="title">Connection</p>
+                        <p class="content">Bluetooth low energy 4.0<br>to mobile</p>
+                    </div>
+                    <div class="mobile">
+                        <p class="title">Mobile</p>
+                        <p class="content">Android and iOS</p>
+                    </div>
+                    <div class="certified">
+                        <p class="title">Certified</p>
+                        <p class="content">State Radio Regulatory<br>Conmmission of the People's<br>Republic of china</p>
+                    </div>
+                </div>
+            </div>
+            <div class="parameter-content-mobile">
+                <img src="../resource/parameter_pc.png">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td class="tablehalf">CPU</td>
+                            <td class="tablehalf">120 MHz embedded ARM processor(Cortex-M3)</td>
+                        </tr>
+                        <tr>
+                            <td>FLASH</td>
+                            <td>512KB</td>
+                        </tr>
+                        <tr>
+                            <td>RAM</td>
+                            <td>128KB</td>
+                        </tr>
+                        <tr>
+                            <td>Screen</td>
+                            <td>Bright OLED - 128x64 pixels</td>
+                        </tr>
+                        <tr>
+                            <td>Size</td>
+                            <td>42mm x 37mm x 14mm<br>(1.7 x 1.4 x 0.6 in)</td>
+                        </tr>
+                        <tr>
+                            <td>Temp</td>
+                            <td>20°C to + 60°C<br>(-4°F - + 140°F)</td>
+                        </tr>
+                        <tr>
+                            <td>Connection</td>
+                            <td>Bluetooth low energy 4.0 to mobile</td>
+                        </tr>
+                        <tr>
+                            <td>Mobile</td>
+                            <td>Android and iOS</td>
+                        </tr>
+                        <tr>
+                            <td>Certified</td>
+                            <td>State Radio Regulatory Conmmission of the People's Republic of china</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="blank"></div>
+            </div>
+        </div>
     </div>
-    <div class="parameter-content-mobile">
-      <img src="../resource/parameter_pc.png">
-      <table>
-        <tbody>
-        <tr>
-          <td class="tablehalf">CPU</td>
-          <td class="tablehalf">120 MHz embedded ARM processor(Cortex-M3)</td>
-        </tr>
-        <tr>
-          <td>FLASH</td>
-          <td>512KB</td>
-        </tr>
-        <tr>
-          <td>RAM</td>
-          <td>128KB</td>
-        </tr>
-        <tr>
-          <td>Screen</td>
-          <td>Bright OLED - 128x64 pixels</td>
-        </tr>
-        <tr>
-          <td>Size</td>
-          <td>42mm x 37mm x 14mm<br>(1.7 x 1.4 x 0.6 in)</td>
-        </tr>
-        <tr>
-          <td>Temp</td>
-          <td>20°C to + 60°C<br>(-4°F - + 140°F)</td>
-        </tr>
-        <tr>
-          <td>Connection</td>
-          <td>Bluetooth low energy 4.0 to mobile</td>
-        </tr>
-        <tr>
-          <td>Mobile</td>
-          <td>Android and iOS</td>
-        </tr>
-        <tr>
-          <td>Certified</td>
-          <td>State Radio Regulatory Conmmission of the People's Republic of china</td>
-        </tr>
-        </tbody>
-      </table>
-      <div class="blank"></div>
+
+    <div class="float-back"></div>
+
+    <div class="video-back">
+        <div class="video-head">
+            <p class="video-title"></p>
+            <img class="video-btn" src="../resource/close.png">
+        </div>
+        <div class="video">
+        </div>
     </div>
-  </div>
-</div>
 
-<div class="float-back"></div>
+    <footer>
+        <p class="bithd_help"></p>
+    </footer>
 
-<div class="video-back">
-  <div class="video-head">
-    <p class="video-title"></p>
-    <img class="video-btn" src="../resource/close.png">
-  </div>
-  <div class="video">
-  </div>
-</div>
-
-<footer>
-  <p class="bithd_help"></p>
-</footer>
-
-<div class="alert-buy-box">
-  <div class="buy-box">
-    <div id="buy_title" class="buy-title"></div>
-    <div class="buy-btn-box">
-      <a href="#" id="buy-wd" class="buy-btn" target="_blank">
-        <span id="buy_wd_font"></span>
-        <span class="gt">></span>
-      </a>
-      <a href="#" id="buy-tb" class="buy-btn" target="_blank">
+    <div class="alert-buy-box">
+        <div class="buy-box">
+            <div id="buy_title" class="buy-title"></div>
+            <div class="buy-btn-box">
+                <a href="#" id="buy-wd" class="buy-btn" target="_blank">
+                    <span id="buy_wd_font"></span>
+                    <span class="gt">></span>
+                </a>
+                <!-- <a href="#" id="buy-tb" class="buy-btn" target="_blank">
         <span id="buy_tb_font"></span>
         <span class="gt">></span>
-      </a>
+      </a> -->
+            </div>
+            <div id="buy_close_btn" class="close-btn"></div>
+        </div>
     </div>
-    <div id="buy_close_btn" class="close-btn"></div>
-  </div>
-</div>
-{% include js.html %}
-<script>
-  $(function() {
-    $('a[href*=#]:not([href=#])').click(function() {
-      if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-        var target = $(this.hash);
-        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-        if (target.length) {
-          $('html,body').animate({
-            scrollTop: target.offset().top - 60
-          }, 1000);
-          return false;
+    {% include js.html %}
+    <script>
+        $(function() {
+            $('a[href*=#]:not([href=#])').click(function() {
+                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                    if (target.length) {
+                        $('html,body').animate({
+                            scrollTop: target.offset().top - 60
+                        }, 1000);
+                        return false;
+                    }
+                }
+            });
+        });
+    </script>
+    <script>
+        $("#menu").click(function() {
+            menuListOperation();
+        });
+
+        $(".menu_report").click(function() {
+            var width = $(window).width();
+            if (width < 768) {
+                var display = $(".mobile-ul").css("display");
+                if (display == "none") {
+                    $(".mobile-ul").css("display", "block");
+                } else {
+                    $(".mobile-ul").css("display", "none");
+                }
+            } else {
+                var display = $(".reports").css("display");
+                if (display == "none") {
+                    $(".reports").css("display", "block");
+                } else {
+                    $(".reports").css("display", "none");
+                }
+            }
+        });
+
+        $(document).ready(function() {
+            adapterSize();
+        })
+
+        $(window).resize(function() {
+            adapterSize();
+        })
+
+        function containMenuOperation() {
+            if ($("#menu-list").hasClass("mobile-hidden") == false) {
+                $("#menu-list").addClass("mobile-hidden");
+            }
+            var display = $(".reports").css("display");
+            if (display == "block") {
+                $(".reports").css("display", "none");
+            }
         }
-      }
-    });
-  });
-</script>
-<script>
-  $("#menu").click(function() {
-    menuListOperation();
-  });
 
-  $(".menu_report").click(function() {
-    var width = $(window).width();
-    if (width < 768) {
-      var display = $(".mobile-ul").css("display");
-      if (display == "none") {
-        $(".mobile-ul").css("display", "block");
-      } else {
-        $(".mobile-ul").css("display", "none");
-      }
-    } else {
-      var display = $(".reports").css("display");
-      if (display == "none") {
-        $(".reports").css("display", "block");
-      } else {
-        $(".reports").css("display", "none");
-      }
-    }
-  });
+        $(".play-video").click(function() {
+            var width = $(window).width();
+            if (width < 768) {
+                window.location.href = "https://v.youku.com/v_show/id_XMzQ2ODEwMTUwNA==.html?spm=a2hzp.8244740.0.0";
+            } else {
+                $(".float-back").css("display", "block");
+                $(".video-back").css("display", "block");
+                $(".video").append("<iframe height=498 width=510 src='https://player.youku.com/embed/XMzQ2ODEwMTUwNA==' frameborder=0 'allowfullscreen'></iframe>");
+            }
+        });
 
-  $(document).ready(function() {
-    adapterSize();
-  })
+        $(".video-btn").click(function() {
+            removeVideo();
+        });
 
-  $(window).resize(function() {
-    adapterSize();
-  })
+        function removeVideo() {
+            $(".float-back").css("display", "none");
+            $(".video-back").css("display", "none");
+            $(".video").empty();
+        }
 
-  function containMenuOperation() {
-    if ($("#menu-list").hasClass("mobile-hidden") == false) {
-      $("#menu-list").addClass("mobile-hidden");
-    }
-    var display = $(".reports").css("display");
-    if (display == "block") {
-      $(".reports").css("display", "none");
-    }
-  }
+        function menuListOperation() {
+            if ($("#menu-list").hasClass("mobile-hidden") == true) {
+                $("#menu-list").removeClass("mobile-hidden");
+            } else {
+                $("#menu-list").addClass("mobile-hidden");
+            }
+        }
 
-  $(".play-video").click(function() {
-    var width = $(window).width();
-    if (width < 768) {
-      window.location.href = "https://v.youku.com/v_show/id_XMzQ2ODEwMTUwNA==.html?spm=a2hzp.8244740.0.0";
-    } else {
-      $(".float-back").css("display", "block");
-      $(".video-back").css("display", "block");
-      $(".video").append("<iframe height=498 width=510 src='https://player.youku.com/embed/XMzQ2ODEwMTUwNA==' frameborder=0 'allowfullscreen'></iframe>");
-    }
-  });
+        function adapterSize() {
+            var width = $(window).width();
+            if (width < 768) {
+                removeVideo();
+                $(".reports").css("display", "none");
+                $("#introduction-bg").attr('src', '../resource/banner_mobile.jpg');
+                $("#security-bg").attr('src', '../resource/safety_mobile.jpg');
+                $("#simple-bg").attr('src', '../resource/easy_mobile.jpg');
+                $("#management-bg").attr('src', '../resource/management_mobile.jpg');
+                $("#convenience-bg").attr('src', '../resource/carousel_mobile.jpg');
+                $("#wear-bg").attr('src', '../resource/wear_mobile.jpg');
+                $("#float-image").attr('src', '../resource/watch_mobile.png');
+                if (new String($.i18n.browserLang()).indexOf("zh") > -1) {
+                    $("#component-bg").attr('src', '../resource/industry_mobile_cn.jpg');
+                } else if ((new String($.i18n.browserLang()).toLowerCase()).indexOf("tw") > -1 || (new String($.i18n.browserLang()).toLowerCase()).indexOf("hk") > -1) {
+                    $("#component-bg").attr('src', '../resource/industry_mobile_rtw.jpg');
+                } else {
+                    $("#component-bg").attr('src', '../resource/industry_mobile_en.jpg');
+                }
+            } else {
+                $(".mobile-ul").css("display", "none");
+                $("#introduction-bg").attr('src', '../resource/banner_pc.jpg');
+                $("#security-bg").attr('src', '../resource/safety_pc.jpg');
+                $("#simple-bg").attr('src', '../resource/easy_pc.jpg');
+                $("#management-bg").attr('src', '../resource/management_pc.jpg');
+                $("#convenience-bg").attr('src', '../resource/carousel_pc.jpg');
+                $("#wear-bg").attr('src', '../resource/wear_pc.jpg');
+                $("#float-image").attr('src', '../resource/watch_pc.png');
+                if ($.i18n.browserLang() == "zh-CN") {
+                    $("#component-bg").attr('src', '../resource/industry_pc_cn.jpg');
+                } else if ($.i18n.browserLang() == "zh-TW" || $.i18n.browserLang() == "zh-HK") {
+                    $("#component-bg").attr('src', '../resource/industry_pc_rtw.jpg');
+                } else {
+                    $(".convenience .summary").css("width", "3.18rem");
+                    $(".management .summary").css("width", "3.18rem");
+                    $("#component-bg").attr('src', '../resource/industry_pc_en.jpg');
+                }
+            }
+        }
 
-  $(".video-btn").click(function() {
-    removeVideo();
-  });
+        $(function() {
+            var languageCode;
 
-  function removeVideo() {
-    $(".float-back").css("display", "none");
-    $(".video-back").css("display", "none");
-    $(".video").empty();
-  }
+            if (new String($.i18n.browserLang()).indexOf("zh") > -1) {
+                languageCode = "zh";
+            } else if ((new String($.i18n.browserLang()).toLowerCase()).indexOf("tw") > -1 || (new String($.i18n.browserLang()).toLowerCase()).indexOf("hk") > -1) {
+                languageCode = "zh-rTW";
+            } else {
+                languageCode = "en";
+            }
+            jQuery.i18n.properties({
+                name: 'strings',
+                path: '/i18n/',
+                mode: 'map',
+                async: true,
+                language: languageCode,
+                callback: function() {
+                    $(".welcome-title").html($.i18n.prop('welcome'));
 
-  function menuListOperation() {
-    if ($("#menu-list").hasClass("mobile-hidden") == true) {
-      $("#menu-list").removeClass("mobile-hidden");
-    } else {
-      $("#menu-list").addClass("mobile-hidden");
-    }
-  }
+                    $(".menu_overview").html($.i18n.prop('menu_features'));
+                    $(".menu_specifications").html($.i18n.prop('menu_specifications'));
+                    $(".menu_report").html($.i18n.prop('menu_report'));
+                    $(".menu_docs").html($.i18n.prop('menu_docs'));
 
-  function adapterSize() {
-    var width = $(window).width();
-    if (width < 768) {
-      removeVideo();
-      $(".reports").css("display", "none");
-      $("#introduction-bg").attr('src', '../resource/banner_mobile.jpg');
-      $("#security-bg").attr('src', '../resource/safety_mobile.jpg');
-      $("#simple-bg").attr('src', '../resource/easy_mobile.jpg');
-      $("#management-bg").attr('src', '../resource/management_mobile.jpg');
-      $("#convenience-bg").attr('src', '../resource/carousel_mobile.jpg');
-      $("#wear-bg").attr('src', '../resource/wear_mobile.jpg');
-      $("#float-image").attr('src', '../resource/watch_mobile.png');
-      if (new String($.i18n.browserLang()).indexOf("zh")> -1) {
-        $("#component-bg").attr('src', '../resource/industry_mobile_cn.jpg');
-      } else if ((new String($.i18n.browserLang()).toLowerCase()).indexOf("tw") > -1|| (new String($.i18n.browserLang()).toLowerCase()).indexOf("hk") > -1) {
-        $("#component-bg").attr('src', '../resource/industry_mobile_rtw.jpg');
-      } else {
-        $("#component-bg").attr('src', '../resource/industry_mobile_en.jpg');
-      }
-    } else {
-      $(".mobile-ul").css("display", "none");
-      $("#introduction-bg").attr('src', '../resource/banner_pc.jpg');
-      $("#security-bg").attr('src', '../resource/safety_pc.jpg');
-      $("#simple-bg").attr('src', '../resource/easy_pc.jpg');
-      $("#management-bg").attr('src', '../resource/management_pc.jpg');
-      $("#convenience-bg").attr('src', '../resource/carousel_pc.jpg');
-      $("#wear-bg").attr('src', '../resource/wear_pc.jpg');
-      $("#float-image").attr('src', '../resource/watch_pc.png');
-      if ($.i18n.browserLang() == "zh-CN") {
-        $("#component-bg").attr('src', '../resource/industry_pc_cn.jpg');
-      } else if ($.i18n.browserLang() == "zh-TW" || $.i18n.browserLang() == "zh-HK") {
-        $("#component-bg").attr('src', '../resource/industry_pc_rtw.jpg');
-      } else {
-        $(".convenience .summary").css("width", "3.18rem");
-        $(".management .summary").css("width", "3.18rem");
-        $("#component-bg").attr('src', '../resource/industry_pc_en.jpg');
-      }
-    }
-  }
+                    $("#jinse_mobile").html($.i18n.prop('menu_ul_jinse'));
+                    $("#jinse_pc").html($.i18n.prop('menu_ul_jinse'));
+                    $("#alcoin_mobile").html($.i18n.prop('menu_ul_alcoin'));
+                    $("#alcoin_pc").html($.i18n.prop('menu_ul_alcoin'));
+                    $("#chain_mobile").html($.i18n.prop('menu_ul_chain'));
+                    $("#chain_pc").html($.i18n.prop('menu_ul_chain'));
 
-  $(function() {
-    var languageCode;
+                    $(".introduction .title").html($.i18n.prop('introduction_title'));
+                    $(".introduction .summary").html($.i18n.prop('introduction_summary'));
+                    $(".introduction .content").html($.i18n.prop('introduction_content'));
+                    $(".play-content").html($.i18n.prop('introduction_play'))
 
-    if (new String($.i18n.browserLang()).indexOf("zh")> -1) {
-      languageCode = "zh";
-    } else if ((new String($.i18n.browserLang()).toLowerCase()).indexOf("tw") > -1|| (new String($.i18n.browserLang()).toLowerCase()).indexOf("hk") > -1) {
-      languageCode = "zh-rTW";
-    } else {
-      languageCode = "en";
-    }
-    jQuery.i18n.properties({
-      name: 'strings',
-      path: '/i18n/',
-      mode: 'map',
-      async: true,
-      language: languageCode,
-      callback: function() {
-        $(".welcome-title").html($.i18n.prop('welcome'));
+                    $(".security .title").html($.i18n.prop('features_sec_title'));
+                    $(".security .summary").html($.i18n.prop('features_sec_summary'));
 
-        $(".menu_overview").html($.i18n.prop('menu_features'));
-        $(".menu_specifications").html($.i18n.prop('menu_specifications'));
-        $(".menu_report").html($.i18n.prop('menu_report'));
-        $(".menu_docs").html($.i18n.prop('menu_docs'));
+                    $(".simple .title").html($.i18n.prop('features_sim_title'));
+                    $(".simple .summary").html($.i18n.prop('features_sim_summary'));
 
-        $("#jinse_mobile").html($.i18n.prop('menu_ul_jinse'));
-        $("#jinse_pc").html($.i18n.prop('menu_ul_jinse'));
-        $("#alcoin_mobile").html($.i18n.prop('menu_ul_alcoin'));
-        $("#alcoin_pc").html($.i18n.prop('menu_ul_alcoin'));
-        $("#chain_mobile").html($.i18n.prop('menu_ul_chain'));
-        $("#chain_pc").html($.i18n.prop('menu_ul_chain'));
+                    $(".management .title").html($.i18n.prop('management_title'));
+                    $(".management .summary").html($.i18n.prop('management_summary'));
 
-        $(".introduction .title").html($.i18n.prop('introduction_title'));
-        $(".introduction .summary").html($.i18n.prop('introduction_summary'));
-        $(".introduction .content").html($.i18n.prop('introduction_content'));
-        $(".play-content").html($.i18n.prop('introduction_play'))
+                    $(".convenience .title").html($.i18n.prop('convenience_title'));
+                    $(".convenience .summary").html($.i18n.prop('convenience_summary'));
 
-        $(".security .title").html($.i18n.prop('features_sec_title'));
-        $(".security .summary").html($.i18n.prop('features_sec_summary'));
+                    $(".wear .title").html($.i18n.prop('wear_title'));
+                    $(".wear .summary").html($.i18n.prop('wear_summary'));
 
-        $(".simple .title").html($.i18n.prop('features_sim_title'));
-        $(".simple .summary").html($.i18n.prop('features_sim_summary'));
+                    $(".component .title").html($.i18n.prop('component_title'));
+                    $(".component .summary").html($.i18n.prop('component_summary'));
+                    $(".bithdtitleshop").html($.i18n.prop('bithdtitleshop'));
+                    $(".taobaoshop").html($.i18n.prop('taobaoshop'));
+                    $(".headline").html($.i18n.prop('parameter_headline'));
+                    $(".bithddocs").html($.i18n.prop('bithddocs'));
 
-        $(".management .title").html($.i18n.prop('management_title'));
-        $(".management .summary").html($.i18n.prop('management_summary'));
+                    $(".bithd_help").html($.i18n.prop('bithd_help'));
 
-        $(".convenience .title").html($.i18n.prop('convenience_title'));
-        $(".convenience .summary").html($.i18n.prop('convenience_summary'));
+                    $(".thanks").html($.i18n.prop('thanks'));
 
-        $(".wear .title").html($.i18n.prop('wear_title'));
-        $(".wear .summary").html($.i18n.prop('wear_summary'));
+                    $(".source").html($.i18n.prop('source'));
 
-        $(".component .title").html($.i18n.prop('component_title'));
-        $(".component .summary").html($.i18n.prop('component_summary'));
-        $(".bithdtitleshop").html($.i18n.prop('bithdtitleshop'));
-        $(".taobaoshop").html($.i18n.prop('taobaoshop'));
-        $(".headline").html($.i18n.prop('parameter_headline'));
-        $(".bithddocs").html($.i18n.prop('bithddocs'));
+                    $(".video-title").html($.i18n.prop('video_title'));
+                    $("#buy-btn").html($.i18n.prop('buy'));
+                    $('#nav_compare').html($.i18n.prop('nav_compare'));
 
-        $(".bithd_help").html($.i18n.prop('bithd_help'));
+                    $('#buy_title').html($.i18n.prop('buy_title'));
+                    $('#buy_wd_font').html($.i18n.prop('buy_wd_font'));
+                    $('#buy_tb_font').html($.i18n.prop('buy_tb_font'));
+                    $('#buy_close_btn').html($.i18n.prop('buy_close_btn'));
 
-        $(".thanks").html($.i18n.prop('thanks'));
-
-        $(".source").html($.i18n.prop('source'));
-
-        $(".video-title").html($.i18n.prop('video_title'));
-        $("#buy-btn").html($.i18n.prop('buy'));
-        $('#nav_compare').html($.i18n.prop('nav_compare'));
-
-        $('#buy_title').html($.i18n.prop('buy_title'));
-        $('#buy_wd_font').html($.i18n.prop('buy_wd_font'));
-        $('#buy_tb_font').html($.i18n.prop('buy_tb_font'));
-        $('#buy_close_btn').html($.i18n.prop('buy_close_btn'));
-
-        $('.nav_btn1').html($.i18n.prop('nav_btn1'));
-        $('.nav_btn2').html($.i18n.prop('nav_btn2'));
-        $('.nav_btn3').html($.i18n.prop('nav_btn3'));
-        $('.nav_btn4').html($.i18n.prop('nav_btn4'));
-      }
-    });
-  });
-</script>
+                    $('.nav_btn1').html($.i18n.prop('nav_btn1'));
+                    $('.nav_btn2').html($.i18n.prop('nav_btn2'));
+                    $('.nav_btn3').html($.i18n.prop('nav_btn3'));
+                    $('.nav_btn4').html($.i18n.prop('nav_btn4'));
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
