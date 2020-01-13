@@ -73,7 +73,7 @@
         <div class="m-box">
             <span id="armor_title" class="lt second-nav-font"></span>
             <!-- <a href="https://k.weidian.com/JmkQ54lp" id="buy-btn" class="gt buy-btn1 second-buy-btn cn-show" target="_blank"></a> -->
-            <a id="buy-btn" class="gt buy-btn1 second-buy-btn cn-show open-buy frozen-buy"></a>
+            <a id="buy-btn" class="gt buy-btn1 second-buy-btn cn-show open-buy armor-buy"></a>
             <div class="gt buy-btn1 open-buy armor-buy armor-buy-btn en-show" target="_blank"></div>
         </div>
     </div>
@@ -237,6 +237,14 @@
             <div class="buy-btn-box">
                 <a href="#" id="buy-wd" class="buy-btn" target="_blank">
                     <span id="buy_wd_font"></span>
+                    <span class="gt">></span>
+                </a>
+                <a href="#" id="buy-amazon" class="buy-btn" target="_blank">
+                    <span id="buy_amazon_font"></span>
+                    <span class="gt">></span>
+                </a>
+                <a href="#" id="buy-ebay" class="buy-btn" target="_blank">
+                    <span id="buy_ebay_font"></span>
                     <span class="gt">></span>
                 </a>
                 <!-- <a href="#" id="buy-tb" class="buy-btn" target="_blank">
@@ -506,10 +514,20 @@ var _hmt = _hmt || [];
                     $('#armor_banner5_font').html($.i18n.prop('armor_banner5_font'));
 
                     $('#buy_title').html($.i18n.prop('buy_title'));
-                    $('#buy_wd_font').html($.i18n.prop('buy_wd_font'));
-                    $('#buy_tb_font').html($.i18n.prop('buy_tb_font'));
                     $('#buy_close_btn').html($.i18n.prop('buy_close_btn'));
                     $('#razor_title').html($.i18n.prop('razor_name'));
+
+                    if (languageCode == 'zh' || languageCode == 'tw') {
+                        $('#buy-ebay').css('display', 'none')
+                        $('#buy-amazon').css('display', 'none')
+                        $('#buy_wd_font').html($.i18n.prop('buy_wd_font'));
+                        $('#buy_tb_font').html($.i18n.prop('buy_tb_font'));
+                    } else {
+                        $('#buy-wd').css('display', 'none')
+                        $('#buy-tb').css('display', 'none')
+                        $('#buy_ebay_font').html($.i18n.prop('buy_ebay_font'));
+                        $('#buy_amazon_font').html($.i18n.prop('buy_amazon_font'));
+                    }
 
 
                     $('#armor_buy_title1').html($.i18n.prop('armor_buy_title1'));

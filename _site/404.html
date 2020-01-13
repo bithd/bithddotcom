@@ -92,10 +92,10 @@
                         <a id="index_banner_btn1" href="/BITHD-Razor.html" class="lt banner-btn">进一步了解 ></a
               >
               <div id="index_banner_btn2" class="lt banner-btn buy-razor cn-show index_banner_btn2 open-buy buy-razor">购买 ></div>
-                        <div id="index_banner_btn3" class="lt banner-btn buy-razor index_banner_btn2 open-buy buy-razor" target="_blank">
+                        <div id="index_banner_btn3" class="lt banner-btn index_banner_btn2 open-buy buy-razor" target="_blank">
                             购买 >
                         </div>
-                        <div class="lt banner-btn armor-buy en-show index_banner_btn2 open-buy"></div>
+                        <div class="lt banner-btn buy-razor en-show index_banner_btn2 open-buy"></div>
                     </div>
                 </div>
 
@@ -189,6 +189,14 @@
                 <div class="buy-box">
                     <div id="buy_title" class="buy-title"></div>
                     <div class="buy-btn-box">
+                        <a href="#" id="buy-amazon" class="buy-btn" target="_blank">
+                            <span id="buy_amazon_font"></span>
+                            <span class="gt">></span>
+                        </a>
+                        <a href="#" id="buy-ebay" class="buy-btn" target="_blank">
+                            <span id="buy_ebay_font"></span>
+                            <span class="gt">></span>
+                        </a>
                         <a href="#" id="buy-wd" class="buy-btn" target="_blank">
                             <span id="buy_wd_font"></span>
                             <span class="gt">></span>
@@ -456,6 +464,10 @@ var _hmt = _hmt || [];
                             $('#index_banner_btn3').css('display', 'none')
                             $('#index_banner_btn2').html($.i18n.prop('index_banner_btn2'))
 
+                            $('#buy-ebay').css('display', 'none')
+                            $('#buy-amazon').css('display', 'none')
+                            $('#buy_wd_font').html($.i18n.prop('buy_wd_font'));
+
                             $('.btc8').attr('src', '../image/8btc_cn.png')
                             $('.poolin').attr('src', '../image/poolin_cn.png')
                             $('.tron').attr('src', '../image/tron_cn.png')
@@ -469,8 +481,9 @@ var _hmt = _hmt || [];
                         } else {
                             $('#index_banner_btn2').css('display', 'none')
                             $('#index_banner_btn3').html($.i18n.prop('index_banner_btn2'))
-                            $('#buy_ebay_font').html($.i18n.prop('buy_ebay_font'))
-                            $('#buy_amazon_font').html($.i18n.prop('buy_amazon_font'))
+                            $('#buy_ebay_font').html($.i18n.prop('buy_ebay_font'));
+                            $('#buy_amazon_font').html($.i18n.prop('buy_amazon_font'));
+                            $('#buy-wd').css('display', 'none')
 
                             $('.btc8').attr('src', '../image/8btc_en.png')
                             $('.poolin').attr('src', '../image/poolin_en.png')

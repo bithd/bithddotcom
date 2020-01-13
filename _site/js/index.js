@@ -3,20 +3,16 @@ $(function() {
     var watch1_tb_address = 'https://shop284054772.m.taobao.com/?refer=http%3A%2F%2F192.168.1.159%3A4000%2FBITHD-watch-1.html'
     var watch2_wd_address = 'https://weidian.com/item.html?itemID=2685724274'
     var watch2_tb_address = 'https://item.taobao.com/item.htm?id=586206342524'
-    var watch2_amazon_address = 'https://www.amazon.com/dp/B07QKTTDRQ?ref=myi_title_dp'
-    var watch2_ebay_address = 'https://www.ebay.com/itm/283447813111'
-    var razor_wd_address = 'https://weidian.com/item.html?itemID=2685724274'
-    var razor_tb_address = 'https://item.taobao.com/item.htm?id=586206342524'
-    var razor_amazon_address = 'https://www.amazon.com/dp/B07QKF867S?ref=myi_title_dp'
-    var razor_ebay_address = 'https://www.ebay.com/itm/283447805021'
-    var armor_wd_address = 'https://www.amazon.com/dp/B07NHX34RK?ref=myi_title_dp&th=1'
-    var armor_tb_address = 'https://www.indiegogo.com/projects/crypto-seed-cold-storage-frozen-armor-bithd#/'
-    var armor_amazon_address = 'https://www.amazon.com/dp/B07NHX34RK?ref=myi_title_dp&th=1'
-    var armor_ebay_address = 'https://www.ebay.com/itm/283467086393'
+    var watch2_amazon_address = 'https://www.amazon.com/BITHD-Cryptocurrency-Hardware-Companion-Anywhere/dp/B07QKTTDRQ/ref=sr_1_3?m=A1Q5WMBAZ5F5MU&marketplaceID=ATVPDKIKX0DER&qid=1578887523&s=merchant-items&sr=1-3'
+    var watch2_ebay_address = 'https://www.ebay.com/itm/BITHD-Watch-2-Cryptocurrency-Hardware-Wallet-Your-Companion-Anywhere-Anytime/283447813111'
     var razor_wd_address = 'https://weidian.com/item.html?itemID=2713821031'
     var razor_tb_address = 'https://item.taobao.com/item.htm?id=589494230731'
-    var frozen_wd_address = 'https://k.weidian.com/JmkQ54lp'
-    var frozen_tb_address = 'https://item.taobao.com/item.htm?id=591821020893'
+    var razor_amazon_address = 'https://www.amazon.com/BITHD-Cryptocurrency-Hardware-Wallet-Pocket/dp/B07QKF867S/ref=sr_1_4?m=A1Q5WMBAZ5F5MU&marketplaceID=ATVPDKIKX0DER&qid=1578887523&s=merchant-items&sr=1-4'
+    var razor_ebay_address = 'https://www.ebay.com/itm/BITHD-Razor-Your-Cryptocurrency-Hardware-Wallet-Right-in-Your-Pocket/283447805021'
+    var armor_wd_address = 'https://k.weidian.com/JmkQ54lp'
+    var armor_tb_address = 'https://www.indiegogo.com/projects/crypto-seed-cold-storage-frozen-armor-bithd#/'
+    var armor_amazon_address = 'https://www.amazon.com/Frozen-Armor-BITHD-Mnemonics-Storage-Memorizer/dp/B07PW5JXVV/ref=sr_1_1?m=A1Q5WMBAZ5F5MU&marketplaceID=ATVPDKIKX0DER&qid=1578887523&s=merchant-items&sr=1-1'
+    var armor_ebay_address = 'https://www.ebay.com/itm/Frozen-Armor-BITHD-Crypto-Wallet-Private-keys-Seeds-Metal-Tablet-Memorizer/283535717738'
 
     function closeBuyBox() {
         $('.alert-buy-box').hide()
@@ -71,14 +67,6 @@ $(function() {
             $('#buy-tb').attr('href', armor_tb_address)
             $('#buy-amazon').attr('href', armor_amazon_address)
             $('#buy-ebay').attr('href', armor_ebay_address)
-        }
-        if ($(this).hasClass('razor-buy')) {
-            $('#buy-wd').attr('href', razor_wd_address)
-            $('#buy-tb').attr('href', razor_tb_address)
-        }
-        if ($(this).hasClass('frozen-buy')) {
-            $('#buy-wd').attr('href', frozen_wd_address)
-            $('#buy-tb').attr('href', frozen_tb_address)
         }
         openBuyBox()
     })
