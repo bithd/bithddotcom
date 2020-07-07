@@ -53,12 +53,14 @@ $(function() {
             $('#buy-ebay').attr('href', razor_ebay_address)
         }
         if ($(this).hasClass('buy-watch2')) {
+            $('.buy-watch1-btn').css('display', 'block');
             $('#buy-wd').attr('href', watch2_wd_address)
             $('#buy-tb').attr('href', watch2_tb_address)
             $('#buy-amazon').attr('href', watch2_amazon_address)
             $('#buy-ebay').attr('href', watch2_ebay_address)
         }
         if ($(this).hasClass('buy-watch1')) {
+            $('.buy-watch1-btn').css('display', 'none');
             $('#buy-wd').attr('href', watch1_wd_address)
             $('#buy-tb').attr('href', watch1_tb_address)
         }

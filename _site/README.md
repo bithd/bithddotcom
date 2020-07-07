@@ -1,2 +1,0 @@
-# bithddotcom
-bithd web site
