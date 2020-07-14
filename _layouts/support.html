@@ -62,19 +62,64 @@
         </div>
     </nav>
 
-    <body>
-        1
-    </body>
+    <div class="second-wrapper">
+        <div class="rol">
+            <div class="m-box">
+                <div class="support-div">
+                    <h3 class="supprot-title">功能使用</h3>
+                    <h4 class="supprot-menu-title">A 比特护盾防伪码</h4>
+                    <p class="supprot-content">为了防止您拿到假冒伪劣商品或二手比特护盾(BITHD) ，保护您的资产安全，比特派提供防伪码检验功能。</p>
+                    <p class="supprot-content">请先进行检验，然后再使用比特护盾 (BITHD)。</p>
+                    <p class="supprot-content-step">1、检验比特护盾 BITHD，打开用户手册最后一页二维码，查询真伪。</p>
+                    <img class="supprot-image" src="../image/support_a_1.jpg">
+                    <p class="supprot-content-step">2、打开比特派 - 我 - 设置 - BITHD 防伪码 - 选择二维码扫描（用户手册最后一页的二维码进行扫描）</p>
+                    <img class="supprot-image" src="../image/support_a_2.jpg">
 
-    <footer>
-        <p class="bithd_help"></p>
-    </footer>
-    <link href="/css/second_media.css" rel="stylesheet" type="text/css" media="all" /> {% include js.html %}
+                    <h4 class="supprot-menu-title">B 连接设备</h4>
+                    <p class="supprot-content">1、保证您的 bitpie 版本在v4.3.5 以上。在 bitpie 我 — 比特护盾管理。</p>
+                    <p class="supprot-content">2、根据设备号（手表任意按键按下2次，显示 BITHD 序列号信息），页面上选择您要连接的设备，进行配对。</p>
+                    <img class="supprot-image" src="../image/support_b_1.jpg">
+
+                    <h4 class="supprot-menu-title">C 创建BITHD账号</h4>
+                    <p class="supprot-content">1、首次进入钱包给新钱包命名（设备标签）。</p>
+                    <p class="supprot-content">2、名字输入完成后，设置钱包的 6-8位 PIN 码，bitpie 九宫格输入对应 BITHD 钱包显示的数字，请记好您设置的PIN码，PIN忘记后不可找回，需要签名相关操作就需要输入PIN码。</p>
+                    <p class="supprot-content">​3､ PIN码设置好后，拿出你的种子卡，开始抄写你的助记词！一定要认认真抄写您的 12 个助记词。</p>
+                    <img class="supprot-image" src="../image/support_c_1.jpg">
+                    <p class="supprot-content">​4、BITHD 账号创建完成，您可以在比特派应用内自由切换您的 BITHD 和 bitpie 账号啦。</p>
+
+                    <h4 class="supprot-menu-title">D 忘记PIN码</h4>
+                    <p class="supprot-content">​一但您的 PIN 码忘记，BITHD 将进入锁定状态，您的BITHD将无法使用但您的资产依旧由助记词掌管，不受影响。当前版本不支持解锁，我们将在后续版本提供相关解锁功能。请保管好您的12个助记词，助记词是您掌控资产的唯一方式。助记词遗失，资产将无法恢复。</p>
+
+                    <h4 class="supprot-menu-title">E 助记词恢复</h4>
+                    <a class="supprot-link" target="_black" href="https://v.qq.com/x/page/b0932xsn27h.html">https://v.qq.com/x/page/b0932xsn27h.html</a>
+
+                    <h3 class="supprot-title">功能使用</h3>
+                    <h4 class="supprot-menu-title">A 多重签名</h4>
+                    <a class="supprot-link" target="_black" href="https://v.qq.com/x/page/s3023szmkl4.html">https://v.qq.com/x/page/s3023szmkl4.html</a>
+
+                    <h4 class="supprot-menu-title">B 密码账户</h4>
+                    <p class="supprot-content">比特护盾密码账户是比特护盾的可选功能，建议密码保管能力较强的人使用。</p>
+                    <p class="supprot-content">启用加密账户后的好处：</p>
+                    <p class="supprot-content-step">1.拥有双重保护，发币等相关资产操作需要双重验证，PIN码 + 加密账户密码。</p>
+                    <p class="supprot-content-step">2.存储在加密账户中的资产，即使12个种子泄露，也依然无需担心，黑客在没有密码情况下是无法获取您加密账户的资产的。</p>
+                    <p class="supprot-content">提示：</p>
+                    <p class="supprot-content">请牢记此密码，如果忘记此密码，加密账户下的所有资产将全部丢失，且无法通过种子密语找回。</p>
+                    <p class="supprot-content">操作方法：</p>
+                    <p class="supprot-content-step">1.更新比特派版本至3.8.3。</p>
+                    <p class="supprot-content-step">2.打开我的菜单，BITHD 设置，启用加密账户。</p>
+                    <img class="supprot-image" src="../image/support_advance_b_1.jpg">
+                    <img class="supprot-image" src="../image/support_advance_b_2.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {% include js.html %}
+    <link href="/css/support_media.css" rel="stylesheet" type="text/css" media="all" />
     <script>
         $(function() {
             $('a[href*=#]:not([href=#])').click(function() {
-                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname ==
-                    this.hostname) {
+                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
                     var target = $(this.hash);
                     target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
                     if (target.length) {
@@ -83,6 +128,194 @@
                         }, 1000);
                         return false;
                     }
+                }
+            });
+        });
+    </script>
+    <script>
+        $("#menu").click(function() {
+            menuListOperation();
+        });
+
+        $(".menu_report").click(function() {
+            var width = $(window).width();
+            if (width < 768) {
+                var display = $(".mobile-ul").css("display");
+                if (display == "none") {
+                    $(".mobile-ul").css("display", "block");
+                } else {
+                    $(".mobile-ul").css("display", "none");
+                }
+            } else {
+                var display = $(".reports").css("display");
+                if (display == "none") {
+                    $(".reports").css("display", "block");
+                } else {
+                    $(".reports").css("display", "none");
+                }
+            }
+        });
+
+        $(document).ready(function() {
+            adapterSize();
+        })
+
+        $(window).resize(function() {
+            adapterSize();
+        })
+
+        function containMenuOperation() {
+            if ($("#menu-list").hasClass("mobile-hidden") == false) {
+                $("#menu-list").addClass("mobile-hidden");
+            }
+            var display = $(".reports").css("display");
+            if (display == "block") {
+                $(".reports").css("display", "none");
+            }
+        }
+
+
+        function menuListOperation() {
+            if ($("#menu-list").hasClass("mobile-hidden") == true) {
+                $("#menu-list").removeClass("mobile-hidden");
+            } else {
+                $("#menu-list").addClass("mobile-hidden");
+            }
+        }
+
+        function adapterSize() {
+            var width = $(window).width();
+            if (width < 768) {
+                removeVideo();
+                $(".reports").css("display", "none");
+                $("#introduction-bg").attr('src', '../resource/banner_mobile.jpg');
+                $("#security-bg").attr('src', '../resource/safety_mobile.jpg');
+                $("#simple-bg").attr('src', '../resource/easy_mobile.jpg');
+                $("#management-bg").attr('src', '../resource/management_mobile.jpg');
+                $("#convenience-bg").attr('src', '../resource/carousel_mobile.jpg');
+                $("#wear-bg").attr('src', '../resource/wear_mobile.jpg');
+                $("#float-image").attr('src', '../resource/watch_mobile.png');
+                if (new String($.i18n.browserLang()).indexOf("zh") > -1) {
+                    $("#component-bg").attr('src', '../resource/industry_mobile_cn.jpg');
+                } else if ((new String($.i18n.browserLang()).toLowerCase()).indexOf("tw") > -1 || (new String($.i18n.browserLang()).toLowerCase()).indexOf("hk") > -1) {
+                    $("#component-bg").attr('src', '../resource/industry_mobile_rtw.jpg');
+                } else {
+                    $("#component-bg").attr('src', '../resource/industry_mobile_en.jpg');
+                }
+            } else {
+                $(".mobile-ul").css("display", "none");
+                $("#introduction-bg").attr('src', '../resource/banner_pc.jpg');
+                $("#security-bg").attr('src', '../resource/safety_pc.jpg');
+                $("#simple-bg").attr('src', '../resource/easy_pc.jpg');
+                $("#management-bg").attr('src', '../resource/management_pc.jpg');
+                $("#convenience-bg").attr('src', '../resource/carousel_pc.jpg');
+                $("#wear-bg").attr('src', '../resource/wear_pc.jpg');
+                $("#float-image").attr('src', '../resource/watch_pc.png');
+                if ($.i18n.browserLang() == "zh-CN") {
+                    $("#component-bg").attr('src', '../resource/industry_pc_cn.jpg');
+                } else if ($.i18n.browserLang() == "zh-TW" || $.i18n.browserLang() == "zh-HK") {
+                    $("#component-bg").attr('src', '../resource/industry_pc_rtw.jpg');
+                } else {
+                    $(".convenience .summary").css("width", "3.18rem");
+                    $(".management .summary").css("width", "3.18rem");
+                    $("#component-bg").attr('src', '../resource/industry_pc_en.jpg');
+                }
+            }
+        }
+
+        $(function() {
+            var languageCode;
+
+            if (new String($.i18n.browserLang()).indexOf("zh") > -1) {
+                languageCode = "zh";
+                $('body').addClass('zh')
+            } else if ((new String($.i18n.browserLang()).toLowerCase()).indexOf("tw") > -1 || (new String($.i18n.browserLang()).toLowerCase()).indexOf("hk") > -1) {
+                languageCode = "zh-rTW";
+                $('body').addClass('tw')
+            } else {
+                languageCode = "en";
+                $('body').addClass('en')
+            }
+            jQuery.i18n.properties({
+                name: 'strings',
+                path: '/i18n/',
+                mode: 'map',
+                async: true,
+                language: languageCode,
+                callback: function() {
+                    $(".welcome-title").html($.i18n.prop('welcome'));
+
+                    $(".menu_overview").html($.i18n.prop('menu_features'));
+                    $(".menu_specifications").html($.i18n.prop('menu_specifications'));
+                    $(".menu_report").html($.i18n.prop('menu_report'));
+                    $(".menu_docs").html($.i18n.prop('menu_docs'));
+
+                    $("#jinse_mobile").html($.i18n.prop('menu_ul_jinse'));
+                    $("#jinse_pc").html($.i18n.prop('menu_ul_jinse'));
+                    $("#alcoin_mobile").html($.i18n.prop('menu_ul_alcoin'));
+                    $("#alcoin_pc").html($.i18n.prop('menu_ul_alcoin'));
+                    $("#chain_mobile").html($.i18n.prop('menu_ul_chain'));
+                    $("#chain_pc").html($.i18n.prop('menu_ul_chain'));
+
+                    $(".introduction .title").html($.i18n.prop('introduction_title'));
+                    $(".introduction .summary").html($.i18n.prop('introduction_summary'));
+                    $(".introduction .content").html($.i18n.prop('introduction_content'));
+                    $(".play-content").html($.i18n.prop('introduction_play'))
+
+                    $(".security .title").html($.i18n.prop('features_sec_title'));
+                    $(".security .summary").html($.i18n.prop('features_sec_summary'));
+
+                    $(".simple .title").html($.i18n.prop('features_sim_title'));
+                    $(".simple .summary").html($.i18n.prop('features_sim_summary'));
+
+                    $(".management .title").html($.i18n.prop('management_title'));
+                    $(".management .summary").html($.i18n.prop('management_summary'));
+
+                    $(".convenience .title").html($.i18n.prop('convenience_title'));
+                    $(".convenience .summary").html($.i18n.prop('convenience_summary'));
+
+                    $(".wear .title").html($.i18n.prop('wear_title'));
+                    $(".wear .summary").html($.i18n.prop('wear_summary'));
+
+                    $(".component .title").html($.i18n.prop('component_title'));
+                    $(".component .summary").html($.i18n.prop('component_summary'));
+                    $(".bithdtitleshop").html($.i18n.prop('bithdtitleshop'));
+                    $(".taobaoshop").html($.i18n.prop('taobaoshop'));
+                    $(".headline").html($.i18n.prop('parameter_headline'));
+                    $(".bithddocs").html($.i18n.prop('bithddocs'));
+
+                    $(".bithd_help").html($.i18n.prop('bithd_help'));
+
+                    $(".thanks").html($.i18n.prop('thanks'));
+
+                    $(".source").html($.i18n.prop('source'));
+
+                    $(".video-title").html($.i18n.prop('video_title'));
+                    $('#nav_compare').html($.i18n.prop('nav_compare'));
+                    $('.compare-btn').html($.i18n.prop('buy'));
+                    $('#compare_title').html($.i18n.prop('compare_title'));
+                    $('#compare_title_1').html($.i18n.prop('compare_title_1'));
+                    $('#compare_watch1_1').html($.i18n.prop('compare_watch1_1'));
+                    $('#compare_watch2_1').html($.i18n.prop('compare_watch2_1'));
+                    $('#compare_title_2').html($.i18n.prop('compare_title_2'));
+                    $('#compare_watch1_2').html($.i18n.prop('compare_watch1_2'));
+                    $('#compare_watch2_2').html($.i18n.prop('compare_watch2_2'));
+                    $('#compare_title_3').html($.i18n.prop('compare_title_3'));
+                    $('#compare_watch1_3').html($.i18n.prop('compare_watch1_3'));
+                    $('#compare_watch2_3').html($.i18n.prop('compare_watch2_3'));
+                    $('#compare_title_4').html($.i18n.prop('compare_title_4'));
+                    $('#compare_watch1_4').html($.i18n.prop('compare_watch1_4'));
+                    $('#compare_watch2_4').html($.i18n.prop('compare_watch2_4'));
+
+                    $('#buy_title').html($.i18n.prop('buy_title'));
+                    $('#buy_wd_font').html($.i18n.prop('buy_wd_font'));
+                    $('#buy_tb_font').html($.i18n.prop('buy_tb_font'));
+                    $('#buy_close_btn').html($.i18n.prop('buy_close_btn'));
+
+                    $('.nav_btn1').html($.i18n.prop('nav_btn1'));
+                    $('.nav_btn2').html($.i18n.prop('nav_btn2'));
+                    $('.nav_btn3').html($.i18n.prop('nav_btn3'));
+                    $('.nav_btn4').html($.i18n.prop('nav_btn4'));
                 }
             });
         });
