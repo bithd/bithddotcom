@@ -22,6 +22,7 @@ $(function() {
         $('.alert-buy-box').show()
     }
     $('.alert-buy-box').click(function(ev) {
+        console.log("$(ev.target).hasClass('alert-buy-box')", $(ev.target).hasClass('alert-buy-box'))
         if ($(ev.target).hasClass('alert-buy-box')) {
             closeBuyBox()
         }
