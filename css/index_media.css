@@ -121,7 +121,7 @@
 
 @media screen and (max-width: 500px) {
     .m-box {
-        width: 380px;
+        width: 350px;
     }
     .banner-font-box {
         width: 400px;
@@ -292,6 +292,9 @@
         width: 170px;
     }
     .en .razor-box-6 {
+        height: 800px;
+    }
+    .en .razor-box-razor {
         height: 800px;
     }
 }

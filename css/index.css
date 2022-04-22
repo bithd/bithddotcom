@@ -76,20 +76,14 @@
       /*font-family:  "\5FAE\8F6F\96C5\9ED1" !important;*/
   }
   
-  .m-box {
-      width: 1100px;
-      height: 100%;
-      margin: 0 auto;
-  }
-  
   .banner-font-box {
       width: 540px;
       margin-top: 160px;
   }
   
   .banner-btn {
-      font-size: 22px;
-      color: #E85D02;
+      font-size: 18px;
+      color: #5887E3;
       margin-right: 75px;
       text-decoration: none;
   }
@@ -141,7 +135,7 @@
   
   .intro-btn {
       font-size: 16px;
-      color: #0070C9;
+      color: #5887E3;
       text-align: center;
       margin-bottom: 25px;
       display: block;
@@ -154,13 +148,26 @@
   .second-nav {
       height: 75px;
       background: #fff;
-      margin-top: 60px;
+      margin-top: 44px;
+  }
+
+  @media screen and (max-width: 768px) {
+    .second-nav {
+        margin-top: 48px;
+        height: 56px;
+    }
   }
   
   .second-nav-font {
       font-size: 24px;
       color: #333;
       line-height: 75px;
+  }
+
+  @media screen and (max-width: 768px) {
+      .second-nav-font {
+        line-height: 56px;
+      }
   }
   
   .second-wrapper {
@@ -180,6 +187,12 @@
       font-size: 16px;
       color: #fff;
       margin-top: 20px;
+  }
+
+   @media screen and (max-width: 768px) {
+    .second-buy-btn {
+        margin-top: 13px;
+    }
   }
   
   .second-box {
@@ -403,6 +416,7 @@
       color: #0070C9;
       text-align: center;
       line-height: 90px;
+      cursor: pointer;
   }
   
   @media screen and (max-width: 600px) {
@@ -416,7 +430,7 @@
           border-radius: 0;
       }
       .buy-title {
-          font-size: 24px;
+          font-size: 18px;
           margin-top: 30px;
           margin-bottom: 40px;
       }
@@ -424,14 +438,14 @@
           padding: 0 15px;
       }
       .buy-btn {
-          font-size: 18px;
+          font-size: 15px;
           margin-bottom: 30px;
           padding-bottom: 20px;
       }
       .close-btn {
           height: 50px;
           line-height: 50px;
-          font-size: 20px;
+          font-size: 15px;
       }
   }
   
@@ -456,15 +470,11 @@
   }
   
   .razro-img {
-      height: 365px;
-  }
-  
-  .intro-btn-index {
-      padding-bottom: 0;
+      height: 340px;
   }
   
   #index_banner_title {
-      line-height: 1.8em;
+      line-height: 1.6;
       margin-bottom: 0;
   }
   
@@ -487,7 +497,7 @@
       color: #333;
       margin-bottom: 20px;
       text-align: center;
-      font-size: 60px;
+      font-size: 48px;
   }
   
   .business-content {

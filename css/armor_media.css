@@ -7,17 +7,11 @@
 
 
 @media screen and (max-width: 1200px) {
-  .m-box{
-    width:1000px;
-  }
   .pc-box{
     display:none;
   }
   .phone-box{
     display:block;
-  }
-  .pc-header-menu ul li{
-    margin-left:20px;
   }
   .armor-banner2{
     height:500px;
@@ -77,9 +71,6 @@
 }
 
 @media screen and (max-width: 800px) {
-  .m-box{
-    width:700px;
-  }
   .armor-banner3-font-box{
     width:300px;
     margin-top:60px;
@@ -142,14 +133,11 @@
 
 }
 @media screen and (max-width: 500px) {
-  .m-box{
-    width:360px;
-  }
   .armor-font-box{
     margin-top:30px;
   }
   .armor-banner2-title{
-    font-size:24px;
+    font-size:32px;
   }
   .armor-banner1-price{
     font-size:20px;
@@ -158,10 +146,10 @@
     font-size:18px;
   }
   .armor-banner1-title{
-    font-size:28px;
+    font-size:32px;
   }
   .armor-banner2-font{
-    font-size:16px;
+    font-size:18px;
   }
   .armor-banner2{
     height:550px;
@@ -181,10 +169,10 @@
     width:100%;
   }
   .armor-banner3-title{
-    font-size:24px;
+    font-size:32px;
   }
   .armor-banner3-font{
-    font-size:16px;
+    font-size:18px;
   }
   .armor-banner4{
     height:700px;
@@ -198,10 +186,10 @@
     margin-top:60px;
   }
   .armor-banner4-title{
-    font-size:24px;
+    font-size:32px;
   }
   .armor-banner4-font{
-    font-size:16px;
+    font-size:18px;
   }
   .armor-banner1{
     background:url('../image/armor_banner_phone_bg.jpg') no-repeat;
@@ -227,14 +215,14 @@
     width:450px;
   }
   .armor-banner1-font{
-    margin-bottom:40px;
+    margin-bottom:20px;
   }
   .en .armor-banner1-font{
     font-size:20px;
     margin-bottom:30px;
   }
   .en .armor-banner2-title{
-    font-size:24px;
+    font-size:32px;
   }
   .en .armor-banner2-font{
     font-size:16px;
@@ -252,17 +240,14 @@
     font-size:16px;
   }
   .armor-banner6-title{
-    font-size:20px;
+    font-size:32px;
   }
   .armor-banner6-font{
-    font-size:14px;
+    font-size:18px;
   }
 }
 
 @media screen and (max-width: 350px) {
-  .m-box{
-    width:300px;
-  }
   .armor-img1{
     width:350px;
   }

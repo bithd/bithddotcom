@@ -4,53 +4,90 @@
 <head>
     <meta charset="utf-8">
     <title>bithd.com</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
     <link rel="shortcut icon" href="/favicon.ico" mce_href="/favicon.ico" type="image/x-icon">
     <script src="/js/flexible.min.js"></script>
     {% include css.html %}
 </head>
 
 <body>
-    <nav style="display: block">
+    <nav class="dark" style="display: block">
         <div class="mobile-nav pc-hidden">
-            <div class="m-box">
+            <div class="header-content">
                 <div class="mobile-header-logo mobile-bithd">
-                    <a href="/index.html"><img class="logo" src="../resource/bithd.png"></a>
+                    <a href="/index.html"><img class="logo" src="../resource/icon.svg"></a>
                 </div>
                 <div class="mobile-header-menu">
-                    <img id="menu" src="../resource/menu.png">
+                    <img id="menu" src="../resource/menu_dark.svg">
                 </div>
             </div>
         </div>
         <div id="menu-list" class="pc-nav mobile-hidden">
-            <div class="m-box">
+            <div class="header-content">
                 <div class="pc-header-logo mobile-hidden">
-                    <a href="/index.html"><img class="logo" src="../resource/bithd.png"></a>
+                    <a href="/index.html"><img class="logo" src="../resource/icon.svg"></a>
                 </div>
                 <div class="pc-header-menu">
                     <ul>
                         <li>
                             <a class="nav_btn1" href="/BITHD-Razor.html"></a>
                         </li>
-                        <li>
-                            <a class="nav_btn2" href="/BITHD-watch-2.html"></a>
+                        <li class="dropdown-div">
+                            <div>
+                                <p class="nav_btn2"></p>
+                                <img class="arrow-right" src="../image/icon_arrow_right.png" />
+                            </div>
+                            <div class="dropdown">
+                                <a class="nav_btn2-1" href="/BITHD-watch-1.html"></a>
+                                <a class="nav_btn2-2" href="/BITHD-watch-2.html"></a>
+                            </div>
                         </li>
-                        <li>
-                            <a class="nav_btn4" href="/BITHD-watch-1.html"></a>
-                        </li>
-                        <li>
-                            <a class="nav_btn3" href="/Frozen-Armor.html"></a>
-                        </li>
-                        <li>
-                            <a id="nav_compare" href="/BITHD-compare.html"></a>
+                        <li class="dropdown-div">
+                            <div>
+                                <p class="nav_btn3"></p>
+                                <img class="arrow-right" src="../image/icon_arrow_right.png" />
+                            </div>
+                            <div class="dropdown">
+                                <a class="nav_btn3-1" href="/Frozen-Armor.html"></a>
+                                <a class="nav_btn3-2" href="/Frozen-Armor2.html"></a>
+                            </div>
                         </li>
                         <li>
                             <a href="../reports/reports.html" class="menu_report"></a>
-                            <!--<ul class="mobile-ul" style="display: none">-->
-                            <!--<li><a href="http://www.jinse.com/bitcoin/123580.html" target="_blank" rel="nofollow noopener noreferrer"  id="jinse_mobile"></a></li>-->
-                            <!--<li><a href="http://www.aicoin.net.cn/amp/services/news-share?id=3762&lang=zh&from=timeline" target="_blank" rel="nofollow noopener noreferrer"  id="alcoin_mobile"></a></li>-->
-                            <!--<li><a href="https://mp.weixin.qq.com/s/PHBJaW8kUW-duMeKb7Hg2g" target="_blank" rel="nofollow noopener noreferrer"  id="chain_mobile"></a></li>-->
-                            <!--</ul>-->
+                        </li>
+                        <li>
+                            <a href="http://docs.bithd.com/" class="menu_docs"></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mobile-menu">
+                    <ul>
+                        <li>
+                            <a class="nav_btn1" href="/BITHD-Razor.html"></a>
+                        </li>
+                        <li class="dropdown-mobile-div" id="bithd-dropdown">
+                            <div onclick="isShowDropdown('bithd')">
+                                <p class="nav_btn2"></p>
+                                <img class="arrow-right" src="../image/icon_arrow_right.png" />
+                            </div>
+                            <div class="dropdown-mobile">
+                                <a class="nav_btn2-1" href="/BITHD-watch-1.html"></a>
+                                <a class="nav_btn2-2" href="/BITHD-watch-2.html"></a>
+                            </div>
+                        </li>
+                        <li class="dropdown-mobile-div" id="armor-dropdown">
+                            <div onclick="isShowDropdown('armor')">
+                                <p class="nav_btn3"></p>
+                                <img class="arrow-right" src="../image/icon_arrow_right.png" />
+                            </div>
+                            <div class="dropdown-mobile">
+                                <a class="nav_btn3-1" href="/Frozen-Armor.html"></a>
+                                <a class="nav_btn3-2" href="/Frozen-Armor2.html"></a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="../reports/reports.html" class="menu_report"></a>
                         </li>
                         <li>
                             <a href="http://docs.bithd.com/" class="menu_docs"></a>
@@ -58,10 +95,10 @@
                     </ul>
                 </div>
             </div>
-
         </div>
     </nav>
-    <div class="second-nav">
+
+    <div class="second-nav light">
         <div class="m-box">
             <span id="razor_title" class="lt second-nav-font"></span>
             <!-- <a href="https://weidian.com/item.html?itemID=2713821031" id="buy-btn" class="gt second-buy-btn buy-watch2" target="_blank" rel="nofollow noopener noreferrer" ></a> -->
@@ -154,7 +191,7 @@
                 </div>
             </div>
         </div>
-        <div class="rol razor-box-6">
+        <div class="rol razor-box-razor">
             <div class="m-box">
                 <img src="../image/line@2x.png" alt="" class="banner6-pic">
                 <div class="banner6-font-box">
@@ -197,28 +234,28 @@
                 </div>
             </div>
         </div>
-        <footer>
+        <div class="rol footer">
             <p class="bithd_help"></p>
-        </footer>
+        </div>
         <div class="alert-buy-box">
             <div class="buy-box">
                 <div id="buy_title" class="buy-title"></div>
                 <div class="buy-btn-box">
                     <a href="#" id="buy-wd" class="buy-btn" target="_blank" rel="nofollow noopener noreferrer">
                         <span id="buy_wd_font"></span>
-                        <span class="gt">></span>
+                        <img class="buy-alert-arrow gt" src="../image/arrow_right_black.svg" alt="">
                     </a>
                     <a href="#" id="buy-amazon" class="buy-btn" target="_blank" rel="nofollow noopener noreferrer">
                         <span id="buy_amazon_font"></span>
-                        <span class="gt">></span>
+                        <img class="buy-alert-arrow gt" src="../image/arrow_right_black.svg" alt="">
                     </a>
                     <a href="#" id="buy-ebay" class="buy-btn" target="_blank" rel="nofollow noopener noreferrer">
                         <span id="buy_ebay_font"></span>
-                        <span class="gt">></span>
+                        <img class="buy-alert-arrow gt" src="../image/arrow_right_black.svg" alt="">
                     </a>
                     <a href="#" id="buy-tb" class="buy-btn" target="_blank" rel="nofollow noopener noreferrer">
                         <span id="buy_tb_font"></span>
-                        <span class="gt">></span>
+                        <img class="buy-alert-arrow gt" src="../image/arrow_right_black.svg" alt="">
                     </a>
                 </div>
                 <div id="buy_close_btn" class="close-btn"></div>
@@ -228,8 +265,8 @@
         {% include js.html %}
         <link href="/css/razor_media.css" rel="stylesheet" type="text/css" media="all" />
         <script>
-            $(function() {
-                $('a[href*=#]:not([href=#])').click(function() {
+            $(function () {
+                $('a[href*=#]:not([href=#])').click(function () {
                     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname ==
                         this.hostname) {
                         var target = $(this.hash);
@@ -245,11 +282,11 @@
             });
         </script>
         <script>
-            $("#menu").click(function() {
+            $("#menu").click(function () {
                 menuListOperation();
             });
 
-            $(".menu_report").click(function() {
+            $(".menu_report").click(function () {
                 var width = $(window).width();
                 if (width < 768) {
                     var display = $(".mobile-ul").css("display");
@@ -268,13 +305,46 @@
                 }
             });
 
-            $(document).ready(function() {
+            $(document).ready(function () {
                 adapterSize();
             })
 
-            $(window).resize(function() {
+            $(window).resize(function () {
                 adapterSize();
             })
+
+            function isShowDropdown(type) {
+                var width = $(window).width();
+                if (width < 768) {
+                    if (type == "bithd") {
+                        let element = $("#bithd-dropdown")[0]
+                        let dropdown = $("#bithd-dropdown .dropdown-mobile")[0]
+                        let arrow = $("#bithd-dropdown .arrow-right")[0]
+                        if (dropdown.style.display == "block") {
+                            dropdown.style.display = "none"
+                            arrow.src = "../image/icon_arrow_right.png"
+                            element.style.height = "45px"
+                        } else {
+                            dropdown.style.display = "block"
+                            arrow.src = "../image/icon_arrow_down.png"
+                            element.style.height = "126px"
+                        }
+                    } else if (type == "armor") {
+                        let element = $("#armor-dropdown")[0]
+                        let dropdown = $("#armor-dropdown .dropdown-mobile")[0]
+                        let arrow = $("#armor-dropdown .arrow-right")[0]
+                        if (dropdown.style.display == "block") {
+                            dropdown.style.display = "none"
+                            arrow.src = "../image/icon_arrow_right.png"
+                            element.style.height = "45px"
+                        } else {
+                            dropdown.style.display = "block"
+                            arrow.src = "../image/icon_arrow_down.png"
+                            element.style.height = "126px"
+                        }
+                    }
+                }
+            }
 
             function containMenuOperation() {
                 if ($("#menu-list").hasClass("mobile-hidden") == false) {
@@ -286,7 +356,7 @@
                 }
             }
 
-            $(".play-video").click(function() {
+            $(".play-video").click(function () {
                 var width = $(window).width();
                 if (width < 768) {
                     window.location.href = "https://v.youku.com/v_show/id_XMzQ2ODEwMTUwNA==.html?spm=a2hzp.8244740.0.0";
@@ -299,7 +369,7 @@
                 }
             });
 
-            $(".video-btn").click(function() {
+            $(".video-btn").click(function () {
                 removeVideo();
             });
 
@@ -332,7 +402,7 @@
                     if (new String($.i18n.browserLang()).indexOf("zh") > -1) {
                         $("#component-bg").attr('src', '../resource/industry_mobile_cn.jpg');
                     } else if ((new String($.i18n.browserLang()).toLowerCase()).indexOf("tw") > -1 || (new String($.i18n
-                            .browserLang()).toLowerCase()).indexOf("hk") > -1) {
+                        .browserLang()).toLowerCase()).indexOf("hk") > -1) {
                         $("#component-bg").attr('src', '../resource/industry_mobile_rtw.jpg');
                     } else {
                         $("#component-bg").attr('src', '../resource/industry_mobile_en.jpg');
@@ -358,14 +428,14 @@
                 }
             }
 
-            $(function() {
+            $(function () {
                 var languageCode;
 
                 if (new String($.i18n.browserLang()).indexOf("zh") > -1) {
                     languageCode = "zh";
                     $('body').addClass('zh')
                 } else if ((new String($.i18n.browserLang()).toLowerCase()).indexOf("tw") > -1 || (new String($.i18n
-                        .browserLang()).toLowerCase()).indexOf("hk") > -1) {
+                    .browserLang()).toLowerCase()).indexOf("hk") > -1) {
                     languageCode = "zh-rTW";
                     $('body').addClass('tw')
                 } else {
@@ -378,7 +448,7 @@
                     mode: 'map',
                     async: true,
                     language: languageCode,
-                    callback: function() {
+                    callback: function () {
                         $(".welcome-title").html($.i18n.prop('welcome'));
 
                         $(".menu_overview").html($.i18n.prop('menu_features'));
@@ -488,6 +558,10 @@
                         $('.nav_btn2').html($.i18n.prop('nav_btn2'));
                         $('.nav_btn3').html($.i18n.prop('nav_btn3'));
                         $('.nav_btn4').html($.i18n.prop('nav_btn4'));
+                        $('.nav_btn2-1').html($.i18n.prop('bithd1'));
+                        $('.nav_btn2-2').html($.i18n.prop('bithd2'));
+                        $('.nav_btn3-1').html($.i18n.prop('armor1'));
+                        $('.nav_btn3-2').html($.i18n.prop('armor2'));
                     }
                 });
             });

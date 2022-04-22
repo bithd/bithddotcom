@@ -11,16 +11,32 @@ body {
 
 nav {
     width: 100%;
-    height: 60px;
+    height: 44px;
     position: fixed;
     top: 0;
     right: 0;
     left: 0;
     z-index: 1030;
     background-color: white;
-    border-bottom: 1px solid #e0e0e0;
-    -webkit-box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.07);
-    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.07);
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.01);
+}
+
+.dark {
+    background-color: #1e1e1e;
+}
+
+.dark-txt {
+    color: #333333 !important;
+}
+
+.dark-txt:hover {
+    color: #5887e3 !important;
+}
+
+@media (max-width: 768px) {
+    nav {
+        height: 48px;
+    }
 }
 
 
@@ -35,36 +51,93 @@ nav {
 }
 
 .pc-nav {
-    width: 10rem;
     height: 100%;
+}
+
+.pc-header-menu,
+.mobile-menu {
+    height: 100%;
+    float: right;
 }
 
 .pc-header-menu {
-    height: 100%;
+    display: block;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+.pc-header-menu ul,
+.mobile-menu ul {
     float: right;
 }
 
-.pc-header-menu ul {
-    float: right;
-}
-
-.pc-header-menu ul li {
-    height: 24px;
-    margin-top: 19px;
-    line-height: 24px;
-    font-size: 18px;
-    margin-left: 30px;
+.pc-header-menu ul li,
+.mobile-menu ul li {
     float: left;
+    vertical-align: top;
+    height: 43px;
+    margin: 0;
+    line-height: 43px;
+    font-size: 12px;
+    margin-left: 30px;
+    position: relative;
     list-style: none;
 }
 
-.pc-header-menu ul li a {
-    color: #666666;
+.pc-header-menu ul li a,
+.mobile-menu ul li a,
+.pc-header-menu ul li p,
+.mobile-menu ul li p {
+    color: white;
     text-decoration: none;
+    font-family: PingFangSC-Regular;
+    font-size: 13px;
+    letter-spacing: 0;
+    font-weight: 400;
 }
 
-.pc-header-menu ul li a:hover {
-    color: #E85F24;
+.mobile-menu ul li a:hover,
+.mobile-menu ul li p:hover,
+.pc-header-menu ul li a:hover,
+.pc-header-menu ul li p:hover {
+    color: #5887e3;
+}
+
+.arrow-right,
+.arrow-down {
+    display: none;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    min-width: 120px;
+    background: url("../image/i18n-bg.png") no-repeat;
+    background-size: 100% 100%;
+    padding: 10px 0;
+    padding-top: 25px;
+    box-sizing: border-box;
+    left: calc(50% - 60px);
+}
+
+.dropdown-mobile {
+    display: none;
+}
+
+.dropdown a {
+    display: block;
+    color: #333 !important;
+    text-align: center;
+}
+
+.dropdown-div:hover .dropdown {
+    display: block;
+}
+
+.dropdown-div a:hover {
+    color: #5887e3 !important;
 }
 
 .pc-header-logo {
@@ -72,11 +145,90 @@ nav {
     float: left;
 }
 
+.pc-header-logo a {
+    display: block;
+    overflow: hidden;
+}
+
 .pc-header-logo img {
-    width: 81px;
-    height: 44px;
-    margin-top: 8px;
+    margin: 9px 0;
+    height: 26px;
     float: left;
+}
+
+.header-content {
+    max-width: 1100px;
+    height: 100%;
+    margin: 0 auto;
+    width: auto;
+    padding: 0 16px;
+}
+
+@media (min-width: 1132px) {
+    .header-content {
+        padding: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    #menu-list .header-content {
+        padding: 0;
+    }
+}
+
+.m-box {
+    width: 1100px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .m-box {
+        margin: 0 16px;
+        width: 100%;
+    }
+}
+
+
+/* index razor */
+
+.banner-btn-box a,
+.banner-btn-box div {
+    font-family: PingFangSC-Regular, sans-serif !important;
+}
+
+.rol {
+    width: 100%;
+    float: left;
+    box-sizing: border-box;
+}
+
+.razor-box-1 {
+    background: url(../image/banner_bg@2x.jpg) no-repeat 100% 100%;
+    height: 750px;
+    background-size: 100% 100%;
+    float: left;
+    width: 100%;
+    position: relative;
+}
+
+.en .razor-box-1 {
+    height: 850px;
+}
+
+.box-1-font {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 95px;
+    text-align: center;
+}
+
+.box-1-tltle {
+    font-size: 48px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: PingFangSC-Semibold;
 }
 
 .reports {
@@ -101,20 +253,24 @@ nav {
     margin-top: 10px;
 }
 
+.body-box {
+    overflow: auto;
+}
+
 .reports ul li a,
-footer p a {
+.footer p a {
     text-align: center;
-    font-size: 16px;
+    font-size: 12px;
     color: #666666;
     text-decoration: none;
 }
 
-footer p a {
+.footer p a {
     text-decoration: underline;
 }
 
 .reports ul li a:hover {
-    color: #E85F24;
+    color: #5887e3;
 }
 
 .mobile-ul {
@@ -123,7 +279,7 @@ footer p a {
 
 .img-ios,
 .img-android {
-    width: 1.041666rem
+    width: 1.041666rem;
 }
 
 .introductions {
@@ -237,31 +393,20 @@ footer p a {
     font-size: 0.5rem;
 }
 
-footer {
-    padding: 30px 0;
+.footer {
+    width: 100%;
+    padding: 15px 0;
 }
 
 .source,
 .bithd_help {
-    font-size: 0.10rem;
+    font-size: 0.1rem;
     line-height: 32px;
     color: #333;
 }
 
 
 /*mobile header*/
-
-@media (max-width: 920px) {
-    .mobile-hidden {
-        display: none;
-    }
-    .pc-hidden {
-        display: block;
-    }
-    .reports {
-        display: none;
-    }
-}
 
 @media (max-width: 768px) {
     .mobile-hidden {
@@ -273,60 +418,106 @@ footer {
     .reports {
         display: none;
     }
-    .pc-header-menu {
+    .pc-header-menu,
+    .mobile-menu {
         width: 100%;
         height: auto;
-        border-top: 1px solid #e0e0e0;
-        border-top: 1px solid #e0e0e0;
         -webkit-box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.07);
         box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.07);
         background-color: white;
     }
-    .pc-header-menu ul {
+    .pc-header-menu {
+        display: none;
+    }
+    .mobile-menu {
+        display: block;
+    }
+    .pc-header-menu ul,
+    .mobile-menu ul {
         float: left;
         width: 100%;
     }
     .mobile-ul {
         width: 100%;
     }
-    .pc-header-menu ul li {
-        height: 17px;
-        margin-top: 20px;
-        line-height: 17px;
-        font-size: 17px;
-        /*margin-left: 20px;*/
-        margin-bottom: 20px;
+    .pc-header-menu ul li,
+    .mobile-menu ul li {
         float: none;
         display: block;
-        width: 100%;
+        font-family: PingFangSC-Regular;
+        margin: 0;
+        padding: 0 16px;
+        height: 44px;
+        font-size: 16px;
+        line-height: 44px;
+        border-bottom: 1px solid #eee;
+        text-decoration: none;
     }
-    .pc-header-menu ul li a {
+    .pc-header-menu ul li a,
+    .mobile-menu ul li a {
+        width: 100%;
         float: left;
         font-family: PingFangSC-Regular, sans-serif;
-        color: #666666;
+        color: #333;
         font-weight: 100;
+        font-size: 16px;
     }
-    .pc-header-menu ul li a:hover {
+    .pc-header-menu ul li p,
+    .mobile-menu ul li p {
+        display: inline-block;
+        width: calc(100% - 12px);
+        text-align: left;
+        color: #333;
+        font-size: 16px;
+    }
+    .pc-header-menu ul li a:hover,
+    .mobile-menu ul li a:hover {
         color: #4a90e2;
+    }
+    .arrow-right {
+        display: block;
+        float: right;
+        width: 12px;
+        margin-top: 16px;
+    }
+    .dropdown-mobile {
+        position: relative;
+        width: 100%;
+        background: none;
+        padding: 0 16px;
+        left: 0;
+    }
+    .dropdown {
+        display: none !important;
+    }
+    .dropdown-mobile a {
+        display: block;
+        text-align: left;
+        font-size: 13px !important;
+        float: none !important;
+        height: 36px;
     }
 }
 
 .mobile-nav {
-    width: 10rem;
+    width: 100%;
     height: 100%;
 }
 
 .mobile-header-logo {
-    width: 3rem;
     height: 100%;
     float: left;
 }
 
 .mobile-header-logo img {
-    width: 81px;
-    height: 44px;
-    margin-top: 8px;
+    height: 24px;
+    margin: 10px 0;
     margin-left: 12px;
+}
+
+.mobile-header-logo a {
+    display: block;
+    overflow: hidden;
 }
 
 .logo-app {
@@ -341,7 +532,7 @@ footer {
     position: absolute;
     bottom: 0;
     right: 3.675rem;
-    width: 3.0rem;
+    width: 3rem;
 }
 
 .mobile-header-menu {
@@ -350,16 +541,12 @@ footer {
 }
 
 .mobile-header-menu img {
-    width: 32px;
-    height: 24px;
-    margin-top: 18px;
-    margin-right: 12px;
-    float: right;
-    margin-left: 20px;
+    height: 14px;
+    margin: 17px 0;
 }
 
 .float-image-app {
-    right: 5.29rem
+    right: 5.29rem;
 }
 
 .banner .content:after {
@@ -377,27 +564,12 @@ footer {
     font-size: 0;
 }
 
-.pc-header-menu ul li span {
-    padding: 0 5px;
-    color: #666666;
-}
-
 .site-name {
     margin-left: 12px;
     line-height: 60px;
     font-size: 18px;
     color: #333;
-    float: right
-}
-
-.pc-header-menu ul li {
-    height: 24px;
-    margin-top: 19px;
-    line-height: 24px;
-    font-size: 18px;
-    margin-left: 30px;
-    float: left;
-    list-style: none;
+    float: right;
 }
 
 .bithddocs {
@@ -410,9 +582,15 @@ footer {
 .container {
     width: 10rem;
     height: auto;
-    margin-top: 60px;
+    margin-top: 44px;
     background-color: #f2f2f2;
     display: block;
+}
+
+@media (max-width: 768px) {
+    .container {
+        margin-top: 48px;
+    }
 }
 
 
@@ -453,7 +631,7 @@ footer {
     line-height: 0.197917rem;
     font-size: 0.197917rem;
     font-weight: 400;
-    color: #E85F24;
+    color: white;
 }
 
 .introduction .summary:after {
@@ -467,7 +645,7 @@ footer {
 
 .introduction .content {
     margin-top: 0.625rem;
-    width: 3.6rem;
+    width: 3rem;
     word-wrap: break-word;
     word-break: normal;
     line-height: 0.260417rem;
@@ -496,7 +674,7 @@ footer {
     line-height: 0.166667rem;
     font-size: 0.15rem;
     font-family: PingFangSC-Light, sans-serif;
-    color: #E85F24;
+    color: #5887E3;
     border: 0;
     text-align: left;
     background-color: transparent;
@@ -525,7 +703,7 @@ footer {
         margin-top: 0.226667rem;
         line-height: 0.373333rem;
         font-size: 0.373333rem;
-        color: #E85F24;
+        color: white;
     }
     .introduction .summary:after {
         display: block;
@@ -553,7 +731,7 @@ footer {
         height: 5.24rem;
         -webkit-transform: rotate(0deg) translateY(0px);
         -ms-transform: rotate(0deg) translateY(0px);
-        transform: rotate(0deg) translateY(0px)
+        transform: rotate(0deg) translateY(0px);
     }
     .play-video {
         font-size: 0;
@@ -566,7 +744,7 @@ footer {
         line-height: 0.333333rem;
         font-size: 0.293333rem;
         font-family: PingFangSC-Light, sans-serif;
-        color: #E85F24;
+        color: #5887E3;
         border: 0;
         text-align: left;
         background-color: transparent;
@@ -597,7 +775,7 @@ footer {
     height: 0.34375rem;
     line-height: 0.34375rem;
     font-size: 0.34375rem;
-    color: #E85F24;
+    color: #000;
 }
 
 .features .title:after {
@@ -616,7 +794,7 @@ footer {
     word-wrap: break-word;
     word-break: normal;
     line-height: 0.28125rem;
-    font-size: 0.177083rem;
+    font-size: 0.15625rem;
     color: #000;
 }
 
@@ -625,13 +803,13 @@ footer {
         position: absolute;
         top: 0.666667rem;
         left: 0.666667rem;
-        color: #E85F24;
+        color: #000;
     }
     .features .title {
         height: 0.48rem;
         line-height: 0.48rem;
         font-size: 0.48rem;
-        color: #E85F24;
+        color: #000;
     }
     .features .title:after {
         display: block;
@@ -797,10 +975,10 @@ footer {
         color: #333;
         text-decoration: none;
         background-position: 0 -15px;
-        -webkit-transition: background-position .1s linear;
-        -moz-transition: background-position .1s linear;
-        -o-transition: background-position .1s linear;
-        transition: background-position .1s linear;
+        -webkit-transition: background-position 0.1s linear;
+        -moz-transition: background-position 0.1s linear;
+        -o-transition: background-position 0.1s linear;
+        transition: background-position 0.1s linear;
     }
 }
 
@@ -823,7 +1001,7 @@ footer {
     height: 0.34375rem;
     line-height: 0.34375rem;
     font-size: 0.34375rem;
-    color: #E85F24;
+    color: #000;
 }
 
 .management .title:after {
@@ -1026,7 +1204,7 @@ footer {
     width: 10rem;
     height: 3.77rem;
     text-align: center;
-    background-color: #F9F9FC;
+    background-color: #f9f9fc;
 }
 
 .parameter .headline {
@@ -1107,7 +1285,7 @@ footer {
         position: relative;
         width: 10rem;
         text-align: center;
-        background-color: #F9F9FC;
+        background-color: #f9f9fc;
         height: auto;
     }
     .parameter .parameter-content-pc {
@@ -1150,7 +1328,7 @@ footer {
     }
     .parameter .parameter-content-mobile table td {
         padding: 10px;
-        border: 0.8px solid #E6E6E6;
+        border: 0.8px solid #e6e6e6;
     }
     .parameter .parameter-content-mobile .blank {
         height: 1.333333rem;
@@ -1160,7 +1338,7 @@ footer {
 .welcome {
     width: 10rem;
     min-height: 100%;
-    background: url('../resource/welcome_bg.jpg') no-repeat fixed center;
+    background: url("../resource/welcome_bg.jpg") no-repeat fixed center;
     background-size: cover;
 }
 
@@ -1184,7 +1362,7 @@ footer {
     .welcome-img {
         margin-left: 1rem;
         margin-top: calc(50% - 3rem);
-        width: 8.0rem;
+        width: 8rem;
         height: 7.413333rem;
     }
     .welcome-title {
@@ -1261,11 +1439,11 @@ footer {
 
 /*footer*/
 
-footer {
+.footer {
     background-color: #fff;
 }
 
-footer p {
+.footer p {
     margin: 0;
     width: 100%;
     color: #666;
@@ -1280,34 +1458,54 @@ footer p {
 
 .bithd_content a {
     line-height: 0.197917rem;
-    font-size: 0.197917rem;
+    font-size: 0.15rem;
     font-family: PingFangSC-Light, sans-serif;
-    color: #E85F24;
+    color: #5887E3;
 }
 
 .bithd_page a {
     color: white !important;
 }
 
+.bithd_content a,
+.bithd_content img {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.bithd_content img {
+    height: 20px;
+    vertical-align: top;
+    display: inline-block;
+    margin-top: 0.015rem;
+}
+
 @media (max-width: 768px) {
     .banner .content-app {
         width: 100%;
     }
-    .mobile-header-logo img {
-        margin-left: 0px;
+    .bithd_content a {
+        line-height: 0.333333rem;
+        font-size: 0.293333rem;
     }
-    .mobile-bithd img {
-        margin-left: 12px !important;
+    .bithd_content img {
+        height: 12px;
+        vertical-align: top;
+        display: inline-block;
+        margin-top: 0px;
+    }
+    .mobile-header-logo img {
+        margin: 12px 0;
     }
     .banner .bg-image {
         height: 9rem;
     }
     .site-name {
         margin-left: 0px;
-        font-size: 15px
+        font-size: 15px;
     }
     .mobile-menu-app ul li a {
-        float: none
+        float: none;
     }
     .banner .text-content {
         top: 1.3rem;
@@ -1320,7 +1518,7 @@ footer p {
     }
     .img-ios {
         margin-top: 0.2rem;
-        width: 1.541666rem
+        width: 1.541666rem;
     }
     .features-1 .bg-image img {
         margin: 5.2rem 0 0 3.6rem;
@@ -1343,15 +1541,15 @@ footer p {
     .float-image-app {
         right: 3.8rem;
     }
-    footer {
-        background-color: #F9F9FC;
+    .footer {
+        background-color: #f9f9fc;
     }
-    footer p {
+    .footer p {
         margin: 0;
         width: 100%;
         color: #333;
         text-align: center;
-        font-size: 0.2rem;
+        font-size: 12px;
         line-height: 40px;
     }
     .bithd_help {
@@ -1359,7 +1557,7 @@ footer p {
     }
 }
 
-@media(min-width: 410px) and (max-width: 768px) {
+@media (min-width: 410px) and (max-width: 768px) {
     .banner .text-content {
         right: 4.2rem;
     }
@@ -1375,4 +1573,434 @@ footer p {
 
 .open-buy {
     cursor: pointer;
+}
+
+.light {
+    background-color: #f6f6f6 !important;
+}
+
+.armor2-banner {
+    position: relative;
+    width: 10rem;
+    height: 3.9rem;
+    background-color: white;
+}
+
+.armor2-banner .banner-img {
+    width: 100%;
+    margin: 0;
+}
+
+.banner-content,
+.banener-left-content,
+.banener-right-content {
+    position: absolute;
+}
+
+.banner-content {
+    left: 58.5%;
+    top: 28%;
+}
+
+.banner-content .name-div {
+    height: 0.416rem;
+    box-sizing: border-box;
+}
+
+.banner-content .name {
+    font-family: PingFangSC-Semibold;
+    float: left;
+    vertical-align: top;
+    font-size: 0.208rem;
+    line-height: 0.416rem;
+    color: #333333;
+    letter-spacing: 0;
+    font-weight: 600;
+    text-align: left;
+}
+
+.banner-content .sub-name {
+    font-family: PingFangSC-Medium;
+    vertical-align: top;
+    margin-top: 0.104rem;
+    display: inline-block;
+    box-sizing: border-box;
+    margin-left: 0.0635rem;
+    font-size: 0.146rem;
+    line-height: 0.162rem;
+    height: 0.182rem;
+    padding: 0 0.052rem;
+    color: #333333;
+    letter-spacing: 0;
+    font-weight: 500;
+    border: 0.013rem solid rgba(95, 95, 95, 1);
+    border-radius: 0.057rem;
+}
+
+.banner-content .title {
+    font-family: PingFangSC-Semibold;
+    margin-top: 0.156rem;
+    font-size: 0.313rem;
+    color: #333333;
+    letter-spacing: 0;
+    line-height: 0.313rem;
+    font-weight: 600;
+}
+
+.buy-div {
+    margin-top: 0.365rem;
+    height: 0.26rem;
+    padding-left: 0.03rem;
+}
+
+.buy-div .price {
+    float: left;
+    vertical-align: top;
+    font-family: PingFangSC-Regular;
+    font-size: 0.16rem;
+    color: #000000;
+    letter-spacing: 0;
+    line-height: 0.26rem;
+    font-weight: 400;
+}
+
+.buy-div .buy {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.buy-div .buy .go-buy {
+    float: left;
+    margin-left: 0.356rem;
+    vertical-align: top;
+    font-family: PingFangSC-Regular;
+    font-size: 0.16rem;
+    color: #5887E3;
+    letter-spacing: 0;
+    line-height: 0.26rem;
+    font-weight: 400;
+}
+
+.buy-arrow {
+    margin-top: 0.063rem;
+    vertical-align: top;
+    display: inline-block;
+    height: 0.135rem;
+}
+
+.banener-left-content {
+    position: absolute;
+    left: 1.406rem;
+    top: 1.5rem;
+}
+
+.banener-right-content {
+    position: absolute;
+    right: 1.406rem;
+    top: 1.5rem;
+}
+
+.banener-left-content .title,
+.banener-right-content .title {
+    font-family: PingFangSC-Semibold;
+    font-size: 0.26rem;
+    line-height: 0.26rem;
+    height: 0.26rem;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    font-weight: 600;
+}
+
+.banener-right-content .title {
+    color: #333333;
+}
+
+.banener-left-content .subtitle,
+.banener-right-content .subtitle {
+    font-family: PingFangSC-Regular;
+    margin-top: 0.208rem;
+    font-size: 0.135rem;
+    line-height: 0.198rem;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    font-weight: 400;
+}
+
+.banener-right-content .subtitle {
+    color: #333333;
+}
+
+.params-div {
+    float: left;
+    margin-left: 2.135rem;
+    margin-top: 0.927rem;
+}
+
+.banner6 .params-div {
+    margin-top: 1.3rem;
+}
+
+.params-div .title {
+    font-family: PingFangSC-Semibold;
+    font-size: 0.26rem;
+    color: #333333;
+    letter-spacing: 0;
+    font-weight: 600;
+}
+
+.params-div .params {
+    margin-top: 0.15rem;
+    font-family: PingFangSC-Regular;
+    font-size: 0.135rem;
+    color: #000000;
+    letter-spacing: 0;
+    font-weight: 400;
+}
+
+.params-div .params:first-child {
+    margin-top: 0.313rem;
+}
+
+.params-img {
+    float: right;
+    margin-right: 2.135rem;
+    width: 2.51rem;
+    margin-top: 0.698rem;
+}
+
+.banner6 {
+    padding-bottom: 0.5rem;
+}
+
+.banner7 {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .armor2-banner {
+        position: relative;
+        width: 10rem;
+        height: auto;
+        background-color: white;
+        overflow: hidden;
+    }
+    .armor2-banner .banner-img {
+        width: 100%;
+        margin: 0;
+    }
+    .banner-content,
+    .banener-left-content,
+    .banener-right-content {
+        position: absolute;
+        left: 1.333rem;
+        top: 1.4rem;
+        right: 1.333rem;
+    }
+    .banner1 .banner-content {
+        left: 20px;
+        right: 20px;
+    }
+    .banner-content .title {
+        font-family: PingFangSC-Semibold;
+        font-size: 0.853rem;
+        margin-top: 0;
+        color: #FFFFFF;
+        letter-spacing: 0;
+        text-align: center;
+        line-height: 1.227rem;
+        font-weight: 600;
+    }
+    .banener-left-content .title,
+    .banener-right-content .title {
+        font-family: PingFangSC-Semibold;
+        font-size: 0.853rem;
+        margin-top: 0;
+        color: #FFFFFF;
+        letter-spacing: 0;
+        text-align: center;
+        line-height: 1.227rem;
+        font-weight: 600;
+        height: auto;
+    }
+    .banener-right-content .title,
+    .banener-right-content .subtitle {
+        color: #FFFFFF;
+    }
+    .banner-content .subtitle,
+    .banener-left-content .subtitle,
+    .banener-right-content .subtitle {
+        font-family: PingFangSC-Regular;
+        font-size: 0.4rem;
+        color: #FFFFFF;
+        letter-spacing: 0;
+        text-align: center;
+        font-weight: 400;
+        margin-top: 0.587rem;
+        height: auto;
+        line-height: 0.533rem;
+    }
+    .banner3 .banener-right-content .subtitle,
+    .banner3 .banener-right-content .title {
+        color: #6D819E;
+    }
+    .banner7 {
+        display: block;
+    }
+    .banner7,
+    .params-mobile-div,
+    .params-img {
+        float: none;
+        display: block;
+    }
+    .banner7 .banner-img {
+        width: 100%;
+    }
+    .banner7 .banener-right-content {
+        margin-top: 0;
+        top: 0;
+        left: 0.987rem;
+        right: 0.987rem;
+    }
+    .banner7 .title {
+        margin-top: 1.333rem;
+        margin-bottom: 0.56rem;
+        font-family: PingFangSC-Semibold;
+        font-size: 0.853rem;
+        color: #000000;
+        letter-spacing: 0;
+        text-align: center;
+        font-weight: 600;
+    }
+    .banner7 .subtitle {
+        font-family: PingFangSC-Regular;
+        margin-top: 0;
+        font-size: 0.347rem;
+        color: #000000;
+        letter-spacing: 0;
+        text-align: justify;
+        line-height: 0.48rem;
+        font-weight: 400;
+        word-wrap: break-word;
+    }
+    .banner7 .subtitle-link {
+        display: inline-block;
+        font-family: Avenir-Book;
+        font-size: 0.347rem;
+        color: #5887E3;
+        letter-spacing: 0;
+        text-align: justify;
+        line-height: 0.48rem;
+        font-weight: 400;
+    }
+    .params-mobile-div {
+        margin: 0 0.533rem;
+    }
+    .params-content-div:first-child {
+        margin-top: 0;
+    }
+    .params-mobile-div .title {
+        font-family: PingFangSC-Semibold;
+        margin-top: 0.8rem;
+        margin-bottom: 0.933rem;
+        font-size: 0.853rem;
+        color: #000000;
+        letter-spacing: 0;
+        text-align: center;
+        font-weight: 600;
+    }
+    .params-content-div {
+        height: 0.853rem;
+        margin-top: 0.4rem;
+    }
+    .params-content-div .title {
+        height: 100%;
+        float: left;
+        margin: 0;
+        width: 2.747rem;
+        background-color: #E9E9E9;
+        text-align: center;
+        font-family: PingFangSC-Regular;
+        font-size: 0.4rem;
+        color: #000000;
+        letter-spacing: 0;
+        font-weight: 400;
+        line-height: 0.853rem;
+    }
+    .params-content-div .content {
+        height: 100%;
+        float: right;
+        margin: 0;
+        width: 6.187rem;
+        background-color: #F2F2F2;
+        font-family: PingFangSC-Regular;
+        font-size: 0.4rem;
+        color: #000000;
+        letter-spacing: 0;
+        text-align: left;
+        font-weight: 400;
+        line-height: 0.853rem;
+        padding-left: 0.92rem;
+        box-sizing: border-box;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+    .params-div .params {
+        margin-top: 0.104rem;
+        font-family: PingFangSC-Regular;
+        font-size: 0.135rem;
+        color: #000000;
+        letter-spacing: 0;
+        font-weight: 400;
+    }
+    .params-img {
+        margin-top: 1.227rem;
+        margin-right: 1.333rem;
+        margin-left: 1.333rem;
+        width: calc(100% - 2.666rem);
+    }
+    .banner6-warnning {
+        font-family: PingFangSC-Regular;
+        margin-top: 0.4rem;
+        font-size: 10px;
+        color: #ACACAC;
+        letter-spacing: 0;
+        text-align: center;
+        font-weight: 400;
+        margin-bottom: 0.533rem;
+    }
+    .banner2-title {
+        text-shadow: 0px 0px #00000000;
+        background: linear-gradient(to left, #DEDEDE, #FFFFFF, #DEDEDE, #FFFFFF, #DEDEDE, #FFFFFF, #DEDEDE, #FFFFFF);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: white;
+    }
+    .banner2-title .title {
+        color: transparent;
+    }
+    .banner4-title {
+        text-shadow: 0px 0px #00000000;
+        background: linear-gradient(to left, #DEDEDE, #FFFFFF, #DEDEDE, #FFFFFF, #DEDEDE, #FFFFFF, #DEDEDE, #FFFFFF, #DEDEDE, #FFFFFF, #DEDEDE, #FFFFFF, #DEDEDE, #FFFFFF, #DEDEDE, #FFFFFF);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: white;
+    }
+    .banner4-title .title {
+        color: transparent;
+    }
+    .banner5-title {
+        text-shadow: 0px 0px #00000000;
+        background: linear-gradient(to left, #DEDEDE, #FFFFFF, #DEDEDE, #FFFFFF, #DEDEDE, #FFFFFF, #DEDEDE, #FFFFFF, #DEDEDE, #FFFFFF);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: white;
+    }
+    .banner5-title .title {
+        color: transparent;
+    }
+}
+
+.buy-alert-arrow {
+    height: 18px;
 }

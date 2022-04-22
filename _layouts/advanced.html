@@ -4,7 +4,8 @@
 <head>
     <meta charset="utf-8">
     <title>bithd.com</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
     <link rel="shortcut icon" href="/favicon.ico" mce_href="/favicon.ico" type="image/x-icon">
     <script src="/js/flexible.min.js"></script>
     {% include css.html %}
@@ -32,25 +33,61 @@
                         <li>
                             <a class="nav_btn1" href="/BITHD-Razor.html"></a>
                         </li>
-                        <li>
-                            <a class="nav_btn2" href="/BITHD-watch-2.html"></a>
+                        <li class="dropdown-div">
+                            <div>
+                                <p class="nav_btn2"></p>
+                                <img class="arrow-right" src="../image/icon_arrow_right.png" />
+                            </div>
+                            <div class="dropdown">
+                                <a class="nav_btn2-1" href="/BITHD-watch-1.html"></a>
+                                <a class="nav_btn2-2" href="/BITHD-watch-2.html"></a>
+                            </div>
                         </li>
-                        <li>
-                            <a class="nav_btn4" href="/BITHD-watch-1.html"></a>
-                        </li>
-                        <li>
-                            <a class="nav_btn3" href="/Frozen-Armor.html"></a>
-                        </li>
-                        <li>
-                            <a id="nav_compare" href="/BITHD-compare.html"></a>
+                        <li class="dropdown-div">
+                            <div>
+                                <p class="nav_btn3"></p>
+                                <img class="arrow-right" src="../image/icon_arrow_right.png" />
+                            </div>
+                            <div class="dropdown">
+                                <a class="nav_btn3-1" href="/Frozen-Armor.html"></a>
+                                <a class="nav_btn3-2" href="/Frozen-Armor2.html"></a>
+                            </div>
                         </li>
                         <li>
                             <a href="../reports/reports.html" class="menu_report"></a>
-                            <!--<ul class="mobile-ul" style="display: none">-->
-                            <!--<li><a href="http://www.jinse.com/bitcoin/123580.html" target="_blank" rel="nofollow noopener noreferrer"  id="jinse_mobile"></a></li>-->
-                            <!--<li><a href="http://www.aicoin.net.cn/amp/services/news-share?id=3762&lang=zh&from=timeline" target="_blank" rel="nofollow noopener noreferrer"  id="alcoin_mobile"></a></li>-->
-                            <!--<li><a href="https://mp.weixin.qq.com/s/PHBJaW8kUW-duMeKb7Hg2g" target="_blank" rel="nofollow noopener noreferrer"  id="chain_mobile"></a></li>-->
-                            <!--</ul>-->
+                        </li>
+                        <li>
+                            <a href="http://docs.bithd.com/" class="menu_docs"></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mobile-menu">
+                    <ul>
+                        <li>
+                            <a class="nav_btn1" href="/BITHD-Razor.html"></a>
+                        </li>
+                        <li class="dropdown-mobile-div" id="bithd-dropdown">
+                            <div onclick="isShowDropdown('bithd')">
+                                <p class="nav_btn2"></p>
+                                <img class="arrow-right" src="../image/icon_arrow_right.png" />
+                            </div>
+                            <div class="dropdown-mobile">
+                                <a class="nav_btn2-1" href="/BITHD-watch-1.html"></a>
+                                <a class="nav_btn2-2" href="/BITHD-watch-2.html"></a>
+                            </div>
+                        </li>
+                        <li class="dropdown-mobile-div" id="armor-dropdown">
+                            <div onclick="isShowDropdown('armor')">
+                                <p class="nav_btn3"></p>
+                                <img class="arrow-right" src="../image/icon_arrow_right.png" />
+                            </div>
+                            <div class="dropdown-mobile">
+                                <a class="nav_btn3-1" href="/Frozen-Armor.html"></a>
+                                <a class="nav_btn3-2" href="/Frozen-Armor2.html"></a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="../reports/reports.html" class="menu_report"></a>
                         </li>
                         <li>
                             <a href="http://docs.bithd.com/" class="menu_docs"></a>
@@ -62,13 +99,13 @@
         </div>
     </nav>
 
-    <footer>
+    <div class="rol footer">
         <p class="bithd_help"></p>
-    </footer>
+    </div>
     <link href="/css/second_media.css" rel="stylesheet" type="text/css" media="all" /> {% include js.html %}
     <script>
-        $(function() {
-            $('a[href*=#]:not([href=#])').click(function() {
+        $(function () {
+            $('a[href*=#]:not([href=#])').click(function () {
                 if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname ==
                     this.hostname) {
                     var target = $(this.hash);

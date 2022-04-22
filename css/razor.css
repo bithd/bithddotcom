@@ -1,48 +1,19 @@
-.rol{
-  width:100%;
-  float:left;
-  box-sizing: border-box;
-}
 
-.razor-box-1{
-  background:url(../image/banner_bg@2x.jpg) no-repeat 100% 100%;
-  height:750px;
-  background-size:100% 100%;
-  float:left;
-  width:100%;
-  position:relative;
-}
-.en .razor-box-1{
-  height:850px;
-}
-.box-1-font{
-  width:700px;
-  margin:0 auto;
-  margin-top:80px;
-  text-align: center;
-}
-.box-1-tltle{
-  font-size:48px;
-  color:#fff;
-  text-align: center;
-  margin-bottom:30px;
-  font-family: PingFangSC-Semibold;
-}
 .box-1-message{
   font-family: PingFangSC-Regular;
-  font-size: 26px;
+  font-size: 22px;
   color: #FFFFFF;
   letter-spacing: 0;
   text-align: center;
-  line-height: 38px;
+  line-height: 1.8;
 }
 .banner-pic{
   text-align: center;
   position:absolute;
-  bottom:0;
+  bottom:40px;
   left:50%;
-  margin-left:-350px;
-  width:700px;
+  margin-left:-320px;
+  width:640px;
 }
 .razor-box-2{
   height:750px;
@@ -176,10 +147,6 @@
   letter-spacing: 0;
   line-height:1.6em;
 }
-.razor-box-6{
-  height:850px;
-  background:#fafafa;
-}
 .banner6-pic{
   width:380px;
   margin-top:130px;
@@ -188,11 +155,11 @@
 .banner6-font-box{
   float:right;
   width:430px;
-  margin-top:102px;
+  margin-top:195px;
   line-height:1.6em;
 }
 .banner6-font-rol{
-  margin-bottom:40px;
+  margin-bottom:20px;
 }
 .banner6-title{
   width:75px;
@@ -217,9 +184,48 @@
   line-height:1.6em;
 }
 .banner-btn-box{
-  display:inline-block;
+  display: flex;
+  justify-content: center;
   margin-top:40px;
+  margin-left: 50px;
   height:30px;
+}
+.banner-btn-content {
+  flex: 1;
+}
+.banner-btn-content .banner-btn {
+  line-height: 30px;
+}
+.next-div {
+  float: right;
+}
+.next-div a {
+  margin-right: 5px;
+}
+.banner-btn-content img {
+  height: 18px;
+  margin-top: 6px;
+}
+.banner-btn-content span, .banner-btn-content img {
+  display: inline-block;
+  vertical-align: top;
+}
+.banner-btn-content:first-child {
+  margin-right: 40px;
+}
+.banner-btn-content:nth-child(2){
+  margin-left: 40px;
+}
+@media screen and (max-width: 768px) {
+  .banner-btn-content:first-child {
+    margin-right: 20px;
+  }
+  .banner-btn-content:nth-child(2){
+    margin-left: 20px;
+  }
+}
+.banner-btn-content #index_banner_btn1 {
+  text-align: right;
 }
 .index-banner-box{
   height:800px;
@@ -227,4 +233,18 @@
 }
 .index-banner-box{
   height:850px;
+}
+
+.razor-box-6{
+  height:650px;
+  background:#fafafa;
+}
+
+.razor-box-razor {
+  height: 650px;
+  background: #fafafa;
+}
+
+.banner6-font-box {
+  margin-top: 145px;
 }

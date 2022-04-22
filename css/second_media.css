@@ -111,9 +111,6 @@
 }
 
 @media screen and (max-width: 700px) {
-    .m-box {
-        width: 480px;
-    }
     .second-font-box {
         width: 480px;
         margin-top: 30px;
@@ -174,11 +171,22 @@
     .water-box {
         height: 670px;
     }
+    .second-nav .m-box {
+        width: auto !important;
+        margin: 0 12px;
+    }
     .second-nav-font {
-        margin-left: 10px;
+        margin-left: 0px;
+        font-size: 18px;
     }
     .second-buy-btn {
-        margin-right: 10px;
+        width: auto;
+        margin-right: 0px;
+        margin-top: 13px;
+        padding: 0 18px;
+        height: 30px;
+        line-height: 28px;
+        font-size: 14px;
     }
     .g-box {
         height: 720px;
@@ -192,21 +200,17 @@
 }
 
 @media screen and (max-width: 500px) {
-    .m-box {
-        width: 340px;
-    }
     .en .bd-box {
         width: 340px;
     }
     .second-font-box {
-        width: 340px;
+        width: 100%;
         margin-top: 30px;
         margin-bottom: 20px;
     }
     .second-img1 {
         float: left;
         margin-left: 50px;
-        height: 400px;
     }
     .second-box {
         height: 600px;
@@ -230,7 +234,7 @@
         height: 620px;
     }
     .g-box {
-        height: 700px;
+        height: 750px;
     }
     .second-img-g {
         height: 300px;
@@ -258,6 +262,7 @@
     .second-font {
         font-size: 16px;
         text-align: center;
+        padding: 0;
     }
     .water-box {
         height: 610px;
@@ -269,15 +274,12 @@
         font-size: 14px;
     }
     .razor-box-6 {
-        height: 800px;
+        height: 650px !important;
         background: #fff;
     }
 }
 
 @media screen and (max-width: 330px) {
-    .m-box {
-        width: 300px;
-    }
     .en .bd-box {
         width: 300px;
     }
@@ -333,3 +335,4 @@
         height: 280px;
     }
 }
+
