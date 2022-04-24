@@ -33,17 +33,17 @@ $(function() {
     $('.open-buy').click(function() {
         if (new String($.i18n.browserLang()).indexOf("zh") > -1) {
             if ($(this).hasClass('not-open')) {
-                alert('预售将于2018年3月15日中午12:00开启')
+                alert('预售将于2022年4月28号开启开启')
                 return false
             }
         } else if ((new String($.i18n.browserLang()).toLowerCase()).indexOf("tw") > -1 || (new String($.i18n.browserLang()).toLowerCase()).indexOf("hk") > -1) {
             if ($(this).hasClass('not-open')) {
-                alert('预售将于2018年3月15日中午12:00开启')
+                alert('预售将于2022年4月28号开启')
                 return false
             }
         } else {
             if ($(this).hasClass('not-open')) {
-                alert('The New Prodect Will Sell at 12:00:00(UTC8) 15th March. Stay Tuned!')
+                alert('The New Prodect Will Sell at 28th April. Stay Tuned!')
                 return false
             }
         }

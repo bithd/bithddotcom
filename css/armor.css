@@ -434,7 +434,8 @@
     }
 }
 
-.armor-buy-btn {
+.armor-buy-btn,
+.armor2-buy-btn {
     display: block;
     width: 90px;
     height: 34px;
@@ -449,7 +450,8 @@
 }
 
 @media screen and (max-width: 768px) {
-    .armor-buy-btn {
+    .armor-buy-btn,
+    .armor2-buy-btn {
         margin-top: 11px;
     }
 }
