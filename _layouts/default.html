@@ -4,8 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <title>bithd.com</title>
-    <meta name="viewport"
-        content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
     <link rel="shortcut icon" href="/favicon.ico" mce_href="/favicon.ico" type="image/x-icon" />
     <script src="/js/flexible.min.js"></script>
     <style>
@@ -44,8 +43,8 @@
                                 <img class="arrow-right" src="../image/icon_arrow_right.png" />
                             </div>
                             <div class="dropdown">
-                                <a class="nav_btn2-1" href="/BITHD-watch-1.html"></a>
                                 <a class="nav_btn2-2" href="/BITHD-watch-2.html"></a>
+                                <a class="nav_btn2-1" href="/BITHD-watch-1.html"></a>
                             </div>
                         </li>
                         <li class="dropdown-div">
@@ -77,8 +76,8 @@
                                 <img class="arrow-right" src="../image/icon_arrow_right.png" />
                             </div>
                             <div class="dropdown-mobile">
-                                <a class="nav_btn2-1" href="/BITHD-watch-1.html"></a>
                                 <a class="nav_btn2-2" href="/BITHD-watch-2.html"></a>
+                                <a class="nav_btn2-1" href="/BITHD-watch-1.html"></a>
                             </div>
                         </li>
                         <li class="dropdown-mobile-div" id="armor-dropdown">
@@ -118,15 +117,13 @@
                             </div>
                         </div>
                         <div class="banner-btn-content index_banner_btn2">
-                            <div id="index_banner_btn2"
-                                class="lt banner-btn buy-razor cn-show index_banner_btn2 open-buy buy-razor">
+                            <div id="index_banner_btn2" class="lt banner-btn buy-razor cn-show index_banner_btn2 open-buy buy-razor">
                                 <span></span>
                                 <img src="../image/arrow_right.svg" alt="">
                             </div>
                         </div>
                         <div class="banner-btn-content index_banner_btn3">
-                            <div id="index_banner_btn3" class="lt banner-btn index_banner_btn3 open-buy buy-razor"
-                                target="_blank" rel="nofollow noopener noreferrer">
+                            <div id="index_banner_btn3" class="lt banner-btn index_banner_btn3 open-buy buy-razor" target="_blank" rel="nofollow noopener noreferrer">
                                 <span></span>
                                 <img src="../image/arrow_right.svg" alt="">
                             </div>
@@ -148,8 +145,7 @@
                     <a href="/BITHD-watch-2.html" class="intro-btn more">
                         进一步了解 >
                     </a>
-                    <img onclick="dumpProductHtml('watch2')" src="../image/home_pic_b@2x.png" alt=""
-                        class="intro-img" />
+                    <img onclick="dumpProductHtml('watch2')" src="../image/home_pic_b@2x.png" alt="" class="intro-img" />
                 </div>
                 <div class="lt intro-btn-box intro-btn-index">
                     <div id="intro_title_2" class="intro-title"></div>
@@ -159,8 +155,7 @@
                     <a href="/BITHD-Razor.html" class="intro-btn more">
                         进一步了解 >
                     </a>
-                    <img onclick="dumpProductHtml('razor')" src="../image/icon_pic_razor@3x.png" alt=""
-                        class="intro-img razro-img" />
+                    <img onclick="dumpProductHtml('razor')" src="../image/icon_pic_razor@3x.png" alt="" class="intro-img razro-img" />
                 </div>
                 <div class="lt intro-btn-box">
                     <div id="index_item1_title" class="intro-title"></div>
@@ -176,8 +171,7 @@
                     <a href="/Frozen-Armor.html" class="intro-btn more">
                         进一步了解 >
                     </a>
-                    <img onclick="dumpProductHtml('armor')" src="../image/index-item2.png" alt=""
-                        class="intro-img razro-img" />
+                    <img onclick="dumpProductHtml('armor')" src="../image/index-item2.png" alt="" class="intro-img razro-img" />
                 </div>
             </div>
         </div>
@@ -220,8 +214,7 @@
         <div class="rol footer">
             <p class="thanks"></p>
             <p>
-                <a href="https://github.com/bithd" target="_blank" rel="nofollow noopener noreferrer"
-                    class="source"></a>
+                <a href="https://github.com/bithd" target="_blank" rel="nofollow noopener noreferrer" class="source"></a>
             </p>
         </div>
 
@@ -255,8 +248,8 @@
     <link href="/css/index_media.css" rel="stylesheet" type="text/css" media="all" />
 
     <script>
-        $(function () {
-            $('a[href*=#]:not([href=#])').click(function () {
+        $(function() {
+            $('a[href*=#]:not([href=#])').click(function() {
                 if (
                     location.pathname.replace(/^\//, '') ==
                     this.pathname.replace(/^\//, '') &&
@@ -268,8 +261,8 @@
                         $('[name=' + this.hash.slice(1) + ']')
                     if (target.length) {
                         $('html,body').animate({
-                            scrollTop: target.offset().top - 60
-                        },
+                                scrollTop: target.offset().top - 60
+                            },
                             1000
                         )
                         return false
@@ -279,11 +272,11 @@
         })
     </script>
     <script>
-        $('#menu').click(function () {
+        $('#menu').click(function() {
             menuListOperation()
         })
 
-        $('.menu_report').click(function () {
+        $('.menu_report').click(function() {
             var width = $(window).width()
             if (width < 768) {
                 var display = $('.mobile-ul').css('display')
@@ -302,11 +295,11 @@
             }
         })
 
-        $(document).ready(function () {
+        $(document).ready(function() {
             adapterSize()
         })
 
-        $(window).resize(function () {
+        $(window).resize(function() {
             adapterSize()
         })
 
@@ -366,7 +359,7 @@
             }
         }
 
-        $('.play-video').click(function () {
+        $('.play-video').click(function() {
             var width = $(window).width()
             if (width < 768) {
                 window.location.href =
@@ -380,7 +373,7 @@
             }
         })
 
-        $('.video-btn').click(function () {
+        $('.video-btn').click(function() {
             removeVideo()
         })
 
@@ -447,7 +440,7 @@
             }
         }
 
-        $(function () {
+        $(function() {
             var languageCode
 
             if (new String($.i18n.browserLang()).indexOf('zh') > -1) {
@@ -469,7 +462,7 @@
                 mode: 'map',
                 async: true,
                 language: languageCode,
-                callback: function () {
+                callback: function() {
                     $('#razor_banner_title').html($.i18n.prop('razor_banner_title'))
                     $('#razor_banner_font').html($.i18n.prop('razor_banner_font'))
                     $('.welcome-title').html($.i18n.prop('welcome'))

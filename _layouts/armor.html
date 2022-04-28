@@ -4,8 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>bithd.com</title>
-    <meta name="viewport"
-        content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
     <link rel="shortcut icon" href="/favicon.ico" mce_href="/favicon.ico" type="image/x-icon">
     <script src="/js/flexible.min.js"></script>
     {% include css.html %}
@@ -39,8 +38,8 @@
                                 <img class="arrow-right" src="../image/icon_arrow_right.png" />
                             </div>
                             <div class="dropdown">
-                                <a class="nav_btn2-1" href="/BITHD-watch-1.html"></a>
                                 <a class="nav_btn2-2" href="/BITHD-watch-2.html"></a>
+                                <a class="nav_btn2-1" href="/BITHD-watch-1.html"></a>
                             </div>
                         </li>
                         <li class="dropdown-div">
@@ -72,8 +71,8 @@
                                 <img class="arrow-right" src="../image/icon_arrow_right.png" />
                             </div>
                             <div class="dropdown-mobile">
-                                <a class="nav_btn2-1" href="/BITHD-watch-1.html"></a>
                                 <a class="nav_btn2-2" href="/BITHD-watch-2.html"></a>
+                                <a class="nav_btn2-1" href="/BITHD-watch-1.html"></a>
                             </div>
                         </li>
                         <li class="dropdown-mobile-div" id="armor-dropdown">
@@ -102,8 +101,7 @@
             <span id="armor_title" class="lt second-nav-font"></span>
             <!-- <a href="https://k.weidian.com/JmkQ54lp" id="buy-btn" class="gt buy-btn1 second-buy-btn cn-show" target="_blank" rel="nofollow noopener noreferrer" ></a> -->
             <a id="buy-btn" class="gt buy-btn1 second-buy-btn cn-show open-buy armor-buy"></a>
-            <div class="gt buy-btn1 open-buy armor-buy armor-buy-btn en-show" target="_blank"
-                rel="nofollow noopener noreferrer"></div>
+            <div class="gt buy-btn1 open-buy armor-buy armor-buy-btn en-show" target="_blank" rel="nofollow noopener noreferrer"></div>
         </div>
     </div>
     <div class="rol armor-banner1">
@@ -205,8 +203,8 @@
     <link href="/css/armor.css" rel="stylesheet" type="text/css" media="all" />
     <link href="/css/armor_media.css" rel="stylesheet" type="text/css" media="all" />
     <script>
-        $(function () {
-            $('a[href*=#]:not([href=#])').click(function () {
+        $(function() {
+            $('a[href*=#]:not([href=#])').click(function() {
                 if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname ==
                     this.hostname) {
                     var target = $(this.hash);
@@ -222,11 +220,11 @@
         });
     </script>
     <script>
-        $("#menu").click(function () {
+        $("#menu").click(function() {
             menuListOperation();
         });
 
-        $(".menu_report").click(function () {
+        $(".menu_report").click(function() {
             var width = $(window).width();
             if (width < 768) {
                 var display = $(".mobile-ul").css("display");
@@ -245,11 +243,11 @@
             }
         });
 
-        $(document).ready(function () {
+        $(document).ready(function() {
             adapterSize();
         })
 
-        $(window).resize(function () {
+        $(window).resize(function() {
             adapterSize();
         })
 
@@ -299,7 +297,7 @@
             }
         }
 
-        $(".play-video").click(function () {
+        $(".play-video").click(function() {
             var width = $(window).width();
             if (width < 768) {
                 window.location.href = "https://v.youku.com/v_show/id_XMzQ2ODEwMTUwNA==.html?spm=a2hzp.8244740.0.0";
@@ -312,7 +310,7 @@
             }
         });
 
-        $(".video-btn").click(function () {
+        $(".video-btn").click(function() {
             removeVideo();
         });
 
@@ -345,7 +343,7 @@
                 if (new String($.i18n.browserLang()).indexOf("zh") > -1) {
                     $("#component-bg").attr('src', '../resource/industry_mobile_cn.jpg');
                 } else if ((new String($.i18n.browserLang()).toLowerCase()).indexOf("tw") > -1 || (new String($.i18n
-                    .browserLang()).toLowerCase()).indexOf("hk") > -1) {
+                        .browserLang()).toLowerCase()).indexOf("hk") > -1) {
                     $("#component-bg").attr('src', '../resource/industry_mobile_rtw.jpg');
                 } else {
                     $("#component-bg").attr('src', '../resource/industry_mobile_en.jpg');
@@ -371,7 +369,7 @@
             }
         }
 
-        $(function () {
+        $(function() {
             var languageCode;
 
 
@@ -380,7 +378,7 @@
             if (winWidth > 600) {
                 $('.armor-banner-height').height(bannerHeight)
             }
-            window.onresize = function () {
+            window.onresize = function() {
                 if (winWidth > 600) {
                     var winWidth1 = $(window).width();
                     var bannerHeight1 = parseInt(winWidth1 * (1500 / 3840));
@@ -393,7 +391,7 @@
                 languageCode = "zh";
                 $('body').addClass('zh')
             } else if ((new String($.i18n.browserLang()).toLowerCase()).indexOf("tw") > -1 || (new String($.i18n
-                .browserLang()).toLowerCase()).indexOf("hk") > -1) {
+                    .browserLang()).toLowerCase()).indexOf("hk") > -1) {
                 languageCode = "zh-rTW";
                 $('body').addClass('tw')
             } else {
@@ -406,7 +404,7 @@
                 mode: 'map',
                 async: true,
                 language: languageCode,
-                callback: function () {
+                callback: function() {
                     $(".welcome-title").html($.i18n.prop('welcome'));
 
                     $(".menu_overview").html($.i18n.prop('menu_features'));

@@ -4,8 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>bithd.com</title>
-    <meta name="viewport"
-        content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
     <link rel="shortcut icon" href="/favicon.ico" mce_href="/favicon.ico" type="image/x-icon">
     <script src="/js/flexible.min.js"></script>
     {% include css.html %}
@@ -39,8 +38,8 @@
                                 <img class="arrow-right" src="../image/icon_arrow_right.png" />
                             </div>
                             <div class="dropdown">
-                                <a class="nav_btn2-1" href="/BITHD-watch-1.html"></a>
                                 <a class="nav_btn2-2" href="/BITHD-watch-2.html"></a>
+                                <a class="nav_btn2-1" href="/BITHD-watch-1.html"></a>
                             </div>
                         </li>
                         <li class="dropdown-div">
@@ -72,8 +71,8 @@
                                 <img class="arrow-right" src="../image/icon_arrow_right.png" />
                             </div>
                             <div class="dropdown-mobile">
-                                <a class="nav_btn2-1" href="/BITHD-watch-1.html"></a>
                                 <a class="nav_btn2-2" href="/BITHD-watch-2.html"></a>
+                                <a class="nav_btn2-1" href="/BITHD-watch-1.html"></a>
                             </div>
                         </li>
                         <li class="dropdown-mobile-div" id="armor-dropdown">
@@ -230,8 +229,8 @@
     </div>
     <link href="/css/second_media.css" rel="stylesheet" type="text/css" media="all" /> {% include js.html %}
     <script>
-        $(function () {
-            $('a[href*=#]:not([href=#])').click(function () {
+        $(function() {
+            $('a[href*=#]:not([href=#])').click(function() {
                 if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname ==
                     this.hostname) {
                     var target = $(this.hash);
@@ -247,7 +246,7 @@
         });
     </script>
     <script>
-        $("#menu").click(function () {
+        $("#menu").click(function() {
             menuListOperation();
         });
 
@@ -259,7 +258,7 @@
             return str;
         }
 
-        $(".menu_report").click(function () {
+        $(".menu_report").click(function() {
             var width = $(window).width();
             if (width < 768) {
                 var display = $(".mobile-ul").css("display");
@@ -278,11 +277,11 @@
             }
         });
 
-        $(document).ready(function () {
+        $(document).ready(function() {
             adapterSize();
         })
 
-        $(window).resize(function () {
+        $(window).resize(function() {
             adapterSize();
         })
 
@@ -296,7 +295,7 @@
             }
         }
 
-        $(".play-video").click(function () {
+        $(".play-video").click(function() {
             var width = $(window).width();
             if (width < 768) {
                 window.location.href = "https://v.youku.com/v_show/id_XMzQ2ODEwMTUwNA==.html?spm=a2hzp.8244740.0.0";
@@ -309,7 +308,7 @@
             }
         });
 
-        $(".video-btn").click(function () {
+        $(".video-btn").click(function() {
             removeVideo();
         });
 
@@ -375,7 +374,7 @@
                 if (new String($.i18n.browserLang()).indexOf("zh") > -1) {
                     $("#component-bg").attr('src', '../resource/industry_mobile_cn.jpg');
                 } else if ((new String($.i18n.browserLang()).toLowerCase()).indexOf("tw") > -1 || (new String($.i18n
-                    .browserLang()).toLowerCase()).indexOf("hk") > -1) {
+                        .browserLang()).toLowerCase()).indexOf("hk") > -1) {
                     $("#component-bg").attr('src', '../resource/industry_mobile_rtw.jpg');
                 } else {
                     $("#component-bg").attr('src', '../resource/industry_mobile_en.jpg');
@@ -401,14 +400,14 @@
             }
         }
 
-        $(function () {
+        $(function() {
             var languageCode;
 
             if (new String($.i18n.browserLang()).indexOf("zh") > -1) {
                 languageCode = "zh";
                 $('body').addClass('zh')
             } else if ((new String($.i18n.browserLang()).toLowerCase()).indexOf("tw") > -1 || (new String($.i18n
-                .browserLang()).toLowerCase()).indexOf("hk") > -1) {
+                    .browserLang()).toLowerCase()).indexOf("hk") > -1) {
                 languageCode = "zh-rTW";
                 $('body').addClass('tw')
             } else {
@@ -422,7 +421,7 @@
                 mode: 'map',
                 async: true,
                 language: languageCode,
-                callback: function () {
+                callback: function() {
                     $(".welcome-title").html($.i18n.prop('welcome'));
 
                     $(".menu_overview").html($.i18n.prop('menu_features'));

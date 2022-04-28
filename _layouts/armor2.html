@@ -36,8 +36,8 @@
                                 <img class="arrow-right" src="../image/icon_arrow_right.png" />
                             </div>
                             <div class="dropdown">
-                                <a class="nav_btn2-1" href="/BITHD-watch-1.html"></a>
                                 <a class="nav_btn2-2" href="/BITHD-watch-2.html"></a>
+                                <a class="nav_btn2-1" href="/BITHD-watch-1.html"></a>
                             </div>
                         </li>
                         <li class="dropdown-div">
@@ -69,8 +69,8 @@
                                 <img class="arrow-right" src="../image/icon_arrow_right.png" />
                             </div>
                             <div class="dropdown-mobile">
-                                <a class="nav_btn2-1" href="/BITHD-watch-1.html"></a>
                                 <a class="nav_btn2-2" href="/BITHD-watch-2.html"></a>
+                                <a class="nav_btn2-1" href="/BITHD-watch-1.html"></a>
                             </div>
                         </li>
                         <li class="dropdown-mobile-div" id="armor-dropdown">
@@ -98,7 +98,7 @@
         <div class="header-content">
             <span id="armor_title" class="lt second-nav-font"></span>
             <!-- <a href="https://k.weidian.com/JmkQ54lp" id="buy-btn" class="gt buy-btn1 second-buy-btn cn-show" target="_blank" rel="nofollow noopener noreferrer" ></a> -->
-            <a id="buy-btn" class="gt buy-btn1 second-buy-btn cn-show open-buy armor-buy"></a>
+            <a id="buy-btn" class="gt buy-btn1 second-buy-btn cn-show not-open open-buy armor-buy"></a>
             <div class="gt buy-btn1 open-buy not-open armor2-buy armor2-buy-btn en-show" target="_blank" rel="nofollow noopener noreferrer"></div>
         </div>
     </div>
@@ -114,7 +114,7 @@
             <div class="buy-div">
                 <p class="price"></p>
                 <div class="buy">
-                    <p class="go-buy"></p>
+                    <p onclick="goBuyClick()" class="go-buy"></p>
                     <img class="buy-arrow" src="../resource/buy-arrow.svg">
                 </div>
             </div>
@@ -220,7 +220,7 @@
         <p class="bithd_help"></p>
     </div>
 
-    <div class="alert-buy-box">
+    <!-- <div class="alert-buy-box">
         <div class="buy-box">
             <div id="buy_title" class="buy-title"></div>
             <div class="buy-btn-box">
@@ -243,7 +243,7 @@
             </div>
             <div id="buy_close_btn" class="close-btn"></div>
         </div>
-    </div>
+    </div> -->
 
     {% include js.html %}
     <link href="/css/armor.css" rel="stylesheet" type="text/css" media="all" />
@@ -302,6 +302,10 @@
                 }
             }
         });
+
+        function goBuyClick() {
+            $('#buy-btn').click();
+        }
 
         $(document).ready(function() {
             adapterSize();

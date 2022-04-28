@@ -4,8 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>bithd.com</title>
-    <meta name="viewport"
-        content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
     <style>
         body {
             background: #fff !important;
@@ -44,8 +43,8 @@
                                 <img class="arrow-right" src="../image/icon_arrow_right.png" />
                             </div>
                             <div class="dropdown">
-                                <a class="nav_btn2-1" href="/BITHD-watch-1.html"></a>
                                 <a class="nav_btn2-2" href="/BITHD-watch-2.html"></a>
+                                <a class="nav_btn2-1" href="/BITHD-watch-1.html"></a>
                             </div>
                         </li>
                         <li class="dropdown-div">
@@ -77,8 +76,8 @@
                                 <img class="arrow-right" src="../image/icon_arrow_right.png" />
                             </div>
                             <div class="dropdown-mobile">
-                                <a class="nav_btn2-1" href="/BITHD-watch-1.html"></a>
                                 <a class="nav_btn2-2" href="/BITHD-watch-2.html"></a>
+                                <a class="nav_btn2-1" href="/BITHD-watch-1.html"></a>
                             </div>
                         </li>
                         <li class="dropdown-mobile-div" id="armor-dropdown">
@@ -227,8 +226,7 @@
                     <span id="buy_wd_font"></span>
                     <img class="buy-alert-arrow gt" src="../image/arrow_right_black.svg" alt="">
                 </a>
-                <a href="#" id="buy-tb" class="buy-btn buy-watch1-btn" target="_blank"
-                    rel="nofollow noopener noreferrer">
+                <a href="#" id="buy-tb" class="buy-btn buy-watch1-btn" target="_blank" rel="nofollow noopener noreferrer">
                     <span id="buy_tb_font"></span>
                     <img class="buy-alert-arrow gt" src="../image/arrow_right_black.svg" alt="">
                 </a>
@@ -240,8 +238,8 @@
     {% include js.html %}
     <link href="/css/compare_media.css" rel="stylesheet" type="text/css" media="all" />
     <script>
-        $(function () {
-            $('a[href*=#]:not([href=#])').click(function () {
+        $(function() {
+            $('a[href*=#]:not([href=#])').click(function() {
                 if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
                     var target = $(this.hash);
                     target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
@@ -256,11 +254,11 @@
         });
     </script>
     <script>
-        $("#menu").click(function () {
+        $("#menu").click(function() {
             menuListOperation();
         });
 
-        $(".menu_report").click(function () {
+        $(".menu_report").click(function() {
             var width = $(window).width();
             if (width < 768) {
                 var display = $(".mobile-ul").css("display");
@@ -279,11 +277,11 @@
             }
         });
 
-        $(document).ready(function () {
+        $(document).ready(function() {
             adapterSize();
         })
 
-        $(window).resize(function () {
+        $(window).resize(function() {
             adapterSize();
         })
 
@@ -333,7 +331,7 @@
             }
         }
 
-        $(".play-video").click(function () {
+        $(".play-video").click(function() {
             var width = $(window).width();
             if (width < 768) {
                 window.location.href = "https://v.youku.com/v_show/id_XMzQ2ODEwMTUwNA==.html?spm=a2hzp.8244740.0.0";
@@ -344,7 +342,7 @@
             }
         });
 
-        $(".video-btn").click(function () {
+        $(".video-btn").click(function() {
             removeVideo();
         });
 
@@ -402,7 +400,7 @@
             }
         }
 
-        $(function () {
+        $(function() {
             var languageCode;
 
             if (new String($.i18n.browserLang()).indexOf("zh") > -1) {
@@ -421,7 +419,7 @@
                 mode: 'map',
                 async: true,
                 language: languageCode,
-                callback: function () {
+                callback: function() {
                     $(".welcome-title").html($.i18n.prop('welcome'));
 
                     $(".menu_overview").html($.i18n.prop('menu_features'));

@@ -4,8 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>bithd.com</title>
-    <meta name="viewport"
-        content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
     <link rel="shortcut icon" href="/favicon.ico" mce_href="/favicon.ico" type="image/x-icon">
     <script src="/js/flexible.min.js"></script>
     {% include css.html %}
@@ -40,8 +39,8 @@
                                 <img class="arrow-right" src="../image/icon_arrow_right.png" />
                             </div>
                             <div class="dropdown">
-                                <a class="nav_btn2-1" href="/BITHD-watch-1.html"></a>
                                 <a class="nav_btn2-2" href="/BITHD-watch-2.html"></a>
+                                <a class="nav_btn2-1" href="/BITHD-watch-1.html"></a>
                             </div>
                         </li>
                         <li class="dropdown-div">
@@ -73,8 +72,8 @@
                                 <img class="arrow-right" src="../image/icon_arrow_right.png" />
                             </div>
                             <div class="dropdown-mobile">
-                                <a class="nav_btn2-1" href="/BITHD-watch-1.html"></a>
                                 <a class="nav_btn2-2" href="/BITHD-watch-2.html"></a>
+                                <a class="nav_btn2-1" href="/BITHD-watch-1.html"></a>
                             </div>
                         </li>
                         <li class="dropdown-mobile-div" id="armor-dropdown">
@@ -120,25 +119,22 @@
 
                     <h4 class="supprot-menu-title">C 创建BITHD账号</h4>
                     <p class="supprot-content">1、首次进入钱包给新钱包命名（设备标签）。</p>
-                    <p class="supprot-content">2、名字输入完成后，设置钱包的 6-8位 PIN 码，bitpie 九宫格输入对应 BITHD
-                        钱包显示的数字，请记好您设置的PIN码，PIN忘记后不可找回，需要签名相关操作就需要输入PIN码。</p>
+                    <p class="supprot-content">2、名字输入完成后，设置钱包的 6-8位 PIN 码，bitpie 九宫格输入对应 BITHD 钱包显示的数字，请记好您设置的PIN码，PIN忘记后不可找回，需要签名相关操作就需要输入PIN码。
+                    </p>
                     <p class="supprot-content">​3､ PIN码设置好后，拿出你的种子卡，开始抄写你的助记词！一定要认认真抄写您的 12 个助记词。</p>
                     <img class="supprot-image" src="../image/support_c_1.jpg">
                     <p class="supprot-content">​4、BITHD 账号创建完成，您可以在比特派应用内自由切换您的 BITHD 和 bitpie 账号啦。</p>
 
                     <h4 class="supprot-menu-title">D 忘记PIN码</h4>
-                    <p class="supprot-content">​一但您的 PIN 码忘记，BITHD
-                        将进入锁定状态，您的BITHD将无法使用但您的资产依旧由助记词掌管，不受影响。当前版本不支持解锁，我们将在后续版本提供相关解锁功能。请保管好您的12个助记词，助记词是您掌控资产的唯一方式。助记词遗失，资产将无法恢复。
+                    <p class="supprot-content">​一但您的 PIN 码忘记，BITHD 将进入锁定状态，您的BITHD将无法使用但您的资产依旧由助记词掌管，不受影响。当前版本不支持解锁，我们将在后续版本提供相关解锁功能。请保管好您的12个助记词，助记词是您掌控资产的唯一方式。助记词遗失，资产将无法恢复。
                     </p>
 
                     <h4 class="supprot-menu-title">E 助记词恢复</h4>
-                    <a class="supprot-link" target="_black"
-                        href="https://v.qq.com/x/page/b0932xsn27h.html">https://v.qq.com/x/page/b0932xsn27h.html</a>
+                    <a class="supprot-link" target="_black" href="https://v.qq.com/x/page/b0932xsn27h.html">https://v.qq.com/x/page/b0932xsn27h.html</a>
 
                     <h3 class="supprot-title">功能使用</h3>
                     <h4 class="supprot-menu-title">A 多重签名</h4>
-                    <a class="supprot-link" target="_black"
-                        href="https://v.qq.com/x/page/s3023szmkl4.html">https://v.qq.com/x/page/s3023szmkl4.html</a>
+                    <a class="supprot-link" target="_black" href="https://v.qq.com/x/page/s3023szmkl4.html">https://v.qq.com/x/page/s3023szmkl4.html</a>
 
                     <h4 class="supprot-menu-title">B 密码账户</h4>
                     <p class="supprot-content">比特护盾密码账户是比特护盾的可选功能，建议密码保管能力较强的人使用。</p>
@@ -160,8 +156,8 @@
     {% include js.html %}
     <link href="/css/support_media.css" rel="stylesheet" type="text/css" media="all" />
     <script>
-        $(function () {
-            $('a[href*=#]:not([href=#])').click(function () {
+        $(function() {
+            $('a[href*=#]:not([href=#])').click(function() {
                 if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
                     var target = $(this.hash);
                     target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
@@ -176,11 +172,11 @@
         });
     </script>
     <script>
-        $("#menu").click(function () {
+        $("#menu").click(function() {
             menuListOperation();
         });
 
-        $(".menu_report").click(function () {
+        $(".menu_report").click(function() {
             var width = $(window).width();
             if (width < 768) {
                 var display = $(".mobile-ul").css("display");
@@ -199,11 +195,11 @@
             }
         });
 
-        $(document).ready(function () {
+        $(document).ready(function() {
             adapterSize();
         })
 
-        $(window).resize(function () {
+        $(window).resize(function() {
             adapterSize();
         })
 
@@ -298,7 +294,7 @@
             }
         }
 
-        $(function () {
+        $(function() {
             var languageCode;
 
             if (new String($.i18n.browserLang()).indexOf("zh") > -1) {
@@ -317,7 +313,7 @@
                 mode: 'map',
                 async: true,
                 language: languageCode,
-                callback: function () {
+                callback: function() {
                     $(".welcome-title").html($.i18n.prop('welcome'));
 
                     $(".menu_overview").html($.i18n.prop('menu_features'));

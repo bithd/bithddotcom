@@ -4,8 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>bithd.com</title>
-    <meta name="viewport"
-        content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
     <link rel="shortcut icon" href="/favicon.ico" mce_href="/favicon.ico" type="image/x-icon">
     <script src="/js/flexible.min.js"></script>
     {% include css.html %}
@@ -40,8 +39,8 @@
                                 <img class="arrow-right" src="../image/icon_arrow_right.png" />
                             </div>
                             <div class="dropdown">
-                                <a class="nav_btn2-1" href="/BITHD-watch-1.html"></a>
                                 <a class="nav_btn2-2" href="/BITHD-watch-2.html"></a>
+                                <a class="nav_btn2-1" href="/BITHD-watch-1.html"></a>
                             </div>
                         </li>
                         <li class="dropdown-div">
@@ -73,8 +72,8 @@
                                 <img class="arrow-right" src="../image/icon_arrow_right.png" />
                             </div>
                             <div class="dropdown-mobile">
-                                <a class="nav_btn2-1" href="/BITHD-watch-1.html"></a>
                                 <a class="nav_btn2-2" href="/BITHD-watch-2.html"></a>
+                                <a class="nav_btn2-1" href="/BITHD-watch-1.html"></a>
                             </div>
                         </li>
                         <li class="dropdown-mobile-div" id="armor-dropdown">
@@ -133,24 +132,19 @@
                 <p class="title-app"></p>
                 <p class="content-app"></p>
                 <p class="bithd_content bithd_page">
-                    <a class="bithdsite" href="https://bithd.com/wallet" target="_blank"
-                        rel="nofollow noopener noreferrer"></a>
+                    <a class="bithdsite" href="https://bithd.com/wallet" target="_blank" rel="nofollow noopener noreferrer"></a>
                 </p>
                 <p class="bithd_content bithd_page">
-                    <a class="bithdtitleshop"
-                        href="https://weidian.com/item.html?itemID=2266200056&spider_token=af9f&spider=seller.zx-shopdetail.5.1"
-                        target="_blank" rel="nofollow noopener noreferrer"></a>
+                    <a class="bithdtitleshop" href="https://weidian.com/item.html?itemID=2266200056&spider_token=af9f&spider=seller.zx-shopdetail.5.1" target="_blank" rel="nofollow noopener noreferrer"></a>
                 </p>
                 <p class="bithd_content bithd_page">
-                    <a class="taobaoshop" href="https://shop284054772.taobao.com/" target="_blank"
-                        rel="nofollow noopener noreferrer"></a>
+                    <a class="taobaoshop" href="https://shop284054772.taobao.com/" target="_blank" rel="nofollow noopener noreferrer"></a>
                 </p>
 
 
 
                 <div class="download-img">
-                    <a href="https://itunes.apple.com/cn/app/bithd/id1366007847?mt=8" target="_blank"
-                        rel="nofollow noopener noreferrer">
+                    <a href="https://itunes.apple.com/cn/app/bithd/id1366007847?mt=8" target="_blank" rel="nofollow noopener noreferrer">
                         <img class="img-ios" src="../resource/ios.png">
                     </a>
 
@@ -180,8 +174,8 @@
 
     {% include js.html %}
     <script>
-        $(function () {
-            $('a[href*=#]:not([href=#])').click(function () {
+        $(function() {
+            $('a[href*=#]:not([href=#])').click(function() {
                 if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
                     var target = $(this.hash);
                     target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
@@ -196,11 +190,11 @@
         });
     </script>
     <script>
-        $("#menu").click(function () {
+        $("#menu").click(function() {
             menuListOperation();
         });
 
-        $(".menu_report").click(function () {
+        $(".menu_report").click(function() {
             var width = $(window).width();
             if (width < 768) {
                 var display = $(".mobile-ul").css("display");
@@ -219,11 +213,11 @@
             }
         });
 
-        $(document).ready(function () {
+        $(document).ready(function() {
             adapterSize();
         })
 
-        $(window).resize(function () {
+        $(window).resize(function() {
             adapterSize();
         })
 
@@ -271,7 +265,7 @@
             }
         }
 
-        $(".play-video").click(function () {
+        $(".play-video").click(function() {
             var width = $(window).width();
             if (width < 768) {
                 window.location.href = "http://v.youku.com/v_show/id_XMzQ2ODEwMTUwNA==.html?spm=a2hzp.8244740.0.0";
@@ -282,7 +276,7 @@
             }
         });
 
-        $(".video-btn").click(function () {
+        $(".video-btn").click(function() {
             removeVideo();
         });
 
@@ -340,7 +334,7 @@
             }
         }
 
-        $(function () {
+        $(function() {
 
             function change(languageCode) {
                 jQuery.i18n.properties({
@@ -349,7 +343,7 @@
                     mode: 'map',
                     async: true,
                     language: languageCode,
-                    callback: function () {
+                    callback: function() {
                         $(".welcome-title").html($.i18n.prop('welcome'));
 
                         $(".menu_overview").html($.i18n.prop('menu_features'));
@@ -421,10 +415,10 @@
 
             change(languageCode);
 
-            $(".en").on("click", function () {
+            $(".en").on("click", function() {
                 change("en");
             })
-            $(".zh").on("click", function () {
+            $(".zh").on("click", function() {
                 change("zh");
             })
 
