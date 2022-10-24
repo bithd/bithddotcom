@@ -424,16 +424,6 @@
     margin-top: 260px;
 }
 
-.armor-banner7 {
-    height: 650px;
-}
-
-@media screen and (max-width: 768px) {
-    .armor-banner7 {
-        height: 720px;
-    }
-}
-
 .armor-buy-btn,
 .armor2-buy-btn {
     display: block;

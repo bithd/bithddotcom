@@ -11,91 +11,7 @@
 </head>
 
 <body>
-    <nav class="dark" style="display: block">
-        <div class="mobile-nav pc-hidden">
-            <div class="header-content">
-                <div class="mobile-header-logo mobile-bithd">
-                    <a href="/index.html"><img class="logo" src="../resource/icon.svg"></a>
-                </div>
-                <div class="mobile-header-menu">
-                    <img id="menu" src="../resource/menu_dark.svg">
-                </div>
-            </div>
-        </div>
-        <div id="menu-list" class="pc-nav mobile-hidden">
-            <div class="header-content">
-                <div class="pc-header-logo mobile-hidden">
-                    <a href="/index.html"><img class="logo" src="../resource/icon.svg"></a>
-                </div>
-                <div class="pc-header-menu">
-                    <ul>
-                        <li>
-                            <a class="nav_btn1" href="/BITHD-Razor.html"></a>
-                        </li>
-                        <li class="dropdown-div">
-                            <div>
-                                <p class="nav_btn2"></p>
-                                <img class="arrow-right" src="../image/icon_arrow_right.png" />
-                            </div>
-                            <div class="dropdown">
-                                <a class="nav_btn2-2" href="/BITHD-watch-2.html"></a>
-                                <a class="nav_btn2-1" href="/BITHD-watch-1.html"></a>
-                            </div>
-                        </li>
-                        <li class="dropdown-div">
-                            <div>
-                                <p class="nav_btn3"></p>
-                                <img class="arrow-right" src="../image/icon_arrow_right.png" />
-                            </div>
-                            <div class="dropdown">
-                                <a class="nav_btn3-1" href="/Frozen-Armor.html"></a>
-                                <a class="nav_btn3-2" href="/Frozen-Armor2.html"></a>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="../reports/reports.html" class="menu_report"></a>
-                        </li>
-                        <li>
-                            <a href="http://docs.bithd.com/" class="menu_docs"></a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="mobile-menu">
-                    <ul>
-                        <li>
-                            <a class="nav_btn1" href="/BITHD-Razor.html"></a>
-                        </li>
-                        <li class="dropdown-mobile-div" id="bithd-dropdown">
-                            <div onclick="isShowDropdown('bithd')">
-                                <p class="nav_btn2"></p>
-                                <img class="arrow-right" src="../image/icon_arrow_right.png" />
-                            </div>
-                            <div class="dropdown-mobile">
-                                <a class="nav_btn2-2" href="/BITHD-watch-2.html"></a>
-                                <a class="nav_btn2-1" href="/BITHD-watch-1.html"></a>
-                            </div>
-                        </li>
-                        <li class="dropdown-mobile-div" id="armor-dropdown">
-                            <div onclick="isShowDropdown('armor')">
-                                <p class="nav_btn3"></p>
-                                <img class="arrow-right" src="../image/icon_arrow_right.png" />
-                            </div>
-                            <div class="dropdown-mobile">
-                                <a class="nav_btn3-1" href="/Frozen-Armor.html"></a>
-                                <a class="nav_btn3-2" href="/Frozen-Armor2.html"></a>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="../reports/reports.html" class="menu_report"></a>
-                        </li>
-                        <li>
-                            <a href="http://docs.bithd.com/" class="menu_docs"></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </nav>
+    {% include header.html menu="../resource/menu_dark.svg" isDark="dark" logo="../resource/icon.svg" %}
     <div class="second-wrapper">
         <div class="second-nav light">
             <div class="m-box">
@@ -341,6 +257,19 @@
                         arrow.src = "../image/icon_arrow_down.png"
                         element.style.height = "126px"
                     }
+                } else if (type == "razor") {
+                    let element = $("#razor-dropdown")[0]
+                    let dropdown = $("#razor-dropdown .dropdown-mobile")[0]
+                    let arrow = $("#razor-dropdown .arrow-right")[0]
+                    if (dropdown.style.display == "block") {
+                        dropdown.style.display = "none"
+                        arrow.src = "../image/icon_arrow_right.png"
+                        element.style.height = "45px"
+                    } else {
+                        dropdown.style.display = "block"
+                        arrow.src = "../image/icon_arrow_down.png"
+                        element.style.height = "126px"
+                    }
                 }
             }
         }
@@ -498,7 +427,8 @@
                     } else {
                         $('#buy-wd').css('display', 'none')
                         $('#buy-tb').css('display', 'none')
-                        $('#buy_ebay_font').html($.i18n.prop('buy_ebay_font'));
+                        $('#buy-ebay').css('display', 'none')
+                        // $('#buy_ebay_font').html($.i18n.prop('buy_ebay_font'));
                         $('#buy_amazon_font').html($.i18n.prop('buy_amazon_font'));
                     }
                     $('#buy_close_btn').html($.i18n.prop('buy_close_btn'));
@@ -508,6 +438,8 @@
                     $('.nav_btn4').html($.i18n.prop('nav_btn4'));
                     $('.nav_btn2-1').html($.i18n.prop('bithd1'));
                     $('.nav_btn2-2').html($.i18n.prop('bithd2'));
+                    $('.nav_btn1-1').html($.i18n.prop('razor1'));
+                    $('.nav_btn1-2').html($.i18n.prop('razor2'));
                     $('.nav_btn3-1').html($.i18n.prop('armor1'));
                     $('.nav_btn3-2').html($.i18n.prop('armor2'));
 

@@ -204,12 +204,21 @@ nav {
 }
 
 .razor-box-1 {
-    background: url(../image/banner_bg@2x.jpg) no-repeat 100% 100%;
+    background: url(../image/razor2_h_back.jpg) no-repeat 100% 100%;
     height: 750px;
+    width: 100%;
     background-size: 100% 100%;
     float: left;
     width: 100%;
     position: relative;
+}
+
+.razor2-box-1 {
+    height: auto !important;
+}
+
+.razor-box-1 .m-box {
+    width: 100%;
 }
 
 .en .razor-box-1 {
@@ -229,6 +238,10 @@ nav {
     text-align: center;
     margin-bottom: 30px;
     font-family: PingFangSC-Semibold;
+}
+
+.box-home-tltle {
+    font-size: 28px !important;
 }
 
 .reports {
@@ -1543,14 +1556,25 @@ nav {
     }
     .footer {
         background-color: #f9f9fc;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
     }
     .footer p {
         margin: 0;
+        padding: 24px 0;
         width: 100%;
         color: #333;
         text-align: center;
         font-size: 12px;
-        line-height: 40px;
+        line-height: 1.2;
+    }
+    .footer p:nth-child(2) {
+        padding-top: 0;
+    }
+    .footer p a {
+        line-height: 1.2;
     }
     .bithd_help {
         font-size: 0.2rem;
@@ -1600,6 +1624,10 @@ nav {
 .banner-content {
     left: 58.5%;
     top: 28%;
+}
+
+.razor2-banner1 .banner-content {
+    top: 22%;
 }
 
 .banner-content .name-div {
@@ -2003,4 +2031,257 @@ nav {
 
 .buy-alert-arrow {
     height: 18px;
+}
+
+/* razor2 */
+.razor2-banner1  {
+    position: relative;
+    width: 10rem;
+    height: 3.9rem;
+    background-image: url('../image/pic_razor2_1.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.razor2-banner2 {
+    position: relative;
+    width: 10rem;
+    height: 3.9rem;
+    background-image: url('../image/banner3_bg@2x.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.razor2-banner .buy-div .price {
+    float: left;
+    vertical-align: top;
+    font-family: PingFangSC-Regular;
+    font-size: 0.1875rem;
+    color: #000000;
+    letter-spacing: 0;
+    line-height: 0.26rem;
+    font-weight: 400;
+}
+
+.buy-div .buy {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.razor2-banner .buy-div .buy .go-buy {
+    float: left;
+    margin-left: 0.356rem;
+    vertical-align: top;
+    font-family: PingFangSC-Regular;
+    font-size: 0.1875rem;
+    color: #5887E3;
+    letter-spacing: 0;
+    line-height: 0.26rem;
+    font-weight: 400;
+}
+
+.razor2-banner2 .banner-img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 50%;
+}
+
+.razor2-box-5 {
+    width: 10rem;
+    height: auto;
+	background: #f6f6f6;
+    overflow: hidden;
+}
+
+.razor2-box-5 .banner5-item-icon {
+    width: 0.3333rem;
+    height: 0.3333rem;
+}
+
+.razor2-box-5 .banner5-title {
+    font-size: 0.1458rem;
+    line-height: 1.2;
+}
+
+.razor2-box-5 .banner5-font {
+    font-size: 0.1rem;
+    line-height: 1.5;
+}
+
+.razor2-content {
+    position: relative;
+    overflow: hidden;
+}
+
+.razor2-content .banner5-box {
+    position: relative;
+    margin: 0.625rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.razor2-content .params-img {
+    margin-top: 1.2968rem;
+}
+ 
+.razor2-box-5 .banner5-item {
+    width: 50%;
+    margin-bottom: 0.3645rem;
+}
+
+.razor2-box-5 .banner5-item:nth-child(5),.razor2-box-5 .banner5-item:nth-child(6) {
+    margin-bottom: 0;
+}
+
+.razor2-box-5 .m-box {
+    width: 100%;
+    max-width: 1100px;
+}
+
+.razor2-banner {
+    position: relative;
+    width: 10rem;
+    height: auto;
+    background-color: white;
+    overflow: hidden;
+}
+
+@media (max-width: 768px) {
+    .razor2-box-5 .title {
+        margin-top: 60px;
+        margin-bottom: 14px;
+        font-size: 32px;
+        line-height: 45px;
+        text-align: center;
+    }
+    .razor2-box-5 .banner5-item {
+        margin: 0 17px;
+        width: calc(100% - 34px);
+        min-height: 97px;
+        margin-bottom: 0;
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid rgba(231,231,231,1);
+    }
+
+    .razor2-box-5 .banner5-item:last-child {
+        border-bottom: none;
+    }
+
+    .razor2-box-5 .banner5-font-box {
+        width: calc(100% - 56px);
+        margin-left: 22px;
+    }
+
+    .razor2-box-5 .banner5-item-icon {
+        width: 34px;
+        height: 34px;
+    }
+
+    .razor2-content .banner5-box {
+        margin: 24px 0;
+    }
+
+    .razor2-box-5 {
+        height: auto;
+        text-align: center;
+    }
+
+    .razor2-box-5 .banner5-title {
+        text-align: left;
+        font-size: 15px;
+        color: #333;
+        font-weight: 500;
+        margin-bottom: 8px;
+    }
+
+    .razor2-box-5 .banner5-font {
+        font-size: 12px;
+        color: #666;
+        text-align: left;
+        line-height: 1.4;
+    }
+
+    .razor2-content .params-mobile-div .title {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .razor2-content .params-content-div .title {
+        margin: 0;
+    }
+}
+
+.razor2-banner-m, .razor2-banner-m-2 {
+    padding-top: 60px;
+    width: 100%;
+    background: white;
+    overflow: hidden;
+}
+
+.razor2-banner-m .banner-content, .razor2-banner-m-2 .banner-content {
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+.razor2-banner-m .banner-content .title, .razor2-banner-m-2 .banner-content .title {
+    font-family: PingFangSC-Semibold;
+    font-size: 32px;
+    color: #333333;
+    letter-spacing: 0;
+    font-weight: 600;
+}
+
+.razor2-banner-m .banner-content .subtitle, .razor2-banner-m-2 .banner-content .subtitle {
+    font-family: PingFangSC-Regular;
+    margin: 22px 54px 0;
+    font-size: 13px;
+    color: #333333;
+    letter-spacing: 0;
+    font-weight: 400;
+}
+
+.razor2-banner-m-2 .banner-content .subtitle, .razor2-banner-m-2 .banner-content .title {
+    color: white;
+}
+
+.razor2-banner-m img, .razor2-banner-m-2 img {
+    margin: 0;
+    margin-top: 80px;
+    width: 100%;
+}
+
+.razor2-banner-m-2 {
+    padding: 60px 0;
+    background-image: url('../image/pic_razor2_m_bg.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+
+.razor-box-6 {
+    height: auto;
+    background-color: white;
+    text-align: center;
+}
+
+.razor-box-razor {
+    text-align: center;
+}
+
+.banner6-font-box {
+    text-align: left;
+}
+
+@media (max-width: 768px) {
+    .banner6-pic {
+        margin: 90px auto 0 !important;
+        width: 80% !important;
+        height: auto !important;
+        float: none !important;
+    }
 }

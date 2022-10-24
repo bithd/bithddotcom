@@ -229,22 +229,29 @@
 }
 .index-banner-box{
   height:800px;
+  text-align: center;
   margin-bottom:40px;
 }
 .index-banner-box{
   height:850px;
 }
 
-.razor-box-6{
-  height:650px;
-  background:#fafafa;
-}
-
-.razor-box-razor {
-  height: 650px;
-  background: #fafafa;
-}
-
 .banner6-font-box {
   margin-top: 145px;
+}
+
+.razor2-box-1 .banner-pic {
+  position: relative;
+  margin: 80px 0 0 0;
+  width: auto;
+  left: 0;
+  width: 38%;
+  max-width: 500px;
+  float: inherit;
+}
+
+@media screen and (max-width: 768px) {
+  .razor2-box-1 .banner-pic {
+    width: 90%;
+  }
 }

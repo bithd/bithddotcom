@@ -176,9 +176,6 @@
   .banner6-font-rol {
     margin-bottom: 25px;
   }
-  .razor-box-6 {
-    height: 600px;
-  }
   .box-1-tltle {
     font-size: 36px;
   }
@@ -296,14 +293,6 @@
     margin-top: 30px;
     margin-right: 80px;
   }
-  .razor-box-6 {
-    height: 580px !important;
-    background: #fff;
-  }
-  .razor-box-razor {
-    height: 750px;
-    background: #fff;
-  }
   .banner6-font-rol {
     margin-bottom: 15px;
   }
@@ -311,8 +300,8 @@
     padding: 0;
   }
   .footer p:nth-child(2){
-    line-height: 20px;
-    margin-top: -15px;
+    /* line-height: 20px; */
+    /* margin-top: -15px; */
   }
 }
 

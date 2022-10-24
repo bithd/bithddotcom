@@ -4,7 +4,8 @@
 <head>
     <meta charset="utf-8" />
     <title>bithd.com</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
     <link rel="shortcut icon" href="/favicon.ico" mce_href="/favicon.ico" type="image/x-icon" />
     <script src="/js/flexible.min.js"></script>
     <style>
@@ -16,127 +17,57 @@
 </head>
 
 <body>
-    <nav style="display: block">
-        <div class="mobile-nav pc-hidden">
-            <div class="header-content">
-                <div class="mobile-header-logo mobile-bithd">
-                    <a href="/index.html"><img class="logo" src="../resource/icon_black.svg"></a>
-                </div>
-                <div class="mobile-header-menu">
-                    <img id="menu" src="../resource/menu.svg">
-                </div>
-            </div>
-        </div>
-        <div id="menu-list" class="pc-nav mobile-hidden">
-            <div class="header-content">
-                <div class="pc-header-logo mobile-hidden">
-                    <a href="/index.html"><img class="logo" src="../resource/icon_black.svg"></a>
-                </div>
-                <div class="pc-header-menu">
-                    <ul>
-                        <li>
-                            <a class="nav_btn1 dark-txt" href="/BITHD-Razor.html"></a>
-                        </li>
-                        <li class="dropdown-div">
-                            <div>
-                                <p class="nav_btn2 dark-txt"></p>
-                                <img class="arrow-right" src="../image/icon_arrow_right.png" />
-                            </div>
-                            <div class="dropdown">
-                                <a class="nav_btn2-2" href="/BITHD-watch-2.html"></a>
-                                <a class="nav_btn2-1" href="/BITHD-watch-1.html"></a>
-                            </div>
-                        </li>
-                        <li class="dropdown-div">
-                            <div>
-                                <p class="nav_btn3 dark-txt"></p>
-                                <img class="arrow-right" src="../image/icon_arrow_right.png" />
-                            </div>
-                            <div class="dropdown">
-                                <a class="nav_btn3-1" href="/Frozen-Armor.html"></a>
-                                <a class="nav_btn3-2" href="/Frozen-Armor2.html"></a>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="../reports/reports.html" class="menu_report dark-txt"></a>
-                        </li>
-                        <li>
-                            <a href="http://docs.bithd.com/" class="menu_docs dark-txt"></a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="mobile-menu">
-                    <ul>
-                        <li>
-                            <a class="nav_btn1 dark-txt" href="/BITHD-Razor.html"></a>
-                        </li>
-                        <li class="dropdown-mobile-div" id="bithd-dropdown">
-                            <div onclick="isShowDropdown('bithd')">
-                                <p class="nav_btn2 dark-txt"></p>
-                                <img class="arrow-right" src="../image/icon_arrow_right.png" />
-                            </div>
-                            <div class="dropdown-mobile">
-                                <a class="nav_btn2-2" href="/BITHD-watch-2.html"></a>
-                                <a class="nav_btn2-1" href="/BITHD-watch-1.html"></a>
-                            </div>
-                        </li>
-                        <li class="dropdown-mobile-div" id="armor-dropdown">
-                            <div onclick="isShowDropdown('armor')">
-                                <p class="nav_btn3 dark-txt"></p>
-                                <img class="arrow-right" src="../image/icon_arrow_right.png" />
-                            </div>
-                            <div class="dropdown-mobile">
-                                <a class="nav_btn3-1" href="/Frozen-Armor.html"></a>
-                                <a class="nav_btn3-2" href="/Frozen-Armor2.html"></a>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="../reports/reports.html" class="menu_report dark-txt"></a>
-                        </li>
-                        <li>
-                            <a href="http://docs.bithd.com/" class="menu_docs dark-txt"></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </nav>
+    {% include header.html menu="../resource/menu.svg" isDarkText="dark" logo="../resource/icon_black.svg" %}
     <div class="body-box" onclick="containMenuOperation()">
-        <div class="rol razor-box-1 index-banner-box">
+        <div class="rol razor-box-1 index-banner-box razor2-box-1">
             <div class="m-box">
                 <div class="box-1-font">
-                    <div id="index_banner_title" class="box-1-tltle">
+                    <div id="index_banner_title" class="box-1-tltle box-home-tltle">
                         <p class="title"></p>
                         <p class="subtitle"></p>
                     </div>
                     <div class="banner-btn-box">
                         <div class="banner-btn-content index_banner_btn1">
                             <div class="next-div">
-                                <a id="index_banner_btn1" href="/BITHD-Razor.html" class="lt banner-btn">进一步了解</a>
+                                <a id="index_banner_btn1" href="/BITHD-Razor-Pro.html" class="lt banner-btn">进一步了解</a>
                                 <img src="../image/arrow_right.svg" alt="">
                             </div>
                         </div>
                         <div class="banner-btn-content index_banner_btn2">
-                            <div id="index_banner_btn2" class="lt banner-btn buy-razor cn-show index_banner_btn2 open-buy buy-razor">
+                            <div id="index_banner_btn2"
+                                class="lt banner-btn buy-razor2 cn-show index_banner_btn2 open-buy buy-razor2 razor2-buy">
                                 <span></span>
                                 <img src="../image/arrow_right.svg" alt="">
                             </div>
                         </div>
                         <div class="banner-btn-content index_banner_btn3">
-                            <div id="index_banner_btn3" class="lt banner-btn index_banner_btn3 open-buy buy-razor" target="_blank" rel="nofollow noopener noreferrer">
+                            <div id="index_banner_btn3"
+                                class="lt banner-btn index_banner_btn3 open-buy buy-razor2 razor2-buy" target="_blank"
+                                rel="nofollow noopener noreferrer">
                                 <span></span>
                                 <img src="../image/arrow_right.svg" alt="">
                             </div>
                         </div>
-                        <div class="lt banner-btn buy-razor en-show index_banner_btn2 open-buy"></div>
+                        <div class="lt banner-btn buy-razor2 en-show index_banner_btn2 open-buy"></div>
                     </div>
                 </div>
 
-                <img src="../image/banner_pic@2x.png" class="banner-pic" alt="" />
+                <img src="../image/pic_razor2_index_2.png" class="banner-pic" alt="" />
             </div>
         </div>
         <div class="index-intro-box">
             <div class="m-box">
+                <div class="lt intro-btn-box intro-btn-index">
+                    <div id="intro_title_2" class="intro-title"></div>
+                    <div id="index_watch_1" class="intro-font">
+                        经过由内而外的重新设计和打造，全新 BITHD Watch 2，给予数字资产更安全的守护。
+                    </div>
+                    <a href="/BITHD-Razor-Pro.html" class="intro-btn more">
+                        进一步了解 >
+                    </a>
+                    <img onclick="dumpProductHtml('razor2')" src="../image/icon_pic_razor@3x.png" alt=""
+                        class="intro-img razro-img" />
+                </div>
                 <div class="lt intro-btn-box">
                     <div id="intro_title_1" class="intro-title"></div>
                     <div id="index_watch_2" class="intro-font">
@@ -145,17 +76,8 @@
                     <a href="/BITHD-watch-2.html" class="intro-btn more">
                         进一步了解 >
                     </a>
-                    <img onclick="dumpProductHtml('watch2')" src="../image/home_pic_b@2x.png" alt="" class="intro-img" />
-                </div>
-                <div class="lt intro-btn-box intro-btn-index">
-                    <div id="intro_title_2" class="intro-title"></div>
-                    <div id="index_watch_1" class="intro-font">
-                        经过由内而外的重新设计和打造，全新 BITHD Watch 2，给予数字资产更安全的守护。
-                    </div>
-                    <a href="/BITHD-Razor.html" class="intro-btn more">
-                        进一步了解 >
-                    </a>
-                    <img onclick="dumpProductHtml('razor')" src="../image/icon_pic_razor@3x.png" alt="" class="intro-img razro-img" />
+                    <img onclick="dumpProductHtml('watch2')" src="../image/home_pic_b@2x.png" alt=""
+                        class="intro-img" />
                 </div>
                 <div class="lt intro-btn-box">
                     <div id="index_item1_title" class="intro-title"></div>
@@ -163,7 +85,7 @@
                     <a href="/Frozen-Armor2.html" class="intro-btn more">
                         进一步了解 >
                     </a>
-                    <img onclick="dumpProductHtml('razor2')" src="../image/armor_2.png" alt="" class="intro-img" />
+                    <img onclick="dumpProductHtml('armor2')" src="../image/armor_2.png" alt="" class="intro-img" />
                 </div>
                 <div class="lt intro-btn-box intro-btn-index">
                     <div id="index_item2_title" class="intro-title"></div>
@@ -171,7 +93,8 @@
                     <a href="/Frozen-Armor.html" class="intro-btn more">
                         进一步了解 >
                     </a>
-                    <img onclick="dumpProductHtml('armor')" src="../image/index-item2.png" alt="" class="intro-img razro-img" />
+                    <img onclick="dumpProductHtml('armor')" src="../image/index-item2.png" alt=""
+                        class="intro-img razro-img" />
                 </div>
             </div>
         </div>
@@ -214,7 +137,8 @@
         <div class="rol footer">
             <p class="thanks"></p>
             <p>
-                <a href="https://github.com/bithd" target="_blank" rel="nofollow noopener noreferrer" class="source"></a>
+                <a href="https://github.com/bithd" target="_blank" rel="nofollow noopener noreferrer"
+                    class="source"></a>
             </p>
         </div>
 
@@ -248,8 +172,8 @@
     <link href="/css/index_media.css" rel="stylesheet" type="text/css" media="all" />
 
     <script>
-        $(function() {
-            $('a[href*=#]:not([href=#])').click(function() {
+        $(function () {
+            $('a[href*=#]:not([href=#])').click(function () {
                 if (
                     location.pathname.replace(/^\//, '') ==
                     this.pathname.replace(/^\//, '') &&
@@ -261,8 +185,8 @@
                         $('[name=' + this.hash.slice(1) + ']')
                     if (target.length) {
                         $('html,body').animate({
-                                scrollTop: target.offset().top - 60
-                            },
+                            scrollTop: target.offset().top - 60
+                        },
                             1000
                         )
                         return false
@@ -272,11 +196,11 @@
         })
     </script>
     <script>
-        $('#menu').click(function() {
+        $('#menu').click(function () {
             menuListOperation()
         })
 
-        $('.menu_report').click(function() {
+        $('.menu_report').click(function () {
             var width = $(window).width()
             if (width < 768) {
                 var display = $('.mobile-ul').css('display')
@@ -295,11 +219,11 @@
             }
         })
 
-        $(document).ready(function() {
+        $(document).ready(function () {
             adapterSize()
         })
 
-        $(window).resize(function() {
+        $(window).resize(function () {
             adapterSize()
         })
 
@@ -333,6 +257,19 @@
                         arrow.src = "../image/icon_arrow_down.png"
                         element.style.height = "126px"
                     }
+                } else if (type == "razor") {
+                    let element = $("#razor-dropdown")[0]
+                    let dropdown = $("#razor-dropdown .dropdown-mobile")[0]
+                    let arrow = $("#razor-dropdown .arrow-right")[0]
+                    if (dropdown.style.display == "block") {
+                        dropdown.style.display = "none"
+                        arrow.src = "../image/icon_arrow_right.png"
+                        element.style.height = "45px"
+                    } else {
+                        dropdown.style.display = "block"
+                        arrow.src = "../image/icon_arrow_down.png"
+                        element.style.height = "126px"
+                    }
                 }
             }
         }
@@ -350,16 +287,16 @@
         function dumpProductHtml(type) {
             if (type == "watch2") {
                 window.location.href = "/BITHD-watch-2.html";
-            } else if (type == "razor") {
-                window.location.href = "/BITHD-Razor.html";
             } else if (type == "razor2") {
+                window.location.href = "/BITHD-Razor-Pro.html";
+            } else if (type == "armor2") {
                 window.location.href = "/Frozen-Armor2.html";
             } else if (type == "armor") {
                 window.location.href = "/Frozen-Armor.html";
             }
         }
 
-        $('.play-video').click(function() {
+        $('.play-video').click(function () {
             var width = $(window).width()
             if (width < 768) {
                 window.location.href =
@@ -373,7 +310,7 @@
             }
         })
 
-        $('.video-btn').click(function() {
+        $('.video-btn').click(function () {
             removeVideo()
         })
 
@@ -440,7 +377,7 @@
             }
         }
 
-        $(function() {
+        $(function () {
             var languageCode
 
             if (new String($.i18n.browserLang()).indexOf('zh') > -1) {
@@ -462,7 +399,7 @@
                 mode: 'map',
                 async: true,
                 language: languageCode,
-                callback: function() {
+                callback: function () {
                     $('#razor_banner_title').html($.i18n.prop('razor_banner_title'))
                     $('#razor_banner_font').html($.i18n.prop('razor_banner_font'))
                     $('.welcome-title').html($.i18n.prop('welcome'))
@@ -520,8 +457,8 @@
 
                     $('.business-div .title').html($.i18n.prop('business_title'))
 
-                    $('#index_banner_title .title').html($.i18n.prop('index_banner_title'))
-                    $('#index_banner_title .subtitle').html($.i18n.prop('index_banner_subtitle'))
+                    $('#index_banner_title .title').html($.i18n.prop('razor2_title'))
+                    $('#index_banner_title .subtitle').html($.i18n.prop('razor2_subtitle'))
                     $('#index_banner_font').html($.i18n.prop('index_banner_font'))
                     $('#index_banner_btn1').html($.i18n.prop('index_banner_btn1'))
                     if (languageCode == 'zh' || languageCode == 'tw') {
@@ -531,6 +468,7 @@
                         $('#buy-ebay').css('display', 'none')
                         $('#buy-amazon').css('display', 'none')
                         $('#buy_wd_font').html($.i18n.prop('buy_wd_font'));
+                        $('#buy_tb_font').html($.i18n.prop('buy_tb_font'));
 
                         $('.btc8').attr('src', '../image/8btc_cn.png')
                         $('.poolin').attr('src', '../image/poolin_cn.png')
@@ -543,6 +481,9 @@
                         $('.newdex').attr('src', '../image/newdex_cn.png')
                         $('.imeos').attr('src', '../image/imeos_cn.png')
                     } else {
+                        $('#buy-ebay').css('display', 'none')
+                        $('#buy-amazon').css('display', 'none')
+
                         $('.index_banner_btn2').css('display', 'none')
                         $('#index_banner_btn3 span').html($.i18n.prop('index_banner_btn2'))
                         $('#buy_ebay_font').html($.i18n.prop('buy_ebay_font'));
@@ -561,7 +502,7 @@
                         $('.imeos').attr('src', '../image/imeos_en.png')
                     }
 
-                    $('#index_watch_1').html($.i18n.prop('index_watch_1'))
+                    $('#index_watch_1').html($.i18n.prop('razor2_subtitle'))
                     $('#index_watch_2').html($.i18n.prop('index_watch_2'))
                     $('.more').html($.i18n.prop('index_banner_btn1'))
                     $('#nav_compare').html($.i18n.prop('nav_compare'))
@@ -577,6 +518,8 @@
                     $('.nav_btn3').html($.i18n.prop('nav_btn3'));
                     $('.nav_btn4').html($.i18n.prop('nav_btn4'));
 
+                    $('.nav_btn1-1').html($.i18n.prop('razor1'));
+                    $('.nav_btn1-2').html($.i18n.prop('razor2'));
                     $('.nav_btn2-1').html($.i18n.prop('bithd1'));
                     $('.nav_btn2-2').html($.i18n.prop('bithd2'));
                     $('.nav_btn3-1').html($.i18n.prop('armor1'));
@@ -587,7 +530,7 @@
                     $('#index_item1_font').html($.i18n.prop('index_item1_font'))
                     $('#index_item2_font').html($.i18n.prop('index_item2_font'))
                     $('#intro_title_1').html($.i18n.prop('intro_title_1'))
-                    $('#intro_title_2').html($.i18n.prop('intro_title_2'))
+                    $('#intro_title_2').html($.i18n.prop('razor2_title'))
 
                     $('#buy_title').html($.i18n.prop('buy_title'));
                     $('#buy_wd_font').html($.i18n.prop('buy_wd_font'));
