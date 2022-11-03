@@ -1,0 +1,27 @@
+{
+  "header": {
+    "razor": "BITHD Razor",
+    "bithd": "BITHD Watch",
+    "frozen": "Frozen Armor",
+    "doc": "Docs",
+    "razor_1": "BITHD Razor",
+    "razor_2": "BITHD Razor Pro",
+    "bithd_1": "BitHD Shield I",
+    "bithd_2": "BitHD Shield II",
+    "frozen_1": "Frozen Armor",
+    "frozen_2": "Frozen Armor 304"
+  },
+  "footer": {
+    "base_on": "基于 Trezor 源码，感谢 BWallet 币定行",
+    "source": "开源",
+    "warn": "硬件钱包属于特殊商品，不适用七天无理由退货条款"
+  },
+  "conmon": {
+    "more": "进一步了解",
+    "buy": "购买"
+  },
+  "home": {
+    "ad_title": "刀锋 Pro",
+    "ad_subtitle": "极致简约，一体感设计"
+  }
+}

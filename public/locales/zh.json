@@ -1,0 +1,46 @@
+{
+  "header": {
+    "razor": "刀锋",
+    "bithd": "护盾",
+    "frozen": "冰甲",
+    "doc": "说明文档",
+    "razor_1": "刀锋",
+    "razor_2": "刀锋 Pro",
+    "bithd_1": "护盾一代",
+    "bithd_2": "护盾二代",
+    "frozen_1": "冰甲一代",
+    "frozen_2": "冰甲 304"
+  },
+  "footer": {
+    "base_on": "基于 Trezor 源码，感谢 BWallet 币定行",
+    "source": "开源",
+    "warn": "硬件钱包属于特殊商品，不适用七天无理由退货条款"
+  },
+  "common": {
+    "more": "进一步了解",
+    "buy": "购买",
+    "partners": "多重签名合作伙伴"
+  },
+  "home": {
+    "ad_title": "刀锋 Pro",
+    "ad_subtitle": "极致简约，一体感设计"
+  },
+  "razor": {
+
+  },
+  "razor_pro": {
+    "des": "全新 Type-C 接口设计、电量提升至 210 毫安时<br>即插即充、续航时间更持久"
+  },
+  "bithd_1": {
+    
+  },
+  "bithd_2": {
+    "des": "经过由内而外的重新设计和打造，全新BITHD WATCH 2<br>给予数字资产更安全的守护"
+  },
+  "frozen": {
+    "des": "水火不侵的 SUS304 钢材锻造，给予助记词最高等级地守护<br>机身可配合密码使用"
+  },
+  "frozen_304": {
+    "des": "固若磐石的冰甲，给予资产更安全的守护<br>水火不侵、耐盐碱、甚至耐酸"
+  }
+}
