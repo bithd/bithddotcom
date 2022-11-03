@@ -1,7 +1,7 @@
-import styled from 'styled-components'
-import { ProductsProps } from '../../model/model'
-import { Content } from './container';
-import { useTranslation } from 'react-i18next';
+import styled from "styled-components"
+import { ProductsProps } from "../../model/model"
+import { Content } from "./container"
+import { useTranslation } from "react-i18next"
 
 const Container = styled(Content)`
   display: flex;
@@ -13,7 +13,7 @@ const Container = styled(Content)`
 const Item = styled.div`
   margin-bottom: 40px;
   padding: 25px 30px;
-  width: calc((100% - 40px)/2);
+  width: calc((100% - 40px) / 2);
   text-align: center;
   background-color: ${({ theme }) => theme.back_fa};
   overflow: hidden;
@@ -65,12 +65,9 @@ const Button = styled.button`
   cursor: pointer;
 `
 
-const BuyBtn = styled(Button)`
-  
-`
+const BuyBtn = styled(Button)``
 
-const MoreBtn = styled(Button)`
-`
+const MoreBtn = styled(Button)``
 
 const Arrow = styled.img`
   display: inline-block;
@@ -82,62 +79,64 @@ const Icon = styled.img`
 `
 
 export function Products() {
-  const { t, i18n } = useTranslation();
+  const { t, i18n } = useTranslation()
 
   const products: ProductsProps[] = [
     {
-      title: t('header.razor_2'),
-      subtitle: t('razor_pro.des'),
-      img: '/images/icon_razor_pro.png',
-      link: '',
-      buy: 'razor_pro'
+      title: t("header.razor_pro"),
+      subtitle: t("razor_pro.des"),
+      img: "/images/icon_razor_pro.png",
+      link: "",
+      buy: "razor_pro",
     },
     {
-      title: t('header.bithd_2'),
-      subtitle: t('bithd_2.des'),
-      img: '/images/icon_watch2.png',
-      link: '',
-      buy: 'bithd2'
+      title: t("header.bithd_2"),
+      subtitle: t("bithd_2.des"),
+      img: "/images/icon_watch2.png",
+      link: "",
+      buy: "bithd2",
     },
     {
-      title: t('header.frozen_2'),
-      subtitle: t('frozen_304.des'),
-      img: '/images/icon_forzen_304.png',
-      link: '',
-      buy: 'frozen_2'
+      title: t("header.frozen_2"),
+      subtitle: t("frozen_304.des"),
+      img: "/images/icon_forzen_304.png",
+      link: "",
+      buy: "frozen_2",
     },
     {
-      title: t('header.frozen'),
-      subtitle: t('frozen.des'),
-      img: '/images/icon_forzen.png',
-      link: '',
-      buy: 'forzen'
-    }
+      title: t("header.frozen"),
+      subtitle: t("frozen.des"),
+      img: "/images/icon_forzen.png",
+      link: "",
+      buy: "forzen",
+    },
   ]
- 
+
   return (
-      <>
-        <Container>
-          {
-            products.map((item, index) => {
-              return <Item key={index}>
-                <Title>{item.title}</Title>
-                <Subtitle dangerouslySetInnerHTML={{__html: item.subtitle}}></Subtitle>
-                <OperateContainer>
-                  <MoreContent>
-                    <MoreBtn>{t("common.more")}</MoreBtn>
-                    <Arrow src='/images/arrow_right.svg' alt='arrow' />
-                  </MoreContent>
-                  <BuyContent>
-                    <BuyBtn>{t("common.buy")}</BuyBtn>
-                    <Arrow src='/images/arrow_right.svg' alt='arrow' />
-                  </BuyContent>
-                </OperateContainer>
-                <Icon src={item.img} alt='icon' /> 
-              </Item>
-            })
-          }
-        </Container>
-      </>
-    )
-} 
+    <>
+      <Container>
+        {products.map((item, index) => {
+          return (
+            <Item key={index}>
+              <Title>{item.title}</Title>
+              <Subtitle
+                dangerouslySetInnerHTML={{ __html: item.subtitle }}
+              ></Subtitle>
+              <OperateContainer>
+                <MoreContent>
+                  <MoreBtn>{t("common.more")}</MoreBtn>
+                  <Arrow src="/images/arrow_right.svg" alt="arrow" />
+                </MoreContent>
+                <BuyContent>
+                  <BuyBtn>{t("common.buy")}</BuyBtn>
+                  <Arrow src="/images/arrow_right.svg" alt="arrow" />
+                </BuyContent>
+              </OperateContainer>
+              <Icon src={item.img} alt="icon" />
+            </Item>
+          )
+        })}
+      </Container>
+    </>
+  )
+}

@@ -1,10 +1,10 @@
-import styled from "styled-components";
-import { useTranslation } from "react-i18next";
-import { isCN } from "../../utils/utils";
-import Link from "next/link";
-import { PCHeaderProps, Menu } from "../../model/model";
-import { MenuList } from "../common/menu_list";
-import React from "react";
+import styled from "styled-components"
+import { useTranslation } from "react-i18next"
+import { isCN } from "../../utils/utils"
+import Link from "next/link"
+import { PCHeaderProps, Menu } from "../../model/model"
+import { MenuList } from "../common/menu_list"
+import React from "react"
 
 const Header = styled.div`
   position: fixed;
@@ -24,7 +24,7 @@ const Header = styled.div`
   @media (max-width: 768px) {
     display: none;
   }
-`;
+`
 
 const HeaderCotainer = styled.div`
   margin: 0 auto;
@@ -32,17 +32,17 @@ const HeaderCotainer = styled.div`
   width: 1100px;
   height: 60px;
   max-width: 1100px;
-`;
+`
 
 const Logo = styled.img`
   float: left;
   height: 36px;
-`;
+`
 
 const MenuContainer = styled.div`
   float: right;
   margin-top: 3px;
-`;
+`
 
 const LanguageContainer = styled.div`
   float: right;
@@ -52,7 +52,7 @@ const LanguageContainer = styled.div`
   border-radius: 30px;
   border: ${({ theme }) => `1px solid ${theme.lang_border}`};
   background: ${({ theme }) => theme.lang_back}; ;
-`;
+`
 
 const LanguageBtn = styled.button<{ isTransparent: boolean }>`
   margin: 4px 0;
@@ -72,18 +72,18 @@ const LanguageBtn = styled.button<{ isTransparent: boolean }>`
   &:hover {
     border-bottom: ${({ theme }) => `2px solid ${theme.white_back}`};
   }
-`;
+`
 
 export function PCHeader({ active }: PCHeaderProps) {
-  const { t, i18n } = useTranslation();
+  const { t, i18n } = useTranslation()
 
   const getLogo = () => {
-    return "/images/logo.svg";
-  };
+    return "/images/logo.svg"
+  }
 
   const changeLang = (lang: string) => {
-    i18n.changeLanguage(lang);
-  };
+    i18n.changeLanguage(lang)
+  }
 
   const menus: Menu[] = [
     {
@@ -101,7 +101,7 @@ export function PCHeader({ active }: PCHeaderProps) {
           link: "",
         },
         {
-          text: t("header.razor_2"),
+          text: t("header.razor_pro"),
           name: "razor_2",
           nofollow: false,
           link: "",
@@ -161,7 +161,7 @@ export function PCHeader({ active }: PCHeaderProps) {
       },
       drop: [],
     },
-  ];
+  ]
 
   return (
     <>
@@ -190,5 +190,5 @@ export function PCHeader({ active }: PCHeaderProps) {
         </HeaderCotainer>
       </Header>
     </>
-  );
+  )
 }

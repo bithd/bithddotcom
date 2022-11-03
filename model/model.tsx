@@ -1,87 +1,87 @@
-import { ReactNode } from "react";
+import { ReactNode } from "react"
 
 export interface ReactNodeChildren {
-  children: ReactNode;
+  children: ReactNode
 }
 
 export interface PCHeaderProps {
-  active: string;
+  active: string
 }
 
 export interface MenuListProps {
-  active: string;
-  menus: Menu[] | [];
+  active: string
+  menus: Menu[] | []
 }
 
 export interface Menu {
-  link: PieLink;
-  drop: PieLink[] | [];
+  link: PieLink
+  drop: PieLink[] | []
 }
 
 export interface MobileMenuListProps {
-  active: boolean;
-  menus: MobileMenu[] | [];
-  menuClicked: () => void | null;
+  active: boolean
+  menus: MobileMenu[] | []
+  menuClicked: () => void | null
 }
 
 export interface MobileMenu {
-  link: MobileDropLink;
-  drop: MobileDropLink[] | [];
-  isMark: boolean;
+  link: MobileDropLink
+  drop: MobileDropLink[] | []
+  isMark: boolean
 }
 
 export interface MobileDropLink {
-  text: string;
-  link: string;
-  nofollow: boolean;
-  changeLang: boolean;
+  text: string
+  link: string
+  nofollow: boolean
+  changeLang: boolean
 }
 
 export interface PieLink {
-  text: string;
-  name: string;
-  link: string;
-  nofollow: boolean;
+  text: string
+  name: string
+  link: string
+  nofollow: boolean
 }
 
 export interface FooterTabs {
-  title: string;
-  tabs: FooterTab[] | [];
+  title: string
+  tabs: FooterTab[] | []
 }
 
 export interface FooterTab {
-  title: string;
-  link: string;
-  nofollow: boolean;
+  title: string
+  link: string
+  nofollow: boolean
 }
 
 export interface FooterProps {
-  router: string;
+  router: string
 }
 
 export interface DialogProps {
-  isShow: boolean;
-  title: string;
-  linkTitle: string;
-  confirmTitle: string;
-  confirmFun: (isDone: boolean) => void;
-  cancelFun: () => void;
+  isShow: boolean
+  title: string
+  linkTitle: string
+  confirmTitle: string
+  confirmFun: (isDone: boolean) => void
+  cancelFun: () => void
 }
 
 export interface ProductsProps {
-  title: string;
-  subtitle: string;
-  img: string;
-  link: string;
-  buy: string;
+  title: string
+  subtitle: string
+  img: string
+  link: string
+  buy: string
 }
 
 export interface ImgLink {
-  img: string;
-  link: string;
+  img: string
+  link: string
 }
 
 export interface BuyProps {
-  title: string;
-  name: string;
+  title: string
+  name: string
 }

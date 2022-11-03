@@ -1,14 +1,14 @@
-import type { NextPage } from 'next'
-import styled from 'styled-components'
-import { NextSeo } from 'next-seo';
-import { PCHeader } from '../components/header/pc_header';
-import { Footer } from '../components/footer/footer';
-import ClientOnly from '../utils/clientOnly'
-import { MobiveHeader } from '../components/header/mobile_header';
-import { Content } from '../components/common/container';
-import { useTranslation } from 'react-i18next';
-import { Products } from '../components/common/products';
-import { Partners } from '../components/common/partners';
+import type { NextPage } from "next"
+import styled from "styled-components"
+import { NextSeo } from "next-seo"
+import { PCHeader } from "../components/header/pc_header"
+import { Footer } from "../components/footer/footer"
+import ClientOnly from "../utils/clientOnly"
+import { MobiveHeader } from "../components/header/mobile_header"
+import { Content } from "../components/common/container"
+import { useTranslation } from "react-i18next"
+import { Products } from "../components/common/products"
+import { Partners } from "../components/common/partners"
 
 const HomeContent = styled.div`
   margin-top: 60px;
@@ -91,7 +91,7 @@ const AdImg = styled.img`
 `
 
 const Home: NextPage = () => {
-  const { t, i18n } = useTranslation();
+  const { t, i18n } = useTranslation()
 
   return (
     <>
@@ -99,12 +99,14 @@ const Home: NextPage = () => {
         title="Bitpie 全球领先多链钱包｜比特派｜Bitpie Wallet｜比特派钱包｜BTC钱包｜ETH钱包｜波场钱包｜以太坊钱包｜USDT钱包"
         additionalMetaTags={[
           {
-            name: 'keywords',
-            content: '比特派,比特派app,比特派官网,比特派下载,比特派钱包, 比特派钱包下载,bitpie,ETH钱包,BTC钱包,波场,以太坊,DeFi'
-          }
-        ]} />
+            name: "keywords",
+            content:
+              "比特派,比特派app,比特派官网,比特派下载,比特派钱包, 比特派钱包下载,bitpie,ETH钱包,BTC钱包,波场,以太坊,DeFi",
+          },
+        ]}
+      />
       <ClientOnly>
-        <PCHeader active='home' />
+        <PCHeader active="home" />
         <MobiveHeader />
         <HomeContent>
           <AdContainer>
@@ -119,16 +121,16 @@ const Home: NextPage = () => {
                 </BuyContent>
                 <MoreContent>
                   <MoreText>{t("common.more")}</MoreText>
-                  <MoreArrow src='/images/arrow_right.svg' alt='arrow' />
+                  <MoreArrow src="/images/arrow_right.svg" alt="arrow" />
                 </MoreContent>
               </BuyContainer>
-              <AdImg src='/images/ad.png' alt='razor img' />
+              <AdImg src="/images/ad.png" alt="razor img" />
             </Content>
           </AdContainer>
           <Products />
           <Partners />
         </HomeContent>
-        <Footer router='home' />
+        <Footer router="home" />
       </ClientOnly>
     </>
   )

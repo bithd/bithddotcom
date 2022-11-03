@@ -5,7 +5,7 @@
     "frozen": "冰甲",
     "doc": "说明文档",
     "razor_1": "刀锋",
-    "razor_2": "刀锋 Pro",
+    "razor_pro": "刀锋 Pro",
     "bithd_1": "护盾一代",
     "bithd_2": "护盾二代",
     "frozen_1": "冰甲一代",
@@ -19,7 +19,8 @@
   "common": {
     "more": "进一步了解",
     "buy": "购买",
-    "partners": "多重签名合作伙伴"
+    "partners": "多重签名合作伙伴",
+    "price": "仅售 {{price}}"
   },
   "home": {
     "ad_title": "刀锋 Pro",
@@ -29,7 +30,8 @@
 
   },
   "razor_pro": {
-    "des": "全新 Type-C 接口设计、电量提升至 210 毫安时<br>即插即充、续航时间更持久"
+    "des": "全新 Type-C 接口设计、电量提升至 210 毫安时<br>即插即充、续航时间更持久",
+    "banner_1_title": "极致简约，一体感设计"
   },
   "bithd_1": {
     

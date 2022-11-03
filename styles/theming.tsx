@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from "styled-components"
 
 export const defaultTheme = {
   white_text: "#fff",
@@ -16,7 +16,10 @@ export const defaultTheme = {
   lang_border: "#ffffff80",
   back_fa: "#fafafa",
   back_f6: "#f6f6f6",
-};
+  back_buy_btn: "#1E6FC6",
+  black_333: "#333",
+  black_text: "#000",
+}
 
 export const GlobalStyles = createGlobalStyle`
   html, body {
@@ -46,4 +49,4 @@ export const GlobalStyles = createGlobalStyle`
       min-width: 100%; 
     }
   }
-`;
+`
