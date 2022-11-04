@@ -31,7 +31,25 @@
   },
   "razor_pro": {
     "des": "全新 Type-C 接口设计、电量提升至 210 毫安时<br>即插即充、续航时间更持久",
-    "banner_1_title": "极致简约，一体感设计"
+    "banner_1_title": "极致简约，一体感设计",
+    "banner_2_title": "全新 Type-C 接口设计",
+    "banner_2_subtitle": "即插即充，充电更方便",
+    "banner_3_title": "电力十足",
+    "banner_3_subtitle": "Razor Pro 将电量提升至 210 毫安时<br>续航时间更持久，告别电量焦虑",
+    "banner_4_title": "多重签名方案",
+    "banner_4_subtitle": "支持 BTC、ETH、ERC-20 TOKENS、DOGE、LTC、BCH<br>币种的多重签名，方便您和他人共同管理资产",
+    "feature1_title": "超长续航",
+    "feature1_subtitle": "电池容量扩大至 210mAh，告别电量焦虑",
+    "feature2_title": "与手机配合使用",
+    "feature2_subtitle": "与 Bitpie 配合使用，提供多种使用场景",
+    "feature3_title": "全新设计",
+    "feature3_subtitle": "生产工艺升级，充电接口升级为 USB Type-C",
+    "feature4_title": "安全易用，操作顺畅",
+    "feature4_subtitle": "Bluetooth 5.0，低功耗传输速度更快",
+    "feature5_title": "安全存储",
+    "feature5_subtitle": "离线存储私钥，永不触网",
+    "feature6_title": "支持多链资产",
+    "feature6_subtitle": "BTC、ETH、USDT(ERC20版、TRC20版、Omni版)、BSC、HECO、TRX、LTC、ETC、DOGE、ZEC、BCH、BSV、Dash、EOS等"
   },
   "bithd_1": {
     

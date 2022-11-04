@@ -18,6 +18,7 @@ export const defaultTheme = {
   back_f6: "#f6f6f6",
   back_buy_btn: "#1E6FC6",
   black_333: "#333",
+  black_666: "#666",
   black_text: "#000",
 }
 
@@ -48,5 +49,8 @@ export const GlobalStyles = createGlobalStyle`
     html, body {
       min-width: 100%; 
     }
+  }
+  p {
+    margin: 0;
   }
 `

@@ -85,3 +85,13 @@ export interface BuyProps {
   title: string
   name: string
 }
+
+export interface FeatureProps {
+  features: Features[]
+}
+
+export interface Features {
+  title: string
+  subtitle: string
+  img: string
+}

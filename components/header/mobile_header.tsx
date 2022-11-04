@@ -22,7 +22,7 @@ const HeaderCotainer = styled.div`
   width: 100%;
   height: 60px;
   background: ${({ theme }) => theme.nav_back};
-  box-shadow: ${({ theme }) => `0px 5px 5px ${theme.nav_shadow}`});
+  box-shadow: ${({ theme }) => `0px 5px 5px ${theme.nav_shadow}`};
 `
 
 const Logo = styled.img`

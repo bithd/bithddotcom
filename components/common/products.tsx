@@ -1,6 +1,6 @@
 import styled from "styled-components"
 import { ProductsProps } from "../../model/model"
-import { Content } from "./container"
+import { Content } from "./common"
 import { useTranslation } from "react-i18next"
 
 const Container = styled(Content)`

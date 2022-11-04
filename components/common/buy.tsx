@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { Content } from "./container"
+import { Content } from "./common"
 import { useTranslation } from "react-i18next"
 import { BuyProps } from "../../model/model"
 
