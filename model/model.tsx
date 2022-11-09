@@ -95,3 +95,8 @@ export interface Features {
   subtitle: string
   img: string
 }
+
+export interface Params {
+  title: string
+  content: string
+}

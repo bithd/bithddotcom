@@ -38,61 +38,33 @@ const BannerContent = styled(Content)`
   height: 100%;
 `
 
-const Banner1ImgContent = styled(BannerImgContent)`
-  text-align: right;
+const Banner1ImgContent = styled(BackImgContent)`
+  height: auto;
+  text-align: center;
+  overflow: hidden;
 `
 
 const Banner1Img = styled.img`
-  width: 320px;
+  margin-bottom: 50px;
+  height: 420px;
 `
 
 const Banner1TextContent = styled(BannerTextContent)`
-  margin-left: 66px;
+  margin: 80px auto 50px;
 `
 
 const Banner1Title = styled.p`
   font-family: "PingFangSC-Semibold";
-  font-size: 28px;
-  color: ${({ theme }) => theme.black_333};
+  font-size: 44px;
+  color: ${({ theme }) => theme.white_text};
   font-weight: 600;
 `
 
 const Banner1Subtitle = styled.p`
-  font-family: "PingFangSC-Semibold";
   margin: 30px 0 0;
-  font-size: 38px;
-  color: ${({ theme }) => theme.black_333};
-  font-weight: 600;
-`
-
-const PriceContent = styled.div`
-  display: flex;
-  align-items: center;
-  margin-top: 60px;
-`
-
-const PriceText = styled.p`
-  line-height: 50px;
+  line-height: 1.6;
   font-size: 22px;
-  color: ${({ theme }) => theme.black_text};
-`
-
-const BuyContent = styled.div`
-  display: flex;
-  align-items: center;
-  margin-left: 20px;
-`
-
-const BuyBtn = styled.button`
-  font-size: 22px;
-  color: ${({ theme }) => theme.blue_text};
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-`
-
-const BuyArrow = styled.img`
-  height: 20px;
+  color: ${({ theme }) => theme.white_text};
 `
 
 const Banner2Img = styled.img`
@@ -115,7 +87,12 @@ const TechnicalImgContent = styled(BannerImgContent)`
   justify-content: flex-start;
 `
 
-const Razor2: NextPage = () => {
+const Banner2ImgContent = styled(BannerImgContent)`
+  align-items: flex-end;
+  justify-content: center;
+`
+
+const Razor: NextPage = () => {
   const { t, i18n } = useTranslation()
 
   const features: Features[] = [
@@ -199,71 +176,45 @@ const Razor2: NextPage = () => {
         ]}
       />
       <ClientOnly>
-        <PCHeader active="razor_pro" />
+        <PCHeader active="razor" />
         <MobiveHeader />
         <Container>
-          <Buy name="razor_pro" title="BITHD Razor Pro" />
+          <Buy name="razor" title="BITHD Razor" />
+          <Banner1ImgContent url="/images/ad_back.jpg">
+            <Banner1TextContent>
+              <Banner1Title>{t("razor.banner_1_title")}</Banner1Title>
+              <Banner1Subtitle
+                dangerouslySetInnerHTML={{
+                  __html: t("razor.banner_1_subtitle"),
+                }}
+              />
+            </Banner1TextContent>
+            <Banner1Img src="/images/razor_banner1.png" alt="banner1" />
+          </Banner1ImgContent>
+
           <BackImgContent url="/images/razor_pro_back.jpg">
             <BannerContent>
-              <Banner1ImgContent>
-                <Banner1Img src="/images/razor_pro_banner1.png" alt="banner1" />
-              </Banner1ImgContent>
-              <Banner1TextContent>
-                <Banner1Title>{t("header.razor_pro")}</Banner1Title>
-                <Banner1Subtitle>
-                  {t("razor_pro.banner_1_title")}
-                </Banner1Subtitle>
-                <PriceContent>
-                  <PriceText>{t("common.price", { price: "¥699" })}</PriceText>
-                  <BuyContent>
-                    <BuyBtn>{t("common.buy")}</BuyBtn>
-                    <BuyArrow src="/images/arrow_right.svg" alt="arrow" />
-                  </BuyContent>
-                </PriceContent>
-              </Banner1TextContent>
-            </BannerContent>
-          </BackImgContent>
-
-          <BackImgContent url="/images/razor_pro_back2.jpg">
-            <BannerContent>
-              <BannerTextContent>
-                <Title color={defaultTheme.white_text}>
-                  {t("razor_pro.banner_2_title")}
-                </Title>
-                <Subtitle color={defaultTheme.white_text}>
-                  {t("razor_pro.banner_2_subtitle")}
-                </Subtitle>
-              </BannerTextContent>
-            </BannerContent>
-            <Banner2Img
-              src="/images/razor_pro_banner2.png"
-              alt="razor pro banner2"
-            />
-          </BackImgContent>
-
-          <BackImgContent url="/images/razor_pro_back3.jpg">
-            <BannerContent>
-              <BannerImgContent>
+              <Banner2ImgContent>
                 <Banner3Img
-                  src="/images/razor_pro_banner3.png"
-                  alt="razor pro banner3"
+                  src="/images/razor_banner2.png"
+                  alt="razor banner2"
                 />
-              </BannerImgContent>
+              </Banner2ImgContent>
               <BannerTextContent>
                 <Title color={defaultTheme.black_333}>
-                  {t("razor_pro.banner_3_title")}
+                  {t("razor.banner_2_title")}
                 </Title>
                 <Subtitle
                   color={defaultTheme.black_333}
                   dangerouslySetInnerHTML={{
-                    __html: t("razor_pro.banner_3_subtitle"),
+                    __html: t("razor.banner_2_subtitle"),
                   }}
                 />
               </BannerTextContent>
             </BannerContent>
           </BackImgContent>
 
-          <BackImgContent url="/images/razor_pro_back.jpg">
+          <BackImgContent url="/images/razor_banner3_back.jpg">
             <BannerContent>
               <BannerTextContent>
                 <Title color={defaultTheme.black_333}>
@@ -320,4 +271,4 @@ const Razor2: NextPage = () => {
   )
 }
 
-export default Razor2
+export default Razor

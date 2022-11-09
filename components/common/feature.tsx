@@ -1,5 +1,4 @@
 import styled from "styled-components"
-import { useTranslation } from "react-i18next"
 import { FeatureProps } from "../../model/model"
 import { Content } from "./common"
 
@@ -14,6 +13,10 @@ const FeatureContent = styled.div`
   align-items: center;
   margin-bottom: 40px;
   width: 50%;
+
+  &:nth-last-child(-n + 2) {
+    margin-bottom: 0;
+  }
 `
 
 const FeatureImg = styled.img`
@@ -26,14 +29,14 @@ const TextContent = styled.div`
 `
 
 const Title = styled.p`
-  font-size: 16px;
+  font-size: 20px;
   color: ${({ theme }) => theme.black_333};
   font-weight: 500;
 `
 
 const Subtitle = styled.p`
   margin: 10px 0 0 0;
-  font-size: 12px;
+  font-size: 14px;
   color: ${({ theme }) => theme.black_666};
 `
 

@@ -21,6 +21,19 @@ export const FeatureContent = styled.div`
   background-color: ${({ theme }) => theme.back_f6};
 `
 
+export const TechnicalContent = styled.div`
+  position: relative;
+  width: 100%;
+  height: 560px;
+  background-color: ${({ theme }) => theme.white_back};
+`
+
+export const TechnicalSubtitle = styled.p`
+  margin-bottom: 12px;
+  font-size: 18px;
+  color: ${({ theme }) => theme.black_text};
+`
+
 export const BannerImgContent = styled.div`
   display: flex;
   align-items: flex-end;
@@ -36,12 +49,13 @@ export const BannerTextContent = styled.div`
 
 export const Title = styled.p<{ color: string }>`
   margin-bottom: 40px;
-  font-size: 28px;
+  font-size: 38px;
   color: ${({ color }) => color};
+  font-weight: 600;
 `
 
 export const Subtitle = styled.p<{ color: string }>`
   line-height: 1.6;
-  font-size: 14px;
+  font-size: 22px;
   color: ${({ color }) => color};
 `
