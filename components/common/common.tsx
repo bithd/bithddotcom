@@ -15,6 +15,13 @@ export const BackImgContent = styled.div<{ url: string }>`
   background-repeat: no-repeat;
 `
 
+export const BackContent = styled.div<{ backColor: string }>`
+  position: relative;
+  width: 100%;
+  height: 560px;
+  background-color: ${({ backColor }) => `url(${backColor})`};
+`
+
 export const FeatureContent = styled.div`
   position: relative;
   width: 100%;

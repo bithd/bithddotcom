@@ -69,9 +69,9 @@ const Banner1Subtitle = styled.p`
 
 const Banner2Img = styled.img`
   position: absolute;
-  right: 0;
+  left: 0;
   bottom: 0;
-  height: 280px;
+  height: 380px;
 `
 
 const Banner3Img = styled.img`
@@ -79,12 +79,19 @@ const Banner3Img = styled.img`
 `
 
 const Banner4Img = styled.img`
-  height: 420px;
+  height: 480px;
 `
 
 const TechnicalImgContent = styled(BannerImgContent)`
   align-items: center;
   justify-content: flex-start;
+  text-align: center;
+`
+
+const Warn = styled.p`
+  margin: 20px auto 0;
+  font-size: 10px;
+  color: ${({ theme }) => theme.text_ac};
 `
 
 const Banner2ImgContent = styled(BannerImgContent)`
@@ -97,35 +104,35 @@ const Razor: NextPage = () => {
 
   const features: Features[] = [
     {
-      title: t("razor_pro.feature1_title"),
-      subtitle: t("razor_pro.feature1_subtitle"),
-      img: "/images/icon_razor_pro_1.png",
+      title: t("razor.feature1_title"),
+      subtitle: t("razor.feature1_subtitle"),
+      img: "/images/icon_razor_1.png",
     },
     {
-      title: t("razor_pro.feature2_title"),
-      subtitle: t("razor_pro.feature2_subtitle"),
-      img: "/images/icon_razor_pro_2.png",
+      title: t("razor.feature2_title"),
+      subtitle: t("razor.feature2_subtitle"),
+      img: "/images/icon_razor_2.png",
     },
 
     {
-      title: t("razor_pro.feature3_title"),
-      subtitle: t("razor_pro.feature3_subtitle"),
-      img: "/images/icon_razor_pro_3.png",
+      title: t("razor.feature3_title"),
+      subtitle: t("razor.feature3_subtitle"),
+      img: "/images/icon_razor_3.png",
     },
     {
-      title: t("razor_pro.feature4_title"),
-      subtitle: t("razor_pro.feature4_subtitle"),
-      img: "/images/icon_razor_pro_4.png",
+      title: t("razor.feature4_title"),
+      subtitle: t("razor.feature4_subtitle"),
+      img: "/images/icon_razor_4.png",
     },
     {
-      title: t("razor_pro.feature5_title"),
-      subtitle: t("razor_pro.feature5_subtitle"),
-      img: "/images/icon_razor_pro_5.png",
+      title: t("razor.feature5_title"),
+      subtitle: t("razor.feature5_subtitle"),
+      img: "/images/icon_razor_5.png",
     },
     {
-      title: t("razor_pro.feature6_title"),
-      subtitle: t("razor_pro.feature6_subtitle"),
-      img: "/images/icon_razor_pro_6.png",
+      title: t("razor.feature6_title"),
+      subtitle: t("razor.feature6_subtitle"),
+      img: "/images/icon_razor_6.png",
     },
   ]
 
@@ -135,32 +142,36 @@ const Razor: NextPage = () => {
 
   const params: Params[] = [
     {
-      title: t("razor_pro.params1_title"),
-      content: t("razor_pro.params1_content"),
+      title: t("razor.params1_title"),
+      content: t("razor.params1_content"),
     },
     {
-      title: t("razor_pro.params2_title"),
-      content: t("razor_pro.params2_content"),
+      title: t("razor.params2_title"),
+      content: t("razor.params2_content"),
     },
     {
-      title: t("razor_pro.params3_title"),
-      content: t("razor_pro.params3_content"),
+      title: t("razor.params3_title"),
+      content: t("razor.params3_content"),
     },
     {
-      title: t("razor_pro.params4_title"),
-      content: t("razor_pro.params4_content"),
+      title: t("razor.params4_title"),
+      content: t("razor.params4_content"),
     },
     {
-      title: t("razor_pro.params5_title"),
-      content: t("razor_pro.params5_content"),
+      title: t("razor.params5_title"),
+      content: t("razor.params5_content"),
     },
     {
-      title: t("razor_pro.params6_title"),
-      content: t("razor_pro.params6_content"),
+      title: t("razor.params6_title"),
+      content: t("razor.params6_content"),
     },
     {
-      title: t("razor_pro.params7_title"),
-      content: t("razor_pro.params7_content"),
+      title: t("razor.params7_title"),
+      content: t("razor.params7_content"),
+    },
+    {
+      title: t("razor.params8_title"),
+      content: t("razor.params8_content"),
     },
   ]
 
@@ -217,6 +228,29 @@ const Razor: NextPage = () => {
           <BackImgContent url="/images/razor_banner3_back.jpg">
             <BannerContent>
               <BannerTextContent>
+                <Title color={defaultTheme.white_text}>
+                  {t("razor.banner_3_title")}
+                </Title>
+                <Subtitle
+                  color={defaultTheme.white_text}
+                  dangerouslySetInnerHTML={{
+                    __html: t("razor.banner_3_subtitle"),
+                  }}
+                />
+              </BannerTextContent>
+              <BannerImgContent>
+                <Banner4Img
+                  src="/images/razor_banner3.png"
+                  alt="razor banner3"
+                />
+              </BannerImgContent>
+            </BannerContent>
+          </BackImgContent>
+
+          <BackImgContent url="/images/razor_pro_back.jpg">
+            <BannerContent>
+              <BannerTextContent></BannerTextContent>
+              <BannerTextContent>
                 <Title color={defaultTheme.black_333}>
                   {t("razor_pro.banner_4_title")}
                 </Title>
@@ -227,13 +261,8 @@ const Razor: NextPage = () => {
                   }}
                 />
               </BannerTextContent>
-              <BannerImgContent>
-                <Banner4Img
-                  src="/images/razor_pro_banner4.png"
-                  alt="razor pro banner4"
-                />
-              </BannerImgContent>
             </BannerContent>
+            <Banner2Img src="/images/razor_banner4.png" alt="razor banner4" />
           </BackImgContent>
 
           <FeatureContent>
@@ -244,7 +273,7 @@ const Razor: NextPage = () => {
             <BannerContent>
               <BannerTextContent>
                 <Title color={defaultTheme.black_333}>
-                  {t("razor_pro.params_title")}
+                  {t("common.params_title")}
                 </Title>
                 {params.map((item, index) => {
                   return (
@@ -257,15 +286,18 @@ const Razor: NextPage = () => {
                 })}
               </BannerTextContent>
               <TechnicalImgContent>
-                <Banner4Img
-                  src="/images/razor_pro_banner5.png"
-                  alt="razor pro banner5"
-                />
+                <div>
+                  <Banner4Img
+                    src="/images/razor_banner5.png"
+                    alt="razor banner5"
+                  />
+                  <Warn>{t("common.warn")}</Warn>
+                </div>
               </TechnicalImgContent>
             </BannerContent>
           </TechnicalContent>
         </Container>
-        <Footer router="razor_pro" />
+        <Footer router="razor" />
       </ClientOnly>
     </>
   )

@@ -16,12 +16,11 @@ import {
   BannerTextContent,
   Title,
   Subtitle,
-  FeatureContent,
   TechnicalContent,
   TechnicalSubtitle,
+  BackContent,
 } from "../components/common/common"
-import { Features, Params } from "../model/model"
-import { Feature } from "../components/common/feature"
+import { Params } from "../model/model"
 
 const Container = styled.div`
   margin-top: 60px;
@@ -122,42 +121,8 @@ const Warn = styled.p`
   color: ${({ theme }) => theme.text_ac};
 `
 
-const Razor2: NextPage = () => {
+const Watch2: NextPage = () => {
   const { t, i18n } = useTranslation()
-
-  const features: Features[] = [
-    {
-      title: t("razor_pro.feature1_title"),
-      subtitle: t("razor_pro.feature1_subtitle"),
-      img: "/images/icon_razor_pro_1.png",
-    },
-    {
-      title: t("razor_pro.feature2_title"),
-      subtitle: t("razor_pro.feature2_subtitle"),
-      img: "/images/icon_razor_pro_2.png",
-    },
-
-    {
-      title: t("razor_pro.feature3_title"),
-      subtitle: t("razor_pro.feature3_subtitle"),
-      img: "/images/icon_razor_pro_3.png",
-    },
-    {
-      title: t("razor_pro.feature4_title"),
-      subtitle: t("razor_pro.feature4_subtitle"),
-      img: "/images/icon_razor_pro_4.png",
-    },
-    {
-      title: t("razor_pro.feature5_title"),
-      subtitle: t("razor_pro.feature5_subtitle"),
-      img: "/images/icon_razor_pro_5.png",
-    },
-    {
-      title: t("razor_pro.feature6_title"),
-      subtitle: t("razor_pro.feature6_subtitle"),
-      img: "/images/icon_razor_pro_6.png",
-    },
-  ]
 
   const getColon = () => {
     return isCN(i18n.language) ? "：" : ":"
@@ -165,32 +130,32 @@ const Razor2: NextPage = () => {
 
   const params: Params[] = [
     {
-      title: t("razor_pro.params1_title"),
-      content: t("razor_pro.params1_content"),
+      title: t("bithd_2.params1_title"),
+      content: t("bithd_2.params1_content"),
     },
     {
-      title: t("razor_pro.params2_title"),
-      content: t("razor_pro.params2_content"),
+      title: t("bithd_2.params2_title"),
+      content: t("bithd_2.params2_content"),
     },
     {
-      title: t("razor_pro.params3_title"),
-      content: t("razor_pro.params3_content"),
+      title: t("bithd_2.params3_title"),
+      content: t("bithd_2.params3_content"),
     },
     {
-      title: t("razor_pro.params4_title"),
-      content: t("razor_pro.params4_content"),
+      title: t("bithd_2.params4_title"),
+      content: t("bithd_2.params4_content"),
     },
     {
-      title: t("razor_pro.params5_title"),
-      content: t("razor_pro.params5_content"),
+      title: t("bithd_2.params5_title"),
+      content: t("bithd_2.params5_content"),
     },
     {
-      title: t("razor_pro.params6_title"),
-      content: t("razor_pro.params6_content"),
+      title: t("bithd_2.params6_title"),
+      content: t("bithd_2.params6_content"),
     },
     {
-      title: t("razor_pro.params7_title"),
-      content: t("razor_pro.params7_content"),
+      title: t("bithd_2.params7_title"),
+      content: t("bithd_2.params7_content"),
     },
   ]
 
@@ -206,95 +171,96 @@ const Razor2: NextPage = () => {
         ]}
       />
       <ClientOnly>
-        <PCHeader active="razor_pro" />
+        <PCHeader active="watch2" />
         <MobiveHeader />
         <Container>
-          <Buy name="razor_pro" title="BITHD Razor Pro" />
-          <BackImgContent url="/images/razor_pro_back.jpg">
-            <BannerContent>
-              <Banner1ImgContent>
-                <Banner1Img src="/images/razor_pro_banner1.png" alt="banner1" />
-              </Banner1ImgContent>
-              <Banner1TextContent>
-                <Banner1Title>{t("header.razor_pro")}</Banner1Title>
-                <Banner1Subtitle>
-                  {t("razor_pro.banner_1_title")}
-                </Banner1Subtitle>
-                <PriceContent>
-                  <PriceText>{t("common.price", { price: "¥699" })}</PriceText>
-                  <BuyContent>
-                    <BuyBtn>{t("common.buy")}</BuyBtn>
-                    <BuyArrow src="/images/arrow_right.svg" alt="arrow" />
-                  </BuyContent>
-                </PriceContent>
-              </Banner1TextContent>
-            </BannerContent>
-          </BackImgContent>
+          <Buy name="bithd_2" title={t("bithd_2.title")} />
 
-          <BackImgContent url="/images/razor_pro_back2.jpg">
+          <BackContent backColor={defaultTheme.back_fa}>
+            <BannerContent>
+              <BannerTextContent>
+                <Title
+                  color={defaultTheme.black_333}
+                  dangerouslySetInnerHTML={{
+                    __html: t("bithd_2.banner_1_title"),
+                  }}
+                />
+                <Subtitle
+                  color={defaultTheme.black_333}
+                  dangerouslySetInnerHTML={{
+                    __html: t("bithd_2.banner_1_subtitle"),
+                  }}
+                />
+              </BannerTextContent>
+              <BannerImgContent>
+                <Banner3Img
+                  src="/images/bithd_2_banner3.png"
+                  alt="razor pro banner3"
+                />
+              </BannerImgContent>
+            </BannerContent>
+          </BackContent>
+
+          <BackImgContent url="/images/bithd_2_back2.jpg">
             <BannerContent>
               <BannerTextContent>
                 <Title color={defaultTheme.white_text}>
-                  {t("razor_pro.banner_2_title")}
+                  {t("bithd_2.banner_2_title")}
                 </Title>
                 <Subtitle color={defaultTheme.white_text}>
-                  {t("razor_pro.banner_2_subtitle")}
+                  {t("bithd_2.banner_2_subtitle")}
                 </Subtitle>
               </BannerTextContent>
             </BannerContent>
             <Banner2Img
-              src="/images/razor_pro_banner2.png"
+              src="/images/bithd_2_banner2.png"
               alt="razor pro banner2"
             />
           </BackImgContent>
 
-          <BackImgContent url="/images/razor_pro_back3.jpg">
+          <BackImgContent url="/images/bithd_2_back3.jpg">
             <BannerContent>
               <BannerImgContent>
                 <Banner3Img
-                  src="/images/razor_pro_banner3.png"
+                  src="/images/bithd_2_banner3.png"
                   alt="razor pro banner3"
                 />
               </BannerImgContent>
               <BannerTextContent>
                 <Title color={defaultTheme.black_333}>
-                  {t("razor_pro.banner_3_title")}
+                  {t("bithd_2.banner_3_title")}
                 </Title>
                 <Subtitle
                   color={defaultTheme.black_333}
                   dangerouslySetInnerHTML={{
-                    __html: t("razor_pro.banner_3_subtitle"),
+                    __html: t("bithd_2.banner_3_subtitle"),
                   }}
                 />
               </BannerTextContent>
             </BannerContent>
           </BackImgContent>
 
-          <BackImgContent url="/images/razor_pro_back.jpg">
+          <BackImgContent url="/images/bithd_2_back.jpg">
             <BannerContent>
               <BannerTextContent>
                 <Title color={defaultTheme.black_333}>
-                  {t("razor_pro.banner_4_title")}
+                  {t("bithd_2.banner_4_title")}
                 </Title>
                 <Subtitle
                   color={defaultTheme.black_333}
                   dangerouslySetInnerHTML={{
-                    __html: t("razor_pro.banner_4_subtitle"),
+                    __html: t("bithd_2.banner_4_subtitle"),
                   }}
                 />
               </BannerTextContent>
               <BannerImgContent>
                 <Banner4Img
-                  src="/images/razor_pro_banner4.png"
+                  src="/images/bithd_2_banner4.png"
                   alt="razor pro banner4"
                 />
               </BannerImgContent>
             </BannerContent>
           </BackImgContent>
-
-          <FeatureContent>
-            <Feature features={features} />
-          </FeatureContent>
 
           <TechnicalContent>
             <BannerContent>
@@ -315,7 +281,7 @@ const Razor2: NextPage = () => {
               <TechnicalImgContent>
                 <div>
                   <Banner4Img
-                    src="/images/razor_pro_banner5.png"
+                    src="/images/bithd_2_banner5.png"
                     alt="razor pro banner5"
                   />
                   <Warn>{t("common.warn")}</Warn>
@@ -324,10 +290,10 @@ const Razor2: NextPage = () => {
             </BannerContent>
           </TechnicalContent>
         </Container>
-        <Footer router="razor_pro" />
+        <Footer router="watch2" />
       </ClientOnly>
     </>
   )
 }
 
-export default Razor2
+export default Watch2

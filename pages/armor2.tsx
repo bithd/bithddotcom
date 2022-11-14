@@ -16,12 +16,10 @@ import {
   BannerTextContent,
   Title,
   Subtitle,
-  FeatureContent,
   TechnicalContent,
   TechnicalSubtitle,
 } from "../components/common/common"
-import { Features, Params } from "../model/model"
-import { Feature } from "../components/common/feature"
+import { Params } from "../model/model"
 
 const Container = styled.div`
   margin-top: 60px;
@@ -42,25 +40,34 @@ const Banner1ImgContent = styled(BannerImgContent)`
   text-align: right;
 `
 
-const Banner1Img = styled.img`
-  width: 320px;
-`
-
 const Banner1TextContent = styled(BannerTextContent)`
   margin-left: 66px;
 `
 
-const Banner1Title = styled.p`
+const Banner1Title = styled.p<{ mark: string }>`
+  position: relative;
   font-family: "PingFangSC-Semibold";
-  font-size: 28px;
+  font-size: 38px;
   color: ${({ theme }) => theme.black_333};
   font-weight: 600;
+
+  &::after {
+    font-family: "PingFangSC-Medium";
+    content: ${(props) => `"${props.mark ? props.mark : ""}"`};
+    position: absolute;
+    margin-left: 12px;
+    padding: 2px 12px;
+    font-size: 22px;
+    border: ${({ theme }) => `2.5px solid ${theme.border_f5}`};
+    border-radius: 11px;
+    font-weight: 500;
+  }
 `
 
 const Banner1Subtitle = styled.p`
   font-family: "PingFangSC-Semibold";
   margin: 30px 0 0;
-  font-size: 38px;
+  font-size: 50px;
   color: ${({ theme }) => theme.black_333};
   font-weight: 600;
 `
@@ -73,7 +80,7 @@ const PriceContent = styled.div`
 
 const PriceText = styled.p`
   line-height: 50px;
-  font-size: 22px;
+  font-size: 28px;
   color: ${({ theme }) => theme.black_text};
 `
 
@@ -84,7 +91,7 @@ const BuyContent = styled.div`
 `
 
 const BuyBtn = styled.button`
-  font-size: 22px;
+  font-size: 28px;
   color: ${({ theme }) => theme.blue_text};
   background-color: transparent;
   border: none;
@@ -92,18 +99,7 @@ const BuyBtn = styled.button`
 `
 
 const BuyArrow = styled.img`
-  height: 20px;
-`
-
-const Banner2Img = styled.img`
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  height: 280px;
-`
-
-const Banner3Img = styled.img`
-  height: 480px;
+  height: 26px;
 `
 
 const Banner4Img = styled.img`
@@ -112,7 +108,7 @@ const Banner4Img = styled.img`
 
 const TechnicalImgContent = styled(BannerImgContent)`
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   text-align: center;
 `
 
@@ -122,42 +118,8 @@ const Warn = styled.p`
   color: ${({ theme }) => theme.text_ac};
 `
 
-const Razor2: NextPage = () => {
+const Armor2: NextPage = () => {
   const { t, i18n } = useTranslation()
-
-  const features: Features[] = [
-    {
-      title: t("razor_pro.feature1_title"),
-      subtitle: t("razor_pro.feature1_subtitle"),
-      img: "/images/icon_razor_pro_1.png",
-    },
-    {
-      title: t("razor_pro.feature2_title"),
-      subtitle: t("razor_pro.feature2_subtitle"),
-      img: "/images/icon_razor_pro_2.png",
-    },
-
-    {
-      title: t("razor_pro.feature3_title"),
-      subtitle: t("razor_pro.feature3_subtitle"),
-      img: "/images/icon_razor_pro_3.png",
-    },
-    {
-      title: t("razor_pro.feature4_title"),
-      subtitle: t("razor_pro.feature4_subtitle"),
-      img: "/images/icon_razor_pro_4.png",
-    },
-    {
-      title: t("razor_pro.feature5_title"),
-      subtitle: t("razor_pro.feature5_subtitle"),
-      img: "/images/icon_razor_pro_5.png",
-    },
-    {
-      title: t("razor_pro.feature6_title"),
-      subtitle: t("razor_pro.feature6_subtitle"),
-      img: "/images/icon_razor_pro_6.png",
-    },
-  ]
 
   const getColon = () => {
     return isCN(i18n.language) ? "：" : ":"
@@ -165,32 +127,24 @@ const Razor2: NextPage = () => {
 
   const params: Params[] = [
     {
-      title: t("razor_pro.params1_title"),
-      content: t("razor_pro.params1_content"),
+      title: t("frozen_304.params1_title"),
+      content: t("frozen_304.params1_content"),
     },
     {
-      title: t("razor_pro.params2_title"),
-      content: t("razor_pro.params2_content"),
+      title: t("frozen_304.params2_title"),
+      content: t("frozen_304.params2_content"),
     },
     {
-      title: t("razor_pro.params3_title"),
-      content: t("razor_pro.params3_content"),
+      title: t("frozen_304.params3_title"),
+      content: t("frozen_304.params3_content"),
     },
     {
-      title: t("razor_pro.params4_title"),
-      content: t("razor_pro.params4_content"),
+      title: t("frozen_304.params4_title"),
+      content: t("frozen_304.params4_content"),
     },
     {
-      title: t("razor_pro.params5_title"),
-      content: t("razor_pro.params5_content"),
-    },
-    {
-      title: t("razor_pro.params6_title"),
-      content: t("razor_pro.params6_content"),
-    },
-    {
-      title: t("razor_pro.params7_title"),
-      content: t("razor_pro.params7_content"),
+      title: t("frozen_304.params5_title"),
+      content: t("frozen_304.params5_content"),
     },
   ]
 
@@ -206,19 +160,19 @@ const Razor2: NextPage = () => {
         ]}
       />
       <ClientOnly>
-        <PCHeader active="razor_pro" />
+        <PCHeader active="frozen_304" />
         <MobiveHeader />
         <Container>
-          <Buy name="razor_pro" title="BITHD Razor Pro" />
-          <BackImgContent url="/images/razor_pro_back.jpg">
+          <Buy name="armor2" title="Frozen Armor 304" />
+          <BackImgContent url="/images/armor2_banner1_back.jpg">
             <BannerContent>
-              <Banner1ImgContent>
-                <Banner1Img src="/images/razor_pro_banner1.png" alt="banner1" />
-              </Banner1ImgContent>
+              <Banner1ImgContent></Banner1ImgContent>
               <Banner1TextContent>
-                <Banner1Title>{t("header.razor_pro")}</Banner1Title>
+                <Banner1Title mark={t("frozen_304.banner_1_mark")}>
+                  {t("frozen_304.banner_1_title")}
+                </Banner1Title>
                 <Banner1Subtitle>
-                  {t("razor_pro.banner_1_title")}
+                  {t("frozen_304.banner_1_subtitle")}
                 </Banner1Subtitle>
                 <PriceContent>
                   <PriceText>{t("common.price", { price: "¥699" })}</PriceText>
@@ -231,73 +185,82 @@ const Razor2: NextPage = () => {
             </BannerContent>
           </BackImgContent>
 
-          <BackImgContent url="/images/razor_pro_back2.jpg">
+          <BackImgContent url="/images/armor2_banner2_back.jpg">
             <BannerContent>
               <BannerTextContent>
                 <Title color={defaultTheme.white_text}>
-                  {t("razor_pro.banner_2_title")}
+                  {t("frozen_304.banner_2_title")}
                 </Title>
                 <Subtitle color={defaultTheme.white_text}>
-                  {t("razor_pro.banner_2_subtitle")}
+                  {t("frozen_304.banner_2_subtitle")}
                 </Subtitle>
               </BannerTextContent>
+              <Banner1ImgContent></Banner1ImgContent>
             </BannerContent>
-            <Banner2Img
-              src="/images/razor_pro_banner2.png"
-              alt="razor pro banner2"
-            />
           </BackImgContent>
 
-          <BackImgContent url="/images/razor_pro_back3.jpg">
+          <BackImgContent url="/images/armor2_banner3_back.jpg">
             <BannerContent>
-              <BannerImgContent>
-                <Banner3Img
-                  src="/images/razor_pro_banner3.png"
-                  alt="razor pro banner3"
-                />
-              </BannerImgContent>
+              <BannerImgContent></BannerImgContent>
               <BannerTextContent>
                 <Title color={defaultTheme.black_333}>
-                  {t("razor_pro.banner_3_title")}
+                  {t("frozen_304.banner_3_title")}
                 </Title>
                 <Subtitle
                   color={defaultTheme.black_333}
                   dangerouslySetInnerHTML={{
-                    __html: t("razor_pro.banner_3_subtitle"),
+                    __html: t("frozen_304.banner_3_subtitle"),
                   }}
                 />
               </BannerTextContent>
             </BannerContent>
           </BackImgContent>
 
-          <BackImgContent url="/images/razor_pro_back.jpg">
+          <BackImgContent url="/images/armor2_banner4_back.jpg">
             <BannerContent>
               <BannerTextContent>
+                <Title color={defaultTheme.white_text}>
+                  {t("frozen_304.banner_4_title")}
+                </Title>
+                <Subtitle
+                  color={defaultTheme.white_text}
+                  dangerouslySetInnerHTML={{
+                    __html: t("frozen_304.banner_4_subtitle"),
+                  }}
+                />
+              </BannerTextContent>
+              <Banner1ImgContent></Banner1ImgContent>
+            </BannerContent>
+          </BackImgContent>
+
+          <BackImgContent url="/images/armor2_banner5_back.jpg">
+            <BannerContent>
+              <BannerImgContent></BannerImgContent>
+              <BannerTextContent>
                 <Title color={defaultTheme.black_333}>
-                  {t("razor_pro.banner_4_title")}
+                  {t("frozen_304.banner_5_title")}
                 </Title>
                 <Subtitle
                   color={defaultTheme.black_333}
                   dangerouslySetInnerHTML={{
-                    __html: t("razor_pro.banner_4_subtitle"),
+                    __html: t("frozen_304.banner_5_subtitle"),
                   }}
                 />
               </BannerTextContent>
-              <BannerImgContent>
-                <Banner4Img
-                  src="/images/razor_pro_banner4.png"
-                  alt="razor pro banner4"
-                />
-              </BannerImgContent>
             </BannerContent>
           </BackImgContent>
-
-          <FeatureContent>
-            <Feature features={features} />
-          </FeatureContent>
 
           <TechnicalContent>
             <BannerContent>
+              <TechnicalImgContent>
+                <div>
+                  <Banner4Img
+                    src="/images/armor2_banner6.jpg"
+                    alt="armor 304 banner6"
+                  />
+                  <Warn>{t("common.warn")}</Warn>
+                </div>
+              </TechnicalImgContent>
               <BannerTextContent>
                 <Title color={defaultTheme.black_333}>
                   {t("common.params_title")}
@@ -312,22 +275,13 @@ const Razor2: NextPage = () => {
                   )
                 })}
               </BannerTextContent>
-              <TechnicalImgContent>
-                <div>
-                  <Banner4Img
-                    src="/images/razor_pro_banner5.png"
-                    alt="razor pro banner5"
-                  />
-                  <Warn>{t("common.warn")}</Warn>
-                </div>
-              </TechnicalImgContent>
             </BannerContent>
           </TechnicalContent>
         </Container>
-        <Footer router="razor_pro" />
+        <Footer router="frozen_304" />
       </ClientOnly>
     </>
   )
 }
 
-export default Razor2
+export default Armor2

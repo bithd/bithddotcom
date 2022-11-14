@@ -20,6 +20,8 @@ export const defaultTheme = {
   black_333: "#333",
   black_666: "#666",
   black_text: "#000",
+  border_f5: "#f5f5f5",
+  text_ac: "#acacac",
 }
 
 export const GlobalStyles = createGlobalStyle`
