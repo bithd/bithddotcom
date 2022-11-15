@@ -10,6 +10,7 @@ import { useTranslation } from "react-i18next"
 import { Products } from "../components/common/products"
 import { Dialog } from "../components/common/dialog"
 import { useState } from "react"
+import Link from "next/link"
 
 const HomeContent = styled.div`
   margin-top: 60px;
@@ -38,6 +39,10 @@ const AdTitle = styled.p`
   font-size: 38px;
   color: ${({ theme }) => theme.white_text};
   text-align: center;
+
+  @media (max-width: 768px) {
+    font-size: 26px;
+  }
 `
 
 const BuyContainer = styled.div`
@@ -50,6 +55,10 @@ const BuyContent = styled.div`
   margin-right: 40px;
   flex: 1;
   text-align: right;
+
+  @media (max-width: 768px) {
+    margin-right: 20px;
+  }
 `
 
 const BuyBtn = styled.button`
@@ -61,6 +70,10 @@ const BuyBtn = styled.button`
   border-radius: 26px;
   background: ${({ theme }) => theme.blue_back};
   cursor: pointer;
+
+  @media (max-width: 768px) {
+    font-size: 16px;
+  }
 `
 
 const MoreContent = styled.div`
@@ -69,6 +82,10 @@ const MoreContent = styled.div`
   margin-left: 40px;
   align-items: center;
   justify-content: left;
+
+  @media (max-width: 768px) {
+    margin-left: 20px;
+  }
 `
 
 const MoreText = styled.p`
@@ -79,6 +96,11 @@ const MoreText = styled.p`
   font-size: 18px;
   color: ${({ theme }) => theme.blue_text};
   cursor: pointer;
+
+  @media (max-width: 768px) {
+    padding: 8px 4px 8px 0px;
+    font-size: 16px;
+  }
 `
 
 const MoreArrow = styled.img`
@@ -89,6 +111,10 @@ const MoreArrow = styled.img`
 const AdImg = styled.img`
   margin: 50px 0;
   width: 500px;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `
 
 const Home: NextPage = () => {
@@ -140,10 +166,12 @@ const Home: NextPage = () => {
                     {t("common.buy")}
                   </BuyBtn>
                 </BuyContent>
-                <MoreContent>
-                  <MoreText>{t("common.more")}</MoreText>
-                  <MoreArrow src="/images/arrow_right.svg" alt="arrow" />
-                </MoreContent>
+                <Link href="/razor2">
+                  <MoreContent>
+                    <MoreText>{t("common.more")}</MoreText>
+                    <MoreArrow src="/images/arrow_right.svg" alt="arrow" />
+                  </MoreContent>
+                </Link>
               </BuyContainer>
               <AdImg src="/images/ad.png" alt="razor img" />
             </Content>

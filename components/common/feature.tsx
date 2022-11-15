@@ -6,6 +6,10 @@ const Container = styled(Content)`
   display: flex;
   flex-wrap: wrap;
   padding: 60px 0;
+
+  @media (max-width: 768px) {
+    padding: 24px 0;
+  }
 `
 
 const FeatureContent = styled.div`
@@ -17,11 +21,26 @@ const FeatureContent = styled.div`
   &:nth-last-child(-n + 2) {
     margin-bottom: 0;
   }
+
+  @media (max-width: 768px) {
+    margin: 0 17px;
+    width: 100%;
+    min-height: 97px;
+    border-bottom: ${({ theme }) => `1px solid ${theme.nav_border}`};
+
+    :last-child {
+      border-bottom: none;
+    }
+  }
 `
 
 const FeatureImg = styled.img`
   margin-right: 12px;
   width: 44px;
+
+  @media (max-width: 768px) {
+    width: 34px;
+  }
 `
 
 const TextContent = styled.div`
@@ -32,12 +51,21 @@ const Title = styled.p`
   font-size: 20px;
   color: ${({ theme }) => theme.black_333};
   font-weight: 500;
+
+  @media (max-width: 768px) {
+    font-size: 15px;
+  }
 `
 
 const Subtitle = styled.p`
   margin: 10px 0 0 0;
   font-size: 14px;
   color: ${({ theme }) => theme.black_666};
+
+  @media (max-width: 768px) {
+    margin: 8px 0 0 0;
+    font-size: 12px;
+  }
 `
 
 export function Feature({ features }: FeatureProps) {

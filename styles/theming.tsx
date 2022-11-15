@@ -25,6 +25,7 @@ export const defaultTheme = {
   back_f2: "#f2f2f2",
   cancel_color: "#0070c9",
   ddd: "#ddd",
+  back_e9: "#e9e9e9",
 }
 
 export const GlobalStyles = createGlobalStyle`

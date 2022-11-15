@@ -3,6 +3,7 @@ import { ProductsProps } from "../../model/model"
 import { Content } from "./common"
 import { useTranslation } from "react-i18next"
 import Link from "next/link"
+import { deleteBr } from "../../utils/utils"
 
 const Container = styled(Content)`
   display: flex;
@@ -18,6 +19,11 @@ const Item = styled.div`
   text-align: center;
   background-color: ${({ theme }) => theme.back_fa};
   overflow: hidden;
+
+  @media (max-width: 768px) {
+    margin: 0 20px 40px;
+    width: 100%;
+  }
 `
 
 const Title = styled.p`
@@ -121,7 +127,7 @@ export function Products({ func }: { func: (type: string) => void }) {
             <Item key={index}>
               <Title>{item.title}</Title>
               <Subtitle
-                dangerouslySetInnerHTML={{ __html: item.subtitle }}
+                dangerouslySetInnerHTML={{ __html: deleteBr(item.subtitle) }}
               ></Subtitle>
               <OperateContainer>
                 <Link href={item.link}>

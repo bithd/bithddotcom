@@ -11,6 +11,11 @@ const Container = styled.div`
 const ContentDiv = styled(Content)`
   display: flex;
   align-items: center;
+
+  @media (max-width: 768px) {
+    margin: 0 12px;
+    width: calc(100% - 24px);
+  }
 `
 
 const Title = styled.p`
@@ -19,6 +24,10 @@ const Title = styled.p`
   line-height: 60px;
   font-size: 24px;
   color: ${({ theme }) => theme.black_333};
+
+  @media (max-width: 768px) {
+    font-size: 18px;
+  }
 `
 
 const BuyBtn = styled.button`
@@ -30,6 +39,11 @@ const BuyBtn = styled.button`
   background-color: ${({ theme }) => theme.back_buy_btn};
   border: none;
   border-radius: 8px;
+
+  @media (max-width: 768px) {
+    font-size: 14px;
+    width: 60px;
+  }
 `
 
 export function Buy({ title, func }: BuyProps) {

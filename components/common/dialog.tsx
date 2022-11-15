@@ -19,10 +19,14 @@ const Container = styled.div<{ isShow: boolean }>`
 const Flex = styled.div`
   display: flex;
   align-items: center;
-  margin: 104px auto 0;
+  margin: 64px auto 0;
   width: 100%;
-  height: calc(100% - 104px);
+  height: calc(100% - 64px);
   overflow: scroll;
+
+  @media (max-width: 768px) {
+    align-items: flex-end;
+  }
 `
 
 const Content = styled.div`
@@ -34,6 +38,13 @@ const Content = styled.div`
   background: ${({ theme }) => theme.white_back};
   border-radius: 20px;
   overflow: hidden;
+
+  @media (max-width: 768px) {
+    margin: 0;
+    width: 100%;
+    height: auto;
+    border-radius: 0;
+  }
 `
 
 const TextContent = styled.div`
@@ -44,7 +55,7 @@ const TextContent = styled.div`
   text-align: center;
   background: ${({ theme }) => theme.white_back};
   border-radius: 8px;
-  overflow: scroll;
+  overflow: hidden;
 `
 
 const Title = styled.p`
@@ -52,6 +63,11 @@ const Title = styled.p`
   font-size: 30px;
   color: ${({ theme }) => theme.black};
   text-align: center;
+
+  @media (max-width: 768px) {
+    margin: 38px auto;
+    font-size: 18px;
+  }
 `
 
 const ContentText = styled.p`
@@ -73,6 +89,14 @@ const ConfirmBtn = styled.button`
   border: none;
   background-color: ${({ theme }) => theme.back_f2};
   cursor: pointer;
+
+  @media (max-width: 768px) {
+    position: relative;
+    margin-top: 20px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 15px;
+  }
 `
 
 const TextConfirmBtn = styled.button`
@@ -98,15 +122,28 @@ const LinkContainer = styled.a`
   border-bottom: ${({ theme }) => `1px solid ${theme.ddd}`};
   cursor: pointer;
   text-decoration: none;
+
+  @media (max-width: 768px) {
+    margin: 0 30px 30px;
+    padding-bottom: 20px;
+  }
 `
 
 const LinkText = styled.p`
   color: ${({ theme }) => theme.black_333};
   font-size: 24px;
+
+  @media (max-width: 768px) {
+    font-size: 15px;
+  }
 `
 
 const LinkArrow = styled.img`
   height: 18px;
+
+  @media (max-width: 768px) {
+    height: 12px;
+  }
 `
 
 export function Dialog({ type, isShow, func }: DialogProps) {

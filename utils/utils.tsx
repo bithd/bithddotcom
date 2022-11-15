@@ -84,3 +84,15 @@ export function getBuyLinks(type: string, languageIsCn: boolean): Buy[] {
   if (type == "watch2") return languageIsCn ? watch2LinkCn : watch2LinkEn
   return []
 }
+
+export function deleteBr(str: string): string {
+  if (
+    typeof document !== "undefined" &&
+    document.documentElement.clientWidth &&
+    document.documentElement.clientWidth <= 768
+  ) {
+    console.log(str)
+    return str.replace("<br/>", " ").replace("<br>", " ")
+  }
+  return str
+}
