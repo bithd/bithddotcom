@@ -19,9 +19,9 @@ const Container = styled.div<{ isShow: boolean }>`
 const Flex = styled.div`
   display: flex;
   align-items: center;
-  margin: 64px auto 0;
+  margin: 60px auto 0;
   width: 100%;
-  height: calc(100% - 64px);
+  height: calc(100% - 60px);
   overflow: scroll;
 
   @media (max-width: 768px) {

@@ -96,3 +96,14 @@ export function deleteBr(str: string): string {
   }
   return str
 }
+
+export function isPc(): boolean {
+  if (
+    typeof document !== "undefined" &&
+    document.documentElement.clientWidth &&
+    document.documentElement.clientWidth <= 768
+  ) {
+    return false
+  }
+  return true
+}

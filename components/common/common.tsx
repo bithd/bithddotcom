@@ -22,6 +22,7 @@ export const BackImgContent = styled.div<{ url: string }>`
   @media (max-width: 768px) {
     height: auto;
     padding: 60px 0;
+    text-align: center;
   }
 `
 
@@ -29,7 +30,13 @@ export const BackContent = styled.div<{ backColor: string }>`
   position: relative;
   width: 100%;
   height: 560px;
-  background-color: ${({ backColor }) => `url(${backColor})`};
+  background-color: ${({ backColor }) => backColor};
+
+  @media (max-width: 768px) {
+    height: auto;
+    padding: 60px 0;
+    text-align: center;
+  }
 `
 
 export const FeatureContent = styled.div`
@@ -69,6 +76,8 @@ export const BannerImgContent = styled.div`
 
   @media (max-width: 768px) {
     flex-basis: 100%;
+    align-items: center;
+    justify-content: center;
   }
 `
 

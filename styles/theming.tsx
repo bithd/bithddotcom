@@ -26,6 +26,7 @@ export const defaultTheme = {
   cancel_color: "#0070c9",
   ddd: "#ddd",
   back_e9: "#e9e9e9",
+  razor2_banner3_text: "#6d819e",
 }
 
 export const GlobalStyles = createGlobalStyle`

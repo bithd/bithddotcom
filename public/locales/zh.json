@@ -161,6 +161,8 @@
     "banner_1_title": "冰甲",
     "banner_1_mark": "304钢版本",
     "banner_1_subtitle": "千锤百炼，强硬登场",
+    "banner_m_1_title": "冰甲不锈钢板<br>通体 304钢 材质",
+    "banner_m_1_subtitle": "可保管两套12位助记词",
     "banner_2_title": "无惧烈火",
     "banner_2_subtitle": "通体 SUS304 钢材锻造，熔点高达1440℃",
     "banner_3_title": "防水耐酸",
@@ -169,7 +171,8 @@
     "banner_4_subtitle": "附赠96个激光精雕字母块，可轻松保管<br>12—24个助记词",
     "banner_5_title": "安全无止境",
     "banner_5_subtitle": "机身可配合密码锁使用，巩固你的森严壁垒",
-    
+    "banner_6_title": "产品说明",
+    "banner_6_subtitle": "根据 BIP39 协议，确定的3到4个字符就可以确定唯一助记词。如助记词多于4个字符，只需要助记词板中放入前4个字符即可。详细访问：<a rel=\"nofollow noopener noreferrer\" target=\"_blank\" href=\"https://github.com/bitcoin/bips/blob/master/bip-0039/english.txt\">https://github.com/bitcoin/bips/blob/master/bip-0039/english.txt</a>",
     "params1_title": "尺寸",
     "params1_content": "105mm * 60mm * 7mm",
     "params2_title": "重量",

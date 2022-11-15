@@ -105,9 +105,7 @@
     "params7_title": "Compatibility",
     "params7_content": "Android/iOS"
   },
-  "bithd_1": {
-    
-  },
+  "bithd_1": {},
   "bithd_2": {
     "des": "Brand new redesign and rebuild provide crypto better protection. Large amounts sends and receives, anytime and anywhere.",
     "title": "BITHD Watch 2",
@@ -120,9 +118,9 @@
     "banner_4_title": "Nano-coating<br/>Skin-friendly Design",
     "banner_4_subtitle": "Quick Fit band<br/>Toolless assembly <br/>Replaceable with 42/44mm bands",
     "banner_5_title": "Wireless Magnetic Charging",
-    "banner_5_subtitle": "When battery is low, all you need to do is to simply put it on the magnetic charging base", 
+    "banner_5_subtitle": "When battery is low, all you need to do is to simply put it on the magnetic charging base",
     "banner_6_title": "Multicurrency + Multisig",
-    "banner_6_subtitle": "State-of-the-art integration of 30+ blockchains management<br/>(BTC, ETH, EOS, USDT-ERC20/Omni, BCH, BSV, LTC, ETC, DASH, ZEC, DOGE etc.,) <br/>Unique multi-signature (BTC, ETH, USDT-ERC20/Omni and EOS)", 
+    "banner_6_subtitle": "State-of-the-art integration of 30+ blockchains management<br/>(BTC, ETH, EOS, USDT-ERC20/Omni, BCH, BSV, LTC, ETC, DASH, ZEC, DOGE etc.,) <br/>Unique multi-signature (BTC, ETH, USDT-ERC20/Omni and EOS)",
     "params1_title": "Size",
     "params1_content": "42mm * 36mm * 12mm",
     "params2_title": "Weight",
@@ -161,6 +159,8 @@
     "banner_1_title": "Frozen Armor",
     "banner_1_mark": "304 steel version",
     "banner_1_subtitle": "Hardened debut",
+    "banner_m_1_title": "Frozen Armor stainless steel plate<br>304 steel material",
+    "banner_m_1_subtitle": "Can store two sets of 12 mnemonic phrases",
     "banner_2_title": "No fear of fire",
     "banner_2_subtitle": "Whole body SUS304 steel forging, melting point up to 1440℃",
     "banner_3_title": "Water and Acid Resistant",
@@ -169,6 +169,8 @@
     "banner_4_subtitle": "Comes with 96 engraved letter blocks for easy storage<br>12-24 mnemonics",
     "banner_5_title": "Security",
     "banner_5_subtitle": "The body can be used with a combination lock to consolidate your barriers",
+    "banner_6_title": "Product Description",
+    "banner_6_subtitle": "According to the BIP39 protocol, input 3 to 4 characters can determine the unique mnemonic.  If the mnemonic has more than 4 characters, you only need to put the first 4 characters in the mnemonic board.  More details: <a rel=\"nofollow noopener noreferrer\" target=\"_blank\" href=\"https://github.com/bitcoin/bips/blob/master/bip-0039/english.txt\">https://github.com/bitcoin/bips/blob/master/bip-0039/english.txt</a>",
     "params1_title": "size",
     "params1_content": "105mm * 60mm * 7mm",
     "params2_title": "weight",

@@ -6,7 +6,7 @@ import { Footer } from "../components/footer/footer"
 import ClientOnly from "../utils/clientOnly"
 import { MobiveHeader } from "../components/header/mobile_header"
 import { useTranslation } from "react-i18next"
-import { isCN } from "../utils/utils"
+import { deleteBr, isCN } from "../utils/utils"
 import { Buy } from "../components/common/buy"
 import { defaultTheme } from "../styles/theming"
 import {
@@ -24,6 +24,7 @@ import { Features, Params } from "../model/model"
 import { Feature } from "../components/common/feature"
 import { Dialog } from "../components/common/dialog"
 import { useState } from "react"
+import { Technical } from "../components/common/technical_list"
 
 const Container = styled.div`
   margin-top: 60px;
@@ -38,6 +39,11 @@ const BannerContent = styled(Content)`
   display: flex;
   align-items: center;
   height: 100%;
+
+  @media (max-width: 768px) {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 `
 
 const Banner1ImgContent = styled(BackImgContent)`
@@ -46,13 +52,55 @@ const Banner1ImgContent = styled(BackImgContent)`
   overflow: hidden;
 `
 
+const BannerContentReverse = styled(Content)`
+  display: flex;
+  align-items: center;
+  height: 100%;
+
+  @media (max-width: 768px) {
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+    text-align: center;
+  }
+`
+
+const ZeroBottomBackImgContent = styled(BackImgContent)`
+  @media (max-width: 768px) {
+    padding: 60px 0 0;
+    text-align: center;
+  }
+`
+
 const Banner1Img = styled.img`
   margin-bottom: 50px;
   height: 420px;
+
+  @media (max-width: 768px) {
+    margin-bottom: 0;
+    width: 80%;
+    max-width: 320px;
+    height: auto;
+  }
 `
 
 const Banner1TextContent = styled(BannerTextContent)`
   margin: 80px auto 50px;
+
+  @media (max-width: 768px) {
+    margin: 0 12px 50px;
+  }
+`
+
+const BlankContent = styled(BannerTextContent)`
+  @media (max-width: 768px) {
+    margin: 0;
+  }
+`
+
+const TechnicalTextContent = styled(BannerTextContent)`
+  @media (max-width: 768px) {
+    margin-bottom: 30px;
+  }
 `
 
 const Banner1Title = styled.p`
@@ -60,6 +108,10 @@ const Banner1Title = styled.p`
   font-size: 44px;
   color: ${({ theme }) => theme.white_text};
   font-weight: 600;
+
+  @media (max-width: 768px) {
+    font-size: 24px;
+  }
 `
 
 const Banner1Subtitle = styled.p`
@@ -67,6 +119,10 @@ const Banner1Subtitle = styled.p`
   line-height: 1.6;
   font-size: 22px;
   color: ${({ theme }) => theme.white_text};
+
+  @media (max-width: 768px) {
+    font-size: 16px;
+  }
 `
 
 const Banner2Img = styled.img`
@@ -74,20 +130,42 @@ const Banner2Img = styled.img`
   left: 0;
   bottom: 0;
   height: 380px;
+
+  @media (max-width: 768px) {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
 `
 
 const Banner3Img = styled.img`
   height: 480px;
+
+  @media (max-width: 768px) {
+    width: 80%;
+    max-width: 200px;
+    height: auto;
+  }
 `
 
 const Banner4Img = styled.img`
   height: 480px;
+
+  @media (max-width: 768px) {
+    width: 80%;
+    max-width: 320px;
+    height: auto;
+  }
 `
 
 const TechnicalImgContent = styled(BannerImgContent)`
   align-items: center;
   justify-content: flex-start;
   text-align: center;
+
+  @media (max-width: 768px) {
+    justify-content: center;
+  }
 `
 
 const Warn = styled.p`
@@ -99,6 +177,24 @@ const Warn = styled.p`
 const Banner2ImgContent = styled(BannerImgContent)`
   align-items: flex-end;
   justify-content: center;
+`
+
+const Banner3ImgContent = styled(BannerImgContent)`
+  align-items: center;
+  justify-content: center;
+`
+
+const RazorTitle = styled(Title)`
+  @media (max-width: 768px) {
+    font-size: 24px;
+  }
+`
+
+const RazorSubtitle = styled(Subtitle)`
+  @media (max-width: 768px) {
+    margin: 0 12px;
+    font-size: 16px;
+  }
 `
 
 const Razor: NextPage = () => {
@@ -214,15 +310,15 @@ const Razor: NextPage = () => {
               />
               <Banner1Subtitle
                 dangerouslySetInnerHTML={{
-                  __html: t("razor.banner_1_subtitle"),
+                  __html: deleteBr(t("razor.banner_1_subtitle")),
                 }}
               />
             </Banner1TextContent>
             <Banner1Img src="/images/razor_banner1.png" alt="banner1" />
           </Banner1ImgContent>
 
-          <BackImgContent url="/images/razor_pro_back.jpg">
-            <BannerContent>
+          <ZeroBottomBackImgContent url="/images/razor_pro_back.jpg">
+            <BannerContentReverse>
               <Banner2ImgContent>
                 <Banner3Img
                   src="/images/razor_banner2.png"
@@ -230,49 +326,49 @@ const Razor: NextPage = () => {
                 />
               </Banner2ImgContent>
               <BannerTextContent>
-                <Title color={defaultTheme.black_333}>
+                <RazorTitle color={defaultTheme.black_333}>
                   {t("razor.banner_2_title")}
-                </Title>
-                <Subtitle
+                </RazorTitle>
+                <RazorSubtitle
                   color={defaultTheme.black_333}
                   dangerouslySetInnerHTML={{
                     __html: t("razor.banner_2_subtitle"),
                   }}
                 />
               </BannerTextContent>
-            </BannerContent>
-          </BackImgContent>
+            </BannerContentReverse>
+          </ZeroBottomBackImgContent>
 
           <BackImgContent url="/images/razor_banner3_back.jpg">
             <BannerContent>
               <BannerTextContent>
-                <Title color={defaultTheme.white_text}>
+                <RazorTitle color={defaultTheme.white_text}>
                   {t("razor.banner_3_title")}
-                </Title>
-                <Subtitle
+                </RazorTitle>
+                <RazorSubtitle
                   color={defaultTheme.white_text}
                   dangerouslySetInnerHTML={{
                     __html: t("razor.banner_3_subtitle"),
                   }}
                 />
               </BannerTextContent>
-              <BannerImgContent>
+              <Banner3ImgContent>
                 <Banner4Img
                   src="/images/razor_banner3.png"
                   alt="razor banner3"
                 />
-              </BannerImgContent>
+              </Banner3ImgContent>
             </BannerContent>
           </BackImgContent>
 
-          <BackImgContent url="/images/razor_pro_back.jpg">
+          <ZeroBottomBackImgContent url="/images/razor_pro_back.jpg">
             <BannerContent>
-              <BannerTextContent></BannerTextContent>
+              <BlankContent></BlankContent>
               <BannerTextContent>
-                <Title color={defaultTheme.black_333}>
+                <RazorTitle color={defaultTheme.black_333}>
                   {t("razor.banner_4_title")}
-                </Title>
-                <Subtitle
+                </RazorTitle>
+                <RazorSubtitle
                   color={defaultTheme.black_333}
                   dangerouslySetInnerHTML={{
                     __html: t("razor.banner_4_subtitle"),
@@ -281,7 +377,7 @@ const Razor: NextPage = () => {
               </BannerTextContent>
             </BannerContent>
             <Banner2Img src="/images/razor_banner4.png" alt="razor banner4" />
-          </BackImgContent>
+          </ZeroBottomBackImgContent>
 
           <FeatureContent>
             <Feature features={features} />
@@ -289,20 +385,12 @@ const Razor: NextPage = () => {
 
           <TechnicalContent>
             <BannerContent>
-              <BannerTextContent>
+              <TechnicalTextContent>
                 <Title color={defaultTheme.black_333}>
                   {t("common.params_title")}
                 </Title>
-                {params.map((item, index) => {
-                  return (
-                    <TechnicalSubtitle key={index}>
-                      {item.title}
-                      {getColon()}
-                      {item.content}
-                    </TechnicalSubtitle>
-                  )
-                })}
-              </BannerTextContent>
+                <Technical params={params} />
+              </TechnicalTextContent>
               <TechnicalImgContent>
                 <div>
                   <Banner4Img

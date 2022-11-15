@@ -6,7 +6,7 @@ import { Footer } from "../components/footer/footer"
 import ClientOnly from "../utils/clientOnly"
 import { MobiveHeader } from "../components/header/mobile_header"
 import { useTranslation } from "react-i18next"
-import { isCN } from "../utils/utils"
+import { isCN, isPc } from "../utils/utils"
 import { Buy } from "../components/common/buy"
 import { defaultTheme } from "../styles/theming"
 import {
@@ -22,6 +22,7 @@ import {
 import { Params } from "../model/model"
 import { Dialog } from "../components/common/dialog"
 import { useState } from "react"
+import { Technical } from "../components/common/technical_list"
 
 const Container = styled.div`
   margin-top: 60px;
@@ -36,16 +37,41 @@ const BannerContent = styled(Content)`
   display: flex;
   align-items: center;
   height: 100%;
+
+  @media (max-width: 768px) {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+`
+
+const BannerContentReverse = styled(Content)`
+  display: flex;
+  align-items: center;
+  height: 100%;
+
+  @media (max-width: 768px) {
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+  }
 `
 
 const Banner1ImgContent = styled(BannerImgContent)`
   text-align: right;
+
+  @media (max-width: 768px) {
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
 `
 
 const Banner1Price = styled.p`
   margin: 30px 0 0;
   font-size: 22px;
   color: ${({ theme }) => theme.blue_text};
+
+  @media (max-width: 768px) {
+    font-size: 20px;
+  }
 `
 
 const Banner2Img = styled.img`
@@ -53,21 +79,33 @@ const Banner2Img = styled.img`
   right: 0;
   bottom: 0;
   height: 360px;
+
+  @media (max-width: 768px) {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+  }
 `
 
-const Banner5Img = styled.img`
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 360px;
-`
-
-const Banner3Img = styled.img`
+const Banner1Img = styled.img`
   height: 480px;
+
+  @media (max-width: 768px) {
+    width: 80%;
+    max-width: 320px;
+    height: auto;
+  }
 `
 
 const Banner4Img = styled.img`
   height: 420px;
+
+  @media (max-width: 768px) {
+    width: 80%;
+    max-width: 320px;
+    height: auto;
+  }
 `
 
 const TechnicalImgContent = styled(BannerImgContent)`
@@ -80,6 +118,44 @@ const Warn = styled.p`
   margin: 20px auto 0;
   font-size: 10px;
   color: ${({ theme }) => theme.text_ac};
+`
+
+const ArmorSubtitle = styled(Subtitle)`
+  @media (max-width: 768px) {
+    margin: 0 12px;
+    font-size: 18px;
+  }
+`
+
+const ZeroBottomBackImgContent = styled(BackImgContent)`
+  @media (max-width: 768px) {
+    padding: 60px 0 0;
+    text-align: center;
+  }
+`
+
+const MobileBackImgContent = styled(BackImgContent)`
+  @media (max-width: 768px) {
+    padding: 60px 0 0;
+    height: 700px;
+    text-align: center;
+    background-size: 100% auto;
+    background-position: left bottom;
+  }
+`
+
+const MobileBannerContent = styled(BannerContent)`
+  @media (max-width: 768px) {
+    align-items: flex-start;
+    text-align: center;
+  }
+`
+
+const BlankContent = styled(BannerTextContent)`
+  @media (max-width: 768px) {
+    display: none;
+    margin: 0;
+  }
 `
 
 const Armor: NextPage = () => {
@@ -137,34 +213,34 @@ const Armor: NextPage = () => {
           />
 
           <Buy func={buyClicked} title="Frozen Armor" />
-          <BackImgContent url="/images/razor_banner3_back.jpg">
+          <ZeroBottomBackImgContent url="/images/razor_banner3_back.jpg">
             <BannerContent>
               <BannerTextContent>
                 <Title color={defaultTheme.white_text}>
                   {t("frozen.banner_1_title")}
                 </Title>
-                <Subtitle color={defaultTheme.white_text}>
+                <ArmorSubtitle color={defaultTheme.white_text}>
                   {t("frozen.banner_1_subtitle")}
-                </Subtitle>
+                </ArmorSubtitle>
                 <Banner1Price>{t("frozen.banner_1_price")}</Banner1Price>
               </BannerTextContent>
 
               <Banner1ImgContent>
-                <Banner3Img
+                <Banner1Img
                   src="/images/armor_banner1.png"
                   alt="razor pro banner3"
                 />
               </Banner1ImgContent>
             </BannerContent>
-          </BackImgContent>
+          </ZeroBottomBackImgContent>
 
-          <BackImgContent url="/images/razor_pro_back.jpg">
+          <ZeroBottomBackImgContent url="/images/razor_pro_back.jpg">
             <BannerContent>
               <BannerTextContent>
                 <Title color={defaultTheme.black_333}>
                   {t("frozen.banner_2_title")}
                 </Title>
-                <Subtitle
+                <ArmorSubtitle
                   color={defaultTheme.black_333}
                   dangerouslySetInnerHTML={{
                     __html: t("frozen.banner_2_subtitle"),
@@ -173,11 +249,17 @@ const Armor: NextPage = () => {
               </BannerTextContent>
             </BannerContent>
             <Banner2Img src="/images/armor_banner2.png" alt="frozen banner2" />
-          </BackImgContent>
+          </ZeroBottomBackImgContent>
 
-          <BackImgContent url="/images/armor_banner3_back.jpg">
-            <BannerContent>
-              <Banner1ImgContent></Banner1ImgContent>
+          <MobileBackImgContent
+            url={
+              isPc()
+                ? "/images/armor_banner3_back.jpg"
+                : "/images/armor_m_banner3_back.jpg"
+            }
+          >
+            <MobileBannerContent>
+              <BlankContent></BlankContent>
               <BannerTextContent>
                 <Title
                   color={defaultTheme.white_text}
@@ -185,32 +267,38 @@ const Armor: NextPage = () => {
                     __html: t("frozen.banner_3_title"),
                   }}
                 />
-                <Subtitle
+                <ArmorSubtitle
                   color={defaultTheme.white_text}
                   dangerouslySetInnerHTML={{
                     __html: t("frozen.banner_3_subtitle"),
                   }}
                 />
               </BannerTextContent>
-            </BannerContent>
-          </BackImgContent>
+            </MobileBannerContent>
+          </MobileBackImgContent>
 
-          <BackImgContent url="/images/armor_banner4_back.jpg">
-            <BannerContent>
+          <MobileBackImgContent
+            url={
+              isPc()
+                ? "/images/armor_banner4_back.jpg"
+                : "/images/armor_m_banner4_back.jpg"
+            }
+          >
+            <MobileBannerContent>
               <BannerTextContent>
                 <Title color={defaultTheme.black_333}>
                   {t("frozen.banner_4_title")}
                 </Title>
-                <Subtitle
+                <ArmorSubtitle
                   color={defaultTheme.black_333}
                   dangerouslySetInnerHTML={{
                     __html: t("frozen.banner_4_subtitle"),
                   }}
                 />
               </BannerTextContent>
-              <BannerImgContent></BannerImgContent>
-            </BannerContent>
-          </BackImgContent>
+              <BlankContent></BlankContent>
+            </MobileBannerContent>
+          </MobileBackImgContent>
 
           <BackImgContent url="/images/razor_pro_back.jpg">
             <BannerContent>
@@ -219,7 +307,7 @@ const Armor: NextPage = () => {
                 <Title color={defaultTheme.black_333}>
                   {t("frozen.banner_5_title")}
                 </Title>
-                <Subtitle
+                <ArmorSubtitle
                   color={defaultTheme.black_333}
                   dangerouslySetInnerHTML={{
                     __html: t("frozen.banner_5_subtitle"),
@@ -227,11 +315,11 @@ const Armor: NextPage = () => {
                 />
               </BannerTextContent>
             </BannerContent>
-            <Banner5Img src="/images/armor_banner5.png" alt="frozen banner2" />
+            <Banner2Img src="/images/armor_banner5.png" alt="frozen banner2" />
           </BackImgContent>
 
           <TechnicalContent>
-            <BannerContent>
+            <BannerContentReverse>
               <TechnicalImgContent>
                 <div>
                   <Banner4Img
@@ -245,17 +333,9 @@ const Armor: NextPage = () => {
                 <Title color={defaultTheme.black_333}>
                   {t("common.params_title")}
                 </Title>
-                {params.map((item, index) => {
-                  return (
-                    <TechnicalSubtitle key={index}>
-                      {item.title}
-                      {getColon()}
-                      {item.content}
-                    </TechnicalSubtitle>
-                  )
-                })}
+                <Technical params={params} />
               </BannerTextContent>
-            </BannerContent>
+            </BannerContentReverse>
           </TechnicalContent>
         </Container>
         <Footer router="frozen" />

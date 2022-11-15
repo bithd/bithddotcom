@@ -6,7 +6,7 @@ import { Footer } from "../components/footer/footer"
 import ClientOnly from "../utils/clientOnly"
 import { MobiveHeader } from "../components/header/mobile_header"
 import { useTranslation } from "react-i18next"
-import { isCN } from "../utils/utils"
+import { isCN, isPc } from "../utils/utils"
 import { Buy } from "../components/common/buy"
 import { defaultTheme } from "../styles/theming"
 import {
@@ -22,6 +22,7 @@ import {
 import { Params } from "../model/model"
 import { Dialog } from "../components/common/dialog"
 import { useState } from "react"
+import { Technical } from "../components/common/technical_list"
 
 const Container = styled.div`
   margin-top: 60px;
@@ -36,14 +37,56 @@ const BannerContent = styled(Content)`
   display: flex;
   align-items: center;
   height: 100%;
+
+  @media (max-width: 768px) {
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+`
+
+const Banner2Content = styled(Content)`
+  display: flex;
+  align-items: center;
+  height: 100%;
+
+  @media (max-width: 768px) {
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+  }
 `
 
 const Banner1ImgContent = styled(BannerImgContent)`
   text-align: right;
+
+  @media (max-width: 768px) {
+    display: block;
+    display: none;
+  }
 `
 
 const Banner1TextContent = styled(BannerTextContent)`
   margin-left: 66px;
+
+  @media (max-width: 768px) {
+    margin: 0;
+  }
+`
+
+const MobileBackImgContent = styled(BackImgContent)<{ height: number }>`
+  @media (max-width: 768px) {
+    padding: 60px 0 0;
+    height: ${({ height }) => `${height}px`};
+    text-align: center;
+    background-size: 100% auto;
+    background-position: left bottom;
+  }
+`
+
+const MobileBackImg6Content = styled(MobileBackImgContent)`
+  @media (min-width: 768px) {
+    display: none;
+  }
 `
 
 const Banner1Title = styled.p<{ mark: string }>`
@@ -52,6 +95,11 @@ const Banner1Title = styled.p<{ mark: string }>`
   font-size: 38px;
   color: ${({ theme }) => theme.black_333};
   font-weight: 600;
+
+  @media (max-width: 768px) {
+    font-size: 32px;
+    color: ${({ theme }) => theme.white_text};
+  }
 
   &::after {
     font-family: "PingFangSC-Medium";
@@ -63,6 +111,10 @@ const Banner1Title = styled.p<{ mark: string }>`
     border: ${({ theme }) => `2.5px solid ${theme.border_f5}`};
     border-radius: 11px;
     font-weight: 500;
+
+    @media (max-width: 768px) {
+      display: none;
+    }
   }
 `
 
@@ -72,12 +124,21 @@ const Banner1Subtitle = styled.p`
   font-size: 50px;
   color: ${({ theme }) => theme.black_333};
   font-weight: 600;
+
+  @media (max-width: 768px) {
+    font-size: 13px;
+    color: ${({ theme }) => theme.white_text};
+  }
 `
 
 const PriceContent = styled.div`
   display: flex;
   align-items: center;
   margin-top: 60px;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 `
 
 const PriceText = styled.p`
@@ -106,6 +167,12 @@ const BuyArrow = styled.img`
 
 const Banner4Img = styled.img`
   height: 420px;
+
+  @media (max-width: 768px) {
+    width: 80%;
+    max-width: 320px;
+    height: auto;
+  }
 `
 
 const TechnicalImgContent = styled(BannerImgContent)`
@@ -118,6 +185,19 @@ const Warn = styled.p`
   margin: 20px auto 0;
   font-size: 10px;
   color: ${({ theme }) => theme.text_ac};
+`
+
+const Banner6Subtitle = styled(Subtitle)`
+  @media (max-width: 768px) {
+    margin: 0 17px;
+    text-align: left;
+
+    a {
+      color: ${({ theme }) => theme.blue_text};
+      text-decoration: none;
+      cursor: pointer;
+    }
+  }
 `
 
 const Armor2: NextPage = () => {
@@ -178,15 +258,29 @@ const Armor2: NextPage = () => {
             }}
           />
           <Buy func={buyClicked} title="Frozen Armor 304" />
-          <BackImgContent url="/images/armor2_banner1_back.jpg">
+          <MobileBackImgContent
+            height={700}
+            url={
+              isPc()
+                ? "/images/armor2_banner1_back.jpg"
+                : "/images/armor2_m_banner1_back.jpg"
+            }
+          >
             <BannerContent>
               <Banner1ImgContent></Banner1ImgContent>
               <Banner1TextContent>
-                <Banner1Title mark={t("frozen_304.banner_1_mark")}>
-                  {t("frozen_304.banner_1_title")}
-                </Banner1Title>
+                <Banner1Title
+                  mark={t("frozen_304.banner_1_mark")}
+                  dangerouslySetInnerHTML={{
+                    __html: isPc()
+                      ? t("frozen_304.banner_1_title")
+                      : t("frozen_304.banner_m_1_title"),
+                  }}
+                />
                 <Banner1Subtitle>
-                  {t("frozen_304.banner_1_subtitle")}
+                  {isPc()
+                    ? t("frozen_304.banner_1_subtitle")
+                    : t("frozen_304.banner_m_1_subtitle")}
                 </Banner1Subtitle>
                 <PriceContent>
                   <PriceText>{t("common.price", { price: "¥699" })}</PriceText>
@@ -197,9 +291,16 @@ const Armor2: NextPage = () => {
                 </PriceContent>
               </Banner1TextContent>
             </BannerContent>
-          </BackImgContent>
+          </MobileBackImgContent>
 
-          <BackImgContent url="/images/armor2_banner2_back.jpg">
+          <MobileBackImgContent
+            height={637}
+            url={
+              isPc()
+                ? "/images/armor2_banner2_back.jpg"
+                : "/images/armor2_m_banner2_back.jpg"
+            }
+          >
             <BannerContent>
               <BannerTextContent>
                 <Title color={defaultTheme.white_text}>
@@ -211,26 +312,50 @@ const Armor2: NextPage = () => {
               </BannerTextContent>
               <Banner1ImgContent></Banner1ImgContent>
             </BannerContent>
-          </BackImgContent>
+          </MobileBackImgContent>
 
-          <BackImgContent url="/images/armor2_banner3_back.jpg">
+          <MobileBackImgContent
+            height={668}
+            url={
+              isPc()
+                ? "/images/armor2_banner3_back.jpg"
+                : "/images/armor2_m_banner3_back.jpg"
+            }
+          >
             <BannerContent>
-              <BannerImgContent></BannerImgContent>
+              <Banner1ImgContent></Banner1ImgContent>
               <BannerTextContent>
-                <Title color={defaultTheme.black_333}>
+                <Title
+                  color={
+                    isPc()
+                      ? defaultTheme.black_333
+                      : defaultTheme.razor2_banner3_text
+                  }
+                >
                   {t("frozen_304.banner_3_title")}
                 </Title>
                 <Subtitle
-                  color={defaultTheme.black_333}
+                  color={
+                    isPc()
+                      ? defaultTheme.black_333
+                      : defaultTheme.razor2_banner3_text
+                  }
                   dangerouslySetInnerHTML={{
                     __html: t("frozen_304.banner_3_subtitle"),
                   }}
                 />
               </BannerTextContent>
             </BannerContent>
-          </BackImgContent>
+          </MobileBackImgContent>
 
-          <BackImgContent url="/images/armor2_banner4_back.jpg">
+          <MobileBackImgContent
+            height={667}
+            url={
+              isPc()
+                ? "/images/armor2_banner4_back.jpg"
+                : "/images/armor2_m_banner4_back.jpg"
+            }
+          >
             <BannerContent>
               <BannerTextContent>
                 <Title color={defaultTheme.white_text}>
@@ -245,27 +370,60 @@ const Armor2: NextPage = () => {
               </BannerTextContent>
               <Banner1ImgContent></Banner1ImgContent>
             </BannerContent>
-          </BackImgContent>
+          </MobileBackImgContent>
 
-          <BackImgContent url="/images/armor2_banner5_back.jpg">
+          <MobileBackImgContent
+            height={680}
+            url={
+              isPc()
+                ? "/images/armor2_banner5_back.jpg"
+                : "/images/armor2_m_banner5_back.jpg"
+            }
+          >
             <BannerContent>
-              <BannerImgContent></BannerImgContent>
+              <Banner1ImgContent></Banner1ImgContent>
               <BannerTextContent>
-                <Title color={defaultTheme.black_333}>
+                <Title
+                  color={
+                    isPc() ? defaultTheme.black_333 : defaultTheme.white_text
+                  }
+                >
                   {t("frozen_304.banner_5_title")}
                 </Title>
                 <Subtitle
-                  color={defaultTheme.black_333}
+                  color={
+                    isPc() ? defaultTheme.black_333 : defaultTheme.white_text
+                  }
                   dangerouslySetInnerHTML={{
                     __html: t("frozen_304.banner_5_subtitle"),
                   }}
                 />
               </BannerTextContent>
             </BannerContent>
-          </BackImgContent>
+          </MobileBackImgContent>
+
+          <MobileBackImg6Content
+            height={720}
+            url="/images/armor2_m_banner6_back.jpg"
+          >
+            <BannerContent>
+              <Banner1ImgContent></Banner1ImgContent>
+              <BannerTextContent>
+                <Title color={defaultTheme.black_333}>
+                  {t("frozen_304.banner_6_title")}
+                </Title>
+                <Banner6Subtitle
+                  color={defaultTheme.black_333}
+                  dangerouslySetInnerHTML={{
+                    __html: t("frozen_304.banner_6_subtitle"),
+                  }}
+                ></Banner6Subtitle>
+              </BannerTextContent>
+            </BannerContent>
+          </MobileBackImg6Content>
 
           <TechnicalContent>
-            <BannerContent>
+            <Banner2Content>
               <TechnicalImgContent>
                 <div>
                   <Banner4Img
@@ -279,17 +437,9 @@ const Armor2: NextPage = () => {
                 <Title color={defaultTheme.black_333}>
                   {t("common.params_title")}
                 </Title>
-                {params.map((item, index) => {
-                  return (
-                    <TechnicalSubtitle key={index}>
-                      {item.title}
-                      {getColon()}
-                      {item.content}
-                    </TechnicalSubtitle>
-                  )
-                })}
+                <Technical params={params} />
               </BannerTextContent>
-            </BannerContent>
+            </Banner2Content>
           </TechnicalContent>
         </Container>
         <Footer router="frozen_304" />

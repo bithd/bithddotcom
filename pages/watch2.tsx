@@ -23,6 +23,7 @@ import {
 import { Params } from "../model/model"
 import { Dialog } from "../components/common/dialog"
 import { useState } from "react"
+import { Technical } from "../components/common/technical_list"
 
 const Container = styled.div`
   margin-top: 60px;
@@ -37,34 +38,89 @@ const BannerContent = styled(Content)`
   display: flex;
   align-items: center;
   height: 100%;
+
+  @media (max-width: 768px) {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+`
+
+const BannerContentReverse = styled(Content)`
+  display: flex;
+  align-items: center;
+  height: 100%;
+
+  @media (max-width: 768px) {
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+  }
 `
 
 const Banner2ImgContent = styled(BannerImgContent)`
   justify-content: flex-start;
+
+  @media (max-width: 768px) {
+    justify-content: center;
+  }
 `
 
 const BannerImg = styled.img`
   height: 100%;
+
+  @media (max-width: 768px) {
+    width: 80%;
+    max-width: 200px;
+    height: auto;
+  }
 `
 
 const Banner1Img = styled.img`
   height: 480px;
+
+  @media (max-width: 768px) {
+    width: 80%;
+    max-width: 200px;
+    height: auto;
+  }
 `
 
-const Banner2Img = styled.img`
-  height: 420px;
+const Banner7Img = styled.img`
+  height: 480px;
+
+  @media (max-width: 768px) {
+    width: 80%;
+    max-width: 320px;
+    height: auto;
+  }
 `
 
 const TechnicalImgContent = styled(BannerImgContent)`
   align-items: center;
   justify-content: flex-start;
   text-align: center;
+
+  @media (max-width: 768px) {
+    justify-content: center;
+  }
 `
 
 const Warn = styled.p`
   margin: 20px auto 0;
   font-size: 10px;
   color: ${({ theme }) => theme.text_ac};
+`
+
+const Watch2Title = styled(Title)`
+  @media (max-width: 768px) {
+    font-size: 24px;
+  }
+`
+
+const Watch2Subtitle = styled(Subtitle)`
+  @media (max-width: 768px) {
+    margin: 0 12px;
+    font-size: 16px;
+  }
 `
 
 const Watch2: NextPage = () => {
@@ -129,13 +185,13 @@ const Watch2: NextPage = () => {
           <BackContent backColor={defaultTheme.white_back}>
             <BannerContent>
               <BannerTextContent>
-                <Title
+                <Watch2Title
                   color={defaultTheme.black_333}
                   dangerouslySetInnerHTML={{
                     __html: t("bithd_2.banner_1_title"),
                   }}
                 />
-                <Subtitle
+                <Watch2Subtitle
                   color={defaultTheme.black_333}
                   dangerouslySetInnerHTML={{
                     __html: t("bithd_2.banner_1_subtitle"),
@@ -152,7 +208,7 @@ const Watch2: NextPage = () => {
           </BackContent>
 
           <BackContent backColor={defaultTheme.back_fa}>
-            <BannerContent>
+            <BannerContentReverse>
               <Banner2ImgContent>
                 <Banner1Img
                   src="/images/watch2_banner2.png"
@@ -160,29 +216,29 @@ const Watch2: NextPage = () => {
                 />
               </Banner2ImgContent>
               <BannerTextContent>
-                <Title color={defaultTheme.black_333}>
+                <Watch2Title color={defaultTheme.black_333}>
                   {t("bithd_2.banner_2_title")}
-                </Title>
-                <Subtitle
+                </Watch2Title>
+                <Watch2Subtitle
                   color={defaultTheme.black_333}
                   dangerouslySetInnerHTML={{
                     __html: t("bithd_2.banner_2_subtitle"),
                   }}
                 />
               </BannerTextContent>
-            </BannerContent>
+            </BannerContentReverse>
           </BackContent>
 
           <BackContent backColor={defaultTheme.white_back}>
             <BannerContent>
               <BannerTextContent>
-                <Title
+                <Watch2Title
                   color={defaultTheme.black_333}
                   dangerouslySetInnerHTML={{
                     __html: t("bithd_2.banner_3_title"),
                   }}
                 />
-                <Subtitle
+                <Watch2Subtitle
                   color={defaultTheme.black_333}
                   dangerouslySetInnerHTML={{
                     __html: t("bithd_2.banner_3_subtitle"),
@@ -199,7 +255,7 @@ const Watch2: NextPage = () => {
           </BackContent>
 
           <BackContent backColor={defaultTheme.back_fa}>
-            <BannerContent>
+            <BannerContentReverse>
               <Banner2ImgContent>
                 <Banner1Img
                   src="/images/watch2_banner4.png"
@@ -207,29 +263,29 @@ const Watch2: NextPage = () => {
                 />
               </Banner2ImgContent>
               <BannerTextContent>
-                <Title color={defaultTheme.black_333}>
+                <Watch2Title color={defaultTheme.black_333}>
                   {t("bithd_2.banner_4_title")}
-                </Title>
-                <Subtitle
+                </Watch2Title>
+                <Watch2Subtitle
                   color={defaultTheme.black_333}
                   dangerouslySetInnerHTML={{
                     __html: t("bithd_2.banner_4_subtitle"),
                   }}
                 />
               </BannerTextContent>
-            </BannerContent>
+            </BannerContentReverse>
           </BackContent>
 
           <BackContent backColor={defaultTheme.white_back}>
             <BannerContent>
               <BannerTextContent>
-                <Title
+                <Watch2Title
                   color={defaultTheme.black_333}
                   dangerouslySetInnerHTML={{
                     __html: t("bithd_2.banner_5_title"),
                   }}
                 />
-                <Subtitle
+                <Watch2Subtitle
                   color={defaultTheme.black_333}
                   dangerouslySetInnerHTML={{
                     __html: t("bithd_2.banner_5_subtitle"),
@@ -246,7 +302,7 @@ const Watch2: NextPage = () => {
           </BackContent>
 
           <BackContent backColor={defaultTheme.back_fa}>
-            <BannerContent>
+            <BannerContentReverse>
               <Banner2ImgContent>
                 <Banner1Img
                   src="/images/watch2_banner6.png"
@@ -254,17 +310,17 @@ const Watch2: NextPage = () => {
                 />
               </Banner2ImgContent>
               <BannerTextContent>
-                <Title color={defaultTheme.black_333}>
+                <Watch2Title color={defaultTheme.black_333}>
                   {t("bithd_2.banner_6_title")}
-                </Title>
-                <Subtitle
+                </Watch2Title>
+                <Watch2Subtitle
                   color={defaultTheme.black_333}
                   dangerouslySetInnerHTML={{
                     __html: t("bithd_2.banner_6_subtitle"),
                   }}
                 />
               </BannerTextContent>
-            </BannerContent>
+            </BannerContentReverse>
           </BackContent>
 
           <TechnicalContent>
@@ -273,19 +329,11 @@ const Watch2: NextPage = () => {
                 <Title color={defaultTheme.black_333}>
                   {t("common.params_title")}
                 </Title>
-                {params.map((item, index) => {
-                  return (
-                    <TechnicalSubtitle key={index}>
-                      {item.title}
-                      {getColon()}
-                      {item.content}
-                    </TechnicalSubtitle>
-                  )
-                })}
+                <Technical params={params} />
               </BannerTextContent>
               <TechnicalImgContent>
                 <div>
-                  <Banner1Img
+                  <Banner7Img
                     src="/images/watch2_banner7.png"
                     alt="watch2 banner7"
                   />
