@@ -22,6 +22,8 @@ import {
 } from "../components/common/common"
 import { Features, Params } from "../model/model"
 import { Feature } from "../components/common/feature"
+import { Dialog } from "../components/common/dialog"
+import { useState } from "react"
 
 const Container = styled.div`
   margin-top: 60px;
@@ -124,6 +126,7 @@ const Warn = styled.p`
 
 const Razor2: NextPage = () => {
   const { t, i18n } = useTranslation()
+  const [showDialog, setShowDialog] = useState<boolean>(false)
 
   const features: Features[] = [
     {
@@ -194,6 +197,10 @@ const Razor2: NextPage = () => {
     },
   ]
 
+  const buyClicked = () => {
+    setShowDialog(true)
+  }
+
   return (
     <>
       <NextSeo
@@ -206,10 +213,17 @@ const Razor2: NextPage = () => {
         ]}
       />
       <ClientOnly>
-        <PCHeader active="razor_pro" />
+        <PCHeader active="razor2" />
         <MobiveHeader />
         <Container>
-          <Buy name="razor_pro" title="BITHD Razor Pro" />
+          <Dialog
+            type="razor2"
+            isShow={showDialog}
+            func={() => {
+              setShowDialog(false)
+            }}
+          />
+          <Buy func={buyClicked} title="BITHD Razor Pro" />
           <BackImgContent url="/images/razor_pro_back.jpg">
             <BannerContent>
               <Banner1ImgContent>
@@ -221,8 +235,12 @@ const Razor2: NextPage = () => {
                   {t("razor_pro.banner_1_title")}
                 </Banner1Subtitle>
                 <PriceContent>
-                  <PriceText>{t("common.price", { price: "¥699" })}</PriceText>
-                  <BuyContent>
+                  <PriceText>
+                    {t("common.price", {
+                      price: isCN(i18n.language) ? "¥699" : "$69.99",
+                    })}
+                  </PriceText>
+                  <BuyContent onClick={buyClicked}>
                     <BuyBtn>{t("common.buy")}</BuyBtn>
                     <BuyArrow src="/images/arrow_right.svg" alt="arrow" />
                   </BuyContent>

@@ -22,6 +22,8 @@ import {
 } from "../components/common/common"
 import { Features, Params } from "../model/model"
 import { Feature } from "../components/common/feature"
+import { Dialog } from "../components/common/dialog"
+import { useState } from "react"
 
 const Container = styled.div`
   margin-top: 60px;
@@ -101,6 +103,7 @@ const Banner2ImgContent = styled(BannerImgContent)`
 
 const Razor: NextPage = () => {
   const { t, i18n } = useTranslation()
+  const [showDialog, setShowDialog] = useState<boolean>(false)
 
   const features: Features[] = [
     {
@@ -135,10 +138,6 @@ const Razor: NextPage = () => {
       img: "/images/icon_razor_6.png",
     },
   ]
-
-  const getColon = () => {
-    return isCN(i18n.language) ? "：" : ":"
-  }
 
   const params: Params[] = [
     {
@@ -175,6 +174,14 @@ const Razor: NextPage = () => {
     },
   ]
 
+  const buyClicked = () => {
+    setShowDialog(true)
+  }
+
+  const getColon = () => {
+    return isCN(i18n.language) ? "：" : ":"
+  }
+
   return (
     <>
       <NextSeo
@@ -190,10 +197,21 @@ const Razor: NextPage = () => {
         <PCHeader active="razor" />
         <MobiveHeader />
         <Container>
-          <Buy name="razor" title="BITHD Razor" />
+          <Dialog
+            type="razor"
+            isShow={showDialog}
+            func={() => {
+              setShowDialog(false)
+            }}
+          />
+          <Buy func={buyClicked} title="BITHD Razor" />
           <Banner1ImgContent url="/images/ad_back.jpg">
             <Banner1TextContent>
-              <Banner1Title>{t("razor.banner_1_title")}</Banner1Title>
+              <Banner1Title
+                dangerouslySetInnerHTML={{
+                  __html: t("razor.banner_1_title"),
+                }}
+              />
               <Banner1Subtitle
                 dangerouslySetInnerHTML={{
                   __html: t("razor.banner_1_subtitle"),
@@ -252,12 +270,12 @@ const Razor: NextPage = () => {
               <BannerTextContent></BannerTextContent>
               <BannerTextContent>
                 <Title color={defaultTheme.black_333}>
-                  {t("razor_pro.banner_4_title")}
+                  {t("razor.banner_4_title")}
                 </Title>
                 <Subtitle
                   color={defaultTheme.black_333}
                   dangerouslySetInnerHTML={{
-                    __html: t("razor_pro.banner_4_subtitle"),
+                    __html: t("razor.banner_4_subtitle"),
                   }}
                 />
               </BannerTextContent>

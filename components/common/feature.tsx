@@ -48,8 +48,8 @@ export function Feature({ features }: FeatureProps) {
           <FeatureContent key={index}>
             <FeatureImg src={item.img} alt={`icon ${index}`} />
             <TextContent>
-              <Title>{item.title}</Title>
-              <Subtitle>{item.subtitle}</Subtitle>
+              <Title dangerouslySetInnerHTML={{ __html: item.title }} />
+              <Subtitle dangerouslySetInnerHTML={{ __html: item.subtitle }} />
             </TextContent>
           </FeatureContent>
         )

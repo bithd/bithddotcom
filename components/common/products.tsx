@@ -2,6 +2,7 @@ import styled from "styled-components"
 import { ProductsProps } from "../../model/model"
 import { Content } from "./common"
 import { useTranslation } from "react-i18next"
+import Link from "next/link"
 
 const Container = styled(Content)`
   display: flex;
@@ -78,7 +79,7 @@ const Icon = styled.img`
   height: 340px;
 `
 
-export function Products() {
+export function Products({ func }: { func: (type: string) => void }) {
   const { t, i18n } = useTranslation()
 
   const products: ProductsProps[] = [
@@ -86,29 +87,29 @@ export function Products() {
       title: t("header.razor_pro"),
       subtitle: t("razor_pro.des"),
       img: "/images/icon_razor_pro.png",
-      link: "",
-      buy: "razor_pro",
+      link: "/razor2",
+      buy: "razor2",
     },
     {
       title: t("header.bithd_2"),
       subtitle: t("bithd_2.des"),
       img: "/images/icon_watch2.png",
-      link: "",
-      buy: "bithd2",
+      link: "/watch2",
+      buy: "watch2",
     },
     {
       title: t("header.frozen_2"),
       subtitle: t("frozen_304.des"),
       img: "/images/icon_forzen_304.png",
-      link: "",
-      buy: "frozen_2",
+      link: "/armor2",
+      buy: "aromr2",
     },
     {
       title: t("header.frozen"),
       subtitle: t("frozen.des"),
       img: "/images/icon_forzen.png",
-      link: "",
-      buy: "forzen",
+      link: "/armor",
+      buy: "armor",
     },
   ]
 
@@ -123,11 +124,17 @@ export function Products() {
                 dangerouslySetInnerHTML={{ __html: item.subtitle }}
               ></Subtitle>
               <OperateContainer>
-                <MoreContent>
-                  <MoreBtn>{t("common.more")}</MoreBtn>
-                  <Arrow src="/images/arrow_right.svg" alt="arrow" />
-                </MoreContent>
-                <BuyContent>
+                <Link href={item.link}>
+                  <MoreContent>
+                    <MoreBtn>{t("common.more")}</MoreBtn>
+                    <Arrow src="/images/arrow_right.svg" alt="arrow" />
+                  </MoreContent>
+                </Link>
+                <BuyContent
+                  onClick={() => {
+                    func(item.buy)
+                  }}
+                >
                   <BuyBtn>{t("common.buy")}</BuyBtn>
                   <Arrow src="/images/arrow_right.svg" alt="arrow" />
                 </BuyContent>

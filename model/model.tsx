@@ -61,11 +61,8 @@ export interface FooterProps {
 
 export interface DialogProps {
   isShow: boolean
-  title: string
-  linkTitle: string
-  confirmTitle: string
-  confirmFun: (isDone: boolean) => void
-  cancelFun: () => void
+  type: string
+  func: () => void
 }
 
 export interface ProductsProps {
@@ -83,7 +80,7 @@ export interface ImgLink {
 
 export interface BuyProps {
   title: string
-  name: string
+  func: () => void
 }
 
 export interface FeatureProps {
@@ -99,4 +96,9 @@ export interface Features {
 export interface Params {
   title: string
   content: string
+}
+
+export interface Buy {
+  title: string
+  link: string
 }

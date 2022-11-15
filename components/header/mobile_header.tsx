@@ -94,13 +94,13 @@ export function MobiveHeader() {
         {
           text: t("header.razor_1"),
           nofollow: false,
-          link: "",
+          link: "/razor",
           changeLang: false,
         },
         {
           text: t("header.razor_pro"),
           nofollow: false,
-          link: "",
+          link: "/razor2",
           changeLang: false,
         },
       ],
@@ -115,15 +115,9 @@ export function MobiveHeader() {
       isMark: false,
       drop: [
         {
-          text: t("header.bithd_1"),
-          nofollow: false,
-          link: "",
-          changeLang: false,
-        },
-        {
           text: t("header.bithd_2"),
           nofollow: false,
-          link: "",
+          link: "/watch2",
           changeLang: false,
         },
       ],
@@ -140,13 +134,13 @@ export function MobiveHeader() {
         {
           text: t("header.frozen_1"),
           nofollow: false,
-          link: "",
+          link: "/armor",
           changeLang: false,
         },
         {
           text: t("header.frozen_2"),
           nofollow: false,
-          link: "",
+          link: "/armor2",
           changeLang: false,
         },
       ],

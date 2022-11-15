@@ -1,12 +1,12 @@
-import styled from 'styled-components'
-import { useTranslation } from 'react-i18next';
-import { MobileMenuListProps } from '../../model/model'
-import Link from 'next/link';
-import { useState } from 'react';
+import styled from "styled-components"
+import { useTranslation } from "react-i18next"
+import { MobileMenuListProps } from "../../model/model"
+import Link from "next/link"
+import { useState } from "react"
 
-const Container = styled.div<{active: boolean}>`
+const Container = styled.div<{ active: boolean }>`
   position: absolute;
-  display: ${({ active }) => active ? 'block': 'none'};
+  display: ${({ active }) => (active ? "block" : "none")};
   top: 64px;
   left: 0;
   width: 100%;
@@ -15,7 +15,7 @@ const Container = styled.div<{active: boolean}>`
   white-space: nowrap;
   overflow-y: scroll;
   scrollbar-width: none;
-  -ms-overflow-style: none; 
+  -ms-overflow-style: none;
   &::-webkit-scrollbar {
     display: none;
   }
@@ -65,8 +65,8 @@ const DropContent = styled.div`
   overflow: hidden;
 `
 
-const DropListContent = styled.div<{show: boolean}>`
-  display: ${({ show }) => show ? 'block' : 'none'};;
+const DropListContent = styled.div<{ show: boolean }>`
+  display: ${({ show }) => (show ? "block" : "none")};
   padding: 11px 0 8px 20px;
 `
 
@@ -82,18 +82,22 @@ const DropLink = styled.a`
   height: 36px;
   line-height: 18px;
   font-size: 13px;
-  color: ${({ theme }) => theme.black_333};;
+  color: ${({ theme }) => theme.black_333};
   text-decoration: none;
 `
 
-export function MobileMenuList({menus, active, menuClicked} : MobileMenuListProps) {
-  const { t, i18n } = useTranslation();
+export function MobileMenuList({
+  menus,
+  active,
+  menuClicked,
+}: MobileMenuListProps) {
+  const { t, i18n } = useTranslation()
 
   const changeLang = (lang: string) => {
-    if (lang == 'English') {
-      i18n.changeLanguage('en')
+    if (lang == "English") {
+      i18n.changeLanguage("en")
     } else {
-      i18n.changeLanguage('zh-cn')
+      i18n.changeLanguage("zh-cn")
     }
     menuClicked()
   }
@@ -101,49 +105,80 @@ export function MobileMenuList({menus, active, menuClicked} : MobileMenuListProp
   return (
     <Container active={active}>
       <>
-        {
-          menus.map((menu, index) => {
-            if (menu.drop != null && menu.drop.length > 0) {
-               const [show, setShow] = useState<boolean>(false)
-              const showDrop = () => {
-                setShow(!show)
-              }
-              return <DropContainer key={index}>
+        {menus.map((menu, index) => {
+          if (menu.drop != null && menu.drop.length > 0) {
+            const [show, setShow] = useState<boolean>(false)
+            const showDrop = () => {
+              setShow(!show)
+            }
+            return (
+              <DropContainer key={index}>
                 <DropContent onClick={showDrop}>
                   <Text>{menu.link.text}</Text>
-                  <Arrow src={show ? '/images/arrow_down.png' : '/images/arrow_right.png'} alt='arrow' />
+                  <Arrow
+                    src={
+                      show
+                        ? "/images/arrow_down.png"
+                        : "/images/arrow_right.png"
+                    }
+                    alt="arrow"
+                  />
                 </DropContent>
                 <DropListContent show={show}>
-                  {
-                    menu.drop.map((item, index) => {
-                      return item.nofollow ? 
-                            <DropLink onClick={item.changeLang ? () => changeLang(item.text) : undefined} key={index} href={item.link} rel='nofollow noopener noreferrer' target='_blank'>{item.text}</DropLink> : 
-                            <Link key={index} href={item.link}><DropLink onClick={item.changeLang ? () => changeLang(item.text) : undefined}>{item.text}</DropLink></Link>
-                    })
-                  }
+                  {menu.drop.map((item, index) => {
+                    return item.nofollow ? (
+                      <DropLink
+                        onClick={
+                          item.changeLang
+                            ? () => changeLang(item.text)
+                            : undefined
+                        }
+                        key={index}
+                        href={item.link}
+                        rel="nofollow noopener noreferrer"
+                        target="_blank"
+                      >
+                        {item.text}
+                      </DropLink>
+                    ) : (
+                      <Link key={index} href={item.link}>
+                        <DropLink
+                          onClick={
+                            item.changeLang
+                              ? () => changeLang(item.text)
+                              : undefined
+                          }
+                        >
+                          {item.text}
+                        </DropLink>
+                      </Link>
+                    )
+                  })}
                 </DropListContent>
               </DropContainer>
-            } else {
-              return menu.link.nofollow ? 
-                <LinkContent key={index} href={menu.link.link} rel='nofollow noopener noreferrer' target='_blank'>
+            )
+          } else {
+            return menu.link.nofollow ? (
+              <LinkContent
+                key={index}
+                href={menu.link.link}
+                rel="nofollow noopener noreferrer"
+                target="_blank"
+              >
+                <Text>{menu.link.text}</Text>
+                {menu.isMark ? <Mark>{t("header.suggest")}</Mark> : <></>}
+              </LinkContent>
+            ) : (
+              <Link key={index} href={menu.link.link}>
+                <LinkContent>
                   <Text>{menu.link.text}</Text>
-                  {
-                    menu.isMark ? <Mark>{t('header.suggest')}</Mark>:<></>
-                  }
-                </LinkContent> : 
-                <Link key={index} href={menu.link.link}>
-                  <LinkContent>
-                    <Text>{menu.link.text}</Text>
-                    {
-                      menu.isMark ? <Mark>{t('header.suggest')}</Mark>:<></>
-                    }
-                  </LinkContent>
-                </Link>
-            }   
-          })
-        }
+                  {menu.isMark ? <Mark>{t("header.suggest")}</Mark> : <></>}
+                </LinkContent>
+              </Link>
+            )
+          }
+        })}
       </>
     </Container>
-    )
-} 
-
+  )
+}

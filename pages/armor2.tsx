@@ -20,6 +20,8 @@ import {
   TechnicalSubtitle,
 } from "../components/common/common"
 import { Params } from "../model/model"
+import { Dialog } from "../components/common/dialog"
+import { useState } from "react"
 
 const Container = styled.div`
   margin-top: 60px;
@@ -120,10 +122,7 @@ const Warn = styled.p`
 
 const Armor2: NextPage = () => {
   const { t, i18n } = useTranslation()
-
-  const getColon = () => {
-    return isCN(i18n.language) ? "：" : ":"
-  }
+  const [showDialog, setShowDialog] = useState<boolean>(false)
 
   const params: Params[] = [
     {
@@ -148,6 +147,14 @@ const Armor2: NextPage = () => {
     },
   ]
 
+  const getColon = () => {
+    return isCN(i18n.language) ? "：" : ":"
+  }
+
+  const buyClicked = () => {
+    setShowDialog(true)
+  }
+
   return (
     <>
       <NextSeo
@@ -163,7 +170,14 @@ const Armor2: NextPage = () => {
         <PCHeader active="frozen_304" />
         <MobiveHeader />
         <Container>
-          <Buy name="armor2" title="Frozen Armor 304" />
+          <Dialog
+            type="armor2"
+            isShow={showDialog}
+            func={() => {
+              setShowDialog(false)
+            }}
+          />
+          <Buy func={buyClicked} title="Frozen Armor 304" />
           <BackImgContent url="/images/armor2_banner1_back.jpg">
             <BannerContent>
               <Banner1ImgContent></Banner1ImgContent>
@@ -176,7 +190,7 @@ const Armor2: NextPage = () => {
                 </Banner1Subtitle>
                 <PriceContent>
                   <PriceText>{t("common.price", { price: "¥699" })}</PriceText>
-                  <BuyContent>
+                  <BuyContent onClick={buyClicked}>
                     <BuyBtn>{t("common.buy")}</BuyBtn>
                     <BuyArrow src="/images/arrow_right.svg" alt="arrow" />
                   </BuyContent>

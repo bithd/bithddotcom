@@ -1,7 +1,8 @@
 import styled from "styled-components"
 import { DialogProps } from "../../model/model"
 import { useState } from "react"
-import Link from "next/link"
+import { useTranslation } from "react-i18next"
+import { getBuyLinks, isCN } from "../../utils/utils"
 
 const Container = styled.div<{ isShow: boolean }>`
   display: ${({ isShow }) => (isShow ? "block" : "none")};
@@ -27,6 +28,17 @@ const Flex = styled.div`
 const Content = styled.div`
   position: relative;
   margin: auto;
+  width: 500px;
+  height: 500px;
+  text-align: center;
+  background: ${({ theme }) => theme.white_back};
+  border-radius: 20px;
+  overflow: hidden;
+`
+
+const TextContent = styled.div`
+  position: relative;
+  margin: auto;
   width: 90%;
   max-width: 325px;
   text-align: center;
@@ -36,134 +48,108 @@ const Content = styled.div`
 `
 
 const Title = styled.p`
-  margin: 25px 20px;
-  line-height: 24px;
-  font-size: 17px;
+  margin: 38px auto 70px;
+  font-size: 30px;
   color: ${({ theme }) => theme.black};
   text-align: center;
 `
 
-const LinkTitle = styled.p`
-  margin: 25px 20px 0;
-  line-height: 24px;
-  font-size: 14px;
-  color: ${({ theme }) => theme.black_333};
-  text-align: left;
-`
-
-const LinkTitleA = styled.a`
-  display: inline-block;
-  color: ${({ theme }) => theme.warn_back};
-
-  &:hover {
-    text-decoration: underline;
-  }
-`
-
-const CheckBoxContainer = styled.div``
-
-const CheckBoxContent = styled.div`
-  margin: 10px 15px;
-  text-align: left;
-`
-
-const CheckBox = styled.input`
-  float: left;
-  margin: 3px 8px 0 0;
-  vertical-align: top;
-  width: 13px;
-`
-
-const CheckBoxText = styled.p`
-  margin: 0;
-  width: calc(100% - 21px);
-  line-height: 20px;
-  font-size: 14px;
+const ContentText = styled.p`
+  margin: 30px auto 30px;
+  font-size: 16px;
+  color: ${({ theme }) => theme.black};
+  text-align: center;
 `
 
 const ConfirmBtn = styled.button`
-  margin: 32px auto 15px;
-  width: 260px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 90px;
+  line-height: 90px;
+  font-size: 26px;
+  color: ${({ theme }) => theme.cancel_color};
+  border: none;
+  background-color: ${({ theme }) => theme.back_f2};
+  cursor: pointer;
+`
+
+const TextConfirmBtn = styled.button`
+  width: 100%;
   height: 44px;
   line-height: 44px;
   font-size: 14px;
-  color: ${({ theme }) => theme.white_text};
+  color: ${({ theme }) => theme.cancel_color};
   border: none;
   border-radius: 8px;
-  background-image: linear-gradient(
-    49deg,
-    #2ea3c9 0%,
-    #3a33cf 36%,
-    #320685 100%
-  );
+  background-color: ${({ theme }) => theme.back_f2};
   box-shadow: ${({ theme }) => `0 2px 5px 0 ${theme.dialog_btn_shadow}`};
 `
 
-export function Dialog({
-  title,
-  confirmTitle,
-  checkBoxArr,
-  confirmFun,
-  isShow,
-  cancelFun,
-  linkTitle,
-}: DialogProps) {
-  const [boxResult, setBoxResult] = useState<boolean[]>([])
+const LinkContainer = styled.a`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 30px 50px;
+  padding-bottom: 25px;
+  color: ${({ theme }) => theme.black_333};
+  font-size: 24px;
+  border-bottom: ${({ theme }) => `1px solid ${theme.ddd}`};
+  cursor: pointer;
+  text-decoration: none;
+`
 
-  const confirmClicked = () => {
-    console.log(checkBoxArr)
-    if (checkBoxArr != null && checkBoxArr.length > 0) {
-      let isCheck = true
-      for (let i = 0; i < checkBoxArr.length; i++) {
-        if (!boxResult[i]) isCheck = false
-      }
-      return confirmFun(isCheck)
-    } else {
-      confirmFun(true)
-    }
-  }
+const LinkText = styled.p`
+  color: ${({ theme }) => theme.black_333};
+  font-size: 24px;
+`
 
-  const checkBoxChanged = (index: number, e: any) => {
-    const arr = Array.from(boxResult)
-    arr[index] = e.target.checked
-    setBoxResult(arr)
-  }
+const LinkArrow = styled.img`
+  height: 18px;
+`
+
+export function Dialog({ type, isShow, func }: DialogProps) {
+  const { t, i18n } = useTranslation()
 
   return (
     <>
-      <Container isShow={isShow} onClick={cancelFun}>
+      <Container isShow={isShow} onClick={func}>
         <Flex>
-          <Content
-            onClick={(e) => {
-              e.stopPropagation()
-            }}
-          >
-            {linkTitle != null && linkTitle.length > 0 ? (
-              <LinkTitle>
-                {linkTitle}
-                <Link href="/newsMessage/130">
-                  <LinkTitleA>https://bitpie.com/newsMessage/130</LinkTitleA>
-                </Link>
-              </LinkTitle>
-            ) : (
-              <Title>{title}</Title>
-            )}
-            <CheckBoxContainer>
-              {checkBoxArr.map((item, index) => {
+          {getBuyLinks(type, isCN(i18n.language)).length == 0 ? (
+            <TextContent
+              onClick={(e) => {
+                e.stopPropagation()
+              }}
+            >
+              <ContentText>预售将于2022年4月28号开启</ContentText>
+              <TextConfirmBtn onClick={func}>
+                {t("common.cancel")}
+              </TextConfirmBtn>
+            </TextContent>
+          ) : (
+            <Content
+              onClick={(e) => {
+                e.stopPropagation()
+              }}
+            >
+              <Title>{t("common.buy_title")}</Title>
+              {getBuyLinks(type, isCN(i18n.language)).map((item, index) => {
                 return (
-                  <CheckBoxContent key={index}>
-                    <CheckBox
-                      type="checkbox"
-                      defaultChecked={item.isSelect}
-                      onChange={(e) => checkBoxChanged(index, e)}
-                    />
-                    <CheckBoxText>{item.text}</CheckBoxText>
-                  </CheckBoxContent>
+                  <LinkContainer
+                    key={index}
+                    href={item.link}
+                    rel="nofollow noopener noreferrer"
+                    target="_blank"
+                  >
+                    <LinkText>{item.title}</LinkText>
+                    <LinkArrow src="/images/arrow_right.png" />
+                  </LinkContainer>
                 )
               })}
-            </CheckBoxContainer>
-            <ConfirmBtn onClick={confirmClicked}>{confirmTitle}</ConfirmBtn>
-          </Content>
+              <ConfirmBtn onClick={func}>{t("common.cancel")}</ConfirmBtn>
+            </Content>
+          )}
         </Flex>
       </Container>
     </>

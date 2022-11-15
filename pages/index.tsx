@@ -8,7 +8,8 @@ import { MobiveHeader } from "../components/header/mobile_header"
 import { Content } from "../components/common/common"
 import { useTranslation } from "react-i18next"
 import { Products } from "../components/common/products"
-import { Partners } from "../components/common/partners"
+import { Dialog } from "../components/common/dialog"
+import { useState } from "react"
 
 const HomeContent = styled.div`
   margin-top: 60px;
@@ -92,6 +93,13 @@ const AdImg = styled.img`
 
 const Home: NextPage = () => {
   const { t, i18n } = useTranslation()
+  const [showDialog, setShowDialog] = useState<boolean>(false)
+  const [dialogType, setDialogType] = useState<string>("")
+
+  const buyClicked = (type: string) => {
+    setDialogType(type)
+    setShowDialog(true)
+  }
 
   return (
     <>
@@ -109,6 +117,13 @@ const Home: NextPage = () => {
         <PCHeader active="home" />
         <MobiveHeader />
         <HomeContent>
+          <Dialog
+            type={dialogType}
+            isShow={showDialog}
+            func={() => {
+              setShowDialog(false)
+            }}
+          />
           <AdContainer>
             <Content>
               <AdTextContainer>
@@ -117,7 +132,13 @@ const Home: NextPage = () => {
               </AdTextContainer>
               <BuyContainer>
                 <BuyContent>
-                  <BuyBtn>{t("common.buy")}</BuyBtn>
+                  <BuyBtn
+                    onClick={() => {
+                      buyClicked("razor2")
+                    }}
+                  >
+                    {t("common.buy")}
+                  </BuyBtn>
                 </BuyContent>
                 <MoreContent>
                   <MoreText>{t("common.more")}</MoreText>
@@ -127,8 +148,7 @@ const Home: NextPage = () => {
               <AdImg src="/images/ad.png" alt="razor img" />
             </Content>
           </AdContainer>
-          <Products />
-          <Partners />
+          <Products func={buyClicked} />
         </HomeContent>
         <Footer router="home" />
       </ClientOnly>

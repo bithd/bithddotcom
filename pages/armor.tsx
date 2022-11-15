@@ -20,6 +20,8 @@ import {
   TechnicalSubtitle,
 } from "../components/common/common"
 import { Params } from "../model/model"
+import { Dialog } from "../components/common/dialog"
+import { useState } from "react"
 
 const Container = styled.div`
   margin-top: 60px;
@@ -82,10 +84,7 @@ const Warn = styled.p`
 
 const Armor: NextPage = () => {
   const { t, i18n } = useTranslation()
-
-  const getColon = () => {
-    return isCN(i18n.language) ? "：" : ":"
-  }
+  const [showDialog, setShowDialog] = useState<boolean>(false)
 
   const params: Params[] = [
     {
@@ -106,6 +105,14 @@ const Armor: NextPage = () => {
     },
   ]
 
+  const getColon = () => {
+    return isCN(i18n.language) ? "：" : ":"
+  }
+
+  const buyClicked = () => {
+    setShowDialog(true)
+  }
+
   return (
     <>
       <NextSeo
@@ -121,7 +128,15 @@ const Armor: NextPage = () => {
         <PCHeader active="frozen" />
         <MobiveHeader />
         <Container>
-          <Buy name="armor" title="Frozen Armor" />
+          <Dialog
+            type="armor"
+            isShow={showDialog}
+            func={() => {
+              setShowDialog(false)
+            }}
+          />
+
+          <Buy func={buyClicked} title="Frozen Armor" />
           <BackImgContent url="/images/razor_banner3_back.jpg">
             <BannerContent>
               <BannerTextContent>

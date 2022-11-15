@@ -21,6 +21,8 @@ import {
   BackContent,
 } from "../components/common/common"
 import { Params } from "../model/model"
+import { Dialog } from "../components/common/dialog"
+import { useState } from "react"
 
 const Container = styled.div`
   margin-top: 60px;
@@ -37,75 +39,19 @@ const BannerContent = styled(Content)`
   height: 100%;
 `
 
-const Banner1ImgContent = styled(BannerImgContent)`
-  text-align: right;
+const Banner2ImgContent = styled(BannerImgContent)`
+  justify-content: flex-start;
+`
+
+const BannerImg = styled.img`
+  height: 100%;
 `
 
 const Banner1Img = styled.img`
-  width: 320px;
-`
-
-const Banner1TextContent = styled(BannerTextContent)`
-  margin-left: 66px;
-`
-
-const Banner1Title = styled.p`
-  font-family: "PingFangSC-Semibold";
-  font-size: 28px;
-  color: ${({ theme }) => theme.black_333};
-  font-weight: 600;
-`
-
-const Banner1Subtitle = styled.p`
-  font-family: "PingFangSC-Semibold";
-  margin: 30px 0 0;
-  font-size: 38px;
-  color: ${({ theme }) => theme.black_333};
-  font-weight: 600;
-`
-
-const PriceContent = styled.div`
-  display: flex;
-  align-items: center;
-  margin-top: 60px;
-`
-
-const PriceText = styled.p`
-  line-height: 50px;
-  font-size: 22px;
-  color: ${({ theme }) => theme.black_text};
-`
-
-const BuyContent = styled.div`
-  display: flex;
-  align-items: center;
-  margin-left: 20px;
-`
-
-const BuyBtn = styled.button`
-  font-size: 22px;
-  color: ${({ theme }) => theme.blue_text};
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-`
-
-const BuyArrow = styled.img`
-  height: 20px;
-`
-
-const Banner2Img = styled.img`
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  height: 280px;
-`
-
-const Banner3Img = styled.img`
   height: 480px;
 `
 
-const Banner4Img = styled.img`
+const Banner2Img = styled.img`
   height: 420px;
 `
 
@@ -123,10 +69,7 @@ const Warn = styled.p`
 
 const Watch2: NextPage = () => {
   const { t, i18n } = useTranslation()
-
-  const getColon = () => {
-    return isCN(i18n.language) ? "：" : ":"
-  }
+  const [showDialog, setShowDialog] = useState<boolean>(false)
 
   const params: Params[] = [
     {
@@ -149,15 +92,15 @@ const Watch2: NextPage = () => {
       title: t("bithd_2.params5_title"),
       content: t("bithd_2.params5_content"),
     },
-    {
-      title: t("bithd_2.params6_title"),
-      content: t("bithd_2.params6_content"),
-    },
-    {
-      title: t("bithd_2.params7_title"),
-      content: t("bithd_2.params7_content"),
-    },
   ]
+
+  const buyClicked = () => {
+    setShowDialog(true)
+  }
+
+  const getColon = () => {
+    return isCN(i18n.language) ? "：" : ":"
+  }
 
   return (
     <>
@@ -174,9 +117,16 @@ const Watch2: NextPage = () => {
         <PCHeader active="watch2" />
         <MobiveHeader />
         <Container>
-          <Buy name="bithd_2" title={t("bithd_2.title")} />
+          <Dialog
+            type="watch2"
+            isShow={showDialog}
+            func={() => {
+              setShowDialog(false)
+            }}
+          />
+          <Buy func={buyClicked} title={t("bithd_2.title")} />
 
-          <BackContent backColor={defaultTheme.back_fa}>
+          <BackContent backColor={defaultTheme.white_back}>
             <BannerContent>
               <BannerTextContent>
                 <Title
@@ -193,43 +143,45 @@ const Watch2: NextPage = () => {
                 />
               </BannerTextContent>
               <BannerImgContent>
-                <Banner3Img
-                  src="/images/bithd_2_banner3.png"
-                  alt="razor pro banner3"
+                <BannerImg
+                  src="/images/watch2_banner1.png"
+                  alt="watch2 banner1"
                 />
               </BannerImgContent>
             </BannerContent>
           </BackContent>
 
-          <BackImgContent url="/images/bithd_2_back2.jpg">
+          <BackContent backColor={defaultTheme.back_fa}>
             <BannerContent>
-              <BannerTextContent>
-                <Title color={defaultTheme.white_text}>
-                  {t("bithd_2.banner_2_title")}
-                </Title>
-                <Subtitle color={defaultTheme.white_text}>
-                  {t("bithd_2.banner_2_subtitle")}
-                </Subtitle>
-              </BannerTextContent>
-            </BannerContent>
-            <Banner2Img
-              src="/images/bithd_2_banner2.png"
-              alt="razor pro banner2"
-            />
-          </BackImgContent>
-
-          <BackImgContent url="/images/bithd_2_back3.jpg">
-            <BannerContent>
-              <BannerImgContent>
-                <Banner3Img
-                  src="/images/bithd_2_banner3.png"
-                  alt="razor pro banner3"
+              <Banner2ImgContent>
+                <Banner1Img
+                  src="/images/watch2_banner2.png"
+                  alt="watch2 banner2"
                 />
-              </BannerImgContent>
+              </Banner2ImgContent>
               <BannerTextContent>
                 <Title color={defaultTheme.black_333}>
-                  {t("bithd_2.banner_3_title")}
+                  {t("bithd_2.banner_2_title")}
                 </Title>
+                <Subtitle
+                  color={defaultTheme.black_333}
+                  dangerouslySetInnerHTML={{
+                    __html: t("bithd_2.banner_2_subtitle"),
+                  }}
+                />
+              </BannerTextContent>
+            </BannerContent>
+          </BackContent>
+
+          <BackContent backColor={defaultTheme.white_back}>
+            <BannerContent>
+              <BannerTextContent>
+                <Title
+                  color={defaultTheme.black_333}
+                  dangerouslySetInnerHTML={{
+                    __html: t("bithd_2.banner_3_title"),
+                  }}
+                />
                 <Subtitle
                   color={defaultTheme.black_333}
                   dangerouslySetInnerHTML={{
@@ -237,11 +189,23 @@ const Watch2: NextPage = () => {
                   }}
                 />
               </BannerTextContent>
+              <BannerImgContent>
+                <Banner1Img
+                  src="/images/watch2_banner3.png"
+                  alt="watch2 banner3"
+                />
+              </BannerImgContent>
             </BannerContent>
-          </BackImgContent>
+          </BackContent>
 
-          <BackImgContent url="/images/bithd_2_back.jpg">
+          <BackContent backColor={defaultTheme.back_fa}>
             <BannerContent>
+              <Banner2ImgContent>
+                <Banner1Img
+                  src="/images/watch2_banner4.png"
+                  alt="watch2 banner4"
+                />
+              </Banner2ImgContent>
               <BannerTextContent>
                 <Title color={defaultTheme.black_333}>
                   {t("bithd_2.banner_4_title")}
@@ -253,14 +217,55 @@ const Watch2: NextPage = () => {
                   }}
                 />
               </BannerTextContent>
+            </BannerContent>
+          </BackContent>
+
+          <BackContent backColor={defaultTheme.white_back}>
+            <BannerContent>
+              <BannerTextContent>
+                <Title
+                  color={defaultTheme.black_333}
+                  dangerouslySetInnerHTML={{
+                    __html: t("bithd_2.banner_5_title"),
+                  }}
+                />
+                <Subtitle
+                  color={defaultTheme.black_333}
+                  dangerouslySetInnerHTML={{
+                    __html: t("bithd_2.banner_5_subtitle"),
+                  }}
+                />
+              </BannerTextContent>
               <BannerImgContent>
-                <Banner4Img
-                  src="/images/bithd_2_banner4.png"
-                  alt="razor pro banner4"
+                <Banner1Img
+                  src="/images/watch2_banner5.png"
+                  alt="watch2 banner5"
                 />
               </BannerImgContent>
             </BannerContent>
-          </BackImgContent>
+          </BackContent>
+
+          <BackContent backColor={defaultTheme.back_fa}>
+            <BannerContent>
+              <Banner2ImgContent>
+                <Banner1Img
+                  src="/images/watch2_banner6.png"
+                  alt="watch2 banner6"
+                />
+              </Banner2ImgContent>
+              <BannerTextContent>
+                <Title color={defaultTheme.black_333}>
+                  {t("bithd_2.banner_6_title")}
+                </Title>
+                <Subtitle
+                  color={defaultTheme.black_333}
+                  dangerouslySetInnerHTML={{
+                    __html: t("bithd_2.banner_6_subtitle"),
+                  }}
+                />
+              </BannerTextContent>
+            </BannerContent>
+          </BackContent>
 
           <TechnicalContent>
             <BannerContent>
@@ -280,9 +285,9 @@ const Watch2: NextPage = () => {
               </BannerTextContent>
               <TechnicalImgContent>
                 <div>
-                  <Banner4Img
-                    src="/images/bithd_2_banner5.png"
-                    alt="razor pro banner5"
+                  <Banner1Img
+                    src="/images/watch2_banner7.png"
+                    alt="watch2 banner7"
                   />
                   <Warn>{t("common.warn")}</Warn>
                 </div>

@@ -32,7 +32,7 @@ const BuyBtn = styled.button`
   border-radius: 8px;
 `
 
-export function Buy({ name, title }: BuyProps) {
+export function Buy({ title, func }: BuyProps) {
   const { t } = useTranslation()
 
   return (
@@ -40,7 +40,13 @@ export function Buy({ name, title }: BuyProps) {
       <Container>
         <ContentDiv>
           <Title>{title}</Title>
-          <BuyBtn>{t("common.buy")}</BuyBtn>
+          <BuyBtn
+            onClick={() => {
+              func()
+            }}
+          >
+            {t("common.buy")}
+          </BuyBtn>
         </ContentDiv>
       </Container>
     </>

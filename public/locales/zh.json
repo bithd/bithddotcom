@@ -19,10 +19,11 @@
   "common": {
     "more": "进一步了解",
     "buy": "购买",
-    "partners": "多重签名合作伙伴",
     "price": "仅售 {{price}}",
     "warn": "* 尺寸重量为手工测量，可能存在微小误差",
-    "params_title": "技术规格"
+    "params_title": "技术规格",
+    "buy_title": "选择购买方式",
+    "cancel": "取消"
   },
   "home": {
     "ad_title": "刀锋 Pro",
@@ -147,7 +148,7 @@
     "params1_title": "尺寸",
     "params1_content": "42mm * 36mm * 12mm",
     "params2_title": "重量",
-    "params2_content": "26.4g",
+    "params2_content": "字符版：46g*4=184g / 主体：114g",
     "params3_title": "材料",
     "params3_content": "铝合金/304不锈钢",
     "params4_title": "特性",
