@@ -1,5 +1,5 @@
 /** @type {import('next').NextConfig} */
-const JavaScriptObfuscatorPlugin = require("webpack-obfuscator");
+const JavaScriptObfuscatorPlugin = require("webpack-obfuscator")
 
 const obfuscatorOptions = {
   compact: true,
@@ -11,7 +11,7 @@ const obfuscatorOptions = {
   stringArrayThreshold: 0.4,
   transformObjectKeys: true,
   unicodeEscapeSequence: true,
-};
+}
 
 const nextConfig = {
   reactStrictMode: true,
@@ -22,10 +22,10 @@ const nextConfig = {
     if (!dev) {
       config.plugins.push(
         new JavaScriptObfuscatorPlugin(obfuscatorOptions, ["bundles/**/**.js"])
-      );
+      )
     }
-    return config;
+    return config
   },
-};
+}
 
-module.exports = nextConfig;
+module.exports = nextConfig

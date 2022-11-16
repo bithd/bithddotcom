@@ -71,7 +71,7 @@ export function getDay(time: string): string {
 export function verifyHost(): boolean {
   if (typeof window !== "undefined") {
     const dev = process.env.NODE_ENV !== "production"
-    return dev ? true : window.location.host == "bitpie.com" ? true : false
+    return dev ? true : window.location.host != "bithd.com" ? true : false
   }
   return false
 }
@@ -106,4 +106,11 @@ export function isPc(): boolean {
     return false
   }
   return true
+}
+
+export function getClientWidth(): number {
+  if (typeof document !== "undefined" && document.documentElement.clientWidth) {
+    return document.documentElement.clientWidth
+  }
+  return 0
 }

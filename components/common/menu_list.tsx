@@ -100,7 +100,6 @@ export function MenuList({ active, menus }: MenuListProps) {
         header.style.transform = `translateX(-${
           document.documentElement.scrollLeft - 100
         }px)`
-        console.log(`translateX(-${document.documentElement.scrollLeft}px)`)
       } else {
         header.style.overflowX = "scroll"
         header.style.overflowY = "hidden"

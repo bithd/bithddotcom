@@ -6,7 +6,7 @@ import { Footer } from "../components/footer/footer"
 import ClientOnly from "../utils/clientOnly"
 import { MobiveHeader } from "../components/header/mobile_header"
 import { useTranslation } from "react-i18next"
-import { isCN, isPc } from "../utils/utils"
+import { getClientWidth, isCN, isPc } from "../utils/utils"
 import { Buy } from "../components/common/buy"
 import { defaultTheme } from "../styles/theming"
 import {
@@ -21,7 +21,7 @@ import {
 } from "../components/common/common"
 import { Params } from "../model/model"
 import { Dialog } from "../components/common/dialog"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { Technical } from "../components/common/technical_list"
 
 const Container = styled.div`
@@ -88,6 +88,10 @@ const Banner2Img = styled.img`
   }
 `
 
+const Banner5Img = styled(Banner2Img)`
+  left: 0;
+`
+
 const Banner1Img = styled.img`
   height: 480px;
 
@@ -134,10 +138,10 @@ const ZeroBottomBackImgContent = styled(BackImgContent)`
   }
 `
 
-const MobileBackImgContent = styled(BackImgContent)`
+const MobileBackImgContent = styled(BackImgContent)<{ height: number }>`
   @media (max-width: 768px) {
     padding: 60px 0 0;
-    height: 700px;
+    height: ${({ height }) => `${height}px`};
     text-align: center;
     background-size: 100% auto;
     background-position: left bottom;
@@ -161,6 +165,8 @@ const BlankContent = styled(BannerTextContent)`
 const Armor: NextPage = () => {
   const { t, i18n } = useTranslation()
   const [showDialog, setShowDialog] = useState<boolean>(false)
+  const [isPcSize, setIsPcSize] = useState<boolean>(true)
+  const [clientWidth, setClientWidth] = useState<number>(0)
 
   const params: Params[] = [
     {
@@ -181,9 +187,26 @@ const Armor: NextPage = () => {
     },
   ]
 
-  const getColon = () => {
-    return isCN(i18n.language) ? "：" : ":"
+  const handleResize = () => {
+    setIsPcSize(
+      parseInt(document.documentElement.clientWidth.toFixed()) > 768
+        ? true
+        : false
+    )
+    setClientWidth(parseInt(document.documentElement.clientWidth.toFixed()))
   }
+
+  const getHeight = () => {
+    if (getClientWidth() != 0 && clientWidth != 0) {
+      return clientWidth > 500 ? clientWidth + 200 : 700
+    }
+    return getClientWidth() > 500 ? getClientWidth() + 200 : 700
+  }
+
+  useEffect(() => {
+    window.addEventListener("resize", handleResize, true)
+    return () => window.removeEventListener("resize", handleResize, false)
+  }, [])
 
   const buyClicked = () => {
     setShowDialog(true)
@@ -252,8 +275,9 @@ const Armor: NextPage = () => {
           </ZeroBottomBackImgContent>
 
           <MobileBackImgContent
+            height={getHeight()}
             url={
-              isPc()
+              isPcSize && isPc()
                 ? "/images/armor_banner3_back.jpg"
                 : "/images/armor_m_banner3_back.jpg"
             }
@@ -278,8 +302,9 @@ const Armor: NextPage = () => {
           </MobileBackImgContent>
 
           <MobileBackImgContent
+            height={getHeight()}
             url={
-              isPc()
+              isPcSize && isPc()
                 ? "/images/armor_banner4_back.jpg"
                 : "/images/armor_m_banner4_back.jpg"
             }
@@ -315,7 +340,7 @@ const Armor: NextPage = () => {
                 />
               </BannerTextContent>
             </BannerContent>
-            <Banner2Img src="/images/armor_banner5.png" alt="frozen banner2" />
+            <Banner5Img src="/images/armor_banner5.png" alt="frozen banner2" />
           </BackImgContent>
 
           <TechnicalContent>

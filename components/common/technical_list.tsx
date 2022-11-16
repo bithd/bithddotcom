@@ -1,10 +1,8 @@
 import styled from "styled-components"
-import { ProductsProps } from "../../model/model"
 import { TechnicalSubtitle } from "./common"
 import { useTranslation } from "react-i18next"
-import Link from "next/link"
-import { deleteBr, isCN } from "../../utils/utils"
-import { Params } from "../../_site/model/model"
+import { Params } from "../../model/model"
+import { isCN } from "../../utils/utils"
 
 const Container = styled.div``
 

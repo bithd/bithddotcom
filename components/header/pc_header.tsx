@@ -6,18 +6,22 @@ import { PCHeaderProps, Menu } from "../../model/model"
 import { MenuList } from "../common/menu_list"
 import React from "react"
 
+const HeaderBox = styled.div`
+  background: ${({ theme }) => theme.nav_back};
+`
+
 const Header = styled.div`
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   background: ${({ theme }) => theme.nav_back};
-  box-shadow: ${({ theme }) => `0px 5px 5px ${theme.nav_shadow}`});
+  box-shadow: ${({ theme }) => `0px 5px 5px ${theme.nav_shadow}`};
   z-index: 100;
   overflow-x: scroll;
   overflow-y: hidden;
   scrollbar-width: none;
-  -ms-overflow-style: none; 
+  -ms-overflow-style: none;
   &::-webkit-scrollbar {
     display: none;
   }
@@ -159,30 +163,32 @@ export function PCHeader({ active }: PCHeaderProps) {
 
   return (
     <>
-      <Header id="header">
-        <HeaderCotainer>
-          <Link href="/">
-            <Logo alt="logo" src={getLogo()} />
-          </Link>
-          <MenuContainer>
-            <MenuList active={active} menus={menus} />
-            <LanguageContainer>
-              <LanguageBtn
-                isTransparent={isCN(i18n.language)}
-                onClick={() => changeLang("en")}
-              >
-                EN
-              </LanguageBtn>
-              <LanguageBtn
-                isTransparent={!isCN(i18n.language)}
-                onClick={() => changeLang("zh-cn")}
-              >
-                中文
-              </LanguageBtn>
-            </LanguageContainer>
-          </MenuContainer>
-        </HeaderCotainer>
-      </Header>
+      <HeaderBox>
+        <Header id="header">
+          <HeaderCotainer>
+            <Link href="/">
+              <Logo alt="logo" src={getLogo()} />
+            </Link>
+            <MenuContainer>
+              <MenuList active={active} menus={menus} />
+              <LanguageContainer>
+                <LanguageBtn
+                  isTransparent={isCN(i18n.language)}
+                  onClick={() => changeLang("en")}
+                >
+                  EN
+                </LanguageBtn>
+                <LanguageBtn
+                  isTransparent={!isCN(i18n.language)}
+                  onClick={() => changeLang("zh-cn")}
+                >
+                  中文
+                </LanguageBtn>
+              </LanguageContainer>
+            </MenuContainer>
+          </HeaderCotainer>
+        </Header>
+      </HeaderBox>
     </>
   )
 }

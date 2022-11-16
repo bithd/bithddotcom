@@ -38,6 +38,10 @@ const Subtitle = styled.p`
   line-height: 1.5em;
   font-size: 16px;
   color: ${({ theme }) => theme.black_333};
+
+  @media (max-width: 768px) {
+    height: auto;
+  }
 `
 
 const OperateContainer = styled.div`

@@ -6,7 +6,7 @@ import { Footer } from "../components/footer/footer"
 import ClientOnly from "../utils/clientOnly"
 import { MobiveHeader } from "../components/header/mobile_header"
 import { useTranslation } from "react-i18next"
-import { isCN, isPc } from "../utils/utils"
+import { getClientWidth, isCN, isPc } from "../utils/utils"
 import { Buy } from "../components/common/buy"
 import { defaultTheme } from "../styles/theming"
 import {
@@ -21,7 +21,7 @@ import {
 } from "../components/common/common"
 import { Params } from "../model/model"
 import { Dialog } from "../components/common/dialog"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { Technical } from "../components/common/technical_list"
 
 const Container = styled.div`
@@ -203,6 +203,8 @@ const Banner6Subtitle = styled(Subtitle)`
 const Armor2: NextPage = () => {
   const { t, i18n } = useTranslation()
   const [showDialog, setShowDialog] = useState<boolean>(false)
+  const [isPcSize, setIsPcSize] = useState<boolean>(true)
+  const [clientWidth, setClientWidth] = useState<number>(0)
 
   const params: Params[] = [
     {
@@ -227,13 +229,35 @@ const Armor2: NextPage = () => {
     },
   ]
 
-  const getColon = () => {
-    return isCN(i18n.language) ? "：" : ":"
-  }
-
   const buyClicked = () => {
     setShowDialog(true)
   }
+
+  const handleResize = () => {
+    setIsPcSize(
+      parseInt(document.documentElement.clientWidth.toFixed()) > 768
+        ? true
+        : false
+    )
+    setClientWidth(parseInt(document.documentElement.clientWidth.toFixed()))
+  }
+
+  const getHeight = (initHeight: number) => {
+    const initWidth = 375
+    if (getClientWidth() != 0 && clientWidth != 0) {
+      return clientWidth > initWidth
+        ? clientWidth - initWidth + initHeight
+        : initHeight
+    }
+    return getClientWidth() > initWidth
+      ? getClientWidth() - initWidth + initHeight
+      : initHeight
+  }
+
+  useEffect(() => {
+    window.addEventListener("resize", handleResize, true)
+    return () => window.removeEventListener("resize", handleResize, false)
+  }, [])
 
   return (
     <>
@@ -259,9 +283,9 @@ const Armor2: NextPage = () => {
           />
           <Buy func={buyClicked} title="Frozen Armor 304" />
           <MobileBackImgContent
-            height={700}
+            height={getHeight(700)}
             url={
-              isPc()
+              isPc() && isPcSize
                 ? "/images/armor2_banner1_back.jpg"
                 : "/images/armor2_m_banner1_back.jpg"
             }
@@ -272,13 +296,14 @@ const Armor2: NextPage = () => {
                 <Banner1Title
                   mark={t("frozen_304.banner_1_mark")}
                   dangerouslySetInnerHTML={{
-                    __html: isPc()
-                      ? t("frozen_304.banner_1_title")
-                      : t("frozen_304.banner_m_1_title"),
+                    __html:
+                      isPc() && isPcSize
+                        ? t("frozen_304.banner_1_title")
+                        : t("frozen_304.banner_m_1_title"),
                   }}
                 />
                 <Banner1Subtitle>
-                  {isPc()
+                  {isPc() && isPcSize
                     ? t("frozen_304.banner_1_subtitle")
                     : t("frozen_304.banner_m_1_subtitle")}
                 </Banner1Subtitle>
@@ -294,9 +319,9 @@ const Armor2: NextPage = () => {
           </MobileBackImgContent>
 
           <MobileBackImgContent
-            height={637}
+            height={getHeight(637)}
             url={
-              isPc()
+              isPc() && isPcSize
                 ? "/images/armor2_banner2_back.jpg"
                 : "/images/armor2_m_banner2_back.jpg"
             }
@@ -315,9 +340,9 @@ const Armor2: NextPage = () => {
           </MobileBackImgContent>
 
           <MobileBackImgContent
-            height={668}
+            height={getHeight(668)}
             url={
-              isPc()
+              isPc() && isPcSize
                 ? "/images/armor2_banner3_back.jpg"
                 : "/images/armor2_m_banner3_back.jpg"
             }
@@ -327,7 +352,7 @@ const Armor2: NextPage = () => {
               <BannerTextContent>
                 <Title
                   color={
-                    isPc()
+                    isPc() && isPcSize
                       ? defaultTheme.black_333
                       : defaultTheme.razor2_banner3_text
                   }
@@ -336,7 +361,7 @@ const Armor2: NextPage = () => {
                 </Title>
                 <Subtitle
                   color={
-                    isPc()
+                    isPc() && isPcSize
                       ? defaultTheme.black_333
                       : defaultTheme.razor2_banner3_text
                   }
@@ -349,9 +374,9 @@ const Armor2: NextPage = () => {
           </MobileBackImgContent>
 
           <MobileBackImgContent
-            height={667}
+            height={getHeight(667)}
             url={
-              isPc()
+              isPc() && isPcSize
                 ? "/images/armor2_banner4_back.jpg"
                 : "/images/armor2_m_banner4_back.jpg"
             }
@@ -373,9 +398,9 @@ const Armor2: NextPage = () => {
           </MobileBackImgContent>
 
           <MobileBackImgContent
-            height={680}
+            height={getHeight(680)}
             url={
-              isPc()
+              isPc() && isPcSize
                 ? "/images/armor2_banner5_back.jpg"
                 : "/images/armor2_m_banner5_back.jpg"
             }
@@ -385,14 +410,18 @@ const Armor2: NextPage = () => {
               <BannerTextContent>
                 <Title
                   color={
-                    isPc() ? defaultTheme.black_333 : defaultTheme.white_text
+                    isPc() && isPcSize
+                      ? defaultTheme.black_333
+                      : defaultTheme.white_text
                   }
                 >
                   {t("frozen_304.banner_5_title")}
                 </Title>
                 <Subtitle
                   color={
-                    isPc() ? defaultTheme.black_333 : defaultTheme.white_text
+                    isPc() && isPcSize
+                      ? defaultTheme.black_333
+                      : defaultTheme.white_text
                   }
                   dangerouslySetInnerHTML={{
                     __html: t("frozen_304.banner_5_subtitle"),
@@ -403,7 +432,7 @@ const Armor2: NextPage = () => {
           </MobileBackImgContent>
 
           <MobileBackImg6Content
-            height={720}
+            height={getHeight(720)}
             url="/images/armor2_m_banner6_back.jpg"
           >
             <BannerContent>
