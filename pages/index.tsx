@@ -130,12 +130,12 @@ const Home: NextPage = () => {
   return (
     <>
       <NextSeo
-        title="Bitpie 全球领先多链钱包｜比特派｜Bitpie Wallet｜比特派钱包｜BTC钱包｜ETH钱包｜波场钱包｜以太坊钱包｜USDT钱包"
+        title="比特派 护盾｜刀锋｜刀锋 Pro｜冰甲｜冰甲304"
         additionalMetaTags={[
           {
             name: "keywords",
             content:
-              "比特派,比特派app,比特派官网,比特派下载,比特派钱包, 比特派钱包下载,bitpie,ETH钱包,BTC钱包,波场,以太坊,DeFi",
+              "比特派,比特派护盾官网,bithd,bithd.com,比特派,护盾,刀锋,刀锋 Pro,冰甲,冰甲304",
           },
         ]}
       />

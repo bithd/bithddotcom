@@ -1,23 +1,23 @@
 export default {
   title:
-    'Bitpie 全球领先多链钱包｜比特派｜Bitpie Wallet｜比特派钱包｜BTC钱包｜ETH钱包｜波场钱包｜以太坊钱包｜USDT钱包',
+    "比特派,比特派护盾官网,bithd,bithd.com,比特派,护盾,刀锋,刀锋 Pro,冰甲,冰甲304",
   description:
-    '比特派是全球领先的多链钱包，支持 BTC/ETH/TRX/USDT 等多种区块链资产。使用比特派，用户可以在方便的使用应用服务的同时确保资产 100% 由自己掌控。',
+    "比特派,比特派护盾官网,bithd,bithd.com,比特派,护盾,刀锋,刀锋 Pro,冰甲,冰甲304",
   openGraph: {
-    type: 'website',
-    url: 'https://bitpie.com/',
+    type: "website",
+    url: "https://bithd.com/",
     title:
-      'Bitpie 全球领先多链钱包｜比特派｜Bitpie Wallet｜比特派钱包｜BTC钱包｜ETH钱包｜波场钱包｜以太坊钱包｜USDT钱包',
-    description: '比特派是全球领先的多链钱包，支持 BTC/ETH/TRX/USDT 等多种区块链资产。使用比特派，用户可以在方便的使用应用服务的同时确保资产 100% 由自己掌控。',
-    image:
-      'https://bitpie.com/nuxt/img/header_logo.504744f.png',
-    site_name: '比特派官网',
+      "比特派,比特派护盾官网,bithd,bithd.com,比特派,护盾,刀锋,刀锋 Pro,冰甲,冰甲304",
+    description:
+      "比特派,比特派护盾官网,bithd,bithd.com,比特派,护盾,刀锋,刀锋 Pro,冰甲,冰甲304",
+    image: "https://bithd.com/favicon.ico",
+    site_name: "bithd官网",
     imageWidth: 294,
     imageHeight: 76,
   },
   twitter: {
-    handle: '@handle',
-    site: '@site',
-    cardType: 'summary_large_image',
-  }
+    handle: "@handle",
+    site: "@site",
+    cardType: "summary_large_image",
+  },
 }

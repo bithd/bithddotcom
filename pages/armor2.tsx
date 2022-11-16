@@ -262,11 +262,11 @@ const Armor2: NextPage = () => {
   return (
     <>
       <NextSeo
-        title="USDT 矿工费代付功能"
+        title="冰甲 304 千锤百炼，强硬登场"
         additionalMetaTags={[
           {
             name: "keywords",
-            content: "USDT 矿工费代付功能",
+            content: "冰甲 304 千锤百炼，强硬登场",
           },
         ]}
       />

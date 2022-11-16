@@ -7,7 +7,11 @@ import { MenuList } from "../common/menu_list"
 import React from "react"
 
 const HeaderBox = styled.div`
+  position: fixed;
+  width: 1200px;
+  height: 60px;
   background: ${({ theme }) => theme.nav_back};
+  z-index: 110;
 `
 
 const Header = styled.div`

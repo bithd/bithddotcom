@@ -215,11 +215,11 @@ const Armor: NextPage = () => {
   return (
     <>
       <NextSeo
-        title="USDT 矿工费代付功能"
+        title="冰甲 给予资产更安全的守护"
         additionalMetaTags={[
           {
             name: "keywords",
-            content: "USDT 矿工费代付功能",
+            content: "冰甲 给予资产更安全的守护",
           },
         ]}
       />

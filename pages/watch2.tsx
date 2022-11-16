@@ -154,18 +154,14 @@ const Watch2: NextPage = () => {
     setShowDialog(true)
   }
 
-  const getColon = () => {
-    return isCN(i18n.language) ? "：" : ":"
-  }
-
   return (
     <>
       <NextSeo
-        title="USDT 矿工费代付功能"
+        title="BITHD Watch 2 给予数字资产更安全的守护"
         additionalMetaTags={[
           {
             name: "keywords",
-            content: "USDT 矿工费代付功能",
+            content: "护盾 ｜ BITHD Watch 2",
           },
         ]}
       />

@@ -307,11 +307,11 @@ const Razor2: NextPage = () => {
   return (
     <>
       <NextSeo
-        title="USDT 矿工费代付功能"
+        title="刀锋 Pro | 极致简约，一体感设计"
         additionalMetaTags={[
           {
             name: "keywords",
-            content: "USDT 矿工费代付功能",
+            content: "刀锋 Pro | 极致简约，一体感设计",
           },
         ]}
       />
