@@ -11,7 +11,7 @@ const HeaderBox = styled.div`
   width: 1200px;
   height: 60px;
   background: ${({ theme }) => theme.nav_back};
-  z-index: 110;
+  z-index: 90;
 `
 
 const Header = styled.div`

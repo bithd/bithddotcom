@@ -23,7 +23,7 @@ import {
 import { Features, Params } from "../model/model"
 import { Feature } from "../components/common/feature"
 import { Dialog } from "../components/common/dialog"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { Technical } from "../components/common/technical_list"
 
 const Container = styled.div`
@@ -228,6 +228,7 @@ const MobileBackImgContent = styled(BackImgContent)`
 
   @media (max-width: 768px) {
     padding: 60px 0;
+    background-size: 100% 100%;
   }
 `
 

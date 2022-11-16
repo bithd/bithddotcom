@@ -18,7 +18,6 @@ import {
   Subtitle,
   FeatureContent,
   TechnicalContent,
-  TechnicalSubtitle,
 } from "../components/common/common"
 import { Features, Params } from "../model/model"
 import { Feature } from "../components/common/feature"
@@ -50,6 +49,13 @@ const Banner1ImgContent = styled(BackImgContent)`
   height: auto;
   text-align: center;
   overflow: hidden;
+  background-size: 100% 100%;
+`
+
+const Banner3Content = styled(BackImgContent)`
+  @media (max-width: 768px) {
+    background-size: 100% 100%;
+  }
 `
 
 const BannerContentReverse = styled(Content)`
@@ -339,7 +345,7 @@ const Razor: NextPage = () => {
             </BannerContentReverse>
           </ZeroBottomBackImgContent>
 
-          <BackImgContent url="/images/razor_banner3_back.jpg">
+          <Banner3Content url="/images/razor_banner3_back.jpg">
             <BannerContent>
               <BannerTextContent>
                 <RazorTitle color={defaultTheme.white_text}>
@@ -359,7 +365,7 @@ const Razor: NextPage = () => {
                 />
               </Banner3ImgContent>
             </BannerContent>
-          </BackImgContent>
+          </Banner3Content>
 
           <ZeroBottomBackImgContent url="/images/razor_pro_back.jpg">
             <BannerContent>

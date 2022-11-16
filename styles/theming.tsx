@@ -27,6 +27,7 @@ export const defaultTheme = {
   ddd: "#ddd",
   back_e9: "#e9e9e9",
   razor2_banner3_text: "#6d819e",
+  black_half: "#00000080",
 }
 
 export const GlobalStyles = createGlobalStyle`
