@@ -6,18 +6,15 @@ import { Footer } from "../components/footer/footer"
 import ClientOnly from "../utils/clientOnly"
 import { MobiveHeader } from "../components/header/mobile_header"
 import { useTranslation } from "react-i18next"
-import { isCN } from "../utils/utils"
 import { Buy } from "../components/common/buy"
 import { defaultTheme } from "../styles/theming"
 import {
-  BackImgContent,
   Content,
   BannerImgContent,
   BannerTextContent,
   Title,
   Subtitle,
   TechnicalContent,
-  TechnicalSubtitle,
   BackContent,
 } from "../components/common/common"
 import { Params } from "../model/model"

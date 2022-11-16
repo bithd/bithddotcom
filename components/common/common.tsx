@@ -15,7 +15,7 @@ export const BackImgContent = styled.div<{ url: string }>`
   width: 100%;
   height: 560px;
   background-image: ${({ url }) => `url(${url})`};
-  background-size: 100% 100%;
+  background-size: 100% auto;
   background-repeat: no-repeat;
   overflow: hidden;
 

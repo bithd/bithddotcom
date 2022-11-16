@@ -1,9 +1,8 @@
+import styled from "styled-components"
+import { useTranslation } from "react-i18next"
+import { FooterProps } from "../../model/model"
 
-import styled from 'styled-components'
-import { useTranslation } from 'react-i18next';
-import { FooterProps } from '../../model/model';
-
-const Container = styled.div<{router: string}>`
+const Container = styled.div<{ router: string }>`
   width: 100%;
   overflow: hidden;
 `
@@ -46,24 +45,38 @@ const FooterLink = styled.a`
   color: ${({ theme }) => theme.footer_link_text};
   text-decoration: underline;
   overflow: hidden;
+  cursor: pointer;
 
   @media (max-width: 768px) {
     min-width: 100%;
   }
 `
 
-export function Footer({router} : FooterProps) {
-  const { t, i18n } = useTranslation();
+export function Footer({ router }: FooterProps) {
+  const { t, i18n } = useTranslation()
 
   return (
-      <>
-        <Container router={router}>
-          <Content>
-            {
-              router == "home" ? <><Text>{t("footer.base_on")}</Text><FooterLink>{t("footer.source")}</FooterLink></> : <><Text>{t("footer.warn")}</Text></>
-            }
-          </Content>
-        </Container>
-      </>
-    )
+    <>
+      <Container router={router}>
+        <Content>
+          {router == "home" ? (
+            <>
+              <Text>{t("footer.base_on")}</Text>
+              <FooterLink
+                href="https://github.com/bithd"
+                rel="nofollow noopener noreferrer"
+                target="_blank"
+              >
+                {t("footer.source")}
+              </FooterLink>
+            </>
+          ) : (
+            <>
+              <Text>{t("footer.warn")}</Text>
+            </>
+          )}
+        </Content>
+      </Container>
+    </>
+  )
 }

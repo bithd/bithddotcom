@@ -138,6 +138,10 @@ const ZeroBottomBackImgContent = styled(BackImgContent)`
   }
 `
 
+const Banner1BackImgContent = styled(ZeroBottomBackImgContent)`
+  background-size: 100% 100%;
+`
+
 const MobileBackImgContent = styled(BackImgContent)<{ height: number }>`
   @media (max-width: 768px) {
     padding: 60px 0 0;
@@ -236,7 +240,7 @@ const Armor: NextPage = () => {
           />
 
           <Buy func={buyClicked} title="Frozen Armor" />
-          <ZeroBottomBackImgContent url="/images/razor_banner3_back.jpg">
+          <Banner1BackImgContent url="/images/razor_banner3_back.jpg">
             <BannerContent>
               <BannerTextContent>
                 <Title color={defaultTheme.white_text}>
@@ -255,7 +259,7 @@ const Armor: NextPage = () => {
                 />
               </Banner1ImgContent>
             </BannerContent>
-          </ZeroBottomBackImgContent>
+          </Banner1BackImgContent>
 
           <ZeroBottomBackImgContent url="/images/razor_pro_back.jpg">
             <BannerContent>
