@@ -18,12 +18,13 @@ import {
   Subtitle,
   FeatureContent,
   TechnicalContent,
-  TechnicalSubtitle,
+  FlexContentReverse,
+  FlexContent,
 } from "../components/common/common"
 import { Features, Params } from "../model/model"
 import { Feature } from "../components/common/feature"
 import { Dialog } from "../components/common/dialog"
-import { useEffect, useState } from "react"
+import { useState } from "react"
 import { Technical } from "../components/common/technical_list"
 
 const Container = styled.div`
@@ -33,28 +34,6 @@ const Container = styled.div`
   height: 100%;
   min-height: 100%;
   overflow: hidden;
-`
-
-const BannerContentReverse = styled(Content)`
-  display: flex;
-  align-items: center;
-  height: 100%;
-
-  @media (max-width: 768px) {
-    justify-content: center;
-    flex-wrap: wrap-reverse;
-  }
-`
-
-const BannerContent = styled(Content)`
-  display: flex;
-  align-items: center;
-  height: 100%;
-
-  @media (max-width: 768px) {
-    justify-content: center;
-    flex-wrap: wrap;
-  }
 `
 
 const Banner1ImgContent = styled(BannerImgContent)`
@@ -76,21 +55,20 @@ const Banner2ImgContent = styled(BannerImgContent)`
   }
 `
 
-const Banner1Img = styled.img`
-  width: 320px;
-
-  @media (max-width: 768px) {
-    width: 80%;
-    max-width: 320px;
-    height: auto;
-  }
-`
-
 const Banner1TextContent = styled(BannerTextContent)`
   margin-left: 66px;
 
   @media (max-width: 768px) {
     margin: 0 0 80px;
+    text-align: center;
+  }
+`
+
+const Banner2TextContent = styled(BannerTextContent)`
+  margin-left: 66px;
+
+  @media (max-width: 768px) {
+    margin: 0 0 60px;
     text-align: center;
   }
 `
@@ -155,39 +133,38 @@ const BuyArrow = styled.img`
   height: 20px;
 `
 
+const Banner1Img = styled.img`
+  width: 320px;
+
+  @media (max-width: 768px) {
+    width: 80%;
+    max-width: 320px;
+    height: auto;
+  }
+`
+
 const Banner2Img = styled.img`
   position: absolute;
   right: 0;
   bottom: 0;
-  height: 280px;
+  height: 380px;
 `
 
-const Banner5Img = styled.img`
+const Banner3Img = styled(Banner1Img)`
+  width: auto;
   height: 480px;
 
   @media (max-width: 768px) {
-    width: 80%;
-    max-width: 320px;
+    max-width: 260px;
     height: auto;
   }
 `
 
-const Banner3Img = styled.img`
-  height: 480px;
-
-  @media (max-width: 768px) {
-    width: 80%;
-    max-width: 320px;
-    height: auto;
-  }
-`
-
-const Banner4Img = styled.img`
+const Banner4Img = styled(Banner1Img)`
+  width: auto;
   height: 420px;
 
   @media (max-width: 768px) {
-    width: 80%;
-    max-width: 320px;
     height: auto;
   }
 `
@@ -329,7 +306,7 @@ const Razor2: NextPage = () => {
           />
           <Buy func={buyClicked} title="BITHD Razor Pro" />
           <ZeroBottomBackImgContent url="/images/razor_pro_back.jpg">
-            <BannerContentReverse>
+            <FlexContentReverse>
               <Banner1ImgContent>
                 <Banner1Img src="/images/razor_pro_banner1.png" alt="banner1" />
               </Banner1ImgContent>
@@ -350,11 +327,11 @@ const Razor2: NextPage = () => {
                   </BuyContent>
                 </PriceContent>
               </Banner1TextContent>
-            </BannerContentReverse>
+            </FlexContentReverse>
           </ZeroBottomBackImgContent>
 
           <MobileBackImgContent url="/images/ad_back.jpg">
-            <Banner1TextContent>
+            <Banner2TextContent>
               <Title color={defaultTheme.white_text}>
                 {t("razor_pro.banner_5_title")}
               </Title>
@@ -364,14 +341,14 @@ const Razor2: NextPage = () => {
                   __html: t("razor_pro.banner_5_subtitle"),
                 }}
               />
-            </Banner1TextContent>
+            </Banner2TextContent>
             <Banner2ImgContent>
-              <Banner5Img src="/images/razor2_banner5.png" alt="banner5" />
+              <Banner3Img src="/images/razor2_banner5.png" alt="banner5" />
             </Banner2ImgContent>
           </MobileBackImgContent>
 
           <PcBackImgContent url="/images/razor_pro_back2.jpg">
-            <BannerContent>
+            <FlexContent>
               <BannerTextContent>
                 <Title color={defaultTheme.white_text}>
                   {t("razor_pro.banner_2_title")}
@@ -380,7 +357,7 @@ const Razor2: NextPage = () => {
                   {t("razor_pro.banner_2_subtitle")}
                 </Subtitle>
               </BannerTextContent>
-            </BannerContent>
+            </FlexContent>
             <Banner2Img
               src="/images/razor_pro_banner2.png"
               alt="razor pro banner2"
@@ -388,7 +365,7 @@ const Razor2: NextPage = () => {
           </PcBackImgContent>
 
           <PcBackImgContent url="/images/razor_pro_back3.jpg">
-            <BannerContent>
+            <FlexContent>
               <BannerImgContent>
                 <Banner3Img
                   src="/images/razor_pro_banner3.png"
@@ -406,11 +383,11 @@ const Razor2: NextPage = () => {
                   }}
                 />
               </BannerTextContent>
-            </BannerContent>
+            </FlexContent>
           </PcBackImgContent>
 
           <ZeroBottomBackImgContent url="/images/razor_pro_back.jpg">
-            <BannerContent>
+            <FlexContent>
               <BannerTextContent>
                 <Title color={defaultTheme.black_333}>
                   {t("razor_pro.banner_4_title")}
@@ -428,7 +405,7 @@ const Razor2: NextPage = () => {
                   alt="razor pro banner4"
                 />
               </Banner2ImgContent>
-            </BannerContent>
+            </FlexContent>
           </ZeroBottomBackImgContent>
 
           <FeatureContent>
@@ -436,7 +413,7 @@ const Razor2: NextPage = () => {
           </FeatureContent>
 
           <TechnicalContent>
-            <BannerContent>
+            <FlexContent>
               <BannerTextContent>
                 <Title color={defaultTheme.black_333}>
                   {t("common.params_title")}
@@ -452,7 +429,7 @@ const Razor2: NextPage = () => {
                   <Warn>{t("common.warn")}</Warn>
                 </div>
               </TechnicalImgContent>
-            </BannerContent>
+            </FlexContent>
           </TechnicalContent>
         </Container>
         <Footer router="razor_pro" />

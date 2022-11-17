@@ -10,12 +10,34 @@ export const Content = styled.div`
   }
 `
 
+export const FlexContent = styled(Content)`
+  display: flex;
+  align-items: center;
+  height: 100%;
+
+  @media (max-width: 768px) {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+`
+
+export const FlexContentReverse = styled(Content)`
+  display: flex;
+  align-items: center;
+  height: 100%;
+
+  @media (max-width: 768px) {
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+  }
+`
+
 export const BackImgContent = styled.div<{ url: string }>`
   position: relative;
   width: 100%;
   height: 560px;
   background-image: ${({ url }) => `url(${url})`};
-  background-size: 100% auto;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   overflow: hidden;
 
@@ -23,6 +45,7 @@ export const BackImgContent = styled.div<{ url: string }>`
     height: auto;
     padding: 60px 0;
     text-align: center;
+    background-size: 100% auto;
   }
 `
 
@@ -78,6 +101,15 @@ export const BannerImgContent = styled.div`
     flex-basis: 100%;
     align-items: center;
     justify-content: center;
+  }
+`
+
+export const BlankImgContent = styled(BannerImgContent)`
+  text-align: right;
+
+  @media (max-width: 768px) {
+    display: block;
+    display: none;
   }
 `
 

@@ -51,21 +51,54 @@ const OperateContainer = styled.div`
   align-items: center;
   justify-content: space-between;
   align-content: space-between;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+`
+
+const MobileOperateContainer = styled.div`
+  display: flex;
+  margin-bottom: 25px;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+`
+
+const MobileOperateContent = styled.div`
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
 `
 
 const OperateContent = styled.div`
   display: flex;
   align-items: center;
-  width: calc((100% - 30px) / 2);
+
+  @media (min-width: 768px) {
+    width: calc((100% - 30px) / 2);
+  }
 `
 
 const MoreContent = styled(OperateContent)`
   justify-content: right;
   text-align: right;
+
+  @media (max-width: 768px) {
+    margin-right: 10px;
+  }
 `
 
 const BuyContent = styled(OperateContent)`
   text-align: left;
+
+  @media (max-width: 768px) {
+    margin-left: 10px;
+  }
 `
 
 const Button = styled.button`
@@ -149,6 +182,24 @@ export function Products({ func }: { func: (type: string) => void }) {
                   <Arrow src="/images/arrow_right.svg" alt="arrow" />
                 </BuyContent>
               </OperateContainer>
+              <MobileOperateContainer>
+                <MobileOperateContent>
+                  <Link href={item.link}>
+                    <MoreContent>
+                      <MoreBtn>{t("common.more")}</MoreBtn>
+                      <Arrow src="/images/arrow_right.svg" alt="arrow" />
+                    </MoreContent>
+                  </Link>
+                  <BuyContent
+                    onClick={() => {
+                      func(item.buy)
+                    }}
+                  >
+                    <BuyBtn>{t("common.buy")}</BuyBtn>
+                    <Arrow src="/images/arrow_right.svg" alt="arrow" />
+                  </BuyContent>
+                </MobileOperateContent>
+              </MobileOperateContainer>
               <Icon src={item.img} alt="icon" />
             </Item>
           )

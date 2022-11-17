@@ -16,6 +16,8 @@ import {
   Subtitle,
   TechnicalContent,
   BackContent,
+  FlexContent,
+  FlexContentReverse,
 } from "../components/common/common"
 import { Params } from "../model/model"
 import { Dialog } from "../components/common/dialog"
@@ -29,28 +31,6 @@ const Container = styled.div`
   height: 100%;
   min-height: 100%;
   overflow: hidden;
-`
-
-const BannerContent = styled(Content)`
-  display: flex;
-  align-items: center;
-  height: 100%;
-
-  @media (max-width: 768px) {
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-`
-
-const BannerContentReverse = styled(Content)`
-  display: flex;
-  align-items: center;
-  height: 100%;
-
-  @media (max-width: 768px) {
-    justify-content: center;
-    flex-wrap: wrap-reverse;
-  }
 `
 
 const Banner2ImgContent = styled(BannerImgContent)`
@@ -71,23 +51,17 @@ const BannerImg = styled.img`
   }
 `
 
-const Banner1Img = styled.img`
+const Banner1Img = styled(BannerImg)`
   height: 480px;
 
   @media (max-width: 768px) {
-    width: 80%;
-    max-width: 200px;
     height: auto;
   }
 `
 
-const Banner7Img = styled.img`
-  height: 480px;
-
+const Banner7Img = styled(Banner1Img)`
   @media (max-width: 768px) {
-    width: 80%;
     max-width: 320px;
-    height: auto;
   }
 `
 
@@ -117,6 +91,13 @@ const Watch2Subtitle = styled(Subtitle)`
   @media (max-width: 768px) {
     margin: 0 12px;
     font-size: 16px;
+  }
+`
+
+const ZeroBottomBackImgContent = styled(BackContent)`
+  @media (max-width: 768px) {
+    padding: 60px 0 0;
+    text-align: center;
   }
 `
 
@@ -176,7 +157,7 @@ const Watch2: NextPage = () => {
           <Buy func={buyClicked} title={t("bithd_2.title")} />
 
           <BackContent backColor={defaultTheme.white_back}>
-            <BannerContent>
+            <FlexContent>
               <BannerTextContent>
                 <Watch2Title
                   color={defaultTheme.black_333}
@@ -197,11 +178,11 @@ const Watch2: NextPage = () => {
                   alt="watch2 banner1"
                 />
               </BannerImgContent>
-            </BannerContent>
+            </FlexContent>
           </BackContent>
 
           <BackContent backColor={defaultTheme.back_fa}>
-            <BannerContentReverse>
+            <FlexContentReverse>
               <Banner2ImgContent>
                 <Banner1Img
                   src="/images/watch2_banner2.png"
@@ -219,11 +200,11 @@ const Watch2: NextPage = () => {
                   }}
                 />
               </BannerTextContent>
-            </BannerContentReverse>
+            </FlexContentReverse>
           </BackContent>
 
           <BackContent backColor={defaultTheme.white_back}>
-            <BannerContent>
+            <FlexContent>
               <BannerTextContent>
                 <Watch2Title
                   color={defaultTheme.black_333}
@@ -244,11 +225,11 @@ const Watch2: NextPage = () => {
                   alt="watch2 banner3"
                 />
               </BannerImgContent>
-            </BannerContent>
+            </FlexContent>
           </BackContent>
 
           <BackContent backColor={defaultTheme.back_fa}>
-            <BannerContentReverse>
+            <FlexContentReverse>
               <Banner2ImgContent>
                 <Banner1Img
                   src="/images/watch2_banner4.png"
@@ -266,11 +247,11 @@ const Watch2: NextPage = () => {
                   }}
                 />
               </BannerTextContent>
-            </BannerContentReverse>
+            </FlexContentReverse>
           </BackContent>
 
-          <BackContent backColor={defaultTheme.white_back}>
-            <BannerContent>
+          <ZeroBottomBackImgContent backColor={defaultTheme.white_back}>
+            <FlexContent>
               <BannerTextContent>
                 <Watch2Title
                   color={defaultTheme.black_333}
@@ -291,11 +272,11 @@ const Watch2: NextPage = () => {
                   alt="watch2 banner5"
                 />
               </BannerImgContent>
-            </BannerContent>
-          </BackContent>
+            </FlexContent>
+          </ZeroBottomBackImgContent>
 
-          <BackContent backColor={defaultTheme.back_fa}>
-            <BannerContentReverse>
+          <ZeroBottomBackImgContent backColor={defaultTheme.back_fa}>
+            <FlexContentReverse>
               <Banner2ImgContent>
                 <Banner1Img
                   src="/images/watch2_banner6.png"
@@ -313,11 +294,11 @@ const Watch2: NextPage = () => {
                   }}
                 />
               </BannerTextContent>
-            </BannerContentReverse>
-          </BackContent>
+            </FlexContentReverse>
+          </ZeroBottomBackImgContent>
 
           <TechnicalContent>
-            <BannerContent>
+            <FlexContent>
               <BannerTextContent>
                 <Title color={defaultTheme.black_333}>
                   {t("common.params_title")}
@@ -333,7 +314,7 @@ const Watch2: NextPage = () => {
                   <Warn>{t("common.warn")}</Warn>
                 </div>
               </TechnicalImgContent>
-            </BannerContent>
+            </FlexContent>
           </TechnicalContent>
         </Container>
         <Footer router="watch2" />

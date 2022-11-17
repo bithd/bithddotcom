@@ -17,7 +17,8 @@ import {
   Title,
   Subtitle,
   TechnicalContent,
-  TechnicalSubtitle,
+  FlexContentReverse,
+  BlankImgContent,
 } from "../components/common/common"
 import { Params } from "../model/model"
 import { Dialog } from "../components/common/dialog"
@@ -45,26 +46,6 @@ const BannerContent = styled(Content)`
   }
 `
 
-const Banner2Content = styled(Content)`
-  display: flex;
-  align-items: center;
-  height: 100%;
-
-  @media (max-width: 768px) {
-    justify-content: center;
-    flex-wrap: wrap-reverse;
-  }
-`
-
-const Banner1ImgContent = styled(BannerImgContent)`
-  text-align: right;
-
-  @media (max-width: 768px) {
-    display: block;
-    display: none;
-  }
-`
-
 const Banner1TextContent = styled(BannerTextContent)`
   margin-left: 66px;
 
@@ -74,6 +55,9 @@ const Banner1TextContent = styled(BannerTextContent)`
 `
 
 const MobileBackImgContent = styled(BackImgContent)<{ height: number }>`
+  height: ${({ height }) => `${height}px`};
+  background-size: 100% auto;
+
   @media (max-width: 768px) {
     padding: 60px 0 0;
     height: ${({ height }) => `${height}px`};
@@ -243,15 +227,23 @@ const Armor2: NextPage = () => {
   }
 
   const getHeight = (initHeight: number) => {
-    const initWidth = 375
-    if (getClientWidth() != 0 && clientWidth != 0) {
-      return clientWidth > initWidth
-        ? clientWidth - initWidth + initHeight
+    if (isPc() && isPcSize) {
+      if (clientWidth > 1200) {
+        return clientWidth / 2.56
+      } else {
+        return 468.75
+      }
+    } else {
+      const initWidth = 375
+      if (getClientWidth() != 0 && clientWidth != 0) {
+        return clientWidth > initWidth
+          ? clientWidth - initWidth + initHeight
+          : initHeight
+      }
+      return getClientWidth() > initWidth
+        ? getClientWidth() - initWidth + initHeight
         : initHeight
     }
-    return getClientWidth() > initWidth
-      ? getClientWidth() - initWidth + initHeight
-      : initHeight
   }
 
   useEffect(() => {
@@ -291,7 +283,7 @@ const Armor2: NextPage = () => {
             }
           >
             <BannerContent>
-              <Banner1ImgContent></Banner1ImgContent>
+              <BlankImgContent />
               <Banner1TextContent>
                 <Banner1Title
                   mark={t("frozen_304.banner_1_mark")}
@@ -335,7 +327,7 @@ const Armor2: NextPage = () => {
                   {t("frozen_304.banner_2_subtitle")}
                 </Subtitle>
               </BannerTextContent>
-              <Banner1ImgContent></Banner1ImgContent>
+              <BlankImgContent />
             </BannerContent>
           </MobileBackImgContent>
 
@@ -348,7 +340,7 @@ const Armor2: NextPage = () => {
             }
           >
             <BannerContent>
-              <Banner1ImgContent></Banner1ImgContent>
+              <BlankImgContent />
               <BannerTextContent>
                 <Title
                   color={
@@ -393,7 +385,7 @@ const Armor2: NextPage = () => {
                   }}
                 />
               </BannerTextContent>
-              <Banner1ImgContent></Banner1ImgContent>
+              <BlankImgContent />
             </BannerContent>
           </MobileBackImgContent>
 
@@ -406,7 +398,7 @@ const Armor2: NextPage = () => {
             }
           >
             <BannerContent>
-              <Banner1ImgContent></Banner1ImgContent>
+              <BlankImgContent />
               <BannerTextContent>
                 <Title
                   color={
@@ -436,7 +428,7 @@ const Armor2: NextPage = () => {
             url="/images/armor2_m_banner6_back.jpg"
           >
             <BannerContent>
-              <Banner1ImgContent></Banner1ImgContent>
+              <BlankImgContent />
               <BannerTextContent>
                 <Title color={defaultTheme.black_333}>
                   {t("frozen_304.banner_6_title")}
@@ -452,7 +444,7 @@ const Armor2: NextPage = () => {
           </MobileBackImg6Content>
 
           <TechnicalContent>
-            <Banner2Content>
+            <FlexContentReverse>
               <TechnicalImgContent>
                 <div>
                   <Banner4Img
@@ -468,7 +460,7 @@ const Armor2: NextPage = () => {
                 </Title>
                 <Technical params={params} />
               </BannerTextContent>
-            </Banner2Content>
+            </FlexContentReverse>
           </TechnicalContent>
         </Container>
         <Footer router="frozen_304" />

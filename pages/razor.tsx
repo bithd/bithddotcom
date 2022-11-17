@@ -18,6 +18,8 @@ import {
   Subtitle,
   FeatureContent,
   TechnicalContent,
+  FlexContentReverse,
+  FlexContent,
 } from "../components/common/common"
 import { Features, Params } from "../model/model"
 import { Feature } from "../components/common/feature"
@@ -34,39 +36,16 @@ const Container = styled.div`
   overflow: hidden;
 `
 
-const BannerContent = styled(Content)`
-  display: flex;
-  align-items: center;
-  height: 100%;
-
-  @media (max-width: 768px) {
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-`
-
 const Banner1ImgContent = styled(BackImgContent)`
   height: auto;
   text-align: center;
-  overflow: hidden;
   background-size: 100% 100%;
+  overflow: hidden;
 `
 
 const Banner3Content = styled(BackImgContent)`
   @media (max-width: 768px) {
     background-size: 100% 100%;
-  }
-`
-
-const BannerContentReverse = styled(Content)`
-  display: flex;
-  align-items: center;
-  height: 100%;
-
-  @media (max-width: 768px) {
-    justify-content: center;
-    flex-wrap: wrap-reverse;
-    text-align: center;
   }
 `
 
@@ -154,13 +133,9 @@ const Banner3Img = styled.img`
   }
 `
 
-const Banner4Img = styled.img`
-  height: 480px;
-
+const Banner4Img = styled(Banner3Img)`
   @media (max-width: 768px) {
-    width: 80%;
     max-width: 320px;
-    height: auto;
   }
 `
 
@@ -324,7 +299,7 @@ const Razor: NextPage = () => {
           </Banner1ImgContent>
 
           <ZeroBottomBackImgContent url="/images/razor_pro_back.jpg">
-            <BannerContentReverse>
+            <FlexContentReverse>
               <Banner2ImgContent>
                 <Banner3Img
                   src="/images/razor_banner2.png"
@@ -342,11 +317,11 @@ const Razor: NextPage = () => {
                   }}
                 />
               </BannerTextContent>
-            </BannerContentReverse>
+            </FlexContentReverse>
           </ZeroBottomBackImgContent>
 
           <Banner3Content url="/images/razor_banner3_back.jpg">
-            <BannerContent>
+            <FlexContent>
               <BannerTextContent>
                 <RazorTitle color={defaultTheme.white_text}>
                   {t("razor.banner_3_title")}
@@ -364,11 +339,11 @@ const Razor: NextPage = () => {
                   alt="razor banner3"
                 />
               </Banner3ImgContent>
-            </BannerContent>
+            </FlexContent>
           </Banner3Content>
 
           <ZeroBottomBackImgContent url="/images/razor_pro_back.jpg">
-            <BannerContent>
+            <FlexContent>
               <BlankContent></BlankContent>
               <BannerTextContent>
                 <RazorTitle color={defaultTheme.black_333}>
@@ -381,7 +356,7 @@ const Razor: NextPage = () => {
                   }}
                 />
               </BannerTextContent>
-            </BannerContent>
+            </FlexContent>
             <Banner2Img src="/images/razor_banner4.png" alt="razor banner4" />
           </ZeroBottomBackImgContent>
 
@@ -390,7 +365,7 @@ const Razor: NextPage = () => {
           </FeatureContent>
 
           <TechnicalContent>
-            <BannerContent>
+            <FlexContent>
               <TechnicalTextContent>
                 <Title color={defaultTheme.black_333}>
                   {t("common.params_title")}
@@ -406,7 +381,7 @@ const Razor: NextPage = () => {
                   <Warn>{t("common.warn")}</Warn>
                 </div>
               </TechnicalImgContent>
-            </BannerContent>
+            </FlexContent>
           </TechnicalContent>
         </Container>
         <Footer router="razor" />

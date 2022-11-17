@@ -49,6 +49,10 @@ const BuyContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 `
 
 const BuyContent = styled.div`
@@ -59,6 +63,24 @@ const BuyContent = styled.div`
   @media (max-width: 768px) {
     margin-right: 20px;
   }
+`
+
+const MobiveBuyContainer = styled.div`
+  @media (min-width: 768px) {
+    display: none;
+  }
+
+  @media (max-width: 768px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+`
+
+const MobiveBuyContent = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `
 
 const BuyBtn = styled.button`
@@ -173,6 +195,23 @@ const Home: NextPage = () => {
                   </MoreContent>
                 </Link>
               </BuyContainer>
+              <MobiveBuyContainer>
+                <MobiveBuyContent>
+                  <BuyBtn
+                    onClick={() => {
+                      buyClicked("razor2")
+                    }}
+                  >
+                    {t("common.buy")}
+                  </BuyBtn>
+                  <Link href="/razor2">
+                    <MoreContent>
+                      <MoreText>{t("common.more")}</MoreText>
+                      <MoreArrow src="/images/arrow_right.svg" alt="arrow" />
+                    </MoreContent>
+                  </Link>
+                </MobiveBuyContent>
+              </MobiveBuyContainer>
               <AdImg src="/images/ad.png" alt="razor img" />
             </Content>
           </AdContainer>

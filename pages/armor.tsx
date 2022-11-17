@@ -11,13 +11,13 @@ import { Buy } from "../components/common/buy"
 import { defaultTheme } from "../styles/theming"
 import {
   BackImgContent,
-  Content,
+  FlexContent,
   BannerImgContent,
   BannerTextContent,
   Title,
   Subtitle,
   TechnicalContent,
-  TechnicalSubtitle,
+  FlexContentReverse,
 } from "../components/common/common"
 import { Params } from "../model/model"
 import { Dialog } from "../components/common/dialog"
@@ -31,28 +31,6 @@ const Container = styled.div`
   height: 100%;
   min-height: 100%;
   overflow: hidden;
-`
-
-const BannerContent = styled(Content)`
-  display: flex;
-  align-items: center;
-  height: 100%;
-
-  @media (max-width: 768px) {
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-`
-
-const BannerContentReverse = styled(Content)`
-  display: flex;
-  align-items: center;
-  height: 100%;
-
-  @media (max-width: 768px) {
-    justify-content: center;
-    flex-wrap: wrap-reverse;
-  }
 `
 
 const Banner1ImgContent = styled(BannerImgContent)`
@@ -74,7 +52,7 @@ const Banner1Price = styled.p`
   }
 `
 
-const Banner2Img = styled.img`
+const BannerRightImg = styled.img`
   position: absolute;
   right: 0;
   bottom: 0;
@@ -88,22 +66,12 @@ const Banner2Img = styled.img`
   }
 `
 
-const Banner5Img = styled(Banner2Img)`
+const BannerLeftImg = styled(BannerRightImg)`
   left: 0;
 `
 
-const Banner1Img = styled.img`
-  height: 480px;
-
-  @media (max-width: 768px) {
-    width: 80%;
-    max-width: 320px;
-    height: auto;
-  }
-`
-
-const Banner4Img = styled.img`
-  height: 420px;
+const BannerImg = styled.img<{ height: number }>`
+  height: ${({ height }) => `${height}px`};
 
   @media (max-width: 768px) {
     width: 80%;
@@ -135,11 +103,8 @@ const ZeroBottomBackImgContent = styled(BackImgContent)`
   @media (max-width: 768px) {
     padding: 60px 0 0;
     text-align: center;
+    background-size: auto 100%;
   }
-`
-
-const Banner1BackImgContent = styled(ZeroBottomBackImgContent)`
-  background-size: 100% 100%;
 `
 
 const MobileBackImgContent = styled(BackImgContent)<{ height: number }>`
@@ -152,7 +117,7 @@ const MobileBackImgContent = styled(BackImgContent)<{ height: number }>`
   }
 `
 
-const MobileBannerContent = styled(BannerContent)`
+const MobileBannerContent = styled(FlexContent)`
   @media (max-width: 768px) {
     align-items: flex-start;
     text-align: center;
@@ -200,11 +165,16 @@ const Armor: NextPage = () => {
     setClientWidth(parseInt(document.documentElement.clientWidth.toFixed()))
   }
 
-  const getHeight = () => {
+  const getHeight = (initHeight: number) => {
+    const initWidth = 500
     if (getClientWidth() != 0 && clientWidth != 0) {
-      return clientWidth > 500 ? clientWidth + 200 : 700
+      return clientWidth > initWidth
+        ? clientWidth - initWidth + initHeight
+        : initHeight
     }
-    return getClientWidth() > 500 ? getClientWidth() + 200 : 700
+    return getClientWidth() > initWidth
+      ? getClientWidth() - initWidth + initHeight
+      : initHeight
   }
 
   useEffect(() => {
@@ -240,8 +210,8 @@ const Armor: NextPage = () => {
           />
 
           <Buy func={buyClicked} title="Frozen Armor" />
-          <Banner1BackImgContent url="/images/razor_banner3_back.jpg">
-            <BannerContent>
+          <ZeroBottomBackImgContent url="/images/razor_banner3_back.jpg">
+            <FlexContent>
               <BannerTextContent>
                 <Title color={defaultTheme.white_text}>
                   {t("frozen.banner_1_title")}
@@ -253,16 +223,17 @@ const Armor: NextPage = () => {
               </BannerTextContent>
 
               <Banner1ImgContent>
-                <Banner1Img
+                <BannerImg
+                  height={480}
                   src="/images/armor_banner1.png"
                   alt="razor pro banner3"
                 />
               </Banner1ImgContent>
-            </BannerContent>
-          </Banner1BackImgContent>
+            </FlexContent>
+          </ZeroBottomBackImgContent>
 
           <ZeroBottomBackImgContent url="/images/razor_pro_back.jpg">
-            <BannerContent>
+            <FlexContent>
               <BannerTextContent>
                 <Title color={defaultTheme.black_333}>
                   {t("frozen.banner_2_title")}
@@ -274,12 +245,15 @@ const Armor: NextPage = () => {
                   }}
                 />
               </BannerTextContent>
-            </BannerContent>
-            <Banner2Img src="/images/armor_banner2.png" alt="frozen banner2" />
+            </FlexContent>
+            <BannerRightImg
+              src="/images/armor_banner2.png"
+              alt="frozen banner2"
+            />
           </ZeroBottomBackImgContent>
 
           <MobileBackImgContent
-            height={getHeight()}
+            height={getHeight(700)}
             url={
               isPcSize && isPc()
                 ? "/images/armor_banner3_back.jpg"
@@ -306,7 +280,7 @@ const Armor: NextPage = () => {
           </MobileBackImgContent>
 
           <MobileBackImgContent
-            height={getHeight()}
+            height={getHeight(620)}
             url={
               isPcSize && isPc()
                 ? "/images/armor_banner4_back.jpg"
@@ -330,7 +304,7 @@ const Armor: NextPage = () => {
           </MobileBackImgContent>
 
           <BackImgContent url="/images/razor_pro_back.jpg">
-            <BannerContent>
+            <FlexContent>
               <BannerImgContent></BannerImgContent>
               <BannerTextContent>
                 <Title color={defaultTheme.black_333}>
@@ -343,15 +317,19 @@ const Armor: NextPage = () => {
                   }}
                 />
               </BannerTextContent>
-            </BannerContent>
-            <Banner5Img src="/images/armor_banner5.png" alt="frozen banner2" />
+            </FlexContent>
+            <BannerLeftImg
+              src="/images/armor_banner5.png"
+              alt="frozen banner2"
+            />
           </BackImgContent>
 
           <TechnicalContent>
-            <BannerContentReverse>
+            <FlexContentReverse>
               <TechnicalImgContent>
                 <div>
-                  <Banner4Img
+                  <BannerImg
+                    height={420}
                     src="/images/armor_banner6.png"
                     alt="armor 304 banner6"
                   />
@@ -364,7 +342,7 @@ const Armor: NextPage = () => {
                 </Title>
                 <Technical params={params} />
               </BannerTextContent>
-            </BannerContentReverse>
+            </FlexContentReverse>
           </TechnicalContent>
         </Container>
         <Footer router="frozen" />
