@@ -108,9 +108,10 @@ const ZeroBottomBackImgContent = styled(BackImgContent)`
 `
 
 const MobileBackImgContent = styled(BackImgContent)<{ height: number }>`
+  height: ${({ height }) => `${height}px`};
+
   @media (max-width: 768px) {
     padding: 60px 0 0;
-    height: ${({ height }) => `${height}px`};
     text-align: center;
     background-size: 100% auto;
     background-position: left bottom;
@@ -166,15 +167,24 @@ const Armor: NextPage = () => {
   }
 
   const getHeight = (initHeight: number) => {
-    const initWidth = 500
-    if (getClientWidth() != 0 && clientWidth != 0) {
-      return clientWidth > initWidth
-        ? clientWidth - initWidth + initHeight
+    if (isPc() && isPcSize) {
+      const width = clientWidth == 0 ? getClientWidth() : clientWidth
+      if (width > 1200) {
+        return width / 2.56
+      } else {
+        return 468.75
+      }
+    } else {
+      const initWidth = 500
+      if (getClientWidth() != 0 && clientWidth != 0) {
+        return clientWidth > initWidth
+          ? clientWidth - initWidth + initHeight
+          : initHeight
+      }
+      return getClientWidth() > initWidth
+        ? getClientWidth() - initWidth + initHeight
         : initHeight
     }
-    return getClientWidth() > initWidth
-      ? getClientWidth() - initWidth + initHeight
-      : initHeight
   }
 
   useEffect(() => {

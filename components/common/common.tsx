@@ -127,6 +127,7 @@ export const Title = styled.p<{ color: string }>`
   font-size: 38px;
   color: ${({ color }) => color};
   font-weight: 600;
+  word-break: break-all;
 
   @media (max-width: 768px) {
     margin-bottom: 22px;
@@ -139,6 +140,7 @@ export const Subtitle = styled.p<{ color: string }>`
   line-height: 1.6;
   font-size: 22px;
   color: ${({ color }) => color};
+  word-break: break-all;
 
   @media (max-width: 768px) {
     margin: 0 54px;

@@ -228,8 +228,9 @@ const Armor2: NextPage = () => {
 
   const getHeight = (initHeight: number) => {
     if (isPc() && isPcSize) {
-      if (clientWidth > 1200) {
-        return clientWidth / 2.56
+      const width = clientWidth == 0 ? getClientWidth() : clientWidth
+      if (width > 1200) {
+        return width / 2.56
       } else {
         return 468.75
       }

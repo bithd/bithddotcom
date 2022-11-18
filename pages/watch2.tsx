@@ -41,6 +41,24 @@ const Banner2ImgContent = styled(BannerImgContent)`
   }
 `
 
+const BannerCenterImgContent = styled(BannerImgContent)`
+  justify-content: flex-start;
+  align-items: center;
+
+  @media (max-width: 768px) {
+    justify-content: center;
+  }
+`
+
+const Banner3ImgContent = styled(BannerImgContent)`
+  justify-content: flex-end;
+  align-items: center;
+
+  @media (max-width: 768px) {
+    justify-content: center;
+  }
+`
+
 const BannerImg = styled.img`
   height: 100%;
 
@@ -183,12 +201,12 @@ const Watch2: NextPage = () => {
 
           <BackContent backColor={defaultTheme.back_fa}>
             <FlexContentReverse>
-              <Banner2ImgContent>
+              <BannerCenterImgContent>
                 <Banner1Img
                   src="/images/watch2_banner2.png"
                   alt="watch2 banner2"
                 />
-              </Banner2ImgContent>
+              </BannerCenterImgContent>
               <BannerTextContent>
                 <Watch2Title color={defaultTheme.black_333}>
                   {t("bithd_2.banner_2_title")}
@@ -219,27 +237,30 @@ const Watch2: NextPage = () => {
                   }}
                 />
               </BannerTextContent>
-              <BannerImgContent>
+              <Banner3ImgContent>
                 <Banner1Img
                   src="/images/watch2_banner3.png"
                   alt="watch2 banner3"
                 />
-              </BannerImgContent>
+              </Banner3ImgContent>
             </FlexContent>
           </BackContent>
 
           <BackContent backColor={defaultTheme.back_fa}>
             <FlexContentReverse>
-              <Banner2ImgContent>
+              <BannerCenterImgContent>
                 <Banner1Img
                   src="/images/watch2_banner4.png"
                   alt="watch2 banner4"
                 />
-              </Banner2ImgContent>
+              </BannerCenterImgContent>
               <BannerTextContent>
-                <Watch2Title color={defaultTheme.black_333}>
-                  {t("bithd_2.banner_4_title")}
-                </Watch2Title>
+                <Watch2Title
+                  color={defaultTheme.black_333}
+                  dangerouslySetInnerHTML={{
+                    __html: t("bithd_2.banner_4_title"),
+                  }}
+                />
                 <Watch2Subtitle
                   color={defaultTheme.black_333}
                   dangerouslySetInnerHTML={{
