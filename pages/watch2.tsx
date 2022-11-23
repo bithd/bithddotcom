@@ -25,7 +25,7 @@ import { useState } from "react"
 import { Technical } from "../components/common/technical_list"
 
 const Container = styled.div`
-  margin-top: 60px;
+  margin-top: 44px;
   flex: 1;
   width: 100%;
   height: 100%;
@@ -63,9 +63,9 @@ const BannerImg = styled.img`
   height: 100%;
 
   @media (max-width: 768px) {
-    width: 80%;
-    max-width: 200px;
-    height: auto;
+    /* width: 80%; */
+    /* max-width: 200px; */
+    height: 320px;
   }
 `
 
@@ -73,7 +73,15 @@ const Banner1Img = styled(BannerImg)`
   height: 480px;
 
   @media (max-width: 768px) {
-    height: auto;
+    height: 320px;
+  }
+`
+
+const Banner6Img = styled(BannerImg)`
+  height: 480px;
+
+  @media (max-width: 768px) {
+    height: 360px;
   }
 `
 
@@ -100,9 +108,9 @@ const Warn = styled.p`
 `
 
 const Watch2Title = styled(Title)`
-  @media (max-width: 768px) {
+  /* @media (max-width: 768px) {
     font-size: 24px;
-  }
+  } */
 `
 
 const Watch2Subtitle = styled(Subtitle)`
@@ -288,7 +296,7 @@ const Watch2: NextPage = () => {
                 />
               </BannerTextContent>
               <BannerImgContent>
-                <Banner1Img
+                <Banner6Img
                   src="/images/watch2_banner5.png"
                   alt="watch2 banner5"
                 />
@@ -299,7 +307,7 @@ const Watch2: NextPage = () => {
           <ZeroBottomBackImgContent backColor={defaultTheme.back_fa}>
             <FlexContentReverse>
               <Banner2ImgContent>
-                <Banner1Img
+                <Banner6Img
                   src="/images/watch2_banner6.png"
                   alt="watch2 banner6"
                 />

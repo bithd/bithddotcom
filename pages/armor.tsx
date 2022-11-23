@@ -25,7 +25,7 @@ import { useEffect, useState } from "react"
 import { Technical } from "../components/common/technical_list"
 
 const Container = styled.div`
-  margin-top: 60px;
+  margin-top: 44px;
   flex: 1;
   width: 100%;
   height: 100%;
@@ -130,6 +130,10 @@ const BlankContent = styled(BannerTextContent)`
     display: none;
     margin: 0;
   }
+`
+
+const Banner3Content = styled(BannerTextContent)`
+  padding-left: 24px;
 `
 
 const Armor: NextPage = () => {
@@ -272,7 +276,7 @@ const Armor: NextPage = () => {
           >
             <MobileBannerContent>
               <BlankContent></BlankContent>
-              <BannerTextContent>
+              <Banner3Content>
                 <Title
                   color={defaultTheme.white_text}
                   dangerouslySetInnerHTML={{
@@ -285,7 +289,7 @@ const Armor: NextPage = () => {
                     __html: t("frozen.banner_3_subtitle"),
                   }}
                 />
-              </BannerTextContent>
+              </Banner3Content>
             </MobileBannerContent>
           </MobileBackImgContent>
 

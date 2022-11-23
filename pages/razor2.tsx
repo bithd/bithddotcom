@@ -28,7 +28,7 @@ import { useState } from "react"
 import { Technical } from "../components/common/technical_list"
 
 const Container = styled.div`
-  margin-top: 60px;
+  margin-top: 44px;
   flex: 1;
   width: 100%;
   height: 100%;

@@ -7,7 +7,7 @@ import { useState } from "react"
 const Container = styled.div<{ active: boolean }>`
   position: absolute;
   display: ${({ active }) => (active ? "block" : "none")};
-  top: 60px;
+  top: 44px;
   left: 0;
   width: 100%;
   max-height: 376px;

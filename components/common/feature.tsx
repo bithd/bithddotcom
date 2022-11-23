@@ -59,6 +59,7 @@ const Title = styled.p`
 
 const Subtitle = styled.p`
   margin: 10px 0 0 0;
+  line-height: 1.6;
   font-size: 14px;
   color: ${({ theme }) => theme.black_666};
 

@@ -63,9 +63,9 @@ const MobileOperateContainer = styled.div`
   justify-content: center;
   align-items: center;
 
-  @media (min-width: 768px) {
+  /* @media (min-width: 768px) {
     display: none;
-  }
+  } */
 `
 
 const MobileOperateContent = styled.div`
@@ -85,20 +85,22 @@ const OperateContent = styled.div`
 `
 
 const MoreContent = styled(OperateContent)`
+  margin-right: 10px;
   justify-content: right;
   text-align: right;
-
+  /* 
   @media (max-width: 768px) {
     margin-right: 10px;
-  }
+  } */
 `
 
 const BuyContent = styled(OperateContent)`
+  margin-left: 10px;
   text-align: left;
 
-  @media (max-width: 768px) {
+  /* @media (max-width: 768px) {
     margin-left: 10px;
-  }
+  } */
 `
 
 const Button = styled.button`
@@ -107,6 +109,10 @@ const Button = styled.button`
   background-color: transparent;
   border: none;
   cursor: pointer;
+
+  @media (max-width: 768px) {
+    padding: 0;
+  }
 `
 
 const BuyBtn = styled(Button)``
@@ -166,7 +172,7 @@ export function Products({ func }: { func: (type: string) => void }) {
               <Subtitle
                 dangerouslySetInnerHTML={{ __html: deleteBr(item.subtitle) }}
               ></Subtitle>
-              <OperateContainer>
+              {/* <OperateContainer>
                 <Link href={item.link}>
                   <MoreContent>
                     <MoreBtn>{t("common.more")}</MoreBtn>
@@ -181,7 +187,7 @@ export function Products({ func }: { func: (type: string) => void }) {
                   <BuyBtn>{t("common.buy")}</BuyBtn>
                   <Arrow src="/images/arrow_right.svg" alt="arrow" />
                 </BuyContent>
-              </OperateContainer>
+              </OperateContainer> */}
               <MobileOperateContainer>
                 <MobileOperateContent>
                   <Link href={item.link}>

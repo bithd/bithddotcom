@@ -81,7 +81,7 @@ export const TechnicalContent = styled.div`
 `
 
 export const TechnicalSubtitle = styled.p`
-  margin-bottom: 12px;
+  margin-bottom: 16px;
   font-size: 18px;
   color: ${({ theme }) => theme.black_text};
 
@@ -124,7 +124,7 @@ export const BannerTextContent = styled.div`
 
 export const Title = styled.p<{ color: string }>`
   margin-bottom: 40px;
-  font-size: 38px;
+  font-size: 40px;
   color: ${({ color }) => color};
   font-weight: 600;
   word-break: break-all;

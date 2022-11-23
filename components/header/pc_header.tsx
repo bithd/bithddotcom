@@ -9,7 +9,7 @@ import React from "react"
 const HeaderBox = styled.div`
   position: fixed;
   width: 1200px;
-  height: 60px;
+  height: 44px;
   background: ${({ theme }) => theme.nav_back};
   z-index: 90;
 `
@@ -35,21 +35,23 @@ const Header = styled.div`
 `
 
 const HeaderCotainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   margin: 0 auto;
   padding: 12px 0;
   width: 1100px;
-  height: 60px;
+  height: 44px;
   max-width: 1100px;
 `
 
 const Logo = styled.img`
   float: left;
-  height: 36px;
+  height: 26px;
 `
 
 const MenuContainer = styled.div`
   float: right;
-  margin-top: 3px;
 `
 
 const LanguageContainer = styled.div`

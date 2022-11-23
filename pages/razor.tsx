@@ -90,12 +90,12 @@ const TechnicalTextContent = styled(BannerTextContent)`
 
 const Banner1Title = styled.p`
   font-family: "PingFangSC-Semibold";
-  font-size: 44px;
+  font-size: 46px;
   color: ${({ theme }) => theme.white_text};
   font-weight: 600;
 
   @media (max-width: 768px) {
-    font-size: 24px;
+    font-size: 32px;
   }
 `
 
@@ -139,6 +139,13 @@ const Banner4Img = styled(Banner3Img)`
   }
 `
 
+const Banner5Img = styled(Banner3Img)`
+  height: 520px;
+  @media (max-width: 768px) {
+    max-width: 320px;
+  }
+`
+
 const TechnicalImgContent = styled(BannerImgContent)`
   align-items: center;
   justify-content: flex-start;
@@ -167,7 +174,7 @@ const Banner3ImgContent = styled(BannerImgContent)`
 
 const RazorTitle = styled(Title)`
   @media (max-width: 768px) {
-    font-size: 24px;
+    /* font-size: 24px; */
   }
 `
 
@@ -334,7 +341,7 @@ const Razor: NextPage = () => {
                 />
               </BannerTextContent>
               <Banner3ImgContent>
-                <Banner4Img
+                <Banner5Img
                   src="/images/razor_banner3.png"
                   alt="razor banner3"
                 />

@@ -8,7 +8,7 @@ const NormalA = styled.a`
   padding: 0 15px;
   height: 30px;
   line-height: 30px;
-  font-size: 16px;
+  font-size: 13px;
   color: ${({ theme }) => theme.white_text};
   text-decoration: none;
   border-radius: 30px;
@@ -22,7 +22,7 @@ const Drop = styled.div<{ distance: number }>`
   position: absolute;
   display: none;
   padding: 10px 12px 5px;
-  top: 45px;
+  top: 36px;
   left: ${({ distance }) => `-${distance}px`};
   border-radius: 5px;
   background: url(/images/drop.png) no-repeat;

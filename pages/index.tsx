@@ -13,7 +13,7 @@ import { useState } from "react"
 import Link from "next/link"
 
 const HomeContent = styled.div`
-  margin-top: 60px;
+  margin-top: 44px;
   flex: 1;
   width: 100%;
   height: 100%;

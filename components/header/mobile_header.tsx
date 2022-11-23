@@ -20,21 +20,21 @@ const Header = styled.div`
 
 const HeaderCotainer = styled.div`
   width: 100%;
-  height: 60px;
+  height: 44px;
   background: ${({ theme }) => theme.nav_back};
   box-shadow: ${({ theme }) => `0px 5px 5px ${theme.nav_shadow}`};
 `
 
 const Logo = styled.img`
   float: left;
-  margin: 16px 0 0 20px;
-  height: 28px;
+  margin: 10px 0 0 20px;
+  height: 24px;
 `
 
 const MenuContainer = styled.div<{ active: boolean }>`
   float: right;
   margin-right: 20px;
-  padding: 15.5px 0;
+  padding: 7.5px 0;
   text-align: center;
   cursor: pointer;
 
