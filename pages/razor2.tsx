@@ -11,7 +11,6 @@ import { Buy } from "../components/common/buy"
 import { defaultTheme } from "../styles/theming"
 import {
   BackImgContent,
-  Content,
   BannerImgContent,
   BannerTextContent,
   Title,
@@ -191,13 +190,6 @@ const PcBackImgContent = styled(BackImgContent)`
   }
 `
 
-const ZeroBottomBackImgContent = styled(BackImgContent)`
-  @media (max-width: 768px) {
-    padding: 60px 0 0;
-    text-align: center;
-  }
-`
-
 const MobileBackImgContent = styled(BackImgContent)`
   @media (min-width: 768px) {
     display: none;
@@ -305,7 +297,11 @@ const Razor2: NextPage = () => {
             }}
           />
           <Buy func={buyClicked} title="BITHD Razor Pro" />
-          <ZeroBottomBackImgContent url="/images/razor_pro_back.jpg">
+          <BackImgContent
+            isZeroBottom={true}
+            isFullBack={true}
+            url="/images/razor_pro_back.jpg"
+          >
             <FlexContentReverse>
               <Banner1ImgContent>
                 <Banner1Img src="/images/razor_pro_banner1.png" alt="banner1" />
@@ -328,9 +324,13 @@ const Razor2: NextPage = () => {
                 </PriceContent>
               </Banner1TextContent>
             </FlexContentReverse>
-          </ZeroBottomBackImgContent>
+          </BackImgContent>
 
-          <MobileBackImgContent url="/images/ad_back.jpg">
+          <MobileBackImgContent
+            isFullBack={true}
+            isZeroBottom={false}
+            url="/images/ad_back.jpg"
+          >
             <Banner2TextContent>
               <Title color={defaultTheme.white_text}>
                 {t("razor_pro.banner_5_title")}
@@ -347,7 +347,11 @@ const Razor2: NextPage = () => {
             </Banner2ImgContent>
           </MobileBackImgContent>
 
-          <PcBackImgContent url="/images/razor_pro_back2.jpg">
+          <PcBackImgContent
+            isFullBack={true}
+            isZeroBottom={false}
+            url="/images/razor_pro_back2.jpg"
+          >
             <FlexContent>
               <BannerTextContent>
                 <Title color={defaultTheme.white_text}>
@@ -364,7 +368,11 @@ const Razor2: NextPage = () => {
             />
           </PcBackImgContent>
 
-          <PcBackImgContent url="/images/razor_pro_back3.jpg">
+          <PcBackImgContent
+            isFullBack={true}
+            isZeroBottom={false}
+            url="/images/razor_pro_back3.jpg"
+          >
             <FlexContent>
               <BannerImgContent>
                 <Banner3Img
@@ -386,7 +394,11 @@ const Razor2: NextPage = () => {
             </FlexContent>
           </PcBackImgContent>
 
-          <ZeroBottomBackImgContent url="/images/razor_pro_back.jpg">
+          <BackImgContent
+            isZeroBottom={true}
+            isFullBack={true}
+            url="/images/razor_pro_back.jpg"
+          >
             <FlexContent>
               <BannerTextContent>
                 <Title color={defaultTheme.black_333}>
@@ -406,7 +418,7 @@ const Razor2: NextPage = () => {
                 />
               </Banner2ImgContent>
             </FlexContent>
-          </ZeroBottomBackImgContent>
+          </BackImgContent>
 
           <FeatureContent>
             <Feature features={features} />

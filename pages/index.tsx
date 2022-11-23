@@ -39,6 +39,7 @@ const AdTitle = styled.p`
   font-size: 38px;
   color: ${({ theme }) => theme.white_text};
   text-align: center;
+  font-weight: 600;
 
   @media (max-width: 768px) {
     font-size: 26px;

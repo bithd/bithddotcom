@@ -54,20 +54,17 @@ const Banner1TextContent = styled(BannerTextContent)`
   }
 `
 
-const MobileBackImgContent = styled(BackImgContent)<{ height: number }>`
+const Armor2BackImgContent = styled(BackImgContent)<{ height: number }>`
   height: ${({ height }) => `${height}px`};
-  background-size: 100% auto;
 
   @media (max-width: 768px) {
-    padding: 60px 0 0;
     height: ${({ height }) => `${height}px`};
     text-align: center;
-    background-size: 100% auto;
     background-position: left bottom;
   }
 `
 
-const MobileBackImg6Content = styled(MobileBackImgContent)`
+const MobileBackImg6Content = styled(Armor2BackImgContent)`
   @media (min-width: 768px) {
     display: none;
   }
@@ -275,7 +272,9 @@ const Armor2: NextPage = () => {
             }}
           />
           <Buy func={buyClicked} title="Frozen Armor 304" />
-          <MobileBackImgContent
+          <Armor2BackImgContent
+            isZeroBottom={false}
+            isFullBack={false}
             height={getHeight(700)}
             url={
               isPc() && isPcSize
@@ -309,9 +308,11 @@ const Armor2: NextPage = () => {
                 </PriceContent>
               </Banner1TextContent>
             </BannerContent>
-          </MobileBackImgContent>
+          </Armor2BackImgContent>
 
-          <MobileBackImgContent
+          <Armor2BackImgContent
+            isZeroBottom={false}
+            isFullBack={false}
             height={getHeight(637)}
             url={
               isPc() && isPcSize
@@ -330,9 +331,11 @@ const Armor2: NextPage = () => {
               </BannerTextContent>
               <BlankImgContent />
             </BannerContent>
-          </MobileBackImgContent>
+          </Armor2BackImgContent>
 
-          <MobileBackImgContent
+          <Armor2BackImgContent
+            isZeroBottom={false}
+            isFullBack={false}
             height={getHeight(668)}
             url={
               isPc() && isPcSize
@@ -364,9 +367,11 @@ const Armor2: NextPage = () => {
                 />
               </BannerTextContent>
             </BannerContent>
-          </MobileBackImgContent>
+          </Armor2BackImgContent>
 
-          <MobileBackImgContent
+          <Armor2BackImgContent
+            isZeroBottom={false}
+            isFullBack={false}
             height={getHeight(667)}
             url={
               isPc() && isPcSize
@@ -388,9 +393,11 @@ const Armor2: NextPage = () => {
               </BannerTextContent>
               <BlankImgContent />
             </BannerContent>
-          </MobileBackImgContent>
+          </Armor2BackImgContent>
 
-          <MobileBackImgContent
+          <Armor2BackImgContent
+            isZeroBottom={false}
+            isFullBack={false}
             height={getHeight(680)}
             url={
               isPc() && isPcSize
@@ -422,9 +429,11 @@ const Armor2: NextPage = () => {
                 />
               </BannerTextContent>
             </BannerContent>
-          </MobileBackImgContent>
+          </Armor2BackImgContent>
 
           <MobileBackImg6Content
+            isZeroBottom={false}
+            isFullBack={false}
             height={getHeight(720)}
             url="/images/armor2_m_banner6_back.jpg"
           >

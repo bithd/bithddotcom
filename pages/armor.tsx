@@ -99,21 +99,11 @@ const ArmorSubtitle = styled(Subtitle)`
   }
 `
 
-const ZeroBottomBackImgContent = styled(BackImgContent)`
-  @media (max-width: 768px) {
-    padding: 60px 0 0;
-    text-align: center;
-    background-size: auto 100%;
-  }
-`
-
 const MobileBackImgContent = styled(BackImgContent)<{ height: number }>`
   height: ${({ height }) => `${height}px`};
 
   @media (max-width: 768px) {
-    padding: 60px 0 0;
     text-align: center;
-    background-size: 100% auto;
     background-position: left bottom;
   }
 `
@@ -224,7 +214,11 @@ const Armor: NextPage = () => {
           />
 
           <Buy func={buyClicked} title="Frozen Armor" />
-          <ZeroBottomBackImgContent url="/images/razor_banner3_back.jpg">
+          <BackImgContent
+            isZeroBottom={true}
+            isFullBack={true}
+            url="/images/razor_banner3_back.jpg"
+          >
             <FlexContent>
               <BannerTextContent>
                 <Title color={defaultTheme.white_text}>
@@ -244,9 +238,13 @@ const Armor: NextPage = () => {
                 />
               </Banner1ImgContent>
             </FlexContent>
-          </ZeroBottomBackImgContent>
+          </BackImgContent>
 
-          <ZeroBottomBackImgContent url="/images/razor_pro_back.jpg">
+          <BackImgContent
+            isZeroBottom={true}
+            isFullBack={true}
+            url="/images/razor_pro_back.jpg"
+          >
             <FlexContent>
               <BannerTextContent>
                 <Title color={defaultTheme.black_333}>
@@ -264,9 +262,11 @@ const Armor: NextPage = () => {
               src="/images/armor_banner2.png"
               alt="frozen banner2"
             />
-          </ZeroBottomBackImgContent>
+          </BackImgContent>
 
           <MobileBackImgContent
+            isFullBack={false}
+            isZeroBottom={true}
             height={getHeight(700)}
             url={
               isPcSize && isPc()
@@ -294,6 +294,8 @@ const Armor: NextPage = () => {
           </MobileBackImgContent>
 
           <MobileBackImgContent
+            isFullBack={false}
+            isZeroBottom={true}
             height={getHeight(620)}
             url={
               isPcSize && isPc()
@@ -317,7 +319,11 @@ const Armor: NextPage = () => {
             </MobileBannerContent>
           </MobileBackImgContent>
 
-          <BackImgContent url="/images/razor_pro_back.jpg">
+          <BackImgContent
+            isZeroBottom={true}
+            isFullBack={true}
+            url="/images/razor_pro_back.jpg"
+          >
             <FlexContent>
               <BannerImgContent></BannerImgContent>
               <BannerTextContent>
@@ -334,7 +340,7 @@ const Armor: NextPage = () => {
             </FlexContent>
             <BannerLeftImg
               src="/images/armor_banner5.png"
-              alt="frozen banner2"
+              alt="frozen banner5"
             />
           </BackImgContent>
 

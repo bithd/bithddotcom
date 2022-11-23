@@ -32,24 +32,31 @@ export const FlexContentReverse = styled(Content)`
   }
 `
 
-export const BackImgContent = styled.div<{ url: string }>`
+export const BackImgContent = styled.div<{
+  url: string
+  isFullBack: boolean
+  isZeroBottom: boolean
+}>`
   position: relative;
   width: 100%;
   height: 560px;
   background-image: ${({ url }) => `url(${url})`};
-  background-size: 100% 100%;
+  background-size: ${({ isFullBack }) =>
+    isFullBack ? "100% 100%" : "100% auto"};
   background-repeat: no-repeat;
   overflow: hidden;
 
   @media (max-width: 768px) {
     height: auto;
-    padding: 60px 0;
+    padding: ${({ isZeroBottom }) => (isZeroBottom ? "60px 0 0;" : "60px 0")};
     text-align: center;
-    background-size: 100% auto;
   }
 `
 
-export const BackContent = styled.div<{ backColor: string }>`
+export const BackContent = styled.div<{
+  backColor: string
+  isZeroBottom: boolean
+}>`
   position: relative;
   width: 100%;
   height: 560px;
@@ -57,7 +64,7 @@ export const BackContent = styled.div<{ backColor: string }>`
 
   @media (max-width: 768px) {
     height: auto;
-    padding: 60px 0;
+    padding: ${({ isZeroBottom }) => (isZeroBottom ? " 60px 0 0" : " 60px 0")};
     text-align: center;
   }
 `
@@ -76,7 +83,7 @@ export const TechnicalContent = styled.div`
 
   @media (max-width: 768px) {
     height: auto;
-    padding: 60px 0;
+    padding: 42px 0 60px;
   }
 `
 

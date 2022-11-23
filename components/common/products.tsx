@@ -30,6 +30,7 @@ const Title = styled.p`
   margin-bottom: 25px;
   font-size: 28px;
   color: ${({ theme }) => theme.black_333};
+  font-weight: 600;
 `
 
 const Subtitle = styled.p`

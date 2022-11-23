@@ -62,7 +62,7 @@ export function Technical({ params }: { params: Params[] }) {
     <>
       {params.map((item, index) => {
         return (
-          <Container>
+          <Container key={index}>
             <TechnicalSubtitle key={index}>
               {item.title}
               {getColon()}

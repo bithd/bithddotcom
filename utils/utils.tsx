@@ -91,8 +91,7 @@ export function deleteBr(str: string): string {
     document.documentElement.clientWidth &&
     document.documentElement.clientWidth <= 768
   ) {
-    console.log(str)
-    return str.replace("<br/>", " ").replace("<br>", " ")
+    return str.replaceAll("<br/>", " ").replaceAll("<br>", " ")
   }
   return str
 }

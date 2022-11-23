@@ -23,6 +23,7 @@ import { Params } from "../model/model"
 import { Dialog } from "../components/common/dialog"
 import { useState } from "react"
 import { Technical } from "../components/common/technical_list"
+import { deleteBr } from "../utils/utils"
 
 const Container = styled.div`
   margin-top: 44px;
@@ -120,13 +121,6 @@ const Watch2Subtitle = styled(Subtitle)`
   }
 `
 
-const ZeroBottomBackImgContent = styled(BackContent)`
-  @media (max-width: 768px) {
-    padding: 60px 0 0;
-    text-align: center;
-  }
-`
-
 const Watch2: NextPage = () => {
   const { t, i18n } = useTranslation()
   const [showDialog, setShowDialog] = useState<boolean>(false)
@@ -182,7 +176,7 @@ const Watch2: NextPage = () => {
           />
           <Buy func={buyClicked} title={t("bithd_2.title")} />
 
-          <BackContent backColor={defaultTheme.white_back}>
+          <BackContent isZeroBottom={false} backColor={defaultTheme.white_back}>
             <FlexContent>
               <BannerTextContent>
                 <Watch2Title
@@ -207,7 +201,7 @@ const Watch2: NextPage = () => {
             </FlexContent>
           </BackContent>
 
-          <BackContent backColor={defaultTheme.back_fa}>
+          <BackContent isZeroBottom={false} backColor={defaultTheme.back_fa}>
             <FlexContentReverse>
               <BannerCenterImgContent>
                 <Banner1Img
@@ -229,7 +223,7 @@ const Watch2: NextPage = () => {
             </FlexContentReverse>
           </BackContent>
 
-          <BackContent backColor={defaultTheme.white_back}>
+          <BackContent isZeroBottom={false} backColor={defaultTheme.white_back}>
             <FlexContent>
               <BannerTextContent>
                 <Watch2Title
@@ -241,7 +235,7 @@ const Watch2: NextPage = () => {
                 <Watch2Subtitle
                   color={defaultTheme.black_333}
                   dangerouslySetInnerHTML={{
-                    __html: t("bithd_2.banner_3_subtitle"),
+                    __html: deleteBr(t("bithd_2.banner_3_subtitle")),
                   }}
                 />
               </BannerTextContent>
@@ -254,7 +248,7 @@ const Watch2: NextPage = () => {
             </FlexContent>
           </BackContent>
 
-          <BackContent backColor={defaultTheme.back_fa}>
+          <BackContent isZeroBottom={false} backColor={defaultTheme.back_fa}>
             <FlexContentReverse>
               <BannerCenterImgContent>
                 <Banner1Img
@@ -279,7 +273,7 @@ const Watch2: NextPage = () => {
             </FlexContentReverse>
           </BackContent>
 
-          <ZeroBottomBackImgContent backColor={defaultTheme.white_back}>
+          <BackContent isZeroBottom={true} backColor={defaultTheme.white_back}>
             <FlexContent>
               <BannerTextContent>
                 <Watch2Title
@@ -291,7 +285,7 @@ const Watch2: NextPage = () => {
                 <Watch2Subtitle
                   color={defaultTheme.black_333}
                   dangerouslySetInnerHTML={{
-                    __html: t("bithd_2.banner_5_subtitle"),
+                    __html: deleteBr(t("bithd_2.banner_5_subtitle")),
                   }}
                 />
               </BannerTextContent>
@@ -302,9 +296,9 @@ const Watch2: NextPage = () => {
                 />
               </BannerImgContent>
             </FlexContent>
-          </ZeroBottomBackImgContent>
+          </BackContent>
 
-          <ZeroBottomBackImgContent backColor={defaultTheme.back_fa}>
+          <BackContent isZeroBottom={true} backColor={defaultTheme.back_fa}>
             <FlexContentReverse>
               <Banner2ImgContent>
                 <Banner6Img
@@ -319,12 +313,12 @@ const Watch2: NextPage = () => {
                 <Watch2Subtitle
                   color={defaultTheme.black_333}
                   dangerouslySetInnerHTML={{
-                    __html: t("bithd_2.banner_6_subtitle"),
+                    __html: deleteBr(t("bithd_2.banner_6_subtitle")),
                   }}
                 />
               </BannerTextContent>
             </FlexContentReverse>
-          </ZeroBottomBackImgContent>
+          </BackContent>
 
           <TechnicalContent>
             <FlexContent>
