@@ -317,10 +317,10 @@ const Razor2: NextPage = () => {
                       price: isCN(i18n.language) ? "¥699" : "$69.99",
                     })}
                   </PriceText>
-                  <BuyContent onClick={buyClicked}>
+                  {/* <BuyContent onClick={buyClicked}>
                     <BuyBtn>{t("common.buy")}</BuyBtn>
                     <BuyArrow src="/images/arrow_right.svg" alt="arrow" />
-                  </BuyContent>
+                  </BuyContent> */}
                 </PriceContent>
               </Banner1TextContent>
             </FlexContentReverse>

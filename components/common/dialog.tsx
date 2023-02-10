@@ -153,7 +153,15 @@ export function Dialog({ type, isShow, func }: DialogProps) {
     <>
       <Container isShow={isShow} onClick={func}>
         <Flex>
-          {getBuyLinks(type, isCN(i18n.language)).length == 0 ? (
+          <TextContent
+            onClick={(e) => {
+              e.stopPropagation()
+            }}
+          >
+            <ContentText>{t("common.sold_out")}</ContentText>
+            <TextConfirmBtn onClick={func}>{t("common.cancel")}</TextConfirmBtn>
+          </TextContent>
+          {/* {getBuyLinks(type, isCN(i18n.language)).length == 0 ? (
             <TextContent
               onClick={(e) => {
                 e.stopPropagation()
@@ -186,7 +194,7 @@ export function Dialog({ type, isShow, func }: DialogProps) {
               })}
               <ConfirmBtn onClick={func}>{t("common.cancel")}</ConfirmBtn>
             </Content>
-          )}
+          )} */}
         </Flex>
       </Container>
     </>

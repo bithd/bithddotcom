@@ -23,7 +23,8 @@
     "warn": "* 尺寸重量为手工测量，可能存在微小误差",
     "params_title": "技术规格",
     "buy_title": "选择购买方式",
-    "cancel": "取消"
+    "cancel": "取消",
+    "sold_out": "已售罄"
   },
   "home": {
     "ad_title": "刀锋 Pro",
@@ -176,7 +177,7 @@
     "params1_title": "尺寸",
     "params1_content": "105mm * 60mm * 7mm",
     "params2_title": "重量",
-    "params2_content": "主体 252g &nbsp;&nbsp; 字符板 30g*3=90g",
+    "params2_content": "主体 252g  字符板 30g*3=90g",
     "params3_title": "熔点",
     "params3_content": "1440℃",
     "params4_title": "材质",

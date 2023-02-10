@@ -138,7 +138,7 @@ export function PCHeader({ active }: PCHeaderProps) {
       link: {
         text: t("header.frozen"),
         name: "frozen",
-        nofollow: true,
+        nofollow: false,
         link: "",
       },
       drop: [

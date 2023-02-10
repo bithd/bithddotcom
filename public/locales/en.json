@@ -23,7 +23,8 @@
     "warn": "*Slight error in manual measurement",
     "params_title": "Technical Specifications",
     "buy_title": "Go to Purchase",
-    "cancel": "Close"
+    "cancel": "Close",
+    "sold_out": "Sold out"
   },
   "home": {
     "ad_title": "BITHD Razor Pro",

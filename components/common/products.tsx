@@ -87,8 +87,8 @@ const OperateContent = styled.div`
 
 const MoreContent = styled(OperateContent)`
   margin-right: 10px;
-  justify-content: right;
-  text-align: right;
+  justify-content: center;
+  text-align: center;
   /* 
   @media (max-width: 768px) {
     margin-right: 10px;
@@ -197,14 +197,14 @@ export function Products({ func }: { func: (type: string) => void }) {
                       <Arrow src="/images/arrow_right.svg" alt="arrow" />
                     </MoreContent>
                   </Link>
-                  <BuyContent
+                  {/* <BuyContent
                     onClick={() => {
                       func(item.buy)
                     }}
                   >
                     <BuyBtn>{t("common.buy")}</BuyBtn>
                     <Arrow src="/images/arrow_right.svg" alt="arrow" />
-                  </BuyContent>
+                  </BuyContent> */}
                 </MobileOperateContent>
               </MobileOperateContainer>
               <Icon src={item.img} alt="icon" />
