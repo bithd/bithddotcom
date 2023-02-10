@@ -300,7 +300,11 @@ const Armor2: NextPage = () => {
                     : t("frozen_304.banner_m_1_subtitle")}
                 </Banner1Subtitle>
                 <PriceContent>
-                  <PriceText>{t("common.price", { price: "¥249" })}</PriceText>
+                  <PriceText>
+                    {t("common.price", {
+                      price: isCN(i18n.language) ? "¥249" : "$39.9",
+                    })}
+                  </PriceText>
                   {/* <BuyContent onClick={buyClicked}>
                     <BuyBtn>{t("common.buy")}</BuyBtn>
                     <BuyArrow src="/images/arrow_right.svg" alt="arrow" />
