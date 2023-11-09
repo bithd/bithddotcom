@@ -140,14 +140,112 @@ const AdImg = styled.img`
   }
 `
 
+const Tips = styled.div`
+  margin: 50px 0;
+  text-align: center;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+`
+
+const ContactButton = styled.div<{ isShow: boolean }>`
+  display: ${({ isShow }) => (isShow ? "block" : "none")};
+  position: absolute;
+  right: 24px;
+  bottom: 24px;
+  width: 120px;
+  height: 48px;
+  background-color: #1f73b7;
+  padding: 0.92857rem 1.57143rem;
+  border-radius: 999rem;
+  letter-spacing: 0.6;
+  font-size: 1.07143rem;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+`
+
+const ContactDiv = styled.div<{ isShow: boolean }>`
+  display: ${({ isShow }) => (isShow ? "block" : "none")};
+  position: absolute;
+  right: 24px;
+  bottom: 24px;
+  width: 320px;
+  border-left: 1px solid #eee;
+  border-right: 1px solid #eee;
+`
+
+const ContactHeader = styled.div`
+  height: 44px;
+  background: rgb(31, 115, 183) !important;
+  color: rgb(255, 255, 255) !important;
+  border-top: 8px;
+  text-align: center;
+  line-height: 44px;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+`
+
+const ContactBody = styled.div`
+  height: 200px;
+  background-color: white;
+  overflow: hidden;
+`
+
+const ContactTitle = styled.p`
+  margin: 8px 12px;
+  font-size: 14px;
+  color: black;
+`
+
+const ContactTextField = styled.input`
+  margin: 8px 12px;
+  font-size: 14px;
+  color: black;
+  border: none;
+  border: 1px solid #000;
+  border-radius: 5px;
+  height: 44px;
+  padding: 5px;
+  width: 296px;
+`
+
+const ContactBottom = styled.div`
+  height: 70px;
+  border-top: 0.0785714rem solid rgb(233, 235, 237);
+  box-shadow: rgb(0 0 0 / 8%) 0px -0.0714286rem 0.857143rem;
+
+  background-color: white;
+`
+
+const ContactSend = styled.div`
+  margin-top: 16px;
+  width: 60px;
+  height: 38px;
+  float: right;
+  margin-right: 12px;
+  background-color: rgb(31, 115, 183) !important;
+  color: rgb(255, 255, 255) !important;
+  border-color: rgb(31, 115, 183) !important;
+  line-height: 38px;
+  text-align: center;
+  border-radius: 8px;
+`
+
 const Home: NextPage = () => {
   const { t, i18n } = useTranslation()
   const [showDialog, setShowDialog] = useState<boolean>(false)
+  const [showCDialog, setShowCDialog] = useState<boolean>(false)
   const [dialogType, setDialogType] = useState<string>("")
 
   const buyClicked = (type: string) => {
     setDialogType(type)
     setShowDialog(true)
+  }
+
+  const showContactDialog = () => {
+    setShowCDialog(true)
   }
 
   return (
@@ -173,7 +271,7 @@ const Home: NextPage = () => {
               setShowDialog(false)
             }}
           />
-          <AdContainer>
+          {/* <AdContainer>
             <Content>
               <AdTextContainer>
                 <AdTitle>{t("home.ad_title")}</AdTitle>
@@ -215,10 +313,40 @@ const Home: NextPage = () => {
               </MobiveBuyContainer>
               <AdImg src="/images/ad.png" alt="razor img" />
             </Content>
-          </AdContainer>
+          </AdContainer> */}
           <Products func={buyClicked} />
+          <Tips>护盾和刀锋现已停售，敬请期待下一代产品</Tips>
+
+          <ContactButton
+            isShow={!showCDialog}
+            onClick={() => {
+              showContactDialog()
+            }}
+          >
+            帮助
+          </ContactButton>
+
+          <ContactDiv isShow={showCDialog}>
+            <ContactHeader>给我们留言</ContactHeader>
+            <ContactBody>
+              <ContactTitle>电邮地址</ContactTitle>
+              <ContactTextField />
+
+              <ContactTitle>有什么我们可以帮忙的?</ContactTitle>
+              <ContactTextField />
+            </ContactBody>
+            <ContactBottom>
+              <ContactSend
+                onClick={() => {
+                  setShowCDialog(false)
+                }}
+              >
+                发送
+              </ContactSend>
+            </ContactBottom>
+          </ContactDiv>
         </HomeContent>
-        <Footer router="home" />
+        {/* <Footer router="home" /> */}
       </ClientOnly>
     </>
   )

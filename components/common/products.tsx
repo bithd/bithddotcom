@@ -7,6 +7,7 @@ import { deleteBr } from "../../utils/utils"
 
 const Container = styled(Content)`
   display: flex;
+  margin-top: 80px;
   flex-wrap: wrap;
   justify-content: space-between;
   align-content: space-between;
@@ -133,19 +134,27 @@ export function Products({ func }: { func: (type: string) => void }) {
   const { t, i18n } = useTranslation()
 
   const products: ProductsProps[] = [
+    // {
+    //   title: t("header.razor_pro"),
+    //   subtitle: t("razor_pro.des"),
+    //   img: "/images/icon_razor_pro.png",
+    //   link: "/razor2",
+    //   buy: "razor2",
+    // },
+    // {
+    //   title: t("header.bithd_2"),
+    //   subtitle: t("bithd_2.des"),
+    //   img: "/images/icon_watch2.png",
+    //   link: "/watch2",
+    //   buy: "watch2",
+    // },
+
     {
-      title: t("header.razor_pro"),
-      subtitle: t("razor_pro.des"),
-      img: "/images/icon_razor_pro.png",
-      link: "/razor2",
-      buy: "razor2",
-    },
-    {
-      title: t("header.bithd_2"),
-      subtitle: t("bithd_2.des"),
-      img: "/images/icon_watch2.png",
-      link: "/watch2",
-      buy: "watch2",
+      title: t("header.frozen"),
+      subtitle: t("frozen.des"),
+      img: "/images/icon_forzen.png",
+      link: "/armor",
+      buy: "armor",
     },
     {
       title: t("header.frozen_2"),
@@ -153,13 +162,6 @@ export function Products({ func }: { func: (type: string) => void }) {
       img: "/images/icon_forzen_304.png",
       link: "/armor2",
       buy: "aromr2",
-    },
-    {
-      title: t("header.frozen"),
-      subtitle: t("frozen.des"),
-      img: "/images/icon_forzen.png",
-      link: "/armor",
-      buy: "armor",
     },
   ]
 

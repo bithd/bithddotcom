@@ -438,13 +438,13 @@ const Razor2: NextPage = () => {
                     src="/images/razor_pro_banner5.png"
                     alt="razor pro banner5"
                   />
-                  <Warn>{t("common.warn")}</Warn>
+                  {/* <Warn>{t("common.warn")}</Warn> */}
                 </div>
               </TechnicalImgContent>
             </FlexContent>
           </TechnicalContent>
         </Container>
-        <Footer router="razor_pro" />
+        {/* <Footer router="razor_pro" /> */}
       </ClientOnly>
     </>
   )

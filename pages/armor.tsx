@@ -365,7 +365,7 @@ const Armor: NextPage = () => {
             </FlexContentReverse>
           </TechnicalContent>
         </Container>
-        <Footer router="frozen" />
+        {/* <Footer router="frozen" /> */}
       </ClientOnly>
     </>
   )

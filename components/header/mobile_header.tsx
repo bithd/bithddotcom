@@ -82,46 +82,46 @@ export function MobiveHeader() {
   }
 
   const menus: MobileMenu[] = [
-    {
-      link: {
-        text: t("header.razor"),
-        nofollow: false,
-        link: "",
-        changeLang: false,
-      },
-      isMark: false,
-      drop: [
-        {
-          text: t("header.razor_1"),
-          nofollow: false,
-          link: "/razor",
-          changeLang: false,
-        },
-        {
-          text: t("header.razor_pro"),
-          nofollow: false,
-          link: "/razor2",
-          changeLang: false,
-        },
-      ],
-    },
-    {
-      link: {
-        text: t("header.bithd"),
-        nofollow: false,
-        link: "",
-        changeLang: false,
-      },
-      isMark: false,
-      drop: [
-        {
-          text: t("header.bithd_2"),
-          nofollow: false,
-          link: "/watch2",
-          changeLang: false,
-        },
-      ],
-    },
+    // {
+    //   link: {
+    //     text: t("header.razor"),
+    //     nofollow: false,
+    //     link: "",
+    //     changeLang: false,
+    //   },
+    //   isMark: false,
+    //   drop: [
+    //     {
+    //       text: t("header.razor_1"),
+    //       nofollow: false,
+    //       link: "/razor",
+    //       changeLang: false,
+    //     },
+    //     {
+    //       text: t("header.razor_pro"),
+    //       nofollow: false,
+    //       link: "/razor2",
+    //       changeLang: false,
+    //     },
+    //   ],
+    // },
+    // {
+    //   link: {
+    //     text: t("header.bithd"),
+    //     nofollow: false,
+    //     link: "",
+    //     changeLang: false,
+    //   },
+    //   isMark: false,
+    //   drop: [
+    //     {
+    //       text: t("header.bithd_2"),
+    //       nofollow: false,
+    //       link: "/watch2",
+    //       changeLang: false,
+    //     },
+    //   ],
+    // },
     {
       link: {
         text: t("header.frozen"),
@@ -145,16 +145,16 @@ export function MobiveHeader() {
         },
       ],
     },
-    {
-      link: {
-        text: t("header.doc"),
-        nofollow: true,
-        link: "http://docs.bithd.com/",
-        changeLang: false,
-      },
-      isMark: false,
-      drop: [],
-    },
+    // {
+    //   link: {
+    //     text: t("header.doc"),
+    //     nofollow: true,
+    //     link: "http://docs.bithd.com/",
+    //     changeLang: false,
+    //   },
+    //   isMark: false,
+    //   drop: [],
+    // },
     {
       link: {
         text: isCN(i18n.language) ? "中文" : "English",

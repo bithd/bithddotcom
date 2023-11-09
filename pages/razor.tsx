@@ -393,7 +393,7 @@ const Razor: NextPage = () => {
             </FlexContent>
           </TechnicalContent>
         </Container>
-        <Footer router="razor" />
+        {/* <Footer router="razor" /> */}
       </ClientOnly>
     </>
   )

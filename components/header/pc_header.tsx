@@ -61,7 +61,7 @@ const LanguageContainer = styled.div`
   height: 30px;
   border-radius: 30px;
   border: ${({ theme }) => `1px solid ${theme.lang_border}`};
-  background: ${({ theme }) => theme.lang_back}; ;
+  background: ${({ theme }) => theme.lang_back};
 `
 
 const LanguageBtn = styled.button<{ isTransparent: boolean }>`
@@ -96,44 +96,44 @@ export function PCHeader({ active }: PCHeaderProps) {
   }
 
   const menus: Menu[] = [
-    {
-      link: {
-        text: t("header.razor"),
-        name: "razor",
-        nofollow: false,
-        link: "",
-      },
-      drop: [
-        {
-          text: t("header.razor_1"),
-          name: "razor_1",
-          nofollow: false,
-          link: "/razor",
-        },
-        {
-          text: t("header.razor_pro"),
-          name: "razor_2",
-          nofollow: false,
-          link: "/razor2",
-        },
-      ],
-    },
-    {
-      link: {
-        text: t("header.bithd"),
-        name: "bithd",
-        nofollow: false,
-        link: "",
-      },
-      drop: [
-        {
-          text: t("header.bithd_2"),
-          name: "bithd_2",
-          nofollow: false,
-          link: "/watch2",
-        },
-      ],
-    },
+    // {
+    //   link: {
+    //     text: t("header.razor"),
+    //     name: "razor",
+    //     nofollow: false,
+    //     link: "",
+    //   },
+    //   drop: [
+    //     {
+    //       text: t("header.razor_1"),
+    //       name: "razor_1",
+    //       nofollow: false,
+    //       link: "/razor",
+    //     },
+    //     {
+    //       text: t("header.razor_pro"),
+    //       name: "razor_2",
+    //       nofollow: false,
+    //       link: "/razor2",
+    //     },
+    //   ],
+    // },
+    // {
+    //   link: {
+    //     text: t("header.bithd"),
+    //     name: "bithd",
+    //     nofollow: false,
+    //     link: "",
+    //   },
+    //   drop: [
+    //     {
+    //       text: t("header.bithd_2"),
+    //       name: "bithd_2",
+    //       nofollow: false,
+    //       link: "/watch2",
+    //     },
+    //   ],
+    // },
     {
       link: {
         text: t("header.frozen"),
@@ -156,15 +156,15 @@ export function PCHeader({ active }: PCHeaderProps) {
         },
       ],
     },
-    {
-      link: {
-        text: t("header.doc"),
-        name: "doc",
-        nofollow: true,
-        link: "http://docs.bithd.com/",
-      },
-      drop: [],
-    },
+    // {
+    //   link: {
+    //     text: t("header.doc"),
+    //     name: "doc",
+    //     nofollow: true,
+    //     link: "http://docs.bithd.com/",
+    //   },
+    //   drop: [],
+    // },
   ]
 
   return (
