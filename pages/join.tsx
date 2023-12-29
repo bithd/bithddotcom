@@ -31,7 +31,7 @@ const Title1 = styled.p`
   margin: 10px 0;
   font-size: 14px;
   line-height: 32px;
-  font-weight: 550;
+  font-weight: 600;
 `
 
 const Title3 = styled.p`
@@ -45,6 +45,18 @@ const Title2 = styled.p`
   margin: 8px 0;
   font-size: 14px;
   line-height: 26px;
+`
+
+const Title4 = styled.p`
+  margin: 20px 0 10px;
+  font-size: 14px;
+  line-height: 32px;
+`
+
+const Title5 = styled.p`
+  margin: 10px 0;
+  font-size: 14px;
+  line-height: 32px;
 `
 
 const Join: NextPage = () => {
@@ -84,11 +96,11 @@ const Join: NextPage = () => {
             <Title2>{t("join.j_4")}</Title2>
             <Title2>{t("join.j_5")}</Title2>
             <Title2>{t("join.j_6")}</Title2>
-            <Title3>{t("join.address")}</Title3>
-            <Title1
+            <Title4>{t("join.address")}</Title4>
+            <Title5
               dangerouslySetInnerHTML={{ __html: t("join.email") }}
-            ></Title1>
-            <Title1>{t("join.provider")}</Title1>
+            ></Title5>
+            <Title5>{t("join.provider")}</Title5>
           </ContainerContent>
         </Container>
       </ClientOnly>
