@@ -118,22 +118,15 @@ export function PCHeader({ active }: PCHeaderProps) {
     //     },
     //   ],
     // },
-    // {
-    //   link: {
-    //     text: t("header.bithd"),
-    //     name: "bithd",
-    //     nofollow: false,
-    //     link: "",
-    //   },
-    //   drop: [
-    //     {
-    //       text: t("header.bithd_2"),
-    //       name: "bithd_2",
-    //       nofollow: false,
-    //       link: "/watch2",
-    //     },
-    //   ],
-    // },
+    {
+      link: {
+        text: t("header.join_us"),
+        name: "join",
+        nofollow: false,
+        link: "",
+      },
+      drop: [],
+    },
     {
       link: {
         text: t("header.frozen"),

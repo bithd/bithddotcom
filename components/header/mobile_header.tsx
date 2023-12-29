@@ -105,23 +105,16 @@ export function MobiveHeader() {
     //     },
     //   ],
     // },
-    // {
-    //   link: {
-    //     text: t("header.bithd"),
-    //     nofollow: false,
-    //     link: "",
-    //     changeLang: false,
-    //   },
-    //   isMark: false,
-    //   drop: [
-    //     {
-    //       text: t("header.bithd_2"),
-    //       nofollow: false,
-    //       link: "/watch2",
-    //       changeLang: false,
-    //     },
-    //   ],
-    // },
+    {
+      link: {
+        text: t("header.bithd"),
+        nofollow: false,
+        link: "",
+        changeLang: false,
+      },
+      isMark: false,
+      drop: [],
+    },
     {
       link: {
         text: t("header.frozen"),
