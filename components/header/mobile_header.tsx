@@ -107,9 +107,9 @@ export function MobiveHeader() {
     // },
     {
       link: {
-        text: t("header.bithd"),
+        text: t("header.join_us"),
         nofollow: false,
-        link: "",
+        link: "/join",
         changeLang: false,
       },
       isMark: false,

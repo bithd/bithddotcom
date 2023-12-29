@@ -123,7 +123,7 @@ export function PCHeader({ active }: PCHeaderProps) {
         text: t("header.join_us"),
         name: "join",
         nofollow: false,
-        link: "",
+        link: "/join",
       },
       drop: [],
     },
