@@ -18,6 +18,7 @@ export const defaultTheme = {
   back_f6: "#f6f6f6",
   back_buy_btn: "#1E6FC6",
   black_333: "#333",
+  stop_sell: "#E12D2D",
   black_666: "#666",
   black_text: "#000",
   border_f5: "#f5f5f5",

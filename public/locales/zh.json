@@ -20,6 +20,7 @@
   "common": {
     "more": "进一步了解",
     "buy": "购买",
+    "stop_sell": "已停售",
     "price": "仅售 {{price}}",
     "warn": "* 尺寸重量为手工测量，可能存在微小误差",
     "params_title": "技术规格",

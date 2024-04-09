@@ -46,6 +46,19 @@ const BuyBtn = styled.button`
   }
 `
 
+const SellTitle = styled.p`
+  flex: 1;
+  margin: 0;
+  line-height: 60px;
+  font-size: 20px;
+  text-align: right;
+  color: ${({ theme }) => theme.stop_sell};
+
+  @media (max-width: 768px) {
+    font-size: 16px;
+  }
+`
+
 export function Buy({ title, func }: BuyProps) {
   const { t } = useTranslation()
 
@@ -54,13 +67,7 @@ export function Buy({ title, func }: BuyProps) {
       <Container>
         <ContentDiv>
           <Title>{title}</Title>
-          <BuyBtn
-            onClick={() => {
-              func()
-            }}
-          >
-            {t("common.buy")}
-          </BuyBtn>
+          <SellTitle>{t("common.stop_sell")}</SellTitle>
         </ContentDiv>
       </Container>
     </>

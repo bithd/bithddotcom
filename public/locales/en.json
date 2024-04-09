@@ -20,6 +20,7 @@
   "common": {
     "more": "Learn More",
     "buy": "Buy",
+    "stop_sell": "Discontinued",
     "price": "Only {{price}}",
     "warn": "*Slight error in manual measurement",
     "params_title": "Technical Specifications",
