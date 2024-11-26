@@ -161,6 +161,13 @@ export function Products({ func }: { func: (type: string) => void }) {
             link: "/watch2",
             buy: "watch2",
           },
+          {
+            title: t("header.razor_pro"),
+            subtitle: t("razor_pro.des"),
+            img: "/images/icon_razor_pro.png",
+            link: "/razor2",
+            buy: "razor2",
+          },
         ]
       : []),
   ]
