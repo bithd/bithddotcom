@@ -3,7 +3,7 @@ import { ProductsProps } from "../../model/model"
 import { Content } from "./common"
 import { useTranslation } from "react-i18next"
 import Link from "next/link"
-import { deleteBr } from "../../utils/utils"
+import { deleteBr, isCN } from "../../utils/utils"
 
 const Container = styled(Content)`
   display: flex;
@@ -133,22 +133,7 @@ const Icon = styled.img`
 export function Products({ func }: { func: (type: string) => void }) {
   const { t, i18n } = useTranslation()
 
-  const products: ProductsProps[] = [
-    // {
-    //   title: t("header.razor_pro"),
-    //   subtitle: t("razor_pro.des"),
-    //   img: "/images/icon_razor_pro.png",
-    //   link: "/razor2",
-    //   buy: "razor2",
-    // },
-    // {
-    //   title: t("header.bithd_2"),
-    //   subtitle: t("bithd_2.des"),
-    //   img: "/images/icon_watch2.png",
-    //   link: "/watch2",
-    //   buy: "watch2",
-    // },
-
+  const baseProducts: ProductsProps[] = [
     {
       title: t("header.frozen"),
       subtitle: t("frozen.des"),
@@ -163,6 +148,21 @@ export function Products({ func }: { func: (type: string) => void }) {
       link: "/armor2",
       buy: "aromr2",
     },
+  ]
+
+  const products: ProductsProps[] = [
+    ...baseProducts,
+    ...(!isCN(i18n.language)
+      ? [
+          {
+            title: t("header.bithd_2"),
+            subtitle: t("bithd_2.des"),
+            img: "/images/icon_watch2.png",
+            link: "/watch2",
+            buy: "watch2",
+          },
+        ]
+      : []),
   ]
 
   return (
